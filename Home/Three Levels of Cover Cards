@@ -1,0 +1,173 @@
+/* Three levels of cover section - specific targeting */
+
+/* Add blue background to the entire section */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] {
+    background-color: #007ac2 !important;
+    padding: 60px 20px !important;
+    margin: 0 !important;
+}
+
+/* Section title */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__list::before {
+    content: "Three levels of cover" !important;
+    display: block !important;
+    text-align: left !important;
+    color: #ffffff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 30px !important;
+    width: 100% !important;
+}
+
+/* Card list wrapper */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__list {
+    position: relative !important;
+    background-color: transparent !important;
+}
+
+/* Individual cards - WHITE backgrounds with rounded corners */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] section.card-v2 {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] div.card-v2__content {
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 30px 25px 25px 25px !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+}
+
+/* Allow backgrounds in this section */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2 *,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content * {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+}
+
+/* First card - Blue title and checks */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(1) .card-v2__content__header__headline h2 {
+    color: #007ac2 !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(1) .icon-check_circle {
+    color: #007ac2 !important;
+}
+
+/* Second card - Gold/Bronze title and checks */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(2) .card-v2__content__header__headline h2 {
+    color: #B8860B !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(2) .icon-check_circle {
+    color: #B8860B !important;
+}
+
+/* Third card - Grey/Platinum title and checks */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(3) .card-v2__content__header__headline h2 {
+    color: #808080 !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(3) .icon-check_circle {
+    color: #808080 !important;
+}
+
+/* Card titles - FIXED TWO LINE HEIGHT - CENTER ALIGNED */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__header {
+    height: auto !important;
+    min-height: 70px !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__header__headline h2 {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    text-align: center !important;
+    line-height: 1.3 !important;
+    min-height: 70px !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+}
+
+/* List items */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__body__list__item span {
+    color: #000000 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+}
+
+/* SHOW and STYLE the footer buttons */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer {
+    display: block !important;
+    text-align: center !important;
+    margin-top: 25px !important;
+    padding-top: 20px !important;
+}
+
+/* Hide the arrow link */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__link {
+    display: none !important;
+}
+
+/* Style the button */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button {
+    display: block !important;
+    text-align: center !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a {
+    background-color: #FFD500 !important;
+    color: #000000 !important;
+    padding: 12px 35px !important;
+    border-radius: 10px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a:hover {
+    background-color: #E6C000 !important;
+}
+
+/* Responsive - Smaller font on mobile to keep Platinum at 2 lines */
+@media (max-width: 768px) {
+    .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__list::before {
+        font-size: 2rem !important;
+    }
+    
+    .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__header {
+        min-height: 60px !important;
+    }
+    
+    .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__header__headline h2 {
+        font-size: 1.35rem !important;
+        line-height: 1.25 !important;
+        min-height: 60px !important;
+    }
+    
+    .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a {
+        padding: 10px 30px !important;
+        font-size: 0.9rem !important;
+    }
+}
