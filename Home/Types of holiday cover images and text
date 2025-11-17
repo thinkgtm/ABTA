@@ -1,0 +1,171 @@
+/* Types of holiday cover section */
+.insurance-- {
+    background-color: #ffffff !important;
+    padding: 60px 20px !important;
+    margin: 0 !important;
+}
+
+.insurance-- .intro-text {
+    text-align: left !important;
+    margin-bottom: 40px !important;
+}
+
+.insurance-- .intro-text h2 {
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Article inline container */
+.article-inline.center__article {
+    display: flex !important;
+    gap: 20px !important;
+    justify-content: space-between !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* Individual cards */
+.article-inline__card {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+}
+
+/* Card images - SEPARATE from text */
+.article-inline__image {
+    width: 100% !important;
+    height: 350px !important;
+    overflow: hidden !important;
+    border-radius: 15px !important;
+    margin-bottom: 20px !important;
+}
+
+.article-inline__image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Card body - NO CARD, transparent background */
+.article-inline__card-body {
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Card titles */
+.article-inline__title {
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    margin: 0 0 20px 0 !important;
+    text-align: left !important;
+}
+
+.article-inline__title.font-bold-publicoheadline {
+    font-family: Calibri, Arial, sans-serif !important;
+}
+
+/* List items */
+.article-inline__card-body .card-v2__content__body__list__item {
+    display: flex !important;
+    align-items: flex-start !important;
+    margin-bottom: 15px !important;
+    list-style: none !important;
+}
+
+.article-inline__card-body .card-v2__content__body__list__item:last-child {
+    margin-bottom: 20px !important;
+}
+
+.article-inline__card-body .card-v2__content__body__list__item i {
+    color: #007ac2 !important;
+    font-size: 1.25rem !important;
+    margin-right: 10px !important;
+    flex-shrink: 0 !important;
+    margin-top: 2px !important;
+}
+
+.article-inline__card-body .card-v2__content__body__list__item span {
+    color: #666666 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+}
+
+/* Button styling - ABTA yellow */
+.article-inline__card-body > div {
+    margin-top: auto !important;
+    padding-top: 20px !important;
+}
+
+.article-inline__card-body .link {
+    background-color: #FFD500 !important;
+    color: #000000 !important;
+    padding: 12px 35px !important;
+    border-radius: 10px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-transform: none !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.article-inline__card-body .link:hover {
+    background-color: #E6C000 !important;
+}
+
+/* Hide the arrow icon */
+.article-inline__card-body .link.icons--east::after,
+.article-inline__card-body .link.icons--right::after {
+    display: none !important;
+}
+
+/* Remove default text styles */
+.article-inline__card-text {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .article-inline.center__article {
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    
+    .article-inline__card {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .insurance-- .intro-text h2 {
+        font-size: 2rem !important;
+    }
+    
+    .article-inline__title {
+        font-size: 1.5rem !important;
+    }
+    
+    .article-inline__image {
+        height: 250px !important;
+    }
+}
