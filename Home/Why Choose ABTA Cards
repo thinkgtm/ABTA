@@ -1,0 +1,173 @@
+/* Why choose ABTA - Section title */
+.card-v2__list::before {
+    content: "Why choose ABTA Travel Insurance?" !important;
+    display: block !important;
+    text-align: center !important;
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 30px !important;
+    width: 100% !important;
+}
+
+/* Why choose ABTA - Card layout */
+.card-v2__list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    max-width: 1200px !important;
+    margin: 40px auto !important;
+    padding: 0 20px !important;
+    justify-content: space-between !important;
+}
+
+/* Individual cards - remove all backgrounds */
+.card-v2,
+section.card-v2 {
+    flex: 1 !important;
+    display: flex !important;
+    margin: 0 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.card-v2__content,
+div.card-v2__content {
+    border: 3px solid #007ac2 !important;
+    border-radius: 12px !important;
+    padding: 20px 20px !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Remove backgrounds from all child elements */
+.card-v2 *,
+.card-v2__content * {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Card header */
+.card-v2__content__header {
+    margin-bottom: 15px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+.card-v2__content__header__headline h2 {
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    background: transparent !important;
+}
+
+/* Hide price and sub-headline */
+.card-v2__content__header__info,
+.card-v2__content__header__sub-headline,
+.card-v2__content__header__price {
+    display: none !important;
+}
+
+/* Card body */
+.card-v2__content__body {
+    flex: 1 !important;
+    margin-bottom: 0 !important;
+    background: transparent !important;
+}
+
+.card-v2__content__body__list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+.card-v2__content__body__list__item {
+    display: flex !important;
+    align-items: flex-start !important;
+    margin-bottom: 12px !important;
+    color: #000000 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    background: transparent !important;
+}
+
+.card-v2__content__body__list__item:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Show green checkmark icons */
+.card-v2__content__body__list__item i.icon-check_circle {
+    display: inline-block !important;
+    color: #00b67a !important;
+    font-size: 1.25rem !important;
+    margin-right: 8px !important;
+    flex-shrink: 0 !important;
+    margin-top: 2px !important;
+    background: transparent !important;
+}
+
+.card-v2__content__body__list__item i.color-success-lighter {
+    color: #00b67a !important;
+}
+
+.card-v2__content__body__list__item span {
+    color: #000000 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    background: transparent !important;
+}
+
+/* Hide footer (buttons and links) */
+.card-v2__content__footer,
+.card-v2__content__footer__link,
+.card-v2__content__footer__button {
+    display: none !important;
+}
+
+/* Remove any pseudo-elements that might create backgrounds */
+.card-v2::before,
+.card-v2::after,
+.card-v2__content::before,
+.card-v2__content::after {
+    display: none !important;
+    background: none !important;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .card-v2__list::before {
+        font-size: 1.75rem !important;
+    }
+    
+    .card-v2 {
+        flex: 1 1 calc(50% - 10px) !important;
+        min-width: 300px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-v2__list::before {
+        font-size: 1.5rem !important;
+    }
+    
+    .card-v2 {
+        flex: 1 1 100% !important;
+    }
+    
+    .card-v2__content__header__headline h2 {
+        font-size: 1.25rem !important;
+    }
+}
