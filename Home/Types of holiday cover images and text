@@ -8,6 +8,9 @@
 .insurance-- .intro-text {
     text-align: left !important;
     margin-bottom: 40px !important;
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .insurance-- .intro-text h2 {
@@ -16,11 +19,11 @@
     font-size: 2.5rem !important;
     font-weight: 700 !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 0 50px !important;
 }
 
 /* Article inline container */
-.article-inline.center__article {
+.article-inline.center__article.container {
     display: flex !important;
     gap: 20px !important;
     justify-content: space-between !important;
@@ -159,6 +162,7 @@
 @media (max-width: 768px) {
     .insurance-- .intro-text h2 {
         font-size: 2rem !important;
+        padding: 0 20px !important;
     }
     
     .article-inline__title {
