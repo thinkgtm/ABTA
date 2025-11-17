@@ -1,12 +1,93 @@
+/* ===== GLOBAL BUTTON STYLING - ALL BUTTONS ===== */
+/* All buttons - Increased size + Sentence case */
+.btn,
+.btn--primary,
+.btn--secondary,
+.link,
+.introduction .btn--primary,
+.introduction .btn__btn .btn--primary,
+.article__card-body .btn--secondary,
+.card-v2__content__footer__button a,
+.article-inline__card-body .link {
+    padding: 15px 42px !important;
+    font-size: 1.125rem !important;
+    font-weight: 700 !important;
+    border-radius: 10px !important;
+    text-transform: none !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+    transition: background-color 0.3s ease !important;
+    font-family: Calibri, Arial, sans-serif !important;
+}
+
+/* Yellow buttons (primary) */
+.btn--primary,
+.introduction .btn--primary,
+.introduction .btn__btn .btn--primary,
+.card-v2__content__footer__button a,
+.article-inline__card-body .link {
+    background-color: #fcb316 !important;
+    color: #000000 !important;
+}
+
+.btn--primary:hover,
+.introduction .btn--primary:hover,
+.introduction .btn__btn .btn--primary:hover,
+.card-v2__content__footer__button a:hover,
+.article-inline__card-body .link:hover {
+    background-color: #E6C000 !important;
+}
+
+/* Secondary buttons */
+.btn--secondary,
+.article__card-body .btn--secondary {
+    background-color: #fcb316 !important;
+    color: #000000 !important;
+}
+
+.btn--secondary:hover,
+.article__card-body .btn--secondary:hover {
+    background-color: #E6C000 !important;
+}
+
+/* Button focus/active states */
+.btn:focus,
+.btn:active,
+.btn--primary:focus,
+.btn--primary:active,
+.btn--secondary:focus,
+.btn--secondary:active {
+    background-color: #fcb316 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Responsive button sizing */
+@media (max-width: 768px) {
+    .btn,
+    .btn--primary,
+    .btn--secondary,
+    .link,
+    .introduction .btn--primary,
+    .introduction .btn__btn .btn--primary,
+    .article__card-body .btn--secondary,
+    .card-v2__content__footer__button a,
+    .article-inline__card-body .link {
+        padding: 13px 36px !important;
+        font-size: 1rem !important;
+    }
+}
+
 /* ===== Home/Header Banner & Fonts ===== */
-/* Source: https://github.com/thinkgtm/ABTA/blob/889b1668e8234490fbd1fd5aceeb9cff92dfecd8/Home/Header%20Banner%20%26%20Fonts */
-/* Replace all AXA text with ABTA */
 body *:not(script):not(style) {
     visibility: visible;
 }
 body *:not(script):not(style) {
     font-family: Calibri, "SourceSansPro", Arial, sans-serif !important;
 }
+
 /* Text replacement for AXA to ABTA */
 .axa-text::before,
 [class*="axa"]::before,
@@ -14,11 +95,12 @@ body *:not(script):not(style) {
     content: 'ABTA' !important;
     visibility: visible;
 }
-/* Hide original AXA text */
+
 [class*="axa"]::first-letter,
 [class*="AXA"]::first-letter {
     font-size: 0;
 }
+
 /* Main banner styling */
 .introduction-banner {
     position: relative;
@@ -95,36 +177,6 @@ body *:not(script):not(style) {
     font-weight: 700;
 }
 
-/* ABTA Yellow CTA Button */
-.introduction .btn--primary,
-.introduction .btn__btn .btn--primary {
-    background-color: #fcb316 !important;
-    color: #000000 !important;
-    padding: 16px 32px !important;
-    border-radius: 10px !important;
-    font-weight: bold !important;
-    text-decoration: none !important;
-    display: inline-block !important;
-    border: none !important;
-    box-shadow: none !important;
-    transition: background-color 0.3s ease;
-}
-
-.introduction .btn--primary:hover,
-.introduction .btn__btn .btn--primary:hover {
-    background-color: #E6C000 !important;
-    box-shadow: none !important;
-}
-
-.introduction .btn--primary:focus,
-.introduction .btn--primary:active,
-.introduction .btn__btn .btn--primary:focus,
-.introduction .btn__btn .btn--primary:active {
-    background-color: #fcb316 !important;
-    outline: none !important;
-    box-shadow: none !important;
-}
-
 /* Mobile version - left-aligned */
 .article-full__detail--mobile .article-full__container {
     background-color: rgba(255, 255, 255, 0.95) !important;
@@ -187,8 +239,6 @@ body *:not(script):not(style) {
 }
 
 /* ===== Home/Moneyhelper Text (Boxed) ===== */
-/* Source: https://github.com/thinkgtm/ABTA/blob/889b1668e8234490fbd1fd5aceeb9cff92dfecd8/Home/Moneyhelper%20Text%20(Boxed) */
-/* Money advice text section - ONLY target sections that contain links */
 section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]),
 section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) {
     background-color: #ffffff !important;
@@ -212,7 +262,7 @@ section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_bloc
 
 section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium,
 section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium {
-    color: #666666 !important;
+    color: #1c1c1b !important;
     font-family: Calibri, Arial, sans-serif !important;
     font-size: 1rem !important;
     font-weight: 400 !important;
@@ -224,7 +274,7 @@ section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_main
 
 section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium p,
 section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium p {
-    color: #666666 !important;
+    color: #1c1c1b !important;
     margin: 0 !important;
     padding: 0 !important;
     text-align: center !important;
@@ -233,7 +283,7 @@ section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_main
 
 section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium p a,
 section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium p a {
-    color: #666666 !important;
+    color: #1c1c1b !important;
     text-decoration: underline !important;
     font-weight: 400 !important;
 }
@@ -243,19 +293,17 @@ section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_main
     color: #007ac2 !important;
 }
 
-/* Force override any existing styles - ONLY for Money Advice section */
 section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) *,
 section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) * {
-    color: #666666 !important;
+    color: #1c1c1b !important;
 }
 
 section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) a,
 section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) a {
-    color: #666666 !important;
+    color: #1c1c1b !important;
     text-decoration: underline !important;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]),
     section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) {
@@ -274,8 +322,6 @@ section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) a {
 }
 
 /* ===== Home/Summary of cover ===== */
-/* Source: https://github.com/thinkgtm/ABTA/blob/889b1668e8234490fbd1fd5aceeb9cff92dfecd8/Home/Summary%20of%20cover */
-/* Summary of cover section */
 section.container {
     background-color: #ffffff !important;
     padding: 60px 20px !important;
@@ -294,7 +340,6 @@ section.container {
     align-items: center !important;
 }
 
-/* Image on left - FORCE SQUARE */
 .article__container .article__image {
     flex: 0 0 45% !important;
     max-width: 45% !important;
@@ -374,32 +419,11 @@ section.container {
 
 /* Body text */
 .article__card-text {
-    color: #666666 !important;
+    color: #1c1c1b !important;
     font-family: Calibri, Arial, sans-serif !important;
     font-size: 1.125rem !important;
     line-height: 1.6 !important;
     margin: 0 0 30px 0 !important;
-}
-
-/* Button - 10px rounded corners like previous CSS */
-.article__card-body .btn--secondary {
-    background-color: #fcb316 !important;
-    color: #000000 !important;
-    padding: 12px 35px !important;
-    border-radius: 10px !important;
-    font-family: Calibri, Arial, sans-serif !important;
-    font-size: 1rem !important;
-    font-weight: 700 !important;
-    text-decoration: none !important;
-    display: inline-block !important;
-    border: none !important;
-    box-shadow: none !important;
-    text-transform: none !important;
-    transition: background-color 0.3s ease !important;
-}
-
-.article__card-body .btn--secondary:hover {
-    background-color: #E6C000 !important;
 }
 
 /* Responsive */
@@ -438,23 +462,15 @@ section.container {
     .article__card-text {
         font-size: 1rem !important;
     }
-
-    .article__card-body .btn--secondary {
-        padding: 10px 30px !important;
-        font-size: 0.9rem !important;
-    }
 }
 
 /* ===== Home/Three Levels of Cover Cards ===== */
-/* Source: https://github.com/thinkgtm/ABTA/blob/889b1668e8234490fbd1fd5aceeb9cff92dfecd8/Home/Three%20Levels%20of%20Cover%20Cards */
-/* Three levels of cover section - specific targeting */
-/* Add blue background to the entire section */
 .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] {
     background-color: #007ac2 !important;
     padding: 60px 20px !important;
     margin: 0 !important;
 }
-/* Section title */
+
 .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__list::before {
     content: "Three levels of cover" !important;
     display: block !important;
@@ -467,13 +483,11 @@ section.container {
     width: 100% !important;
 }
 
-/* Card list wrapper */
 .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__list {
     position: relative !important;
     background-color: transparent !important;
 }
 
-/* Individual cards - WHITE backgrounds with rounded corners */
 .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2,
 .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] section.card-v2 {
     background: #ffffff !important;
@@ -491,7 +505,6 @@ section.container {
     background-color: #ffffff !important;
 }
 
-/* Allow backgrounds in this section */
 .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2 *,
 .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content * {
     background: transparent !important;
@@ -528,7 +541,6 @@ section.container {
     color: #808080 !important;
 }
 
-/* Card titles - FIXED TWO LINE HEIGHT - CENTER ALIGNED */
 .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__header {
     height: auto !important;
     min-height: 70px !important;
@@ -549,14 +561,12 @@ section.container {
     justify-content: center !important;
 }
 
-/* List items */
 .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__body__list__item span {
-    color: #000000 !important;
+    color: #1c1c1b !important;
     font-family: Calibri, Arial, sans-serif !important;
     font-size: 1rem !important;
 }
 
-/* SHOW and STYLE the footer buttons */
 .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer {
     display: block !important;
     text-align: center !important;
@@ -564,37 +574,15 @@ section.container {
     padding-top: 20px !important;
 }
 
-/* Hide the arrow link */
 .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__link {
     display: none !important;
 }
 
-/* Style the button */
 .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button {
     display: block !important;
     text-align: center !important;
 }
 
-.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a {
-    background-color: #fcb316 !important;
-    color: #000000 !important;
-    padding: 12px 35px !important;
-    border-radius: 10px !important;
-    font-family: Calibri, Arial, sans-serif !important;
-    font-size: 1rem !important;
-    font-weight: 700 !important;
-    text-decoration: none !important;
-    display: inline-block !important;
-    border: none !important;
-    box-shadow: none !important;
-    transition: background-color 0.3s ease !important;
-}
-
-.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a:hover {
-    background-color: #E6C000 !important;
-}
-
-/* Responsive - Smaller font on mobile to keep Platinum at 2 lines */
 @media (max-width: 768px) {
     .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__list::before {
         font-size: 2rem !important;
@@ -609,17 +597,9 @@ section.container {
         line-height: 1.25 !important;
         min-height: 60px !important;
     }
-
-    .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a {
-        padding: 10px 30px !important;
-        font-size: 0.9rem !important;
-    }
 }
 
 /* ===== Home/Trustpilot Carrousel ===== */
-/* Source: https://github.com/thinkgtm/ABTA/blob/889b1668e8234490fbd1fd5aceeb9cff92dfecd8/Home/Trustpilot%20Carrousel */
-/* Trustpilot Carousel Widget - Padding Only */
-/* Target the specific Trustpilot widget wrapper */
 .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] {
     background-color: #ffffff !important;
     padding: 60px 20px !important;
@@ -627,7 +607,6 @@ section.container {
     width: 100% !important;
 }
 
-/* Container for the widget */
 .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget {
     max-width: 1200px !important;
     margin: 0 auto !important;
@@ -635,19 +614,16 @@ section.container {
     display: block !important;
 }
 
-/* The iframe inside */
 .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget iframe {
     width: 100% !important;
     display: block !important;
     margin: 0 auto !important;
 }
 
-/* Remove any extra spacing */
 .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] br {
     display: none !important;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
     .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget {
         padding: 0 20px !important;
@@ -663,10 +639,6 @@ section.container {
 }
 
 /* ===== Home/Trustpilot Widget (stars only) ===== */
-/* Source: https://github.com/thinkgtm/ABTA/blob/889b1668e8234490fbd1fd5aceeb9cff92dfecd8/Home/Trustpilot%20Widget%20(stars%20only) */
-/* Trustpilot Widget Redesign for ABTA */
-
-/* Main widget container */
 #ekomiApiIntegrationViewStars,
 .neo-ekomi-api-integration-view-stars {
     background-color: transparent !important;
@@ -687,10 +659,9 @@ section.container {
     text-align: center !important;
 }
 
-/* "Rated excellent on Trustpilot" text - SHOW and style in grey */
 .range-star__text.font-display-4 {
     display: inline-block !important;
-    color: #666666 !important;
+    color: #1c1c1b !important;
     font-family: Calibri, Arial, sans-serif !important;
     font-size: 1.125rem !important;
     font-weight: 700 !important;
@@ -700,10 +671,9 @@ section.container {
 }
 
 .range-star__text.font-display-4 span {
-    color: #666666 !important;
+    color: #1c1c1b !important;
 }
 
-/* CRITICAL: Force stars to display horizontally inline with text */
 .range-star__container .range-star__star {
     display: inline-block !important;
     width: auto !important;
@@ -719,7 +689,6 @@ section.container {
     cursor: pointer !important;
 }
 
-/* Target by ID for maximum specificity */
 #star1, #star2, #star3, #star4, #star5 {
     display: inline-block !important;
     width: auto !important;
@@ -735,14 +704,12 @@ section.container {
     cursor: pointer !important;
 }
 
-/* First 4 stars - full green */
 .range-star__star.icon-star.range-star__checked,
 #star1, #star2, #star3, #star4 {
     color: #00B67A !important;
     display: inline-block !important;
 }
 
-/* 5th star - half filled using gradient */
 #star5.range-star__star.icon-star.color-white {
     display: inline-block !important;
     position: relative !important;
@@ -753,12 +720,10 @@ section.container {
     color: transparent !important;
 }
 
-/* Rating value (4.6) - HIDDEN */
 .range-star__text.pt-2 {
     display: none !important;
 }
 
-/* Trustpilot logo link - compact size and CLICKABLE */
 #linkEkomiReviews {
     display: inline-block !important;
     margin-left: 10px !important;
@@ -778,12 +743,10 @@ section.container {
     cursor: pointer !important;
 }
 
-/* Override any icon-star base styles */
 .icon-star::before {
     display: inline !important;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .range-star__text.font-display-4 {
         font-size: 1rem !important;
@@ -806,14 +769,14 @@ section.container {
         width: 70px !important;
     }
 }
-/* Remove all extra padding */
+
 .pb-4 {
     padding-bottom: 0 !important;
 }
 .pt-2 {
     padding-top: 0 !important;
 }
-/* Nuclear option - override any width constraints */
+
 .range-star__star,
 #star1, #star2, #star3, #star4, #star5 {
     max-width: none !important;
@@ -821,8 +784,6 @@ section.container {
 }
 
 /* ===== Home/Types of holiday cover images and text ===== */
-/* Source: https://github.com/thinkgtm/ABTA/blob/889b1668e8234490fbd1fd5aceeb9cff92dfecd8/Home/Types%20of%20holiday%20cover%20images%20and%20text */
-/* Types of holiday cover section */
 .insurance-- {
     background-color: #ffffff !important;
     padding: 60px 20px !important;
@@ -846,7 +807,6 @@ section.container {
     padding: 0 50px !important;
 }
 
-/* Article inline container */
 .article-inline.center__article.container {
     display: flex !important;
     gap: 20px !important;
@@ -855,7 +815,6 @@ section.container {
     margin: 0 auto !important;
 }
 
-/* Individual cards */
 .article-inline__card {
     flex: 1 !important;
     display: flex !important;
@@ -866,7 +825,6 @@ section.container {
     box-shadow: none !important;
 }
 
-/* Card images - SEPARATE from text */
 .article-inline__image {
     width: 100% !important;
     height: 350px !important;
@@ -881,7 +839,6 @@ section.container {
     object-fit: cover !important;
 }
 
-/* Card body - NO CARD, transparent background */
 .article-inline__card-body {
     padding: 0 !important;
     display: flex !important;
@@ -892,7 +849,6 @@ section.container {
     box-shadow: none !important;
 }
 
-/* Card titles */
 .article-inline__title {
     color: #007ac2 !important;
     font-family: Calibri, Arial, sans-serif !important;
@@ -906,7 +862,6 @@ section.container {
     font-family: Calibri, Arial, sans-serif !important;
 }
 
-/* List items */
 .article-inline__card-body .card-v2__content__body__list__item {
     display: flex !important;
     align-items: flex-start !important;
@@ -927,51 +882,27 @@ section.container {
 }
 
 .article-inline__card-body .card-v2__content__body__list__item span {
-    color: #666666 !important;
+    color: #1c1c1b !important;
     font-family: Calibri, Arial, sans-serif !important;
     font-size: 1rem !important;
     line-height: 1.5 !important;
 }
 
-/* Button styling - ABTA yellow */
 .article-inline__card-body > div {
     margin-top: auto !important;
     padding-top: 20px !important;
 }
 
-.article-inline__card-body .link {
-    background-color: #fcb316 !important;
-    color: #000000 !important;
-    padding: 12px 35px !important;
-    border-radius: 10px !important;
-    font-family: Calibri, Arial, sans-serif !important;
-    font-size: 1rem !important;
-    font-weight: 700 !important;
-    text-decoration: none !important;
-    display: inline-block !important;
-    border: none !important;
-    box-shadow: none !important;
-    text-transform: none !important;
-    transition: background-color 0.3s ease !important;
-}
-
-.article-inline__card-body .link:hover {
-    background-color: #E6C000 !important;
-}
-
-/* Hide the arrow icon */
 .article-inline__card-body .link.icons--east::after,
 .article-inline__card-body .link.icons--right::after {
     display: none !important;
 }
 
-/* Remove default text styles */
 .article-inline__card-text {
     padding: 0 !important;
     margin: 0 !important;
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
     .article-inline.center__article {
         flex-direction: column !important;
@@ -995,8 +926,6 @@ section.container {
 }
 
 /* ===== Home/Whatever's in front banner ===== */
-/* Source: https://github.com/thinkgtm/ABTA/blob/889b1668e8234490fbd1fd5aceeb9cff92dfecd8/Home/Whatever's%20in%20front%20banner */
-/* Whatever's in front banner styling - TOP PADDING */
 section.t_block.t_quote.t_quote--xlarge {
     background-color: #007ac2 !important;
     padding: 13px 0 0 0 !important;
@@ -1028,7 +957,6 @@ section.t_block.t_quote.t_quote--xlarge * {
     padding: 0 !important;
 }
 
-/* Hide empty p tags */
 .t_quote--xlarge .t_mainText.font-medium p:empty {
     display: none !important;
 }
@@ -1046,7 +974,6 @@ section.t_block.t_quote.t_quote--xlarge * {
     line-height: 1.2 !important;
 }
 
-/* Remove any extra spacing */
 .t_block.t_quote {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -1057,7 +984,6 @@ section.t_quote--xlarge {
     box-shadow: none !important;
 }
 
-/* Responsive */
 @media (max-width: 767px) {
     section.t_block.t_quote.t_quote--xlarge {
         padding: 12px 0 0 0 !important;
@@ -1070,8 +996,6 @@ section.t_quote--xlarge {
 }
 
 /* ===== Home/Why Choose ABTA Cards ===== */
-/* Source: https://github.com/thinkgtm/ABTA/blob/889b1668e8234490fbd1fd5aceeb9cff92dfecd8/Home/Why%20Choose%20ABTA%20Cards */
-/* Why choose ABTA - Section title */
 .card-v2__list::before {
     content: "Why choose ABTA Travel Insurance?" !important;
     display: block !important;
@@ -1084,7 +1008,6 @@ section.t_quote--xlarge {
     width: 100% !important;
 }
 
-/* Why choose ABTA - Card layout */
 .card-v2__list {
     display: flex !important;
     flex-wrap: wrap !important;
@@ -1095,7 +1018,6 @@ section.t_quote--xlarge {
     justify-content: space-between !important;
 }
 
-/* Individual cards - remove all backgrounds */
 .card-v2,
 section.card-v2 {
     flex: 1 !important;
@@ -1119,14 +1041,12 @@ div.card-v2__content {
     flex-direction: column !important;
 }
 
-/* Remove backgrounds from all child elements */
 .card-v2 *,
 .card-v2__content * {
     background: transparent !important;
     background-color: transparent !important;
 }
 
-/* Card header */
 .card-v2__content__header {
     margin-bottom: 15px !important;
     height: auto !important;
@@ -1146,14 +1066,12 @@ div.card-v2__content {
     background: transparent !important;
 }
 
-/* Hide price and sub-headline */
 .card-v2__content__header__info,
 .card-v2__content__header__sub-headline,
 .card-v2__content__header__price {
     display: none !important;
 }
 
-/* Card body */
 .card-v2__content__body {
     flex: 1 !important;
     margin-bottom: 0 !important;
@@ -1171,7 +1089,7 @@ div.card-v2__content {
     display: flex !important;
     align-items: flex-start !important;
     margin-bottom: 12px !important;
-    color: #000000 !important;
+    color: #1c1c1b !important;
     font-family: Calibri, Arial, sans-serif !important;
     font-size: 1rem !important;
     line-height: 1.5 !important;
@@ -1182,7 +1100,6 @@ div.card-v2__content {
     margin-bottom: 0 !important;
 }
 
-/* Show green checkmark icons */
 .card-v2__content__body__list__item i.icon-check_circle {
     display: inline-block !important;
     color: #00b67a !important;
@@ -1198,19 +1115,17 @@ div.card-v2__content {
 }
 
 .card-v2__content__body__list__item span {
-    color: #000000 !important;
+    color: #1c1c1b !important;
     font-family: Calibri, Arial, sans-serif !important;
     background: transparent !important;
 }
 
-/* Hide footer (buttons and links) */
 .card-v2__content__footer,
 .card-v2__content__footer__link,
 .card-v2__content__footer__button {
     display: none !important;
 }
 
-/* Remove any pseudo-elements that might create backgrounds */
 .card-v2::before,
 .card-v2::after,
 .card-v2__content::before,
@@ -1219,7 +1134,6 @@ div.card-v2__content {
     background: none !important;
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
     .card-v2__list::before {
         font-size: 1.75rem !important;
@@ -1240,9 +1154,8 @@ div.card-v2__content {
         font-size: 1.25rem !important;
     }
 }
-/* Footer Styling - ABTA */
 
-/* Main footer */
+/* ===== FOOTER ===== */
 footer.footer {
     background-color: #007ac2 !important;
     padding: 60px 20px 40px 20px !important;
@@ -1250,7 +1163,6 @@ footer.footer {
     color: #ffffff !important;
 }
 
-/* Top section - Grid layout */
 .m-footer-small.m-footer-small--top.m-footer-small--desktop {
     background-color: transparent !important;
     padding: 0 0 40px 0 !important;
@@ -1265,7 +1177,6 @@ footer.footer {
     display: block !important;
 }
 
-/* ABTA Logo - Top Left */
 .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container::before {
     content: "ABTA Logo Placeholder" !important;
     position: absolute !important;
@@ -1282,7 +1193,6 @@ footer.footer {
     width: 200px !important;
 }
 
-/* AXA Partnership - Top Right */
 .m-footer-small__disclaimer {
     position: absolute !important;
     top: 0 !important;
@@ -1320,7 +1230,6 @@ footer.footer {
     order: 2 !important;
 }
 
-/* Navigation - Centered below logos */
 .m-footer-small__disclaimer--list {
     margin-top: 120px !important;
     display: flex !important;
@@ -1362,7 +1271,6 @@ footer.footer {
     text-decoration: underline !important;
 }
 
-/* Social section - Below menu, aligned right */
 .m-footer-small__disclaimer .m-footer-small__list {
     order: 3 !important;
     display: flex !important;
@@ -1382,7 +1290,6 @@ footer.footer {
     width: 100% !important;
 }
 
-/* Social icons - Horizontal row */
 .m-footer-small__disclaimer .m-footer-small__list > .m-footer-small__list-item--follow + a,
 .m-footer-small__disclaimer .m-footer-small__list > a {
     display: inline-block !important;
@@ -1404,7 +1311,6 @@ footer.footer {
     opacity: 0.8 !important;
 }
 
-/* Wrapper for social icons to keep them horizontal */
 .m-footer-small__disclaimer .m-footer-small__list {
     display: block !important;
 }
@@ -1414,7 +1320,6 @@ footer.footer {
     margin-bottom: 10px !important;
 }
 
-/* Bottom legal section */
 .m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) {
     background-color: transparent !important;
     padding: 0 !important;
@@ -1454,7 +1359,6 @@ footer.footer {
     text-decoration: none !important;
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
     .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container::before {
         position: static !important;
