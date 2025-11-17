@@ -1,0 +1,73 @@
+/* Whatever's in front banner styling - TOP PADDING */
+section.t_block.t_quote.t_quote--xlarge {
+    background-color: #007ac2 !important;
+    padding: 13px 0 0 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    min-height: 50px !important;
+}
+
+.t_quote--xlarge .t_block__inner,
+.t_quote--xlarge .container {
+    padding: 0 20px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge * {
+    color: #ffffff !important;
+}
+
+.t_quote--xlarge .t_mainText.font-medium {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.t_quote--xlarge .t_mainText.font-medium p {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Hide empty p tags */
+.t_quote--xlarge .t_mainText.font-medium p:empty {
+    display: none !important;
+}
+
+.t_quote--xlarge .t_mainText.font-medium p,
+.t_quote--xlarge .t_mainText.font-medium p strong,
+.t_quote--xlarge .t_mainText.font-medium span,
+.t_quote--xlarge .t_mainText.font-medium p span {
+    color: #ffffff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.25rem !important;
+    font-weight: 400 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.2 !important;
+}
+
+/* Remove any extra spacing */
+.t_block.t_quote {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+section.t_quote--xlarge {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    section.t_block.t_quote.t_quote--xlarge {
+        padding: 12px 0 0 0 !important;
+    }
+    
+    .t_quote--xlarge .t_mainText.font-medium p,
+    .t_quote--xlarge .t_mainText.font-medium p strong,
+    .t_quote--xlarge * {
+        font-size: 1rem !important;
+    }
+}
