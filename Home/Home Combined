@@ -583,6 +583,27 @@ section.container {
     text-align: center !important;
 }
 
+/* CRITICAL FIX - Three Levels of Cover Buttons */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a {
+    background-color: #fcb316 !important;
+    color: #000000 !important;
+    padding: 15px 42px !important;
+    border-radius: 10px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.125rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-transform: none !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a:hover {
+    background-color: #E6C000 !important;
+}
+
 @media (max-width: 768px) {
     .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__list::before {
         font-size: 2rem !important;
@@ -596,6 +617,11 @@ section.container {
         font-size: 1.35rem !important;
         line-height: 1.25 !important;
         min-height: 60px !important;
+    }
+    
+    .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a {
+        padding: 13px 36px !important;
+        font-size: 1rem !important;
     }
 }
 
