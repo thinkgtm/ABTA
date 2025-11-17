@@ -1,0 +1,46 @@
+/* Trustpilot Carousel Widget - Padding Only */
+
+/* Target the specific Trustpilot widget wrapper */
+.journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] {
+    background-color: #ffffff !important;
+    padding: 60px 20px !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+/* Container for the widget */
+.journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 40px !important;
+    display: block !important;
+}
+
+/* The iframe inside */
+.journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget iframe {
+    width: 100% !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+/* Remove any extra spacing */
+.journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] br {
+    display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget {
+        padding: 0 20px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] {
+        padding: 40px 15px !important;
+    }
+    
+    .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget {
+        padding: 0 10px !important;
+    }
+}
