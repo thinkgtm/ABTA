@@ -1,0 +1,84 @@
+/* Money advice text section - ONLY target sections that contain links */
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]),
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) {
+    background-color: #ffffff !important;
+    padding: 0 !important;
+    margin: 20px 20px !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_block__inner.t_quote__inner.container.text-center,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_block__inner.t_quote__inner.container.text-center {
+    border: 3px solid #007ac2 !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    background-color: #ffffff !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium {
+    color: #666666 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium p,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium p {
+    color: #666666 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    display: inline !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium p a,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium p a {
+    color: #666666 !important;
+    text-decoration: underline !important;
+    font-weight: 400 !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium p a:hover,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium p a:hover {
+    color: #007ac2 !important;
+}
+
+/* Force override any existing styles - ONLY for Money Advice section */
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) *,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) * {
+    color: #666666 !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) a,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) a {
+    color: #666666 !important;
+    text-decoration: underline !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]),
+    section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) {
+        margin: 15px 15px !important;
+    }
+    
+    section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_block__inner.t_quote__inner.container.text-center,
+    section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_block__inner.t_quote__inner.container.text-center {
+        padding: 12px !important;
+    }
+    
+    section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium,
+    section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium {
+        font-size: 0.9rem !important;
+    }
+}
