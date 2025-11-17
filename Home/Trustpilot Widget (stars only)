@@ -1,0 +1,168 @@
+/* Trustpilot Widget Redesign for ABTA */
+
+/* Main widget container */
+#ekomiApiIntegrationViewStars,
+.neo-ekomi-api-integration-view-stars {
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.range-star {
+    background-color: transparent !important;
+    padding: 15px 0 !important;
+}
+
+.range-star__container {
+    max-width: 1200px;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    display: block !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    transition: opacity 0.2s ease !important;
+}
+
+/* Make container clickable and add hover effect */
+.range-star__container:hover {
+    opacity: 0.8 !important;
+}
+
+/* Wrap everything in the link behavior */
+#linkEkomiReviews {
+    display: inline-block !important;
+    margin: 0 !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+/* Make stars part of the clickable link */
+.range-star__container {
+    position: relative !important;
+}
+
+.range-star__container::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    z-index: 1 !important;
+}
+
+.range-star__container a {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+/* "Rated excellent on Trustpilot" text - HIDDEN */
+.range-star__text.font-display-4 {
+    display: none !important;
+}
+
+/* CRITICAL: Force stars to display horizontally - SMALL SIZE */
+.range-star__container .range-star__star {
+    display: inline-block !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 2px !important;
+    padding: 0 !important;
+    font-size: 1.5rem !important;
+    line-height: 1 !important;
+    vertical-align: middle !important;
+    float: none !important;
+    position: static !important;
+    pointer-events: none !important;
+}
+
+/* Target by ID for maximum specificity */
+#star1, #star2, #star3, #star4, #star5 {
+    display: inline-block !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 2px !important;
+    padding: 0 !important;
+    font-size: 1.5rem !important;
+    line-height: 1 !important;
+    vertical-align: middle !important;
+    float: none !important;
+    position: static !important;
+    pointer-events: none !important;
+}
+
+.range-star__star.icon-star {
+    color: #00B67A !important;
+    display: inline-block !important;
+}
+
+.range-star__star.range-star__checked {
+    color: #00B67A !important;
+    display: inline-block !important;
+}
+
+.range-star__star.color-white {
+    color: #dcdce6 !important;
+    display: inline-block !important;
+}
+
+/* Rating value (4.6) - HIDDEN */
+.range-star__text.pt-2 {
+    display: none !important;
+}
+
+/* Trustpilot logo link - compact size */
+#linkEkomiReviews {
+    display: inline-block !important;
+    margin-left: 10px !important;
+    margin-top: 0 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    text-decoration: none !important;
+}
+
+#linkEkomiReviews svg {
+    width: 80px !important;
+    height: auto !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    pointer-events: none !important;
+}
+
+/* Override any icon-star base styles */
+.icon-star::before {
+    display: inline !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #star1, #star2, #star3, #star4, #star5,
+    .range-star__star {
+        font-size: 1.25rem !important;
+        margin: 0 1px !important;
+    }
+    
+    #linkEkomiReviews {
+        margin-left: 8px !important;
+    }
+    
+    #linkEkomiReviews svg {
+        width: 70px !important;
+    }
+}
+
+/* Remove all extra padding and spacing */
+.pb-4 {
+    padding-bottom: 0 !important;
+}
+
+.pt-2 {
+    padding-top: 0 !important;
+}
+
+/* Nuclear option - override any width constraints */
+.range-star__star,
+#star1, #star2, #star3, #star4, #star5 {
+    max-width: none !important;
+    min-width: 0 !important;
+}
