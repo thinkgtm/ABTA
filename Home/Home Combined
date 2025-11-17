@@ -98,7 +98,7 @@ body *:not(script):not(style) {
 /* ABTA Yellow CTA Button */
 .introduction .btn--primary,
 .introduction .btn__btn .btn--primary {
-    background-color: #FFD500 !important;
+    background-color: #fcb316 !important;
     color: #000000 !important;
     padding: 16px 32px !important;
     border-radius: 10px !important;
@@ -120,7 +120,7 @@ body *:not(script):not(style) {
 .introduction .btn--primary:active,
 .introduction .btn__btn .btn--primary:focus,
 .introduction .btn__btn .btn--primary:active {
-    background-color: #FFD500 !important;
+    background-color: #fcb316 !important;
     outline: none !important;
     box-shadow: none !important;
 }
@@ -383,7 +383,7 @@ section.container {
 
 /* Button - 10px rounded corners like previous CSS */
 .article__card-body .btn--secondary {
-    background-color: #FFD500 !important;
+    background-color: #fcb316 !important;
     color: #000000 !important;
     padding: 12px 35px !important;
     border-radius: 10px !important;
@@ -576,7 +576,7 @@ section.container {
 }
 
 .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a {
-    background-color: #FFD500 !important;
+    background-color: #fcb316 !important;
     color: #000000 !important;
     padding: 12px 35px !important;
     border-radius: 10px !important;
@@ -940,7 +940,7 @@ section.container {
 }
 
 .article-inline__card-body .link {
-    background-color: #FFD500 !important;
+    background-color: #fcb316 !important;
     color: #000000 !important;
     padding: 12px 35px !important;
     border-radius: 10px !important;
