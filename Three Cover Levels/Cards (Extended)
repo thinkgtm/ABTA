@@ -1,66 +1,100 @@
-/* ===== ABTA Travel Insurance Card ===== */
-
-/* Card container */
+/* ===== ABTA Travel Insurance Card (Three Tier Levels) ===== */
 .card-v2__list {
     max-width: 1200px !important;
     margin: 40px auto !important;
     padding: 0 20px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    justify-content: space-between !important;
 }
 
-/* Remove the "Why choose ABTA" heading that was being injected */
+/* Remove the injected heading */
 .card-v2__list::before {
     display: none !important;
 }
 
-/* Card styling */
+/* Card styling - Three columns */
 .card-v2,
 section.card-v2 {
     background: #ffffff !important;
     border-radius: 15px !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
     overflow: hidden !important;
-    max-width: 600px !important;
-    margin: 0 auto !important;
+    flex: 1 1 calc(33.333% - 14px) !important;
+    min-width: 280px !important;
+    margin: 0 !important;
+    display: flex !important;
 }
 
 .card-v2__content,
 div.card-v2__content {
-    padding: 40px 30px !important;
+    padding: 30px 25px !important;
     background: #ffffff !important;
     border: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 /* Header */
 .card-v2__content__header {
-    margin-bottom: 30px !important;
+    margin-bottom: 25px !important;
     text-align: center !important;
+    height: auto !important;
+    min-height: 70px !important;
+    padding: 0 !important;
 }
 
 .card-v2__content__header__headline h2 {
-    color: #007ac2 !important;
     font-family: Calibri, Arial, sans-serif !important;
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     font-weight: 700 !important;
-    margin: 0 0 10px 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    line-height: 1.3 !important;
 }
 
-/* Hide sub-headline and price if not needed */
-.card-v2__content__header__info {
+/* First card - Blue (ABTA) */
+.card-v2:nth-child(1) .card-v2__content__header__headline h2 {
+    color: #007ac2 !important;
+}
+
+/* Second card - Gold */
+.card-v2:nth-child(2) .card-v2__content__header__headline h2 {
+    color: #B8860B !important;
+}
+
+/* Third card - Platinum/Grey */
+.card-v2:nth-child(3) .card-v2__content__header__headline h2 {
+    color: #808080 !important;
+}
+
+/* Hide sub-headline and price */
+.card-v2__content__header__info,
+.card-v2__content__header__sub-headline,
+.card-v2__content__header__price {
     display: none !important;
 }
 
 /* Body list - Remove ticks, clean list styling */
+.card-v2__content__body {
+    margin-bottom: 0 !important;
+    flex: 1 !important;
+}
+
 .card-v2__content__body__list {
     list-style: none !important;
     padding: 0 !important;
     margin: 0 !important;
-    columns: 2 !important;
-    column-gap: 30px !important;
+    columns: 1 !important;
 }
 
 .card-v2__content__body__list__item {
     display: block !important;
-    margin-bottom: 12px !important;
+    margin-bottom: 10px !important;
     padding: 8px 0 !important;
     border-bottom: 1px solid #e5e5e5 !important;
     break-inside: avoid !important;
@@ -72,7 +106,8 @@ div.card-v2__content {
 
 /* Hide the tick icons completely */
 .card-v2__content__body__list__item i.icon-check_circle,
-.card-v2__content__body__list__item i[class*="icon-"] {
+.card-v2__content__body__list__item i[class*="icon-"],
+.card-v2__content__body__list__item i.color-success-lighter {
     display: none !important;
 }
 
@@ -80,13 +115,26 @@ div.card-v2__content {
 .card-v2__content__body__list__item span {
     color: #1c1c1b !important;
     font-family: Calibri, Arial, sans-serif !important;
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
     display: block !important;
 }
 
-.card-v2__content__body__list__item span b {
+/* First card - Blue bold text */
+.card-v2:nth-child(1) .card-v2__content__body__list__item span b {
     color: #007ac2 !important;
+    font-weight: 700 !important;
+}
+
+/* Second card - Gold bold text */
+.card-v2:nth-child(2) .card-v2__content__body__list__item span b {
+    color: #B8860B !important;
+    font-weight: 700 !important;
+}
+
+/* Third card - Platinum/Grey bold text */
+.card-v2:nth-child(3) .card-v2__content__body__list__item span b {
+    color: #808080 !important;
     font-weight: 700 !important;
 }
 
@@ -99,7 +147,7 @@ div.card-v2__content {
 .card-v2__content__footer {
     display: block !important;
     text-align: center !important;
-    margin-top: 30px !important;
+    margin-top: 25px !important;
     padding-top: 20px !important;
     border-top: 1px solid #e5e5e5 !important;
 }
@@ -112,15 +160,16 @@ div.card-v2__content {
 /* Show and style the button */
 .card-v2__content__footer__button {
     display: block !important;
+    text-align: center !important;
 }
 
 .card-v2__content__footer__button a {
     background-color: #fcb316 !important;
     color: #000000 !important;
-    padding: 15px 42px !important;
+    padding: 15px 30px !important;
     border-radius: 10px !important;
     font-family: Calibri, Arial, sans-serif !important;
-    font-size: 1.125rem !important;
+    font-size: 1rem !important;
     font-weight: 700 !important;
     text-decoration: none !important;
     display: inline-block !important;
@@ -142,23 +191,42 @@ div.card-v2__content {
     box-shadow: 0 0 0 3px rgba(252, 179, 22, 0.3) !important;
 }
 
-/* Responsive */
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+    .card-v2,
+    section.card-v2 {
+        flex: 1 1 calc(50% - 10px) !important;
+    }
+}
+
+/* Responsive - Mobile */
 @media (max-width: 768px) {
+    .card-v2__list {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .card-v2,
+    section.card-v2 {
+        flex: 1 1 100% !important;
+        min-width: 100% !important;
+    }
+
     .card-v2__content,
     div.card-v2__content {
-        padding: 30px 20px !important;
+        padding: 25px 20px !important;
+    }
+
+    .card-v2__content__header {
+        min-height: 50px !important;
     }
 
     .card-v2__content__header__headline h2 {
-        font-size: 1.75rem !important;
-    }
-
-    .card-v2__content__body__list {
-        columns: 1 !important;
+        font-size: 1.35rem !important;
     }
 
     .card-v2__content__footer__button a {
-        padding: 13px 36px !important;
+        padding: 13px 30px !important;
         font-size: 1rem !important;
         width: 100% !important;
         box-sizing: border-box !important;
