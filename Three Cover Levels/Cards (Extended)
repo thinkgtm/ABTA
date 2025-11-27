@@ -1,0 +1,166 @@
+/* ===== ABTA Travel Insurance Card ===== */
+
+/* Card container */
+.card-v2__list {
+    max-width: 1200px !important;
+    margin: 40px auto !important;
+    padding: 0 20px !important;
+}
+
+/* Remove the "Why choose ABTA" heading that was being injected */
+.card-v2__list::before {
+    display: none !important;
+}
+
+/* Card styling */
+.card-v2,
+section.card-v2 {
+    background: #ffffff !important;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+    overflow: hidden !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+}
+
+.card-v2__content,
+div.card-v2__content {
+    padding: 40px 30px !important;
+    background: #ffffff !important;
+    border: none !important;
+}
+
+/* Header */
+.card-v2__content__header {
+    margin-bottom: 30px !important;
+    text-align: center !important;
+}
+
+.card-v2__content__header__headline h2 {
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    margin: 0 0 10px 0 !important;
+}
+
+/* Hide sub-headline and price if not needed */
+.card-v2__content__header__info {
+    display: none !important;
+}
+
+/* Body list - Remove ticks, clean list styling */
+.card-v2__content__body__list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    columns: 2 !important;
+    column-gap: 30px !important;
+}
+
+.card-v2__content__body__list__item {
+    display: block !important;
+    margin-bottom: 12px !important;
+    padding: 8px 0 !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+    break-inside: avoid !important;
+}
+
+.card-v2__content__body__list__item:last-child {
+    border-bottom: none !important;
+}
+
+/* Hide the tick icons completely */
+.card-v2__content__body__list__item i.icon-check_circle,
+.card-v2__content__body__list__item i[class*="icon-"] {
+    display: none !important;
+}
+
+/* Text styling */
+.card-v2__content__body__list__item span {
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    display: block !important;
+}
+
+.card-v2__content__body__list__item span b {
+    color: #007ac2 !important;
+    font-weight: 700 !important;
+}
+
+.card-v2__content__body__list__item span i {
+    font-style: normal !important;
+    color: #666666 !important;
+}
+
+/* Footer with button */
+.card-v2__content__footer {
+    display: block !important;
+    text-align: center !important;
+    margin-top: 30px !important;
+    padding-top: 20px !important;
+    border-top: 1px solid #e5e5e5 !important;
+}
+
+/* Hide the arrow link */
+.card-v2__content__footer__link {
+    display: none !important;
+}
+
+/* Show and style the button */
+.card-v2__content__footer__button {
+    display: block !important;
+}
+
+.card-v2__content__footer__button a {
+    background-color: #fcb316 !important;
+    color: #000000 !important;
+    padding: 15px 42px !important;
+    border-radius: 10px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.125rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-transform: none !important;
+    transition: background-color 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+.card-v2__content__footer__button a:hover {
+    background-color: #e6a000 !important;
+}
+
+.card-v2__content__footer__button a:focus,
+.card-v2__content__footer__button a:active {
+    background-color: #fcb316 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(252, 179, 22, 0.3) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-v2__content,
+    div.card-v2__content {
+        padding: 30px 20px !important;
+    }
+
+    .card-v2__content__header__headline h2 {
+        font-size: 1.75rem !important;
+    }
+
+    .card-v2__content__body__list {
+        columns: 1 !important;
+    }
+
+    .card-v2__content__footer__button a {
+        padding: 13px 36px !important;
+        font-size: 1rem !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
