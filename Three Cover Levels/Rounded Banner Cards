@@ -1,0 +1,107 @@
+/* Medical Banner - ABTA Styling */
+.banner-quote-now-v2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.banner-quote-now-v2 .banner-quote-now-v2__inner.container {
+    display: flex;
+    align-items: stretch;
+    background: #fff;
+    border: 2px solid #0077C8;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 0;
+    max-width: none;
+    width: 100%;
+    box-shadow: none;
+}
+
+.banner-quote-now-v2 .inner__description-box {
+    flex: 1;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+}
+
+.banner-quote-now-v2 .inner__description-box h2 {
+    color: #0077C8;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.banner-quote-now-v2 .inner__description-box p {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.banner-quote-now-v2 .inner__description-box .btn--secondary {
+    background-color: #FFB81C;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    width: fit-content;
+}
+
+.banner-quote-now-v2 .inner__description-box .btn--secondary:hover {
+    background-color: #E5A519;
+}
+
+.banner-quote-now-v2 .inner__image-box {
+    flex: 0 0 40%;
+    min-height: 280px;
+    background: transparent;
+}
+
+.banner-quote-now-v2 .inner__image-box picture {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-quote-now-v2 .inner__image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .banner-quote-now-v2 .banner-quote-now-v2__inner.container {
+        flex-direction: column;
+    }
+    
+    .banner-quote-now-v2 .inner__description-box {
+        padding: 30px 25px;
+    }
+    
+    .banner-quote-now-v2 .inner__description-box h2 {
+        font-size: 22px;
+    }
+    
+    .banner-quote-now-v2 .inner__image-box {
+        min-height: 200px;
+    }
+    
+    .banner-quote-now-v2 .inner__image-box img {
+        border-radius: 0 0 10px 10px;
+    }
+}
