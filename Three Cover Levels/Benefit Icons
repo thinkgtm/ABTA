@@ -1,0 +1,102 @@
+/* Benefits of Cover - ABTA Styling */
+.v2-icons-list {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 60px 60px;
+}
+
+.v2-icons-list__intro {
+    margin-bottom: 50px;
+}
+
+.v2-icons-list__title {
+    color: #0077C8;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.v2-icons-list__description {
+    display: none;
+}
+
+.v2-icons-list__wrapper {
+    width: 100%;
+}
+
+/* Grid layout */
+.v2-icons-list__container {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 80px !important;
+    align-items: start !important;
+}
+
+/* Each item: flex column, icon on top, text below */
+.v2-icons-list__item.col-1 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    width: 100% !important;
+    max-width: none !important;
+}
+
+/* Inner content is just a vertical stack */
+.v2-icons-list__content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+/* ICON WRAPPER: no fixed height, no weird alignment */
+.v2-icons-list__item figure.v2-icons-list__item-image {
+    margin: 0 0 25px 0 !important;
+    padding: 0 !important;
+    display: block !important;
+}
+
+/* ICON IMAGE: same height for all so they line up */
+.v2-icons-list__item figure.v2-icons-list__item-image img.v2-icons-list__item-image {
+    display: block !important;
+    height: 80px !important;          /* set the icon height */
+    width: auto !important;
+    max-width: 100% !important;
+}
+
+/* Hide the small numeric h3 if it is not needed visually */
+.v2-icons-list__item .v2-icons-list__item-title {
+    display: none !important;
+}
+
+/* Text can be any length now, it will only grow downward */
+.v2-icons-list__item .v2-icons-list__item-copy {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 !important;
+    white-space: normal !important;
+    display: block !important;
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+    .v2-icons-list {
+        padding: 40px 30px;
+    }
+
+    .v2-icons-list__container {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 50px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .v2-icons-list__container {
+        grid-template-columns: 1fr !important;
+    }
+
+    .v2-icons-list__title {
+        font-size: 26px;
+    }
+}
