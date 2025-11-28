@@ -1,0 +1,135 @@
+/* Navigation Bar - ABTA Styling */
+.header#header--sticky {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-navbar {
+    background: #fff;
+}
+
+.main-navbar__wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Main menu items */
+.mega-menu__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.mega-menu__item a {
+    color: #333 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    padding: 20px 0 !important;
+    display: block;
+    transition: color 0.3s ease;
+    border-bottom: 3px solid transparent !important;
+}
+
+.mega-menu__item a:hover {
+    color: #0077C8 !important;
+    border-bottom: 3px solid #0077C8 !important;
+}
+
+.mega-menu__item--active a {
+    color: #0077C8 !important;
+    border-bottom: 3px solid #0077C8 !important;
+}
+
+/* Mega menu dropdown tray */
+.mega-menu-tray {
+    background: #fff !important;
+    border-top: 3px solid #0077C8 !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mega-menu-tray__content {
+    padding: 30px 40px !important;
+}
+
+.mega-menu-tray__info p {
+    color: #0077C8 !important;
+    font-weight: 600 !important;
+}
+
+.mega-menu-tray__info a {
+    color: #0077C8 !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+}
+
+.mega-menu-tray__info a:hover {
+    text-decoration: underline !important;
+}
+
+.mega-menu-tray__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    display: block;
+    padding: 8px 0 !important;
+    text-decoration: none !important;
+}
+
+.mega-menu-tray__nav a:hover {
+    color: #0077C8 !important;
+}
+
+/* Mobile navigation trigger */
+.main-navbar__mobile-trigger__icon,
+.main-navbar__mobile-trigger__icon::before,
+.main-navbar__mobile-trigger__icon::after {
+    background-color: #0077C8 !important;
+}
+
+/* Mobile navigation */
+.main-navbar-responsive {
+    background: #fff !important;
+}
+
+.mega-menu-responsive__item-title {
+    color: #333 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    padding: 15px 20px !important;
+    border-bottom: 1px solid #eee !important;
+}
+
+.mega-menu-responsive__item-title:hover {
+    color: #0077C8 !important;
+}
+
+.mega-menu-tray-responsive {
+    background: #f9f9f9 !important;
+}
+
+.mega-menu-tray-responsive__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    padding: 12px 20px !important;
+    display: block;
+}
+
+.mega-menu-tray-responsive__nav a:hover {
+    color: #0077C8 !important;
+    background: #f0f0f0 !important;
+}
+
+.mega-menu-tray-responsive--back {
+    color: #0077C8 !important;
+    font-weight: 600 !important;
+}
+
+/* Extra details bar */
+.extra-details-v2 {
+    background: #0077C8 !important;
+}
+
+.extra-details-v2 .item__text,
+.extra-details-v2 .item__icon {
+    color: #fff !important;
+}
