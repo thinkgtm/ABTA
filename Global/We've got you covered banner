@@ -1,0 +1,73 @@
+/* Whatever's in front banner styling - Specifically targeted */
+[data-analytics-asset-title="TGTM - Whatever in front banner"] section.t_block.t_quote.t_quote--xlarge {
+    background-color: #007ac2 !important;
+    padding: 13px 0 0 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    min-height: 50px !important;
+}
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_block__inner,
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .container {
+    padding: 0 20px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] section.t_block.t_quote.t_quote--xlarge * {
+    color: #ffffff !important;
+}
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium p {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Hide empty p tags */
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium p:empty {
+    display: none !important;
+}
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium p,
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium p strong,
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium span,
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium p span {
+    color: #ffffff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.25rem !important;
+    font-weight: 400 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.2 !important;
+}
+
+/* Remove any extra spacing */
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_block.t_quote {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] section.t_quote--xlarge {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    [data-analytics-asset-title="TGTM - Whatever in front banner"] section.t_block.t_quote.t_quote--xlarge {
+        padding: 12px 0 0 0 !important;
+    }
+    
+    [data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium p,
+    [data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium p strong,
+    [data-analytics-asset-title="TGTM - Whatever in front banner"] * {
+        font-size: 1rem !important;
+    }
+}
