@@ -1,0 +1,66 @@
+/* ABTA Medical Assistance Text Section - Clean styling */
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] section.t_block.t_quote.t_quote--xlarge {
+    background: transparent !important;
+    padding: 0 0 40px 0 !important;
+    margin: 0 auto !important;
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 1000px !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] .t_block__inner {
+    text-align: left !important;
+    padding: 0 20px !important;
+    margin: 0 !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] .t_mainText {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] .t_mainText > p:empty {
+    display: none !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] h3 {
+    color: #0077C8 !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] h4 {
+    color: #0077C8 !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] p {
+    color: #333 !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    font-family: inherit !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] a {
+    color: #0077C8 !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] a:hover {
+    text-decoration: underline !important;
+}
+
+/* Video iframe rounded corners */
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] .embed-responsive {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] .embed-responsive iframe {
+    border-radius: 12px !important;
+}
