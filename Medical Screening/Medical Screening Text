@@ -1,7 +1,7 @@
 /* ABTA Medical Assistance Text Section - Clean styling */
 [data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] section.t_block.t_quote.t_quote--xlarge {
     background: transparent !important;
-    padding: 0 0 40px 0 !important;
+    padding: 60px 0 40px 0 !important;
     margin: 0 auto !important;
     border: none !important;
     box-shadow: none !important;
