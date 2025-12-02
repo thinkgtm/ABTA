@@ -1,0 +1,2134 @@
+/* ============================================================
+   ABTA TRAVEL INSURANCE - COMBINED STYLESHEET
+   ============================================================
+   
+   Table of Contents:
+   ------------------
+   1. GLOBAL STYLES & TYPOGRAPHY
+   2. HEADER & NAVIGATION
+   3. HERO BANNER
+   4. "WE'VE GOT YOU COVERED" BANNER
+   5. BENEFIT ICONS SECTION
+   6. CARD COMPONENTS (Base Styles)
+   7. WHY CHOOSE ABTA CARDS
+   8. THREE LEVELS OF COVER CARDS
+   9. CARDS EXTENDED (Three Tier Levels)
+   10. TYPES OF HOLIDAY COVER
+   11. SUMMARY OF COVER
+   12. ROUNDED BANNER CARDS (Medical Banner)
+   13. TEXT SECTIONS (Medical Screening, Travel Money)
+   14. MONEYHELPER TEXT BOX
+   15. TRUSTPILOT CAROUSEL
+   16. FOOTER
+   
+   ============================================================ */
+
+
+/* ============================================================
+   1. GLOBAL STYLES & TYPOGRAPHY
+   ============================================================ */
+
+body *:not(script):not(style) {
+    visibility: visible;
+    font-family: Calibri, "SourceSansPro", Arial, sans-serif !important;
+}
+
+/* Global body/paragraph text colour */
+body,
+p,
+span,
+li,
+td,
+th,
+label,
+.body-text,
+.paragraph {
+    color: #1c1c1b !important;
+}
+
+/* Global heading colour */
+h1, h2, h3, h4, h5, h6 {
+    color: #007bff !important;
+}
+
+/* Text replacement for AXA to ABTA */
+.axa-text::before,
+[class*="axa"]::before,
+[class*="AXA"]::before {
+    content: 'ABTA' !important;
+    visibility: visible;
+}
+
+[class*="axa"]::first-letter,
+[class*="AXA"]::first-letter {
+    font-size: 0;
+}
+
+/* Utility classes */
+.color-white {
+    color: #ffffff !important;
+}
+
+.color-black {
+    color: #000000 !important;
+}
+
+.font-display-4 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.font-bold-publicoheadline {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-weight: 700;
+}
+
+.pb-2 {
+    padding-bottom: 0.5rem !important;
+}
+
+.pt-2 {
+    padding-top: 0.5rem !important;
+}
+
+.pt-4 {
+    padding-top: 1rem !important;
+}
+
+.hide-xs {
+    display: block !important;
+}
+
+.show-xs {
+    display: none !important;
+}
+
+@media (max-width: 767px) {
+    .hide-xs {
+        display: none !important;
+    }
+    
+    .show-xs {
+        display: block !important;
+    }
+    
+    .font-display-4 {
+        font-size: 1.75rem;
+    }
+}
+
+
+/* ============================================================
+   2. HEADER & NAVIGATION
+   ============================================================ */
+
+.header#header--sticky {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-navbar {
+    background: #fff;
+}
+
+.main-navbar__wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Main menu items */
+.mega-menu__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.mega-menu__item a {
+    color: #1c1c1b !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    padding: 20px 0 !important;
+    display: block;
+    transition: color 0.3s ease;
+    border-bottom: 3px solid transparent !important;
+}
+
+.mega-menu__item a:hover {
+    color: #007bff !important;
+    border-bottom: 3px solid #007bff !important;
+}
+
+.mega-menu__item--active a {
+    color: #007bff !important;
+    border-bottom: 3px solid #007bff !important;
+}
+
+/* Mega menu dropdown tray */
+.mega-menu-tray {
+    background: #fff !important;
+    border-top: 3px solid #007bff !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mega-menu-tray__content {
+    padding: 30px 40px !important;
+}
+
+.mega-menu-tray__info p {
+    color: #007bff !important;
+    font-weight: 600 !important;
+}
+
+.mega-menu-tray__info a {
+    color: #007bff !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+}
+
+.mega-menu-tray__info a:hover {
+    text-decoration: underline !important;
+}
+
+.mega-menu-tray__nav a {
+    color: #1c1c1b !important;
+    font-size: 15px !important;
+    display: block;
+    padding: 8px 0 !important;
+    text-decoration: none !important;
+}
+
+.mega-menu-tray__nav a:hover {
+    color: #007bff !important;
+}
+
+/* Mobile navigation trigger */
+.main-navbar__mobile-trigger__icon,
+.main-navbar__mobile-trigger__icon::before,
+.main-navbar__mobile-trigger__icon::after {
+    background-color: #007bff !important;
+}
+
+/* Mobile navigation */
+.main-navbar-responsive {
+    background: #fff !important;
+}
+
+.mega-menu-responsive__item-title {
+    color: #1c1c1b !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    padding: 15px 20px !important;
+    border-bottom: 1px solid #eee !important;
+}
+
+.mega-menu-responsive__item-title:hover {
+    color: #007bff !important;
+}
+
+.mega-menu-tray-responsive {
+    background: #f9f9f9 !important;
+}
+
+.mega-menu-tray-responsive__nav a {
+    color: #1c1c1b !important;
+    font-size: 15px !important;
+    padding: 12px 20px !important;
+    display: block;
+}
+
+.mega-menu-tray-responsive__nav a:hover {
+    color: #007bff !important;
+    background: #f0f0f0 !important;
+}
+
+.mega-menu-tray-responsive--back {
+    color: #007bff !important;
+    font-weight: 600 !important;
+}
+
+/* Extra details bar */
+.extra-details-v2 {
+    background: #007bff !important;
+}
+
+.extra-details-v2 .item__text,
+.extra-details-v2 .item__icon {
+    color: #fff !important;
+}
+
+
+/* ============================================================
+   3. HERO BANNER
+   ============================================================ */
+
+.introduction-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.introduction-banner__mask--flex {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 450px;
+}
+
+.introduction-banner__mask--flex picture,
+.introduction-banner__mask--flex img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Content overlay */
+.introduction-banner__mask {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.introduction-banner__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.introduction-banner__content {
+    max-width: 600px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.introduction-banner__content--end {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Left-aligned white content box */
+.introduction-banner__content--content {
+    background: rgba(255, 255, 255, 0.95) !important;
+    padding: 40px !important;
+    border-radius: 8px;
+    margin-left: 0;
+}
+
+/* Typography */
+.introduction-banner__content--content h2 {
+    color: #007bff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+/* ABTA Yellow CTA Button */
+.introduction .btn--primary,
+.introduction .btn__btn .btn--primary {
+    background-color: #FFD500 !important;
+    color: #1c1c1b !important;
+    padding: 16px 32px !important;
+    border-radius: 10px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+    transition: background-color 0.3s ease;
+}
+
+.introduction .btn--primary:hover,
+.introduction .btn__btn .btn--primary:hover {
+    background-color: #E6C000 !important;
+    box-shadow: none !important;
+}
+
+.introduction .btn--primary:focus,
+.introduction .btn--primary:active,
+.introduction .btn__btn .btn--primary:focus,
+.introduction .btn__btn .btn--primary:active {
+    background-color: #FFD500 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Mobile banner */
+.article-full__detail--mobile .article-full__container {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    padding: 30px !important;
+    border-radius: 8px;
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 600px;
+}
+
+.article-full__detail--mobile h2 {
+    color: #007bff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+}
+
+@media (max-width: 767px) {
+    .introduction-banner__mask--flex {
+        min-height: 350px;
+    }
+    
+    .introduction-banner__content--content {
+        padding: 30px 20px !important;
+    }
+}
+
+
+/* ============================================================
+   4. "WE'VE GOT YOU COVERED" BANNER
+   ============================================================ */
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] section.t_block.t_quote.t_quote--xlarge {
+    background-color: #007bff !important;
+    padding: 13px 0 0 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    min-height: 50px !important;
+}
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_block__inner,
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .container {
+    padding: 0 20px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] section.t_block.t_quote.t_quote--xlarge * {
+    color: #ffffff !important;
+}
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium p {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium p:empty {
+    display: none !important;
+}
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium p,
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium p strong,
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium span,
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium p span {
+    color: #ffffff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.25rem !important;
+    font-weight: 400 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.2 !important;
+}
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] .t_block.t_quote {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+[data-analytics-asset-title="TGTM - Whatever in front banner"] section.t_quote--xlarge {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+@media (max-width: 767px) {
+    [data-analytics-asset-title="TGTM - Whatever in front banner"] section.t_block.t_quote.t_quote--xlarge {
+        padding: 12px 0 0 0 !important;
+    }
+    
+    [data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium p,
+    [data-analytics-asset-title="TGTM - Whatever in front banner"] .t_mainText.font-medium p strong,
+    [data-analytics-asset-title="TGTM - Whatever in front banner"] * {
+        font-size: 1rem !important;
+    }
+}
+
+
+/* ============================================================
+   5. BENEFIT ICONS SECTION
+   ============================================================ */
+
+.v2-icons-list {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 60px 60px;
+}
+
+.v2-icons-list__intro {
+    margin-bottom: 50px;
+}
+
+.v2-icons-list__title {
+    color: #007bff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.v2-icons-list__description {
+    display: none;
+}
+
+.v2-icons-list__wrapper {
+    width: 100%;
+}
+
+/* Grid layout */
+.v2-icons-list__container {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 80px !important;
+    align-items: start !important;
+}
+
+/* Each item */
+.v2-icons-list__item.col-1 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.v2-icons-list__content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+/* Icon wrapper */
+.v2-icons-list__item figure.v2-icons-list__item-image {
+    margin: 0 0 25px 0 !important;
+    padding: 0 !important;
+    display: block !important;
+}
+
+/* Icon image */
+.v2-icons-list__item figure.v2-icons-list__item-image img.v2-icons-list__item-image {
+    display: block !important;
+    height: 80px !important;
+    width: auto !important;
+    max-width: 100% !important;
+}
+
+/* Hide numeric title */
+.v2-icons-list__item .v2-icons-list__item-title {
+    display: none !important;
+}
+
+/* Copy text */
+.v2-icons-list__item .v2-icons-list__item-copy {
+    color: #1c1c1b;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 !important;
+    white-space: normal !important;
+    display: block !important;
+}
+
+@media (max-width: 992px) {
+    .v2-icons-list {
+        padding: 40px 30px;
+    }
+
+    .v2-icons-list__container {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 50px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .v2-icons-list__container {
+        grid-template-columns: 1fr !important;
+    }
+
+    .v2-icons-list__title {
+        font-size: 26px;
+    }
+}
+
+
+/* ============================================================
+   6. CARD COMPONENTS (Base Styles)
+   ============================================================ */
+
+.card-v2__list {
+    max-width: 1200px !important;
+    margin: 40px auto !important;
+    padding: 0 20px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    justify-content: space-between !important;
+}
+
+/* Base card styling */
+.card-v2,
+section.card-v2 {
+    background: #ffffff !important;
+    border-radius: 15px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+    overflow: hidden !important;
+    flex: 1 1 calc(33.333% - 14px) !important;
+    min-width: 280px !important;
+    margin: 0 !important;
+    display: flex !important;
+}
+
+.card-v2__content,
+div.card-v2__content {
+    padding: 30px 25px !important;
+    background: #ffffff !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Card header */
+.card-v2__content__header {
+    margin-bottom: 25px !important;
+    text-align: center !important;
+    height: auto !important;
+    min-height: 70px !important;
+    padding: 0 !important;
+}
+
+.card-v2__content__header__headline h2 {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    line-height: 1.3 !important;
+}
+
+/* Hide sub-headline and price by default */
+.card-v2__content__header__info,
+.card-v2__content__header__sub-headline,
+.card-v2__content__header__price {
+    display: none !important;
+}
+
+/* Card body list */
+.card-v2__content__body {
+    margin-bottom: 0 !important;
+    flex: 1 !important;
+}
+
+.card-v2__content__body__list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    columns: 1 !important;
+}
+
+.card-v2__content__body__list__item {
+    display: block !important;
+    margin-bottom: 10px !important;
+    padding: 8px 0 !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+    break-inside: avoid !important;
+}
+
+.card-v2__content__body__list__item:last-child {
+    border-bottom: none !important;
+}
+
+/* Text styling */
+.card-v2__content__body__list__item span {
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
+    display: block !important;
+}
+
+.card-v2__content__body__list__item span i {
+    font-style: normal !important;
+    color: #666666 !important;
+}
+
+/* Card footer */
+.card-v2__content__footer {
+    display: block !important;
+    text-align: center !important;
+    margin-top: 25px !important;
+    padding-top: 20px !important;
+    border-top: 1px solid #e5e5e5 !important;
+}
+
+.card-v2__content__footer__link {
+    display: none !important;
+}
+
+.card-v2__content__footer__button {
+    display: block !important;
+    text-align: center !important;
+}
+
+.card-v2__content__footer__button a {
+    background-color: #fcb316 !important;
+    color: #1c1c1b !important;
+    padding: 15px 30px !important;
+    border-radius: 10px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-transform: none !important;
+    transition: background-color 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+.card-v2__content__footer__button a:hover {
+    background-color: #e6a000 !important;
+}
+
+.card-v2__content__footer__button a:focus,
+.card-v2__content__footer__button a:active {
+    background-color: #fcb316 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(252, 179, 22, 0.3) !important;
+}
+
+/* Card responsive - Tablet */
+@media (max-width: 1024px) {
+    .card-v2,
+    section.card-v2 {
+        flex: 1 1 calc(50% - 10px) !important;
+    }
+}
+
+/* Card responsive - Mobile */
+@media (max-width: 768px) {
+    .card-v2__list {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .card-v2,
+    section.card-v2 {
+        flex: 1 1 100% !important;
+        min-width: 100% !important;
+    }
+
+    .card-v2__content,
+    div.card-v2__content {
+        padding: 25px 20px !important;
+    }
+
+    .card-v2__content__header {
+        min-height: 50px !important;
+    }
+
+    .card-v2__content__header__headline h2 {
+        font-size: 1.35rem !important;
+    }
+
+    .card-v2__content__footer__button a {
+        padding: 13px 30px !important;
+        font-size: 1rem !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
+
+/* ============================================================
+   7. WHY CHOOSE ABTA CARDS
+   ============================================================ */
+
+/* Section title - Use specific targeting to avoid conflicts */
+[data-analytics-asset-title*="Why Choose"] .card-v2__list::before,
+.why-choose-abta .card-v2__list::before {
+    content: "Why choose ABTA Travel Insurance?" !important;
+    display: block !important;
+    text-align: center !important;
+    color: #007bff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 30px !important;
+    width: 100% !important;
+}
+
+/* Why Choose cards - transparent background variant */
+[data-analytics-asset-title*="Why Choose"] .card-v2,
+[data-analytics-asset-title*="Why Choose"] section.card-v2,
+.why-choose-abta .card-v2,
+.why-choose-abta section.card-v2 {
+    flex: 1 !important;
+    display: flex !important;
+    margin: 0 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+[data-analytics-asset-title*="Why Choose"] .card-v2__content,
+[data-analytics-asset-title*="Why Choose"] div.card-v2__content,
+.why-choose-abta .card-v2__content,
+.why-choose-abta div.card-v2__content {
+    border: 3px solid #007bff !important;
+    border-radius: 12px !important;
+    padding: 20px 20px !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Remove backgrounds from all child elements */
+[data-analytics-asset-title*="Why Choose"] .card-v2 *,
+[data-analytics-asset-title*="Why Choose"] .card-v2__content *,
+.why-choose-abta .card-v2 *,
+.why-choose-abta .card-v2__content * {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Card header for Why Choose */
+[data-analytics-asset-title*="Why Choose"] .card-v2__content__header,
+.why-choose-abta .card-v2__content__header {
+    margin-bottom: 15px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+[data-analytics-asset-title*="Why Choose"] .card-v2__content__header__headline h2,
+.why-choose-abta .card-v2__content__header__headline h2 {
+    color: #007bff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    background: transparent !important;
+}
+
+/* List items with green checkmarks */
+[data-analytics-asset-title*="Why Choose"] .card-v2__content__body__list__item,
+.why-choose-abta .card-v2__content__body__list__item {
+    display: flex !important;
+    align-items: flex-start !important;
+    margin-bottom: 12px !important;
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    background: transparent !important;
+    border-bottom: none !important;
+    padding: 0 !important;
+}
+
+[data-analytics-asset-title*="Why Choose"] .card-v2__content__body__list__item:last-child,
+.why-choose-abta .card-v2__content__body__list__item:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Show green checkmark icons */
+[data-analytics-asset-title*="Why Choose"] .card-v2__content__body__list__item i.icon-check_circle,
+.why-choose-abta .card-v2__content__body__list__item i.icon-check_circle {
+    display: inline-block !important;
+    color: #00b67a !important;
+    font-size: 1.25rem !important;
+    margin-right: 8px !important;
+    flex-shrink: 0 !important;
+    margin-top: 2px !important;
+    background: transparent !important;
+}
+
+[data-analytics-asset-title*="Why Choose"] .card-v2__content__body__list__item i.color-success-lighter,
+.why-choose-abta .card-v2__content__body__list__item i.color-success-lighter {
+    color: #00b67a !important;
+}
+
+[data-analytics-asset-title*="Why Choose"] .card-v2__content__body__list__item span,
+.why-choose-abta .card-v2__content__body__list__item span {
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    background: transparent !important;
+}
+
+/* Hide footer for Why Choose cards */
+[data-analytics-asset-title*="Why Choose"] .card-v2__content__footer,
+[data-analytics-asset-title*="Why Choose"] .card-v2__content__footer__link,
+[data-analytics-asset-title*="Why Choose"] .card-v2__content__footer__button,
+.why-choose-abta .card-v2__content__footer,
+.why-choose-abta .card-v2__content__footer__link,
+.why-choose-abta .card-v2__content__footer__button {
+    display: none !important;
+}
+
+/* Remove pseudo-elements */
+[data-analytics-asset-title*="Why Choose"] .card-v2::before,
+[data-analytics-asset-title*="Why Choose"] .card-v2::after,
+[data-analytics-asset-title*="Why Choose"] .card-v2__content::before,
+[data-analytics-asset-title*="Why Choose"] .card-v2__content::after,
+.why-choose-abta .card-v2::before,
+.why-choose-abta .card-v2::after,
+.why-choose-abta .card-v2__content::before,
+.why-choose-abta .card-v2__content::after {
+    display: none !important;
+    background: none !important;
+}
+
+@media (max-width: 1024px) {
+    [data-analytics-asset-title*="Why Choose"] .card-v2__list::before,
+    .why-choose-abta .card-v2__list::before {
+        font-size: 1.75rem !important;
+    }
+    
+    [data-analytics-asset-title*="Why Choose"] .card-v2,
+    .why-choose-abta .card-v2 {
+        flex: 1 1 calc(50% - 10px) !important;
+        min-width: 300px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    [data-analytics-asset-title*="Why Choose"] .card-v2__list::before,
+    .why-choose-abta .card-v2__list::before {
+        font-size: 1.5rem !important;
+    }
+    
+    [data-analytics-asset-title*="Why Choose"] .card-v2,
+    .why-choose-abta .card-v2 {
+        flex: 1 1 100% !important;
+    }
+    
+    [data-analytics-asset-title*="Why Choose"] .card-v2__content__header__headline h2,
+    .why-choose-abta .card-v2__content__header__headline h2 {
+        font-size: 1.25rem !important;
+    }
+}
+
+
+/* ============================================================
+   8. THREE LEVELS OF COVER CARDS
+   ============================================================ */
+
+/* Blue background section */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] {
+    background-color: #007bff !important;
+    padding: 60px 20px !important;
+    margin: 0 !important;
+}
+
+/* Section title */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__list::before {
+    content: "Three levels of cover" !important;
+    display: block !important;
+    text-align: left !important;
+    color: #ffffff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 30px !important;
+    width: 100% !important;
+}
+
+/* Card list wrapper */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__list {
+    position: relative !important;
+    background-color: transparent !important;
+}
+
+/* Individual cards - WHITE backgrounds */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] section.card-v2 {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] div.card-v2__content {
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 30px 25px 25px 25px !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+}
+
+/* Allow backgrounds in this section */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2 *,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content * {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+}
+
+/* First card - Blue title and checks */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(1) .card-v2__content__header__headline h2 {
+    color: #007bff !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(1) .icon-check_circle {
+    color: #007bff !important;
+}
+
+/* Second card - Gold/Bronze title and checks */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(2) .card-v2__content__header__headline h2 {
+    color: #B8860B !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(2) .icon-check_circle {
+    color: #B8860B !important;
+}
+
+/* Third card - Grey/Platinum title and checks */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(3) .card-v2__content__header__headline h2 {
+    color: #808080 !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(3) .icon-check_circle {
+    color: #808080 !important;
+}
+
+/* Card titles - FIXED TWO LINE HEIGHT - CENTER ALIGNED */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__header {
+    height: auto !important;
+    min-height: 70px !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__header__headline h2 {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    text-align: center !important;
+    line-height: 1.3 !important;
+    min-height: 70px !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+}
+
+/* List items */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__body__list__item span {
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+}
+
+/* SHOW and STYLE the footer buttons */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer {
+    display: block !important;
+    text-align: center !important;
+    margin-top: 25px !important;
+    padding-top: 20px !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__link {
+    display: none !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button {
+    display: block !important;
+    text-align: center !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a {
+    background-color: #FFD500 !important;
+    color: #1c1c1b !important;
+    padding: 12px 35px !important;
+    border-radius: 10px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a:hover {
+    background-color: #E6C000 !important;
+}
+
+@media (max-width: 768px) {
+    .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__list::before {
+        font-size: 2rem !important;
+    }
+    
+    .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__header {
+        min-height: 60px !important;
+    }
+    
+    .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__header__headline h2 {
+        font-size: 1.35rem !important;
+        line-height: 1.25 !important;
+        min-height: 60px !important;
+    }
+    
+    .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a {
+        padding: 10px 30px !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+
+/* ============================================================
+   9. CARDS EXTENDED (Three Tier Levels - Blue/Gold/Platinum)
+   ============================================================ */
+
+/* Remove the injected heading for extended cards */
+.cards-extended .card-v2__list::before {
+    display: none !important;
+}
+
+/* First card - Blue (ABTA) */
+.card-v2:nth-child(1) .card-v2__content__header__headline h2 {
+    color: #007bff !important;
+}
+
+/* Second card - Gold */
+.card-v2:nth-child(2) .card-v2__content__header__headline h2 {
+    color: #B8860B !important;
+}
+
+/* Third card - Platinum/Grey */
+.card-v2:nth-child(3) .card-v2__content__header__headline h2 {
+    color: #808080 !important;
+}
+
+/* Hide the tick icons completely for extended cards */
+.cards-extended .card-v2__content__body__list__item i.icon-check_circle,
+.cards-extended .card-v2__content__body__list__item i[class*="icon-"],
+.cards-extended .card-v2__content__body__list__item i.color-success-lighter {
+    display: none !important;
+}
+
+/* First card - Blue bold text */
+.card-v2:nth-child(1) .card-v2__content__body__list__item span b {
+    color: #007bff !important;
+    font-weight: 700 !important;
+}
+
+/* Second card - Gold bold text */
+.card-v2:nth-child(2) .card-v2__content__body__list__item span b {
+    color: #B8860B !important;
+    font-weight: 700 !important;
+}
+
+/* Third card - Platinum/Grey bold text */
+.card-v2:nth-child(3) .card-v2__content__body__list__item span b {
+    color: #808080 !important;
+    font-weight: 700 !important;
+}
+
+
+/* ============================================================
+   10. TYPES OF HOLIDAY COVER
+   ============================================================ */
+
+.insurance-- {
+    background-color: #ffffff !important;
+    padding: 60px 20px !important;
+    margin: 0 !important;
+}
+
+.insurance-- .intro-text {
+    text-align: left !important;
+    margin-bottom: 40px !important;
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.insurance-- .intro-text h2 {
+    color: #007bff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    padding: 0 50px !important;
+}
+
+/* Article inline container */
+.article-inline.center__article.container {
+    display: flex !important;
+    gap: 20px !important;
+    justify-content: space-between !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* Individual cards */
+.article-inline__card {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+}
+
+/* Card images */
+.article-inline__image {
+    width: 100% !important;
+    height: 350px !important;
+    overflow: hidden !important;
+    border-radius: 15px !important;
+    margin-bottom: 20px !important;
+}
+
+.article-inline__image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Card body - transparent background */
+.article-inline__card-body {
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Card titles */
+.article-inline__title {
+    color: #007bff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    margin: 0 0 20px 0 !important;
+    text-align: left !important;
+}
+
+.article-inline__title.font-bold-publicoheadline {
+    font-family: Calibri, Arial, sans-serif !important;
+}
+
+/* List items */
+.article-inline__card-body .card-v2__content__body__list__item {
+    display: flex !important;
+    align-items: flex-start !important;
+    margin-bottom: 15px !important;
+    list-style: none !important;
+}
+
+.article-inline__card-body .card-v2__content__body__list__item:last-child {
+    margin-bottom: 20px !important;
+}
+
+.article-inline__card-body .card-v2__content__body__list__item i {
+    color: #007bff !important;
+    font-size: 1.25rem !important;
+    margin-right: 10px !important;
+    flex-shrink: 0 !important;
+    margin-top: 2px !important;
+}
+
+.article-inline__card-body .card-v2__content__body__list__item span {
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+}
+
+/* Button styling - ABTA yellow */
+.article-inline__card-body > div {
+    margin-top: auto !important;
+    padding-top: 20px !important;
+}
+
+.article-inline__card-body .link {
+    background-color: #FFD500 !important;
+    color: #1c1c1b !important;
+    padding: 12px 35px !important;
+    border-radius: 10px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-transform: none !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.article-inline__card-body .link:hover {
+    background-color: #E6C000 !important;
+}
+
+/* Hide the arrow icon */
+.article-inline__card-body .link.icons--east::after,
+.article-inline__card-body .link.icons--right::after {
+    display: none !important;
+}
+
+/* Remove default text styles */
+.article-inline__card-text {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 1024px) {
+    .article-inline.center__article {
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    
+    .article-inline__card {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .insurance-- .intro-text h2 {
+        font-size: 2rem !important;
+        padding: 0 20px !important;
+    }
+    
+    .article-inline__title {
+        font-size: 1.5rem !important;
+    }
+    
+    .article-inline__image {
+        height: 250px !important;
+    }
+}
+
+
+/* ============================================================
+   11. SUMMARY OF COVER
+   ============================================================ */
+
+section.container {
+    background-color: #ffffff !important;
+    padding: 60px 20px !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+.article {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.article__container {
+    display: flex !important;
+    gap: 60px !important;
+    align-items: center !important;
+}
+
+/* Image on left - FORCE SQUARE */
+.article__container .article__image {
+    flex: 0 0 45% !important;
+    max-width: 45% !important;
+    width: 45% !important;
+    height: 0 !important;
+    padding-bottom: 45% !important;
+    position: relative !important;
+    overflow: hidden !important;
+    border-radius: 15px !important;
+    background-color: #f0f0f0 !important;
+}
+
+.article__container .article__image picture {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+}
+
+.article__container .article__image picture source {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.article__container .article__image img {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 15px !important;
+    display: block !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+
+/* Text content on right */
+.article__text {
+    flex: 1 !important;
+}
+
+.article__card {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.article__card-body {
+    padding: 0 !important;
+}
+
+/* Hide the date */
+.article__card-date {
+    display: none !important;
+}
+
+/* Title */
+.article__card-title {
+    color: #007bff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    margin: 0 0 30px 0 !important;
+    text-align: left !important;
+}
+
+/* Body text */
+.article__card-text {
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.125rem !important;
+    line-height: 1.6 !important;
+    margin: 0 0 30px 0 !important;
+}
+
+/* Button */
+.article__card-body .btn--secondary {
+    background-color: #FFD500 !important;
+    color: #1c1c1b !important;
+    padding: 12px 35px !important;
+    border-radius: 10px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-transform: none !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.article__card-body .btn--secondary:hover {
+    background-color: #E6C000 !important;
+}
+
+@media (max-width: 1024px) {
+    .article__container {
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+    
+    .article__container .article__image {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        max-width: 500px !important;
+        padding-bottom: 100% !important;
+        margin: 0 auto !important;
+    }
+    
+    .article__card-title {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    section.container {
+        padding: 40px 20px !important;
+    }
+    
+    .article__container .article__image {
+        max-width: 100% !important;
+    }
+    
+    .article__card-title {
+        font-size: 1.75rem !important;
+    }
+    
+    .article__card-text {
+        font-size: 1rem !important;
+    }
+    
+    .article__card-body .btn--secondary {
+        padding: 10px 30px !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+
+/* ============================================================
+   12. ROUNDED BANNER CARDS (Medical Banner)
+   ============================================================ */
+
+.banner-quote-now-v2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.banner-quote-now-v2 .banner-quote-now-v2__inner.container {
+    display: flex;
+    align-items: stretch;
+    background: #fff;
+    border: 2px solid #007bff;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 0;
+    max-width: none;
+    width: 100%;
+    box-shadow: none;
+}
+
+.banner-quote-now-v2 .inner__description-box {
+    flex: 1;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+}
+
+.banner-quote-now-v2 .inner__description-box h2 {
+    color: #007bff;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.banner-quote-now-v2 .inner__description-box p {
+    color: #1c1c1b;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.banner-quote-now-v2 .inner__description-box .btn--secondary {
+    background-color: #FFB81C;
+    color: #1c1c1b;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    width: fit-content;
+}
+
+.banner-quote-now-v2 .inner__description-box .btn--secondary:hover {
+    background-color: #E5A519;
+}
+
+.banner-quote-now-v2 .inner__image-box {
+    flex: 0 0 40%;
+    min-height: 280px;
+    background: transparent;
+}
+
+.banner-quote-now-v2 .inner__image-box picture {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-quote-now-v2 .inner__image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 768px) {
+    .banner-quote-now-v2 .banner-quote-now-v2__inner.container {
+        flex-direction: column;
+    }
+    
+    .banner-quote-now-v2 .inner__description-box {
+        padding: 30px 25px;
+    }
+    
+    .banner-quote-now-v2 .inner__description-box h2 {
+        font-size: 22px;
+    }
+    
+    .banner-quote-now-v2 .inner__image-box {
+        min-height: 200px;
+    }
+    
+    .banner-quote-now-v2 .inner__image-box img {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+
+/* ============================================================
+   13. TEXT SECTIONS (Medical Screening, Travel Money)
+   ============================================================ */
+
+/* Medical Assistance Text Section */
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] section.t_block.t_quote.t_quote--xlarge {
+    background: transparent !important;
+    padding: 60px 0 40px 0 !important;
+    margin: 0 auto !important;
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 1000px !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] .t_block__inner {
+    text-align: left !important;
+    padding: 0 20px !important;
+    margin: 0 !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] .t_mainText {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] .t_mainText > p:empty {
+    display: none !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] h3 {
+    color: #007bff !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] h4 {
+    color: #007bff !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] p {
+    color: #1c1c1b !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    font-family: inherit !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] a {
+    color: #007bff !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] a:hover {
+    text-decoration: underline !important;
+}
+
+/* Video iframe rounded corners */
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] .embed-responsive {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+
+[data-analytics-asset-title="ABTA - Medical Assistance Text - TGTM"] .embed-responsive iframe {
+    border-radius: 12px !important;
+}
+
+/* Travel Money Text Section */
+[data-analytics-asset-title="ABTA - Travel Money Text - TGTM"] section.t_block.t_quote.t_quote--xlarge {
+    background: transparent !important;
+    padding: 0 0 40px 0 !important;
+    margin: 0 auto !important;
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 1000px !important;
+}
+
+[data-analytics-asset-title="ABTA - Travel Money Text - TGTM"] .t_block__inner {
+    text-align: left !important;
+    padding: 0 20px !important;
+    margin: 0 !important;
+}
+
+[data-analytics-asset-title="ABTA - Travel Money Text - TGTM"] .t_mainText {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+[data-analytics-asset-title="ABTA - Travel Money Text - TGTM"] .t_mainText > p:empty {
+    display: none !important;
+}
+
+[data-analytics-asset-title="ABTA - Travel Money Text - TGTM"] h3 {
+    color: #007bff !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+}
+
+[data-analytics-asset-title="ABTA - Travel Money Text - TGTM"] h4 {
+    color: #007bff !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+}
+
+[data-analytics-asset-title="ABTA - Travel Money Text - TGTM"] p {
+    color: #1c1c1b !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    font-family: inherit !important;
+}
+
+[data-analytics-asset-title="ABTA - Travel Money Text - TGTM"] ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 0 25px 0 !important;
+}
+
+[data-analytics-asset-title="ABTA - Travel Money Text - TGTM"] ul li {
+    color: #1c1c1b !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    padding-left: 30px !important;
+    margin-bottom: 12px !important;
+    position: relative !important;
+}
+
+[data-analytics-asset-title="ABTA - Travel Money Text - TGTM"] ul li span {
+    color: #007bff !important;
+    position: absolute !important;
+    left: 0 !important;
+    font-weight: bold !important;
+}
+
+[data-analytics-asset-title="ABTA - Travel Money Text - TGTM"] a {
+    color: #007bff !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+[data-analytics-asset-title="ABTA - Travel Money Text - TGTM"] a:hover {
+    text-decoration: underline !important;
+}
+
+
+/* ============================================================
+   14. MONEYHELPER TEXT BOX
+   ============================================================ */
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]),
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) {
+    background-color: #ffffff !important;
+    padding: 0 !important;
+    margin: 20px 20px !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_block__inner.t_quote__inner.container.text-center,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_block__inner.t_quote__inner.container.text-center {
+    border: 3px solid #007bff !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    background-color: #ffffff !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium {
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium p,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium p {
+    color: #1c1c1b !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    display: inline !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium p a,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium p a {
+    color: #1c1c1b !important;
+    text-decoration: underline !important;
+    font-weight: 400 !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium p a:hover,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium p a:hover {
+    color: #007bff !important;
+}
+
+/* Force override - ONLY for Money Advice section */
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) *,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) * {
+    color: #1c1c1b !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) a,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) a {
+    color: #1c1c1b !important;
+    text-decoration: underline !important;
+}
+
+@media (max-width: 768px) {
+    section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]),
+    section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) {
+        margin: 15px 15px !important;
+    }
+    
+    section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_block__inner.t_quote__inner.container.text-center,
+    section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_block__inner.t_quote__inner.container.text-center {
+        padding: 12px !important;
+    }
+    
+    section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium,
+    section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium {
+        font-size: 0.9rem !important;
+    }
+}
+
+
+/* ============================================================
+   15. TRUSTPILOT CAROUSEL
+   ============================================================ */
+
+.journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] {
+    background-color: #ffffff !important;
+    padding: 60px 20px !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 40px !important;
+    display: block !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget iframe {
+    width: 100% !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] br {
+    display: none !important;
+}
+
+@media (max-width: 1024px) {
+    .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget {
+        padding: 0 20px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] {
+        padding: 40px 15px !important;
+    }
+    
+    .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget {
+        padding: 0 10px !important;
+    }
+}
+
+
+/* ============================================================
+   16. FOOTER
+   ============================================================ */
+
+/* Main footer base */
+footer.footer {
+    background-color: #007bff !important;
+    padding: 60px 20px 40px 20px !important;
+    margin: 0 !important;
+    color: #ffffff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    border-top: none !important;
+}
+
+/* Top section - Desktop (Logos + Nav + Social) */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop {
+    background: transparent !important;
+    border: none !important;
+    margin: 0 0 32px 0 !important;
+    padding: 0 0 32px 0 !important;
+    position: relative !important;
+}
+
+/* Main container */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    padding-top: 90px !important;
+    position: relative !important;
+}
+
+/* ABTA Logo (Top Left) */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 16px !important;
+    left: 0 !important;
+    width: 180px !important;
+    height: 55px !important;
+    background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/abta-travel-insurance-white-logo-rgb.webp/a903b952-072c-31f3-70fb-c3927ab764f4?version=1.0&t=1763453026583&imagePreview=1") !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    background-size: contain !important;
+    border: none !important;
+}
+
+/* AXA Lockup (Top Right) - Text Above + Square Logo Below */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+    content: "IN PARTNERSHIP WITH" !important;
+    position: absolute !important;
+    top: 8px !important;
+    right: 0 !important;
+    width: 200px !important;
+    height: 80px !important;
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    text-align: right !important;
+    line-height: 1.2 !important;
+    padding-bottom: 45px !important;
+    background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/axa_logo_solid_rgb.webp/b6ba9428-c8da-c8b9-6e97-09bd46908585?version=1.0&t=1763453280994&imagePreview=1") !important;
+    background-repeat: no-repeat !important;
+    background-position: right bottom !important;
+    background-size: 48px 48px !important;
+}
+
+/* Navigation - Centered */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer--list {
+    order: 1 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.m-footer-small__disclaimer--list .m-footer-small__list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 12px !important;
+}
+
+.m-footer-small__list-item.m-footer-small__list-item--border {
+    color: #ffffff !important;
+    font-size: 1rem !important;
+    padding: 0 15px !important;
+    border-right: 1px solid #ffffff !important;
+    white-space: nowrap !important;
+}
+
+.m-footer-small__list-item.m-footer-small__list-item--border:last-child {
+    border-right: none !important;
+}
+
+.m-footer-small__list-item a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.m-footer-small__list-item a:hover {
+    text-decoration: underline !important;
+}
+
+/* Social Icons - Centered */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer {
+    order: 2 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 4px !important;
+    position: static !important;
+}
+
+/* Hide "Follow us" label */
+.m-footer-small__list-item--follow {
+    display: none !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list img {
+    width: 32px !important;
+    height: 32px !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list a:hover img {
+    opacity: 0.8 !important;
+}
+
+/* Legal Section - Single Line Above + Plain Text */
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) {
+    background: transparent !important;
+    padding: 24px 0 0 0 !important;
+    margin: 0 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-bottom: none !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) .m-footer-small__container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+/* Only legal text should show */
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) .m-footer-small__disclaimer > :not(.m-footer-small__list) {
+    display: none !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) .m-footer-small__list {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) .m-footer-small__list-item {
+    color: #ffffff !important;
+    font-size: 0.8rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Make legal text plain, not clickable */
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) .m-footer-small__list-item a {
+    color: inherit !important;
+    text-decoration: none !important;
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+/* Footer Responsive */
+@media (max-width: 1024px) {
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+        top: 12px !important;
+        width: 150px !important;
+        height: 40px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+        width: 180px !important;
+        height: 70px !important;
+        background-size: 40px 40px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+        padding-top: 70px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    footer.footer {
+        padding: 40px 20px 30px 20px !important;
+    }
+
+    .m-footer-small__disclaimer--list .m-footer-small__list {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    .m-footer-small__list-item.m-footer-small__list-item--border {
+        border-right: none !important;
+        padding: 0 !important;
+    }
+}
+
+
+/* ============================================================
+   END OF STYLESHEET
+   ============================================================ */
