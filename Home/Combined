@@ -620,7 +620,7 @@ section.container {
 
 /* ===== Home/Trustpilot Carrousel ===== */
 .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] {
-    background-color: #ffffff !important;
+    background-color: #007ac2 !important;
     padding: 60px 20px !important;
     margin: 0 !important;
     width: 100% !important;
@@ -629,7 +629,7 @@ section.container {
 .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget {
     max-width: 1200px !important;
     margin: 0 auto !important;
-    padding: 0 40px !important;
+    padding: 0 !important;
     display: block !important;
 }
 
@@ -648,15 +648,16 @@ section.container {
         padding: 0 20px !important;
     }
 }
+
 @media (max-width: 768px) {
     .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] {
         padding: 40px 15px !important;
     }
+    
     .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget {
         padding: 0 10px !important;
     }
 }
-
 /* ===== Home/Trustpilot Widget (stars only) ===== */
 #ekomiApiIntegrationViewStars,
 .neo-ekomi-api-integration-view-stars {
