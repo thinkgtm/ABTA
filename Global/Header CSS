@@ -27,24 +27,64 @@
     text-decoration: none !important;
     padding: 20px 0 !important;
     display: block;
-    transition: color 0.3s ease;
-    border-bottom: 3px solid transparent !important;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent !important;
 }
 
+/* Remove any lingering borders/colors from original theme */
+.mega-menu__item a,
+.mega-menu__item a *,
+.mega-menu__item--active a,
+.mega-menu__item--active a * {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Remove any pseudo-elements that might be creating colored lines */
+.mega-menu__item a::before,
+.mega-menu__item a::after,
+.mega-menu__item--active a::before,
+.mega-menu__item--active a::after,
+.mega-menu__item--active > a::before,
+.mega-menu__item--active > a::after {
+    display: none !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+/* Only show blue line on hover */
 .mega-menu__item a:hover {
     color: #0077C8 !important;
-    border-bottom: 3px solid #0077C8 !important;
+    border-bottom: 2px solid #0077C8 !important;
 }
 
-.mega-menu__item--active a {
+/* Only show blue line when it's the EXACT active page */
+.mega-menu__item--active > a {
     color: #0077C8 !important;
-    border-bottom: 3px solid #0077C8 !important;
+    border-bottom: 2px solid #0077C8 !important;
+}
+
+/* Remove blue line from parent when child page is active */
+.mega-menu__item--active-tree:not(.mega-menu__item--active) > a {
+    color: #333 !important;
+    border-bottom: 2px solid transparent !important;
+}
+
+/* Ensure no background colors creating lines on active items */
+.mega-menu__item--active {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Hide the Holiday Types info column in mega menu */
+.mega-menu-tray__column--content {
+    display: none !important;
 }
 
 /* Mega menu dropdown tray */
 .mega-menu-tray {
     background: #fff !important;
-    border-top: 3px solid #0077C8 !important;
+    border-top: 2px solid #0077C8 !important;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
