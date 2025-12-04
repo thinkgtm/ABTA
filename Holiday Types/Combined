@@ -2054,3 +2054,7 @@ footer.footer {
         border-radius: 0 0 10px 10px;
     }
 }
+/* Remove empty article card text elements */
+.article__card-text:empty {
+    display: none !important;
+}
