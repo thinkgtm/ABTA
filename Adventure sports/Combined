@@ -1,0 +1,1709 @@
+/* ===== GLOBAL BUTTON STYLING - ALL BUTTONS ===== */
+/* All buttons - Increased size + Sentence case */
+.btn,
+.btn--primary,
+.btn--secondary,
+.link,
+.introduction .btn--primary,
+.introduction .btn__btn .btn--primary,
+.article__card-body .btn--secondary,
+.card-v2__content__footer__button a,
+.article-inline__card-body .link {
+    padding: 15px 42px !important;
+    font-size: 1.125rem !important;
+    font-weight: 700 !important;
+    border-radius: 10px !important;
+    text-transform: none !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+    transition: background-color 0.3s ease !important;
+    font-family: Calibri, Arial, sans-serif !important;
+}
+
+/* Yellow buttons (primary) */
+.btn--primary,
+.introduction .btn--primary,
+.introduction .btn__btn .btn--primary,
+.card-v2__content__footer__button a,
+.article-inline__card-body .link {
+    background-color: #fcb316 !important;
+    color: #000000 !important;
+}
+
+.btn--primary:hover,
+.introduction .btn--primary:hover,
+.introduction .btn__btn .btn--primary:hover,
+.card-v2__content__footer__button a:hover,
+.article-inline__card-body .link:hover {
+    background-color: #E6C000 !important;
+}
+
+/* Secondary buttons */
+.btn--secondary,
+.article__card-body .btn--secondary {
+    background-color: #fcb316 !important;
+    color: #000000 !important;
+}
+
+.btn--secondary:hover,
+.article__card-body .btn--secondary:hover {
+    background-color: #E6C000 !important;
+}
+
+/* Button focus/active states */
+.btn:focus,
+.btn:active,
+.btn--primary:focus,
+.btn--primary:active,
+.btn--secondary:focus,
+.btn--secondary:active {
+    background-color: #fcb316 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Responsive button sizing */
+@media (max-width: 768px) {
+    .btn,
+    .btn--primary,
+    .btn--secondary,
+    .link,
+    .introduction .btn--primary,
+    .introduction .btn__btn .btn--primary,
+    .article__card-body .btn--secondary,
+    .card-v2__content__footer__button a,
+    .article-inline__card-body .link {
+        padding: 13px 36px !important;
+        font-size: 1rem !important;
+    }
+}
+
+/* ===== Home/Header Banner & Fonts ===== */
+body *:not(script):not(style) {
+    visibility: visible;
+}
+body *:not(script):not(style) {
+    font-family: Calibri, "SourceSansPro", Arial, sans-serif !important;
+}
+
+/* Text replacement for AXA to ABTA */
+.axa-text::before,
+[class*="axa"]::before,
+[class*="AXA"]::before {
+    content: 'ABTA' !important;
+    visibility: visible;
+}
+
+[class*="axa"]::first-letter,
+[class*="AXA"]::first-letter {
+    font-size: 0;
+}
+
+/* Main banner styling */
+.introduction-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.introduction-banner__mask--flex {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 450px;
+}
+
+.introduction-banner__mask--flex picture,
+.introduction-banner__mask--flex img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Content overlay */
+.introduction-banner__mask {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.introduction-banner__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.introduction-banner__content {
+    max-width: 600px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.introduction-banner__content--end {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Left-aligned white content box */
+.introduction-banner__content--content {
+    background: rgba(255, 255, 255, 0.95) !important;
+    padding: 40px !important;
+    border-radius: 8px;
+    margin-left: 0;
+}
+
+/* Typography using ABTA Calibri */
+.introduction-banner__content--content h2 {
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.font-bold-publicoheadline {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-weight: 700;
+}
+
+/* Mobile version - left-aligned */
+.article-full__detail--mobile .article-full__container {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    padding: 30px !important;
+    border-radius: 8px;
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 600px;
+}
+
+.article-full__detail--mobile h2 {
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+}
+
+/* Utilities */
+.color-white {
+    color: #ffffff !important;
+}
+.color-black {
+    color: #000000 !important;
+}
+.font-display-4 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+.pb-2 {
+    padding-bottom: 0.5rem !important;
+}
+.pt-2 {
+    padding-top: 0.5rem !important;
+}
+.pt-4 {
+    padding-top: 1rem !important;
+}
+
+/* Responsive */
+.hide-xs {
+    display: block !important;
+}
+.show-xs {
+    display: none !important;
+}
+@media (max-width: 767px) {
+    .hide-xs {
+        display: none !important;
+    }
+    .show-xs {
+        display: block !important;
+    }
+    .font-display-4 {
+        font-size: 1.75rem;
+    }
+    .introduction-banner__mask--flex {
+        min-height: 350px;
+    }
+    .introduction-banner__content--content {
+        padding: 30px 20px !important;
+    }
+}
+
+/* ===== Home/Moneyhelper Text (Boxed) ===== */
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]),
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) {
+    background-color: #ffffff !important;
+    padding: 0 !important;
+    margin: 20px 20px !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_block__inner.t_quote__inner.container.text-center,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_block__inner.t_quote__inner.container.text-center {
+    border: 3px solid #007ac2 !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    background-color: #ffffff !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium {
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium p,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium p {
+    color: #1c1c1b !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    display: inline !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium p a,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium p a {
+    color: #1c1c1b !important;
+    text-decoration: underline !important;
+    font-weight: 400 !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium p a:hover,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium p a:hover {
+    color: #007ac2 !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) *,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) * {
+    color: #1c1c1b !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) a,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) a {
+    color: #1c1c1b !important;
+    text-decoration: underline !important;
+}
+
+@media (max-width: 768px) {
+    section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]),
+    section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) {
+        margin: 15px 15px !important;
+    }
+
+    section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_block__inner.t_quote__inner.container.text-center,
+    section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_block__inner.t_quote__inner.container.text-center {
+        padding: 12px !important;
+    }
+
+    section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.font-medium,
+    section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* ===== Home/Summary of cover ===== */
+section.container {
+    background-color: #ffffff !important;
+    padding: 60px 20px !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+.article {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.article__container {
+    display: flex !important;
+    gap: 60px !important;
+    align-items: center !important;
+}
+
+.article__container .article__image {
+    flex: 0 0 45% !important;
+    max-width: 45% !important;
+    width: 45% !important;
+    height: 0 !important;
+    padding-bottom: 45% !important;
+    position: relative !important;
+    overflow: hidden !important;
+    border-radius: 15px !important;
+    background-color: #f0f0f0 !important;
+}
+
+.article__container .article__image picture {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+}
+
+.article__container .article__image picture source {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.article__container .article__image img {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 15px !important;
+    display: block !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+
+/* Text content on right */
+.article__text {
+    flex: 1 !important;
+}
+
+.article__card {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.article__card-body {
+    padding: 0 !important;
+}
+
+/* Hide the date */
+.article__card-date {
+    display: none !important;
+}
+
+/* Title */
+.article__card-title {
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    margin: 0 0 30px 0 !important;
+    text-align: left !important;
+}
+
+/* Body text */
+.article__card-text {
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.125rem !important;
+    line-height: 1.6 !important;
+    margin: 0 0 30px 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .article__container {
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+
+    .article__container .article__image {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        max-width: 500px !important;
+        padding-bottom: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .article__card-title {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    section.container {
+        padding: 40px 20px !important;
+    }
+
+    .article__container .article__image {
+        max-width: 100% !important;
+    }
+
+    .article__card-title {
+        font-size: 1.75rem !important;
+    }
+
+    .article__card-text {
+        font-size: 1rem !important;
+    }
+}
+
+/* ===== Home/Three Levels of Cover Cards ===== */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] {
+    background-color: #007ac2 !important;
+    padding: 60px 20px !important;
+    margin: 0 !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__list::before {
+    content: "Three levels of cover" !important;
+    display: block !important;
+    text-align: left !important;
+    color: #ffffff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 30px !important;
+    width: 100% !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__list {
+    position: relative !important;
+    background-color: transparent !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] section.card-v2 {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] div.card-v2__content {
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 30px 25px 25px 25px !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2 *,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content * {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+}
+
+/* First card - Blue title and checks */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(1) .card-v2__content__header__headline h2 {
+    color: #007ac2 !important;
+}
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(1) .icon-check_circle {
+    color: #007ac2 !important;
+}
+
+/* Second card - Gold/Bronze title and checks */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(2) .card-v2__content__header__headline h2 {
+    color: #B8860B !important;
+}
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(2) .icon-check_circle {
+    color: #B8860B !important;
+}
+
+/* Third card - Grey/Platinum title and checks */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(3) .card-v2__content__header__headline h2 {
+    color: #808080 !important;
+}
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(3) .icon-check_circle {
+    color: #808080 !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__header {
+    height: auto !important;
+    min-height: 70px !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__header__headline h2 {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    text-align: center !important;
+    line-height: 1.3 !important;
+    min-height: 70px !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__body__list__item span {
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer {
+    display: block !important;
+    text-align: center !important;
+    margin-top: 25px !important;
+    padding-top: 20px !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__link {
+    display: none !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button {
+    display: block !important;
+    text-align: center !important;
+}
+
+/* CRITICAL FIX - Three Levels of Cover Buttons */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a {
+    background-color: #fcb316 !important;
+    color: #000000 !important;
+    padding: 15px 42px !important;
+    border-radius: 10px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.125rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-transform: none !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a:hover {
+    background-color: #E6C000 !important;
+}
+
+@media (max-width: 768px) {
+    .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__list::before {
+        font-size: 2rem !important;
+    }
+
+    .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__header {
+        min-height: 60px !important;
+    }
+
+    .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__header__headline h2 {
+        font-size: 1.35rem !important;
+        line-height: 1.25 !important;
+        min-height: 60px !important;
+    }
+    
+    .journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2__content__footer__button a {
+        padding: 13px 36px !important;
+        font-size: 1rem !important;
+    }
+}
+
+/* ===== Home/Trustpilot Carrousel ===== */
+.journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] {
+    background-color: #ffffff !important;
+    padding: 60px 20px !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 40px !important;
+    display: block !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget iframe {
+    width: 100% !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+.journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] br {
+    display: none !important;
+}
+
+@media (max-width: 1024px) {
+    .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget {
+        padding: 0 20px !important;
+    }
+}
+@media (max-width: 768px) {
+    .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] {
+        padding: 40px 15px !important;
+    }
+    .journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"] .trustpilot-widget {
+        padding: 0 10px !important;
+    }
+}
+
+/* ===== Home/Trustpilot Widget (stars only) ===== */
+#ekomiApiIntegrationViewStars,
+.neo-ekomi-api-integration-view-stars {
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.range-star {
+    background-color: transparent !important;
+    padding: 15px 0 !important;
+}
+
+.range-star__container {
+    max-width: 1200px;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    display: block !important;
+    text-align: center !important;
+}
+
+.range-star__text.font-display-4 {
+    display: inline-block !important;
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.125rem !important;
+    font-weight: 700 !important;
+    margin-right: 15px !important;
+    padding-bottom: 0 !important;
+    vertical-align: middle !important;
+}
+
+.range-star__text.font-display-4 span {
+    color: #1c1c1b !important;
+}
+
+.range-star__container .range-star__star {
+    display: inline-block !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 2px !important;
+    padding: 0 !important;
+    font-size: 1.5rem !important;
+    line-height: 1 !important;
+    vertical-align: middle !important;
+    float: none !important;
+    position: static !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+#star1, #star2, #star3, #star4, #star5 {
+    display: inline-block !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 2px !important;
+    padding: 0 !important;
+    font-size: 1.5rem !important;
+    line-height: 1 !important;
+    vertical-align: middle !important;
+    float: none !important;
+    position: static !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+.range-star__star.icon-star.range-star__checked,
+#star1, #star2, #star3, #star4 {
+    color: #00B67A !important;
+    display: inline-block !important;
+}
+
+#star5.range-star__star.icon-star.color-white {
+    display: inline-block !important;
+    position: relative !important;
+    background: linear-gradient(90deg, #00B67A 0%, #00B67A 50%, #dcdce6 50%, #dcdce6 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+.range-star__text.pt-2 {
+    display: none !important;
+}
+
+#linkEkomiReviews {
+    display: inline-block !important;
+    margin-left: 10px !important;
+    margin-top: 0 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    text-decoration: none !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+#linkEkomiReviews svg {
+    width: 80px !important;
+    height: auto !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+.icon-star::before {
+    display: inline !important;
+}
+
+@media (max-width: 768px) {
+    .range-star__text.font-display-4 {
+        font-size: 1rem !important;
+        display: block !important;
+        margin-right: 0 !important;
+        margin-bottom: 10px !important;
+    }
+
+    #star1, #star2, #star3, #star4, #star5,
+    .range-star__star {
+        font-size: 1.25rem !important;
+        margin: 0 1px !important;
+    }
+
+    #linkEkomiReviews {
+        margin-left: 8px !important;
+    }
+
+    #linkEkomiReviews svg {
+        width: 70px !important;
+    }
+}
+
+.pb-4 {
+    padding-bottom: 0 !important;
+}
+.pt-2 {
+    padding-top: 0 !important;
+}
+
+.range-star__star,
+#star1, #star2, #star3, #star4, #star5 {
+    max-width: none !important;
+    min-width: 0 !important;
+}
+
+/* ===== Home/Types of holiday cover images and text ===== */
+.insurance-- {
+    background-color: #ffffff !important;
+    padding: 60px 20px !important;
+    margin: 0 !important;
+}
+
+.insurance-- .intro-text {
+    text-align: left !important;
+    margin-bottom: 40px !important;
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.insurance-- .intro-text h2 {
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    padding: 0 50px !important;
+}
+
+.article-inline.center__article.container {
+    display: flex !important;
+    gap: 20px !important;
+    justify-content: space-between !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.article-inline__card {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+}
+
+.article-inline__image {
+    width: 100% !important;
+    height: 350px !important;
+    overflow: hidden !important;
+    border-radius: 15px !important;
+    margin-bottom: 20px !important;
+}
+
+.article-inline__image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.article-inline__card-body {
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.article-inline__title {
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    margin: 0 0 20px 0 !important;
+    text-align: left !important;
+}
+
+.article-inline__title.font-bold-publicoheadline {
+    font-family: Calibri, Arial, sans-serif !important;
+}
+
+.article-inline__card-body .card-v2__content__body__list__item {
+    display: flex !important;
+    align-items: flex-start !important;
+    margin-bottom: 15px !important;
+    list-style: none !important;
+}
+
+.article-inline__card-body .card-v2__content__body__list__item:last-child {
+    margin-bottom: 20px !important;
+}
+
+.article-inline__card-body .card-v2__content__body__list__item i {
+    color: #007ac2 !important;
+    font-size: 1.25rem !important;
+    margin-right: 10px !important;
+    flex-shrink: 0 !important;
+    margin-top: 2px !important;
+}
+
+.article-inline__card-body .card-v2__content__body__list__item span {
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+}
+
+.article-inline__card-body > div {
+    margin-top: auto !important;
+    padding-top: 20px !important;
+}
+
+.article-inline__card-body .link.icons--east::after,
+.article-inline__card-body .link.icons--right::after {
+    display: none !important;
+}
+
+.article-inline__card-text {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 1024px) {
+    .article-inline.center__article {
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    .article-inline__card {
+        width: 100% !important;
+    }
+}
+@media (max-width: 768px) {
+    .insurance-- .intro-text h2 {
+        font-size: 2rem !important;
+        padding: 0 20px !important;
+    }
+    .article-inline__title {
+        font-size: 1.5rem !important;
+    }
+    .article-inline__image {
+        height: 250px !important;
+    }
+}
+
+/* ===== Home/Whatever's in front banner ===== */
+section.t_block.t_quote.t_quote--xlarge {
+    background-color: #007ac2 !important;
+    padding: 13px 0 0 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    min-height: 50px !important;
+}
+
+.t_quote--xlarge .t_block__inner,
+.t_quote--xlarge .container {
+    padding: 0 20px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge * {
+    color: #ffffff !important;
+}
+
+.t_quote--xlarge .t_mainText.font-medium {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.t_quote--xlarge .t_mainText.font-medium p {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.t_quote--xlarge .t_mainText.font-medium p:empty {
+    display: none !important;
+}
+
+.t_quote--xlarge .t_mainText.font-medium p,
+.t_quote--xlarge .t_mainText.font-medium p strong,
+.t_quote--xlarge .t_mainText.font-medium span,
+.t_quote--xlarge .t_mainText.font-medium p span {
+    color: #ffffff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.25rem !important;
+    font-weight: 400 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.2 !important;
+}
+
+.t_block.t_quote {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+section.t_quote--xlarge {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+@media (max-width: 767px) {
+    section.t_block.t_quote.t_quote--xlarge {
+        padding: 12px 0 0 0 !important;
+    }
+    .t_quote--xlarge .t_mainText.font-medium p,
+    .t_quote--xlarge .t_mainText.font-medium p strong,
+    .t_quote--xlarge * {
+        font-size: 1rem !important;
+    }
+}
+
+/* ===== Home/Why Choose ABTA Cards ===== */
+.card-v2__list::before {
+    content: "Why choose ABTA Travel Insurance?" !important;
+    display: block !important;
+    text-align: center !important;
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 30px !important;
+    width: 100% !important;
+}
+
+.card-v2__list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    max-width: 1200px !important;
+    margin: 40px auto !important;
+    padding: 0 20px !important;
+    justify-content: space-between !important;
+}
+
+.card-v2,
+section.card-v2 {
+    flex: 1 !important;
+    display: flex !important;
+    margin: 0 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.card-v2__content,
+div.card-v2__content {
+    border: 3px solid #007ac2 !important;
+    border-radius: 12px !important;
+    padding: 20px 20px !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.card-v2 *,
+.card-v2__content * {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.card-v2__content__header {
+    margin-bottom: 15px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+.card-v2__content__header__headline h2 {
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    background: transparent !important;
+}
+
+.card-v2__content__header__info,
+.card-v2__content__header__sub-headline,
+.card-v2__content__header__price {
+    display: none !important;
+}
+
+.card-v2__content__body {
+    flex: 1 !important;
+    margin-bottom: 0 !important;
+    background: transparent !important;
+}
+
+.card-v2__content__body__list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+.card-v2__content__body__list__item {
+    display: flex !important;
+    align-items: flex-start !important;
+    margin-bottom: 12px !important;
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    background: transparent !important;
+}
+
+.card-v2__content__body__list__item:last-child {
+    margin-bottom: 0 !important;
+}
+
+.card-v2__content__body__list__item i.icon-check_circle {
+    display: inline-block !important;
+    color: #00b67a !important;
+    font-size: 1.25rem !important;
+    margin-right: 8px !important;
+    flex-shrink: 0 !important;
+    margin-top: 2px !important;
+    background: transparent !important;
+}
+
+.card-v2__content__body__list__item i.color-success-lighter {
+    color: #00b67a !important;
+}
+
+.card-v2__content__body__list__item span {
+    color: #1c1c1b !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    background: transparent !important;
+}
+
+.card-v2__content__footer,
+.card-v2__content__footer__link,
+.card-v2__content__footer__button {
+    display: none !important;
+}
+
+.card-v2::before,
+.card-v2::after,
+.card-v2__content::before,
+.card-v2__content::after {
+    display: none !important;
+    background: none !important;
+}
+
+@media (max-width: 1024px) {
+    .card-v2__list::before {
+        font-size: 1.75rem !important;
+    }
+    .card-v2 {
+        flex: 1 1 calc(50% - 10px) !important;
+        min-width: 300px !important;
+    }
+}
+@media (max-width: 768px) {
+    .card-v2__list::before {
+        font-size: 1.5rem !important;
+    }
+    .card-v2 {
+        flex: 1 1 100% !important;
+    }
+    .card-v2__content__header__headline h2 {
+        font-size: 1.25rem !important;
+    }
+}
+
+/* ==========================================
+   ABTA FOOTER – FINAL VERSION (SQUARE AXA LOGO)
+   ========================================== */
+
+/* MAIN FOOTER BASE */
+footer.footer {
+    background-color: #007ac2 !important;
+    padding: 60px 20px 40px 20px !important;
+    margin: 0 !important;
+    color: #ffffff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    border-top: none !important;
+}
+
+/* ============================================================
+   TOP SECTION – DESKTOP (LOGOS + NAV + SOCIAL)
+   ============================================================ */
+
+.m-footer-small.m-footer-small--top.m-footer-small--desktop {
+    background: transparent !important;
+    border: none !important;
+    margin: 0 0 32px 0 !important;
+    padding: 0 0 32px 0 !important;
+    position: relative !important;
+}
+
+/* MAIN CONTAINER */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    padding-top: 90px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    position: relative !important;
+}
+
+/* ============================================================
+   LOGO ROW (ABTA LEFT, AXA RIGHT) - WITH SIDE PADDING
+   ============================================================ */
+
+/* ABTA LOGO (TOP LEFT) - WITH LEFT PADDING */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 16px !important;
+    left: 40px !important;
+    width: 180px !important;
+    height: 55px !important;
+    background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/abta-travel-insurance-white-logo-rgb.webp/a903b952-072c-31f3-70fb-c3927ab764f4?version=1.0&t=1763453026583&imagePreview=1") !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    background-size: contain !important;
+    border: none !important;
+}
+
+/* AXA LOCKUP (TOP RIGHT) - WITH RIGHT PADDING */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+    content: "IN PARTNERSHIP WITH" !important;
+    position: absolute !important;
+    top: 8px !important;
+    right: 40px !important;
+    width: 200px !important;
+    height: 80px !important;
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    text-align: right !important;
+    line-height: 1.2 !important;
+    padding-bottom: 45px !important;
+    background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/axa_logo_solid_rgb.webp/b6ba9428-c8da-c8b9-6e97-09bd46908585?version=1.0&t=1763453280994&imagePreview=1") !important;
+    background-repeat: no-repeat !important;
+    background-position: right bottom !important;
+    background-size: 48px 48px !important;
+}
+
+/* ============================================================
+   NAVIGATION – CENTERED WITH EQUAL SPACING
+   ============================================================ */
+
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer--list {
+    order: 1 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.m-footer-small__disclaimer--list .m-footer-small__list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+}
+
+.m-footer-small__list-item.m-footer-small__list-item--border {
+    color: #ffffff !important;
+    font-size: 1rem !important;
+    padding: 0 20px !important;
+    border-right: 1px solid #ffffff !important;
+    white-space: nowrap !important;
+}
+
+.m-footer-small__list-item.m-footer-small__list-item--border:first-child {
+    padding-left: 0 !important;
+}
+
+.m-footer-small__list-item.m-footer-small__list-item--border:last-child {
+    border-right: none !important;
+    padding-right: 0 !important;
+}
+
+.m-footer-small__list-item a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.m-footer-small__list-item a:hover {
+    text-decoration: underline !important;
+}
+
+/* ============================================================
+   SOCIAL ICONS – CENTERED
+   ============================================================ */
+
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer {
+    order: 2 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 4px !important;
+    position: static !important;
+}
+
+/* Hide "Follow us" label */
+.m-footer-small__list-item--follow {
+    display: none !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list img {
+    width: 32px !important;
+    height: 32px !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list a:hover img {
+    opacity: 0.8 !important;
+}
+
+/* ============================================================
+   LEGAL SECTION – SINGLE LINE ABOVE + PLAIN TEXT
+   ============================================================ */
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) {
+    background: transparent !important;
+    padding: 24px 0 0 0 !important;
+    margin: 0 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-bottom: none !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+/* Only legal text should show */
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__disclaimer > :not(.m-footer-small__list) {
+    display: none !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__list {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__list-item {
+    color: #ffffff !important;
+    font-size: 0.8rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Make legal text plain, not clickable */
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__list-item a {
+    color: inherit !important;
+    text-decoration: none !important;
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1024px) {
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        padding-top: 70px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+        top: 12px !important;
+        left: 30px !important;
+        width: 150px !important;
+        height: 40px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+        right: 30px !important;
+        width: 180px !important;
+        height: 70px !important;
+        background-size: 40px 40px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    footer.footer {
+        padding: 40px 20px 30px 20px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+        left: 20px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+        right: 20px !important;
+    }
+
+    .m-footer-small__disclaimer--list .m-footer-small__list {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    .m-footer-small__list-item.m-footer-small__list-item--border {
+        border-right: none !important;
+        padding: 0 !important;
+    }
+}
+
+/* Navigation Bar - ABTA Styling */
+.header#header--sticky {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-navbar {
+    background: #fff;
+}
+
+.main-navbar__wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Main menu items */
+.mega-menu__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.mega-menu__item a {
+    color: #333 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    padding: 20px 0 !important;
+    display: block;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent !important;
+}
+
+/* Remove any lingering borders/colors from original theme */
+.mega-menu__item a,
+.mega-menu__item a *,
+.mega-menu__item--active a,
+.mega-menu__item--active a * {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Remove any pseudo-elements that might be creating colored lines */
+.mega-menu__item a::before,
+.mega-menu__item a::after,
+.mega-menu__item--active a::before,
+.mega-menu__item--active a::after,
+.mega-menu__item--active > a::before,
+.mega-menu__item--active > a::after {
+    display: none !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+/* Only show blue line on hover */
+.mega-menu__item a:hover {
+    color: #0077C8 !important;
+    border-bottom: 2px solid #0077C8 !important;
+}
+
+/* Only show blue line when it's the EXACT active page */
+.mega-menu__item--active > a {
+    color: #0077C8 !important;
+    border-bottom: 2px solid #0077C8 !important;
+}
+
+/* Remove blue line from parent when child page is active */
+.mega-menu__item--active-tree:not(.mega-menu__item--active) > a {
+    color: #333 !important;
+    border-bottom: 2px solid transparent !important;
+}
+
+/* Ensure no background colors creating lines on active items */
+.mega-menu__item--active {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Hide the Holiday Types info column in mega menu */
+.mega-menu-tray__column--content {
+    display: none !important;
+}
+
+/* Mega menu dropdown tray */
+.mega-menu-tray {
+    background: #fff !important;
+    border-top: 2px solid #0077C8 !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mega-menu-tray__content {
+    padding: 30px 40px !important;
+}
+
+.mega-menu-tray__info p {
+    color: #0077C8 !important;
+    font-weight: 600 !important;
+}
+
+.mega-menu-tray__info a {
+    color: #0077C8 !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+}
+
+.mega-menu-tray__info a:hover {
+    text-decoration: underline !important;
+}
+
+.mega-menu-tray__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    display: block;
+    padding: 8px 0 !important;
+    text-decoration: none !important;
+}
+
+.mega-menu-tray__nav a:hover {
+    color: #0077C8 !important;
+}
+
+/* Mobile navigation trigger */
+.main-navbar__mobile-trigger__icon,
+.main-navbar__mobile-trigger__icon::before,
+.main-navbar__mobile-trigger__icon::after {
+    background-color: #0077C8 !important;
+}
+
+/* Mobile navigation */
+.main-navbar-responsive {
+    background: #fff !important;
+}
+
+.mega-menu-responsive__item-title {
+    color: #333 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    padding: 15px 20px !important;
+    border-bottom: 1px solid #eee !important;
+}
+
+.mega-menu-responsive__item-title:hover {
+    color: #0077C8 !important;
+}
+
+.mega-menu-tray-responsive {
+    background: #f9f9f9 !important;
+}
+
+.mega-menu-tray-responsive__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    padding: 12px 20px !important;
+    display: block;
+}
+
+.mega-menu-tray-responsive__nav a:hover {
+    color: #0077C8 !important;
+    background: #f0f0f0 !important;
+}
+
+.mega-menu-tray-responsive--back {
+    color: #0077C8 !important;
+    font-weight: 600 !important;
+}
+
+/* Extra details bar */
+.extra-details-v2 {
+    background: #0077C8 !important;
+}
+
+.extra-details-v2 .item__text,
+.extra-details-v2 .item__icon {
+    color: #fff !important;
+}
+/* Table - ABTA Styling */
+.table-v2 {
+    background: #fff;
+}
+
+.table-v2__content {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table header */
+.table-v2__content thead .table-v2__content__row__header {
+    background: #0077C8 !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    padding: 15px 20px !important;
+    text-align: left !important;
+    border: none !important;
+}
+
+/* Table body rows */
+.table-v2__content tbody .table-v2__content__row__cell {
+    padding: 15px 20px !important;
+    font-size: 15px !important;
+    color: #333 !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+
+/* Zebra striping */
+.table-v2__content tbody .row--zebra-odd {
+    background: #f8f9fa !important;
+}
+
+.table-v2__content tbody .row--zebra-even {
+    background: #fff !important;
+}
+
+/* Description cells - first column */
+.table-v2__content__row__cell.cell__description {
+    font-weight: 500 !important;
+    color: #333 !important;
+}
+
+.table-v2__content__row__cell.cell__description .font-weight-bold {
+    color: #0077C8 !important;
+    font-weight: 700 !important;
+}
+
+/* Mobile description rows */
+.table-v2__content__row.row__description {
+    background: #0077C8 !important;
+}
+
+.table-v2__content__row.row__description .cell__description {
+    color: #fff !important;
+    font-weight: 600 !important;
+    padding: 12px 20px !important;
+}
+
+.table-v2__content__row.row__description .cell__description .font-weight-bold {
+    color: #fff !important;
+}
+
+/* Hover effect */
+.table-v2__content tbody tr:hover {
+    background: #e6f3fa !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .table-v2__content thead .table-v2__content__row__header {
+        padding: 12px 15px !important;
+        font-size: 14px !important;
+    }
+    
+    .table-v2__content tbody .table-v2__content__row__cell {
+        padding: 12px 15px !important;
+        font-size: 14px !important;
+    }
+}
