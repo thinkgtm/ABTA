@@ -173,3 +173,33 @@
 .extra-details-v2 .item__icon {
     color: #fff !important;
 }
+
+/* Get a Quote Button in Navigation */
+.mega-menu__item .btn--primary {
+    background: #fcb316 !important;
+    border: 2px solid #fcb316 !important;
+    color: #333 !important;
+    padding: 10px 24px !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+    border-bottom: 2px solid #fcb316 !important;
+}
+
+.mega-menu__item .btn--primary:hover {
+    background: #e0a014 !important;
+    border: 2px solid #e0a014 !important;
+    border-bottom: 2px solid #e0a014 !important;
+    color: #333 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(252, 179, 22, 0.4) !important;
+}
+
+/* Override the default menu item link styling for the button */
+.mega-menu__item a.btn--primary {
+    padding: 10px 24px !important;
+    display: inline-block !important;
+}
