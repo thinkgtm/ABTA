@@ -1,0 +1,334 @@
+/* ==========================================
+   ABTA BLOG GRID - COMPLETE WITH IMAGES
+   ========================================== */
+
+/* Navigation Font Size Fix */
+.mega-menu__item a {
+    font-size: 14px !important;
+}
+
+.mega-menu-responsive__item-title {
+    font-size: 14px !important;
+}
+
+/* Page Header */
+.abta-blog-header {
+    background: linear-gradient(135deg, #007ac2 0%, #005a8f 100%);
+    padding: 80px 20px;
+    margin: 0 0 60px 0;
+    text-align: center;
+}
+
+.abta-blog-header__title {
+    font-family: 'Calibri', Arial, sans-serif !important;
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    margin: 0 !important;
+}
+
+/* Container Cleanup */
+.portlet-asset-publisher .portlet-header {
+    display: none !important;
+}
+
+.portlet-asset-publisher .portlet-body {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 20px 60px !important;
+}
+
+/* Grid Layout */
+.cards-news {
+    width: 100% !important;
+}
+
+.cards-news__cards-group {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+    gap: 30px !important;
+}
+
+/* Individual Card */
+.cards-news__card {
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    padding: 0 !important;
+    min-height: 400px !important;
+}
+
+.cards-news__card:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 6px 20px rgba(0, 122, 194, 0.15) !important;
+    text-decoration: none !important;
+}
+
+/* Featured Image at Top */
+.cards-news__image-container {
+    width: 100% !important;
+    height: 200px !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 12px 12px 0 0 !important;
+    flex-shrink: 0 !important;
+}
+
+.cards-news__image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    transition: transform 0.3s ease !important;
+}
+
+.cards-news__card:hover .cards-news__image {
+    transform: scale(1.05) !important;
+}
+
+/* Content Section */
+.cards-news__summary-info {
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 24px !important;
+}
+
+/* Title */
+.cards-news__title {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #007ac2 !important;
+    margin: 0 0 16px 0 !important;
+    line-height: 1.3 !important;
+}
+
+/* Summary Text */
+.cards-news__summary {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    color: #666666 !important;
+    line-height: 1.6 !important;
+    margin: 0 0 20px 0 !important;
+    flex-grow: 1 !important;
+}
+
+/* Read More Link */
+.cards-news__link {
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    padding: 10px 20px !important;
+    background: transparent !important;
+    border: 2px solid #007ac2 !important;
+    border-radius: 4px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    align-self: flex-start !important;
+    margin-top: auto !important;
+}
+
+.cards-news__card:hover .cards-news__link {
+    background: #007ac2 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.cards-news__link i,
+.cards-news__link .icon-navigate_next {
+    font-size: 1.2rem !important;
+}
+
+/* HIDE THE DATE */
+.cards-news__info {
+    display: none !important;
+}
+
+.cards-news__time {
+    display: none !important;
+}
+
+/* Pagination Styling */
+.portlet-asset-publisher .taglib-page-iterator,
+.portlet-asset-publisher .pagination-bar {
+    max-width: 1200px !important;
+    margin: 40px auto 0 !important;
+    padding: 0 20px !important;
+}
+
+.portlet-asset-publisher .pagination,
+.portlet-asset-publisher .pagination-bar > div {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    flex-wrap: wrap !important;
+}
+
+.portlet-asset-publisher .pagination a,
+.portlet-asset-publisher .page-link,
+.portlet-asset-publisher .pagination-link,
+.portlet-asset-publisher .pagination__item {
+    background: #ffffff !important;
+    border: 2px solid #007ac2 !important;
+    color: #007ac2 !important;
+    padding: 10px 18px !important;
+    border-radius: 6px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    min-width: 44px !important;
+    text-align: center !important;
+}
+
+.portlet-asset-publisher .pagination a:hover,
+.portlet-asset-publisher .page-link:hover,
+.portlet-asset-publisher .pagination__item:hover {
+    background: #007ac2 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.portlet-asset-publisher .page-item.active .page-link,
+.portlet-asset-publisher .pagination .active a,
+.portlet-asset-publisher .pagination__item--active {
+    background: #007ac2 !important;
+    color: #ffffff !important;
+    border-color: #007ac2 !important;
+}
+
+.portlet-asset-publisher .page-item.disabled .page-link,
+.portlet-asset-publisher .pagination .disabled a,
+.portlet-asset-publisher .pagination__item.is--disabled {
+    opacity: 0.4 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+}
+
+/* Empty State */
+.portlet-asset-publisher .alert-info {
+    text-align: center !important;
+    padding: 60px 20px !important;
+    font-size: 1.1rem !important;
+    color: #666 !important;
+    background: #f8f9fa !important;
+    border: 2px dashed #007ac2 !important;
+    border-radius: 12px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .abta-blog-header {
+        padding: 60px 20px !important;
+        margin-bottom: 40px !important;
+    }
+    
+    .abta-blog-header__title {
+        font-size: 2rem !important;
+    }
+    
+    .cards-news__cards-group {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    .cards-news__card {
+        min-height: auto !important;
+    }
+    
+    .cards-news__image-container {
+        height: 180px !important;
+    }
+    
+    .cards-news__summary-info {
+        padding: 20px !important;
+    }
+    
+    .cards-news__title {
+        font-size: 1.25rem !important;
+    }
+    
+    .portlet-asset-publisher .portlet-body {
+        padding: 0 15px 40px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .abta-blog-header {
+        padding: 40px 20px !important;
+    }
+    
+    .abta-blog-header__title {
+        font-size: 1.75rem !important;
+    }
+    
+    .cards-news__image-container {
+        height: 160px !important;
+    }
+    
+    .cards-news__summary-info {
+        padding: 16px !important;
+    }
+    
+    .cards-news__link {
+        padding: 8px 16px !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .pagination a,
+    .page-link,
+    .pagination__item {
+        padding: 8px 14px !important;
+        font-size: 0.9rem !important;
+    }
+}
+/* Force blog card images to always show */
+.cards-news__image-container {
+  display: block !important;
+}
+
+.cards-news__image {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Make sure mobile trigger is clickable */
+.main-navbar__mobile-trigger {
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    z-index: 1000 !important;
+}
+
+.main-navbar__mobile-trigger__icon {
+    pointer-events: none !important;
+}
+
+/* Don't hide pseudo-elements on mobile trigger */
+.main-navbar__mobile-trigger::before,
+.main-navbar__mobile-trigger::after {
+    display: block !important;
+}
+
+/* Ensure mobile menu can show */
+.main-navbar-responsive {
+    background: #fff !important;
+    z-index: 999 !important;
+}
