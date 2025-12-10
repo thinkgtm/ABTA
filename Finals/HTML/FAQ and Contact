@@ -1,0 +1,4313 @@
+<body class="chrome controls-visible yui3-skin-sam signed-out public-page site min-vh-100 d-flex flex-column">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+	<symbol id="arrow">
+		<title>arrow</title>
+		<path d="M16 28.067c-0.533 0-1-0.2-1.4-0.6l-14-14c-1.8-1.8 1-4.667 2.8-2.8l12.6 12.533 12.6-12.533c1.8-1.8 4.667 1 2.8 2.8l-14 14c-0.333 0.4-0.867 0.6-1.4 0.6z"></path>
+	</symbol>
+	<symbol id="full-arrow" viewBox="0 0 32 32">
+		<title>Full arrow</title>
+		<path d="M22.943 25.8a1.088 1.088 0 0 1-.849-1.768l5.55-6.943H1.787a1.089 1.089 0 1 1 0-2.178h25.856l-5.55-6.943a1.09 1.09 0 0 1 1.701-1.36L31.302 16l-7.508 9.391a1.084 1.084 0 0 1-.851.409z"></path>
+	</symbol>
+	<symbol id="chevron" viewBox="0 0 16 16">
+		<title>Chevron</title>
+		<path class="fill" fill-rule="nonzero" d="M4.175 5L8 8.825 11.825 5 13 6.183l-5 5-5-5z"></path>
+	</symbol>
+	<symbol id="healthkit" viewBox="0 0 32 32">
+		<title>Healthkit</title>
+		<path class="fill" d="M26.67 8.67h-5.34V6a2.68 2.68 0 0 0-2.66-2.67h-5.34A2.67 2.67 0 0 0 10.67 6v2.67H5.33a2.67 2.67 0 0 0-2.66 2.66V26a2.67 2.67 0 0 0 2.66 2.67h21.34A2.67 2.67 0 0 0 29.33 26V11.33a2.67 2.67 0 0 0-2.66-2.66zM13.33 6h5.34v2.67h-5.34zm8 14h-4v4h-2.66v-4h-4v-2.67h4v-4h2.66v4h4z"></path>
+	</symbol>
+	<symbol id="pen" viewBox="0 0 16 16">
+		<title>Pen</title>
+		<path class="fill" d="M10.5 0L1.64 8.86 0 14l5.14-1.64L14 3.5s-.06-1.226-1.167-2.333C11.726.059 10.5 0 10.5 0zM2.279 9.443s.704.175 1.403.875c.759.7.875 1.349.875 1.349l.019.036-2.079.657-.875-.875.657-2.042z" fill-rule="evenodd"></path>
+	</symbol>
+	<symbol id="calendar" viewBox="0 0 16 16">
+		<title>calendar</title>
+		<path class="fill" d="M3.4 13.6h9.8V5.9H3.4v7.7zm9.8-11.2h-.7V1h-1.4v1.4H5.5V1H4.1v1.4h-.7c-.777 0-1.393.63-1.393 1.4L2 13.6c0 .77.623 1.4 1.4 1.4h9.8c.77 0 1.4-.63 1.4-1.4V3.8c0-.77-.63-1.4-1.4-1.4zm-2.8 6.3h1.4V7.3h-1.4v1.4zm-2.8 0H9V7.3H7.6v1.4zm-2.8 0h1.4V7.3H4.8v1.4z" fill="#00008F" fill-rule="evenodd"></path>
+	</symbol>
+	<symbol id="dollar" viewBox="0 0 96 96">
+		<title>dollar</title>
+		<path class="fill" d="M69 61.2a11 11 0 0 0-1.27-5 16.25 16.25 0 0 0-6.81-6.65L51 44V29.24c4.34.72 7.37 2.91 7.88 5a5 5 0 1 0 9.7-2.42C66.89 25 59.85 20.09 51 19.17V15a3 3 0 0 0-6 0v4.17c-10.3 1.07-18 7.54-18 15.63a11 11 0 0 0 1.27 5 16.29 16.29 0 0 0 6.81 6.64L45 52.05v14.71c-4.34-.72-7.37-2.91-7.88-5a5 5 0 1 0-9.7 2.42C29.11 71 36.15 75.91 45 76.83V81a3 3 0 0 0 6 0v-4.17c10.3-1.07 18-7.54 18-15.63zM40 37.75a7 7 0 0 1-2.8-2.47 1.45 1.45 0 0 1-.2-.48c0-2.23 3.32-4.75 8-5.54v11.32zm11 29V55.42l5 2.83a7 7 0 0 1 2.8 2.47 1.45 1.45 0 0 1 .18.48c.02 2.23-3.3 4.8-7.98 5.54z" fill="none" stroke="#00008f" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol id="euro" viewBox="0 0 96 96">
+		<title>euro</title>
+		<path class="fill" d="M61.36 65a13 13 0 0 1-9.18 4.29c-6.08 0-11.48-5.11-14-12.31H52a3 3 0 0 0 0-6H36.83a28.2 28.2 0 0 1 0-6H52a3 3 0 0 0 0-6H38.18c2.52-7.2 7.92-12.31 14-12.31A13 13 0 0 1 61.36 31a5.11 5.11 0 0 0 7.07.2 4.73 4.73 0 0 0 .21-6.84A23 23 0 0 0 52.18 17C40.69 17 31 26.28 27.77 39H24a3 3 0 0 0 0 6h2.79q-.12 1.48-.12 3t.12 3H24a3 3 0 0 0 0 6h3.77C31 69.72 40.69 79 52.18 79a23 23 0 0 0 16.46-7.34 4.73 4.73 0 0 0-.21-6.84 5.12 5.12 0 0 0-7.07.18z" fill="none" stroke="#00008f"></path>
+	</symbol>
+	<symbol id="pound" viewBox="0 0 96 96">
+		<title>pound</title>
+		<path d="M65 70H36a36.58 36.58 0 0 0 2.73-14.54V53H52a3 3 0 0 0 0-6H38.73V36.06C38.73 30 42.92 25 48.08 25s9.34 5 9.34 11.06a4.5 4.5 0 0 0 9 0C66.42 25 58.19 16 48.08 16S30 24.94 30 36v11h-4a3 3 0 0 0 0 6h4v2a29.51 29.51 0 0 1-4.85 15.77L24.32 72a4.51 4.51 0 0 0 3.76 7H65a4.5 4.5 0 0 0 0-9z" fill="none" stroke="#00008f" stroke-miterlimit="10" stroke-width="2"></path>
+	</symbol>
+	<symbol id="yen" viewBox="0 0 96 96">
+		<title>yen</title>
+		<path class="fill" d="M68 49a3 3 0 0 0 0-6H53v-.64l16.68-16.79a5 5 0 1 0-7.07-7.07L48.11 33 33.57 18.5a5 5 0 0 0-7.07 7.07L43 42.18V43H28a3 3 0 0 0 0 6h15v8H28a3 3 0 0 0 0 6h15v14a5 5 0 0 0 10 0V63h15a3 3 0 0 0 0-6H53v-8z" fill="none" stroke="#00008f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+	</symbol>
+	<symbol id="check" viewBox="0 0 16 16">
+		<title>check</title>
+		<path class="fill" d="M6 10.78L3.22 8l-.95.94L6 12.67l8-8-.94-.94z"></path>
+	</symbol>
+	<symbol id="file" viewBox="0 0 16 16">
+		<title>file</title>
+		<path class="fill" d="M4 1.33a1.33 1.33 0 0 0-1.33 1.34v10.66A1.33 1.33 0 0 0 4 14.67h8a1.34 1.34 0 0 0 1.33-1.33v-8l-4-4L4 1.33zM8.67 6V2.33L12.33 6H8.67z" fill-rule="nonzero"></path>
+	</symbol>
+	<symbol id="gear" viewBox="0 0 16 16">
+		<title>gear</title>
+		<path class="fill" d="M13 8.65A5.2 5.2 0 0 0 13 8a5.2 5.2 0 0 0 0-.65l1.41-1.1a.34.34 0 0 0 .08-.43l-1.38-2.31a.34.34 0 0 0-.41-.15L11 4a4.87 4.87 0 0 0-1.13-.65l-.21-1.74a.33.33 0 0 0-.33-.28H6.67a.33.33 0 0 0-.33.28l-.25 1.77A5.12 5.12 0 0 0 5 4l-1.7-.63a.33.33 0 0 0-.41.15l-1.33 2.3a.33.33 0 0 0 .08.43L3 7.35A5.29 5.29 0 0 0 3 8a5.29 5.29 0 0 0 0 .65l-1.36 1.1a.34.34 0 0 0-.08.43l1.33 2.31a.34.34 0 0 0 .41.15L5 12a4.87 4.87 0 0 0 1.13.65l.25 1.77a.33.33 0 0 0 .33.28h2.62a.33.33 0 0 0 .33-.28l.25-1.77A5.12 5.12 0 0 0 11 12l1.66.67a.33.33 0 0 0 .41-.15l1.33-2.31a.34.34 0 0 0-.08-.43L13 8.65zm-5 1.68A2.33 2.33 0 1 1 10.33 8 2.34 2.34 0 0 1 8 10.33z" fill-rule="nonzero"></path>
+	</symbol>
+	<symbol id="circledPerson" viewBox="0 0 32 32">
+		<g fill="none">
+			<path stroke-width=".75" stroke-miterlimit="10" d="M.457 15.842v.32c.001 8.496 6.889 15.382 15.385 15.381h.32c8.496-.001 15.382-6.889 15.381-15.385v-.315-.005C31.542 7.342 24.653.456 16.158.457h-.32C7.342.458.456 7.347.457 15.842z"></path>
+			<path stroke-width=".5" stroke-linecap="round" stroke-linejoin="round" d="M13.504 14.645c-.006-.082-.019-.161-.019-.245v-1.829h1.257c1.257 0 1.758-.706 2.171-1.6.256.617.891 1.143 1.552 1.143h.048V14.4c0 .084-.013.163-.019.245M13.504 14.645c.095 1.401.984 2.498 2.496 2.498 1.511 0 2.4-1.103 2.495-2.498M17.6 17.829h-3.2M14.4 16.615v1.214M13.782 17.93l-1.368.225a2.972 2.972 0 0 0-2.585 2.91v1.072c.001.448.327.83.77.901l1.744.315M17.6 17.829v-1.214M14.4 17.829l-.611.1M13.782 17.93l.007-.001M19.657 23.353l-.786.142a15.656 15.656 0 0 1-5.742 0l-.786-.142M19.657 22.171v1.182M12.343 22.171v1.182"></path>
+			<path stroke-width=".5" stroke-linecap="round" stroke-linejoin="round" d="M17.6 17.829l1.986.327a2.972 2.972 0 0 1 2.585 2.91v1.072a.915.915 0 0 1-.77.901l-1.744.315M18.495 14.645h.019a2.703 2.703 0 0 0 1.143-2.286v-1.387a.914.914 0 0 0-.914-.914 3.274 3.274 0 0 0-2.866-1.6h-.272a3.267 3.267 0 0 0-3.262 3.271v.562c0 .885.457 1.895 1.143 2.354h.019"></path>
+			<path stroke-width=".5" stroke-linecap="round" stroke-linejoin="round" d="M13.782 17.93l1.869 2.225a.457.457 0 0 0 .699 0l1.867-2.224-4.428-.002M13.789 17.929h-.008l.001.001"></path>
+		</g>
+	</symbol>
+	<symbol id="circledTravelBag" viewBox="0 0 32 32">
+		<g fill="none" stroke-width=".5" stroke-miterlimit="10">
+			<path d="M31.543 15.842v.315c.001 8.496-6.885 15.384-15.381 15.385h-.32C7.347 31.544.458 24.658.457 16.162v-.32C.456 7.347 7.342.458 15.838.457h.32c8.496-.001 15.384 6.885 15.385 15.381v.004z"></path>
+			<path d="M19.429 12.114H11.2v10.057h9.6V12.114h-1.371zm-6.4 2.057h2.743v2.286h-2.743v-2.286zm3.657 5.486h-2.057v-1.829h2.057v1.829zm2.285-2.971h-2.057v-1.143h2.057v1.143zM10.057 12.114H11.2v10.057h-1.143z"></path>
+			<path d="M9.371 12.114c-.631 0-1.143.512-1.143 1.143v7.771c0 .631.512 1.143 1.143 1.143h.686V12.114h-.686z"></path>
+			<path d="M16.158.457h-.32C7.342.458.456 7.347.457 15.842v.32c.001 8.496 6.889 15.382 15.385 15.381h.32c8.496-.001 15.382-6.889 15.381-15.385v-.315-.005C31.542 7.342 24.653.456 16.158.457zm-2.624 9.314c.624-.068 1.7-.171 2.466-.171s1.842.103 2.466.171a.565.565 0 0 1 .502.625.567.567 0 0 1-.623.504c-.635-.066-1.625-.157-2.345-.157s-1.71.091-2.345.158a.567.567 0 0 1-.626-.565.564.564 0 0 1 .505-.565zm10.237 11.258c0 .631-.512 1.143-1.143 1.143H9.371a1.143 1.143 0 0 1-1.143-1.143v-7.771c0-.631.512-1.143 1.143-1.143h3.2l.727-1.273-.727 1.273h6.857l-.727-1.273.727 1.273h3.201c.631 0 1.143.512 1.143 1.143v7.771z"></path>
+			<path d="M22.629 12.114h-.686v10.057h.686c.631 0 1.143-.512 1.143-1.143v-7.771a1.144 1.144 0 0 0-1.143-1.143zM20.8 12.114h1.143v10.057H20.8zM13.595 10.904l.06-.003c.635-.066 1.625-.158 2.345-.158s1.71.091 2.345.158a.567.567 0 0 0 .121-1.129c-.624-.069-1.7-.172-2.466-.172s-1.842.103-2.466.171a.565.565 0 0 0-.505.565.567.567 0 0 0 .566.568zM16.914 15.543h2.057v1.143h-2.057zM14.629 17.829h2.057v1.829h-2.057zM13.029 14.171h2.743v2.286h-2.743z"></path>
+		</g>
+	</symbol>
+	<symbol id="pinLocator" viewBox="0 0 16 16">
+		<title>pinLocator</title>
+		<path d="M8 1.33A4.66 4.66 0 0 0 3.33 6C3.33 9.5 8 14.67 8 14.67S12.67 9.5 12.67 6A4.66 4.66 0 0 0 8 1.33zm0 6.34a1.67 1.67 0 1 1 0-3.34 1.67 1.67 0 0 1 0 3.34z" fill-rule="nonzero"></path>
+	</symbol>
+	<symbol id="family" viewBox="0 0 16 16">
+		<title>family</title>
+		<g transform="translate(1 3)">
+			<path d="M5.91 9.85V8.68a2.58 2.58 0 0 1 1.58-2.27A8.6 8.6 0 0 0 5 6C3.44 6 .33 6.78.33 8.33v1.53h5.58v-.01z"></path>
+			<circle cx="5" cy="2.48" r="2.33"></circle>
+			<ellipse cx="10.49" cy="4.69" rx="1.59" ry="1.6"></ellipse>
+			<path d="M13.67 8.68c0-1.06-2.12-1.6-3.18-1.6s-3.18.54-3.18 1.6v1.17h6.35l.01-1.17z"></path>
+		</g>
+	</symbol>
+	<symbol id="download" viewBox="0 0 16 16">
+		<title>download</title>
+		<path d="M12.34 6H9.67V2h-4v4H3l4.67 4.67L12.34 6zM3 12v1.33h9.33V12H3z" fill-rule="nonzero"></path>
+	</symbol>
+	<!-- Social Network -->
+	<symbol id="facebook" viewBox="0 0 24 24">
+		<path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"></path>
+	</symbol>
+	<symbol id="twitter" viewBox="0 0 24 24">
+		<path d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 3.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 19.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 4.557z"></path>
+	</symbol>
+	<symbol id="linkedin" viewBox="0 0 24 24">
+		<path d="M4.98 3.5C4.98 4.881 3.87 6 2.5 6S.02 4.881.02 3.5C.02 2.12 1.13 1 2.5 1s2.48 1.12 2.48 2.5zM5 8H0v16h5V8zm7.982 0H8.014v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0V24H24V13.869c0-7.88-8.922-7.593-11.018-3.714V8z"></path>
+	</symbol>
+	<symbol id="glass" viewBox="0 0 16 16">
+		<path d="M11.33 10.33h-.52l-.19-.18a4.34 4.34 0 1 0-.47.47l.18.19v.53l3.33 3.33 1-1-3.33-3.34zm-4 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" fill="#00008F" fill-rule="nonzero"></path>
+	</symbol>
+	<symbol id="phone" viewBox="0 0 12 12">
+		<path d="M8.2,3.7C8,3.5,7.9,3.2,8,3c0.2-0.8,0.3-1.5,0.3-2.3C8.3,0.3,8.6,0,9,0l2.3,0C11.7,0,12,0.3,12,0.7C12,6.9,6.9,12,0.7,12
+	C0.3,12,0,11.7,0,11.3L0,9c0-0.3,0.3-0.6,0.6-0.6C1.4,8.4,2.2,8.3,3,8c0.2-0.1,0.5-0.1,0.7,0.1l1.5,1.5c1.9-1,3.4-2.5,4.4-4.4
+	L8.2,3.7z" fill="000000"></path>
+	</symbol>
+	<symbol id="enveloppe" viewBox="0 0 640 640">
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M585.1 85H58.2C24.7 85 1 105.6 1 140.1v354.4C1 531.7 21 556 60 556h528.7c38.1 0 52.2-27 52.2-59.7V146.5c.1-36.3-8.5-61.5-55.8-61.5zm-3.1 91.3L323.5 381.6 65 176.3l-.6-28.2 26.8.2 232.3 178.5 232.3-178.5 26.8-.2-.6 28.2z"></path>
+	</symbol>
+	<symbol id="whatsapp" viewBox="0 0 90 90">
+		<path d="M90,43.841c0,24.213-19.779,43.841-44.182,43.841c-7.747,0-15.025-1.98-21.357-5.455L0,90l7.975-23.522
+		c-4.023-6.606-6.34-14.354-6.34-22.637C1.635,19.628,21.416,0,45.818,0C70.223,0,90,19.628,90,43.841z M45.818,6.982
+		c-20.484,0-37.146,16.535-37.146,36.859c0,8.065,2.629,15.534,7.076,21.61L11.107,79.14l14.275-4.537
+		c5.865,3.851,12.891,6.097,20.437,6.097c20.481,0,37.146-16.533,37.146-36.857S66.301,6.982,45.818,6.982z M68.129,53.938
+		c-0.273-0.447-0.994-0.717-2.076-1.254c-1.084-0.537-6.41-3.138-7.4-3.495c-0.993-0.358-1.717-0.538-2.438,0.537
+		c-0.721,1.076-2.797,3.495-3.43,4.212c-0.632,0.719-1.263,0.809-2.347,0.271c-1.082-0.537-4.571-1.673-8.708-5.333
+		c-3.219-2.848-5.393-6.364-6.025-7.441c-0.631-1.075-0.066-1.656,0.475-2.191c0.488-0.482,1.084-1.255,1.625-1.882
+		c0.543-0.628,0.723-1.075,1.082-1.793c0.363-0.717,0.182-1.344-0.09-1.883c-0.27-0.537-2.438-5.825-3.34-7.977
+		c-0.902-2.15-1.803-1.792-2.436-1.792c-0.631,0-1.354-0.09-2.076-0.09c-0.722,0-1.896,0.269-2.889,1.344
+		c-0.992,1.076-3.789,3.676-3.789,8.963c0,5.288,3.879,10.397,4.422,11.113c0.541,0.716,7.49,11.92,18.5,16.223
+		C58.2,65.771,58.2,64.336,60.186,64.156c1.984-0.179,6.406-2.599,7.312-5.107C68.398,56.537,68.398,54.386,68.129,53.938z"></path>
+	</symbol>
+
+</svg>
+<div class="t_neo_cms false min-vh-100">
+
+    <div id="wrapper" class="container-fluid min-vh-100 d-flex flex-column">
+
+
+        
+        <div class="menu-compensador" style="height: 140px; display: none;"></div>
+
+        <header class="header" id="header--sticky">
+
+
+	<!-- Meta Navigation -->
+	<!-- / Meta Navigation -->
+	<!-- NAVIGATION -->
+	<div class="main-navbar">
+		<!-- Wrapper -->
+		<div class="main-navbar__wrapper container">
+			<!-- Logo -->
+			<div class="main-navbar__logo">
+								<a href="/" onclick="pushDataLayerHeaderFunnel('90.152.3.204', '/')">
+					<img src="https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/abta-travel-insurance-colour-logo-rgb.webp/215a7556-a1cc-c47c-1981-437fde8f4652?version=1.0&amp;t=1761750921338&amp;imagePreview=1" alt="site_name" class="main-navbar__logo-image ls-is-cached lazyloaded">
+					</a>
+				<!-- Logo Second -->
+				<!-- Logo Second-->
+			</div>
+			<!-- / Logo -->
+			<!-- Nav Container -->
+				<div class="main-navbar__container">
+					<!-- Navigation -->
+					<nav class="mega-menu" aria-label="mega navigation">
+						<ul class="mega-menu__list">
+								<li class="mega-menu__item ">
+									<a href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/home" aria-haspopup="true" aria-expanded="false" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/home&quot;, &quot;Home&quot;,&quot;Home&quot;, 'header navigation menu')">
+										Home
+									</a>
+									<!-- Tray -->
+									<!-- / Tray -->
+								</li>
+								<li class="mega-menu__item ">
+									<a href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/3-cover-levels" aria-haspopup="true" aria-expanded="false" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/3-cover-levels&quot;, &quot;3 Cover Levels&quot;,&quot;3 Cover Levels&quot;, 'header navigation menu')">
+										3 Cover Levels
+									</a>
+									<!-- Tray -->
+										<div class="mega-menu-tray">
+											<!-- Content -->
+											<div class="mega-menu-tray__content container">
+												<!-- Container -->
+												<div class="mega-menu-tray__container">
+													<!-- Column content -->
+													<div class="mega-menu-tray__column mega-menu-tray__column--content">
+														<div class="mega-menu-tray__info richtext">
+															<p class="font-small pb-1 text-uppercase">
+																3 Cover Levels
+															</p>
+															<a href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/3-cover-levels" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/3-cover-levels&quot;, &quot;3 Cover Levels&quot;, &quot;3 Cover Levels&quot;, 'header navigation submenu','sub menu link more')">
+Find out more															</a>
+														</div>
+													</div>
+													<!-- / Column content -->
+													<!-- Column -->
+													<div class="mega-menu-tray__column">
+														<!-- Level 1 -->
+														<ul class="mega-menu-tray__nav">
+															<li class="mega-menu-tray__nav-item">
+																<p class="mega-menu-tray__nav-item--title pb-1 hide">
+																	3 Cover Levels
+																</p>
+																	<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/abta-travel-insurance" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/3-cover-levels&quot;, &quot;3 Cover Levels&quot;,&quot;ABTA Travel Insurance&quot;, 'header navigation submenu', 'sub menu link')">
+																		ABTA Travel Insurance
+																	</a>
+																	<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/abta-travel-insurance-gold" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/3-cover-levels&quot;, &quot;3 Cover Levels&quot;,&quot;ABTA Travel Insurance Gold&quot;, 'header navigation submenu', 'sub menu link')">
+																		ABTA Travel Insurance Gold
+																	</a>
+																	<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/abta-travel-insurance-platinum" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/3-cover-levels&quot;, &quot;3 Cover Levels&quot;,&quot;ABTA Travel Insurance Platinum&quot;, 'header navigation submenu', 'sub menu link')">
+																		ABTA Travel Insurance Platinum
+																	</a>
+															</li>
+														</ul>
+														<!-- / Level 1 -->
+													</div>
+													<!-- / Column -->
+													<!-- Column content -->
+													<div class="mega-menu-tray__column mega-menu-tray__column--content">
+														<div class="mega-menu-tray__info richtext">
+														</div>
+													</div>
+													<!-- / Column content -->
+												</div>
+												<!-- Container -->
+											</div>
+											<!-- Content -->
+										</div>
+									<!-- / Tray -->
+								</li>
+								<li class="mega-menu__item ">
+									<a href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/holiday-types" aria-haspopup="true" aria-expanded="false" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/holiday-types&quot;, &quot;Holiday Types&quot;,&quot;Holiday Types&quot;, 'header navigation menu')">
+										Holiday Types
+									</a>
+									<!-- Tray -->
+										<div class="mega-menu-tray">
+											<!-- Content -->
+											<div class="mega-menu-tray__content container">
+												<!-- Container -->
+												<div class="mega-menu-tray__container">
+													<!-- Column content -->
+													<div class="mega-menu-tray__column mega-menu-tray__column--content">
+														<div class="mega-menu-tray__info richtext">
+															<p class="font-small pb-1 text-uppercase">
+																Holiday Types
+															</p>
+															<a href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/holiday-types" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/holiday-types&quot;, &quot;Holiday Types&quot;, &quot;Holiday Types&quot;, 'header navigation submenu','sub menu link more')">
+Find out more															</a>
+														</div>
+													</div>
+													<!-- / Column content -->
+													<!-- Column -->
+													<div class="mega-menu-tray__column">
+														<!-- Level 1 -->
+														<ul class="mega-menu-tray__nav">
+															<li class="mega-menu-tray__nav-item">
+																<p class="mega-menu-tray__nav-item--title pb-1 hide">
+																	Holiday Types
+																</p>
+																	<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/winter-sports" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/holiday-types&quot;, &quot;Holiday Types&quot;,&quot;Winter sports&quot;, 'header navigation submenu', 'sub menu link')">
+																		Winter sports
+																	</a>
+																	<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/adventureholidays" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/holiday-types&quot;, &quot;Holiday Types&quot;,&quot;Adventure holidays&quot;, 'header navigation submenu', 'sub menu link')">
+																		Adventure holidays
+																	</a>
+																	<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/cruise" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/holiday-types&quot;, &quot;Holiday Types&quot;,&quot;Cruise insurance&quot;, 'header navigation submenu', 'sub menu link')">
+																		Cruise insurance
+																	</a>
+															</li>
+														</ul>
+														<!-- / Level 1 -->
+													</div>
+													<!-- / Column -->
+													<!-- Column content -->
+													<div class="mega-menu-tray__column mega-menu-tray__column--content">
+														<div class="mega-menu-tray__info richtext">
+														</div>
+													</div>
+													<!-- / Column content -->
+												</div>
+												<!-- Container -->
+											</div>
+											<!-- Content -->
+										</div>
+									<!-- / Tray -->
+								</li>
+								<li class="mega-menu__item ">
+									<a href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/blogs-and-info" aria-haspopup="true" aria-expanded="false" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/blogs-and-info&quot;, &quot;Blogs &amp; info&quot;,&quot;Blogs &amp; info&quot;, 'header navigation menu')">
+										Blogs &amp; info
+									</a>
+									<!-- Tray -->
+										<div class="mega-menu-tray">
+											<!-- Content -->
+											<div class="mega-menu-tray__content container">
+												<!-- Container -->
+												<div class="mega-menu-tray__container">
+													<!-- Column content -->
+													<div class="mega-menu-tray__column mega-menu-tray__column--content">
+														<div class="mega-menu-tray__info richtext">
+															<p class="font-small pb-1 text-uppercase">
+																Blogs &amp; info
+															</p>
+															<a href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/blogs-and-info" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/blogs-and-info&quot;, &quot;Blogs &amp; info&quot;, &quot;Blogs &amp; info&quot;, 'header navigation submenu','sub menu link more')">
+Find out more															</a>
+														</div>
+													</div>
+													<!-- / Column content -->
+													<!-- Column -->
+													<div class="mega-menu-tray__column">
+														<!-- Level 1 -->
+														<ul class="mega-menu-tray__nav">
+															<li class="mega-menu-tray__nav-item">
+																<p class="mega-menu-tray__nav-item--title pb-1 hide">
+																	Blogs &amp; info
+																</p>
+																	<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/abta-travel-money" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/blogs-and-info&quot;, &quot;Blogs &amp; info&quot;,&quot;ABTA Travel Money&quot;, 'header navigation submenu', 'sub menu link')">
+																		ABTA Travel Money
+																	</a>
+																	<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/medical-screening" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/blogs-and-info&quot;, &quot;Blogs &amp; info&quot;,&quot;Medical screening&quot;, 'header navigation submenu', 'sub menu link')">
+																		Medical screening
+																	</a>
+															</li>
+														</ul>
+														<!-- / Level 1 -->
+													</div>
+													<!-- / Column -->
+													<!-- Column content -->
+													<div class="mega-menu-tray__column mega-menu-tray__column--content">
+														<div class="mega-menu-tray__info richtext">
+														</div>
+													</div>
+													<!-- / Column content -->
+												</div>
+												<!-- Container -->
+											</div>
+											<!-- Content -->
+										</div>
+									<!-- / Tray -->
+								</li>
+								<li class="mega-menu__item ">
+									<a href="https://abtatravelinsurance.onesolutiontravel.co.uk/user/login" aria-haspopup="true" aria-expanded="false" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://abtatravelinsurance.onesolutiontravel.co.uk/user/login&quot;, &quot;Existing Customers&quot;,&quot;Existing Customers&quot;, 'header navigation menu')">
+										Existing Customers
+									</a>
+									<!-- Tray -->
+									<!-- / Tray -->
+								</li>
+								<li class="mega-menu__item mega-menu__item--active">
+									<a href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/faqs-and-contact-us" aria-haspopup="true" aria-expanded="false" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/faqs-and-contact-us&quot;, &quot;FAQs and Contact Us&quot;,&quot;FAQs and Contact Us&quot;, 'header navigation menu')">
+										FAQs and Contact Us
+									</a>
+									<!-- Tray -->
+									<!-- / Tray -->
+								</li>
+							<!-- CALL TO ACTION -->
+								<li class="mega-menu__item">
+									<a href="https://abtatravelinsurance.onesolutiontravel.co.uk/quote" class="btn btn--primary text-uppercase" onclick="pushDataLayerCTA(window.location.href + &quot;https://abtatravelinsurance.onesolutiontravel.co.uk/quote&quot;, 'primary', &quot;Get a quote&quot;)">
+										Get a quote
+									</a>
+								</li>
+							<!-- /CALL TO ACTION -->
+						</ul>
+					</nav>
+					<!-- / Navigation -->
+					<!-- Nav Spacer -->
+					<div class="main-navbar__spacer hide-lg"></div>
+					<!-- / Nav Spacer -->
+					<!-- Mobile Nav Trigger -->
+					<a href="#" id="main-navbar__mobile-trigger" class="main-navbar__mobile-trigger" aria-label="Mobile Navigation">
+						<span class="main-navbar__mobile-trigger__icon">
+						</span>
+					</a>
+					<!-- / Mobile Nav Trigger -->
+				</div>
+			<!-- / Nav Container -->
+		</div>
+		<!-- / Wrapper -->
+		<!-- Search -->
+		<!-- / Search -->
+	</div>
+	<!-- NAVIGATION -->
+      <div id="extra-details-container" class="extra-details-v2 hide">
+        <div class="extra-details-v2__content">
+          <div class="extra-details-v2__content--left">
+            <div class="content__item hide" id="extraDetailsNachnameContainer">
+                <i class="item__icon icon-add_location"></i>
+                <span class="item__text" id="extraDetailsNachname"></span>
+            </div>
+          </div>
+          <div class="extra-details-v2__content--right">
+            <div class="content__item hide " id="extraDetailsTelContainer">
+              <i class="item__icon icon-call"></i>
+              <span class="item__text" id="extraDetailsTel">030 86454929</span>
+            </div>
+            <hr id="contentDividerTel" class="content__divider hide">
+            <div class="content__item hide" id="extraDetailsEmailContainer">
+              <i class="item__icon icon-email"></i>
+              <span class="item__text" id="extraDetailsEmail">Email</span>
+            </div>
+            <hr id="contentDividerEmail" class="content__divider hide">
+            <div class="content__item hide" id="extraDetailsLocationContainer">
+              <i class="item__icon icon-world"></i>
+              <span class="item__text" id="extraDetailsLocation">AXA.DE</span>
+            </div>
+            <hr id="contentDividerLocation" class="content__divider hide">
+            <div class="content__item hide" id="extraDetailsAgentNameContainer">
+              <i class="item__icon icon-comment"></i>
+              <span class="item__text" id="extraDetailsAgentName">Schaden Melden</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="extra-details-container-mobile" class="extra-details-v2--mobile accordion__extra hide">
+        <div class="extra-details-v2__content accordion__item__extra">
+          <div class="accordion__header__extra">
+            <div class="content__item__extra">
+              <span class="item__text">Contact</span>
+            </div>
+          </div>
+          <div class="accordion__body__extra">
+            <div class="body__info">
+              <div class="info__title">
+                <div class="content__item hide" id="extraDetailsAgentNameMobileContainer">
+                  <span class="item__text--title" id="extraDetailsAgentNameMobile"></span>
+                </div>
+                <div class="content__item hide" id="extraDetailsNachnameFirstMobileContainer">
+                  <span class="item__text--title" id="extraDetailsNachnameMobile-first"></span>
+                </div>
+                <div class="content__item hide" id="extraDetailsNachnameSecondMobileContainer">
+                  <span class="item__text--title" id="extraDetailsNachnameMobile-second"></span>
+                </div>
+              </div>
+              <div class="content__item hide" id="extraDetailsTelMobileContainer">
+                <i class="item__icon icon-call"></i>
+                <span class="item__text" id="extraDetailsTelMobile"></span>
+              </div>
+              <div class="content__item hide" id="extraDetailsEmailMobileContainer">
+                <i class="item__icon icon-email"></i>
+                <span class="item__text" id="extraDetailsEmailMobile"></span>
+              </div>
+              <div class="content__item hide" id="extraDetailsLocationMobileContainer">
+                <i class="item__icon icon-world"></i>
+                <span class="item__text" id="extraDetailsLocationMobile"></span>
+              </div>
+              <hr class="content__divider">
+            </div>
+            <div class="body__info">
+             <div class="content__item">
+                <i class="item__icon icon-add_location"></i>
+                <span class="item__text" id="extraDetailsNachname"></span>
+             </div>
+          </div>
+      </div>
+      </div>
+      </div>
+  <script type="text/javascript">
+  $(function() {
+    if ($(".accordion__header__extra").hasClass("accordion__active__extra")) {
+      $(".accordion__header__extra").each(function() {
+        if ($(this).hasClass('accordion__active__extra')) {
+          $(this).parent().find(".accordion__body__extra").slideToggle();
+        }
+      })
+    }
+    $(".accordion__header__extra").click(function(e) {
+      var openAccordion = $(this).closest(".accordion__item__extra").find(".accordion__body__extra");
+      $(this).closest(".accordion__extra").find(".accordion__body__extra").not(openAccordion).slideUp();
+      if ($(this).hasClass("accordion__active__extra")) {
+        $(this).removeClass("accordion__active__extra");
+      } else {
+        $(this).closest(".accordion__extra").find(".accordion__header__extra.accordion__active__extra").removeClass("accordion__active__extra");
+        $(this).addClass("accordion__active__extra");
+      }
+      openAccordion.stop(false, true).slideToggle();
+      e.preventDefault();
+    });
+  });
+
+  function getCookieAgent() {
+    var dc = document.cookie;
+    var prefix = "AGENT_DETAILS=";
+    var begin = dc.indexOf("; " + prefix);
+    if (begin == -1) {
+      begin = dc.indexOf(prefix);
+      if (begin != 0) return null;
+    } else {
+      begin += 2;
+      var end = document.cookie.indexOf(";", begin);
+      if (end == -1) {
+        end = dc.length;
+      }
+    }
+    return decodeURI(dc.substring(begin + prefix.length, end));
+  }
+  var setAgentCookie = () => {
+    var currDate = new Date();
+    currDate.setHours(currDate.getHours() + 24);
+    var ExpirationDate = currDate.toUTCString();
+    const aux = window.location.href.toString().replaceAll("#", ""); //scape the # to make the params accessible
+    const urlParams = new URL(aux).searchParams;
+    const decodeValue = (value) => (urlParams.get(value) ? (decodeURI(urlParams.get(value)).replaceAll('+', ' ')) : '')
+    if (decodeValue('AXACENTER') || decodeValue('referrerid')) {
+      const agentData = {}
+      agentData.HPID = decodeValue('HPID'); // 80066800 ++ ADD Quote Rquest
+      agentData.AxaCenter = decodeValue('AXACENTER'); // 5002001421 ++ ADD Quote Rquest
+      agentData.street = decodeValue('VM_STR_HSNR'); // Richard-Zanders-Str. 
+      agentData.firstname = decodeValue('VM_VORNAME'); // 
+      agentData.location = decodeValue('VM_ORT'); // Bergisch Gladbach (lugar) // direccion 3
+      agentData.faxvor = decodeValue('VM_FA_FAXVOR'); // 02202
+      agentData.tel = decodeValue('VM_FA_TEL'); // 936400
+      agentData.email = decodeValue('VM_EMAIL'); //grossbach.gmbh@axa.de
+      agentData.telvor = decodeValue('VM_FA_TELVOR'); // 02202
+      agentData.fax = decodeValue('VM_FA_FAX'); // 9364050
+      agentData.surname = decodeValue('VM_NACHNAME'); // oficina de  Großbach und Colleagues GmbH
+      agentData.plz = decodeValue('VM_PLZ'); // 51465 - direccion 2
+      agentData.address = decodeValue('VM_ANREDE'); // 9
+      agentData.page = decodeValue('VM_HOMEPAGE'); // https://www.axa-betreuer.de/grossbach.gmbh
+      agentData.actionCode = decodeValue('AKTIONSCODE'); // 94008Q
+      agentData.intermediaryCode = decodeValue('referrerid'); // ++ ADD Quote Rquest
+      const agentDataString = JSON.stringify(agentData)
+      document.cookie = "AGENT_DETAILS=" + agentDataString + "; expires=" + ExpirationDate + "; path=/";
+    }
+  }
+
+  const shouldRenderBanner = (cookieData) => {
+    if (cookieData && Object.keys(cookieData).length > 0) {
+      for (const key in cookieData) {
+        if (key !== 'intermediaryCode' && cookieData[key].trim() !== '') {
+          return true;
+        }
+      }
+      return false;
+    }
+    return false;
+  }
+
+  var setInfoIntoHTML = (cookieData) => {
+    if (cookieData.email) {
+      document.getElementById('extraDetailsEmail').textContent = cookieData.email;
+      document.getElementById('extraDetailsEmailContainer').className = "content__item";
+      document.getElementById('extraDetailsEmailMobile').textContent = cookieData.email;
+      document.getElementById('extraDetailsEmailMobileContainer').className = "content__item";
+      document.getElementById('contentDividerEmail').className = "content__divider";
+    }
+    if (cookieData.location || cookieData.street || cookieData.plz) {
+      document.getElementById('extraDetailsNachname').textContent = cookieData.street + ', ' + cookieData.plz + ' ' + cookieData.location;
+      document.getElementById('extraDetailsNachnameContainer').className = "content__item";
+      document.getElementById('extraDetailsNachnameMobile-first').textContent = cookieData.street;
+      document.getElementById('extraDetailsNachnameMobile-second').textContent = cookieData.plz + ' ' + cookieData.location;
+      document.getElementById('extraDetailsNachnameFirstMobileContainer').className = "content__item";
+      document.getElementById('extraDetailsNachnameSecondMobileContainer').className = "content__item";
+    }
+    if (cookieData.tel) {
+      document.getElementById('extraDetailsTel').textContent = cookieData.telvor + ' ' + cookieData.tel;
+      document.getElementById('extraDetailsTelContainer').className = "content__item";
+      document.getElementById('extraDetailsTelMobile').textContent = cookieData.telvor + ' ' + cookieData.tel;
+      document.getElementById('extraDetailsTelMobileContainer').className = "content__item";
+      document.getElementById('contentDividerTel').className = "content__divider";
+    }
+    if (cookieData.page) {
+      document.getElementById('extraDetailsLocation').textContent = cookieData.page;
+      document.getElementById('extraDetailsLocationContainer').className = "content__item";
+      document.getElementById('extraDetailsLocationMobile').textContent = cookieData.page;
+      document.getElementById('extraDetailsLocationMobileContainer').className = "content__item";
+      document.getElementById('contentDividerLocation').className = "content__divider";
+    }
+    if (cookieData.firstname || cookieData.surname) {
+      document.getElementById('extraDetailsAgentNameMobile').textContent = cookieData.firstname + ' ' + cookieData.surname;
+      document.getElementById('extraDetailsAgentNameMobileContainer').className = "content__item";
+      document.getElementById('extraDetailsAgentName').textContent = cookieData.firstname + ' ' + cookieData.surname;
+      document.getElementById('extraDetailsAgentNameContainer').className = "content__item";
+    }
+  }
+  window.addEventListener('DOMContentLoaded', function() {
+    setAgentCookie()
+    const dataExtraDetails = JSON.parse(getCookieAgent());
+    if (shouldRenderBanner(dataExtraDetails)) {
+      document.getElementById('extra-details-container').className = "extra-details-v2"
+      document.getElementById('extra-details-container-mobile').className = "extra-details-v2--mobile accordion"
+      setInfoIntoHTML(dataExtraDetails)
+    }
+  });
+  </script>	<!-- NAVIGATION MOBILE-->
+	<div class="main-navbar-responsive" style="display: none;">
+		<!-- Wrapper -->
+		<div class="main-navbar-responsive__wrapper">
+			<!-- Nav Container -->
+			<div class="main-navbar-responsive__container">
+				<!-- Navigation SITES -->
+				<!-- Navigation SITES -->
+				<!-- Navigation -->
+				<nav class="mega-menu-responsive" aria-label="mega navigation">
+					<ul class="mega-menu-responsive__list">
+
+							<li class="mega-menu-responsive__item">
+								<div class="mega-menu-responsive__item-title" aria-haspopup="true" aria-expanded="false" onclick="pushDataLayerLandingNavigationCategoryMobile('90.152.3.204',&quot;Home&quot;,&quot;Home&quot;, 'header navigation menu')"><span>
+										Home
+									</span></div>
+								<!-- Tray -->
+								<div class="mega-menu-tray-responsive" style="display: none;">
+									<!-- Content -->
+									<div class="mega-menu-tray-responsive__content container">
+										<!-- Container -->
+										<div class="mega-menu-tray-responsive__container">
+											<!-- Column content -->
+											<div class="mega-menu-tray-responsive__column mega-menu-tray-responsive__column--content">
+												<div class="mega-menu-tray__info richtext">
+													<p class="font-small pb-1 text-uppercase">
+														Home
+													</p>
+													<a href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/home" class="test2">
+Find out more													</a>
+												</div>
+											</div>
+											<!-- / Column content -->
+											<!-- Column -->
+											<div class="mega-menu-tray-responsive__column">
+												<!-- Level 1 -->
+												<ul class="mega-menu-tray-responsive__nav">
+													<li class="mega-menu-tray-responsive__nav-item">
+														<p class="mega-menu-tray-responsive__nav-item--title pb-1 hide">
+															Home
+														</p>
+													</li>
+												</ul>
+												<!-- / Level 1 -->
+											</div>
+											<!-- / Column -->
+											<!-- Column content -->
+											<div class="mega-menu-tray-responsive__column mega-menu-tray-responsive__column--content">
+												<div class="mega-menu-tray-responsive__info richtext">
+												</div>
+											</div>
+											<!-- / Column content -->
+										</div>
+										<!-- Container -->
+									</div>
+									<!-- Content -->
+								</div>
+								<!-- / Tray -->
+							</li>
+							<li class="mega-menu-responsive__item">
+								<div class="mega-menu-responsive__item-title" aria-haspopup="true" aria-expanded="false" onclick="pushDataLayerLandingNavigationCategoryMobile('90.152.3.204',&quot;3 Cover Levels&quot;,&quot;3 Cover Levels&quot;, 'header navigation menu')"><span>
+										3 Cover Levels
+									</span></div>
+								<!-- Tray -->
+								<div class="mega-menu-tray-responsive" style="display: none;">
+									<!-- Content -->
+									<div class="mega-menu-tray-responsive__content container">
+										<!-- Container -->
+										<div class="mega-menu-tray-responsive__container">
+											<!-- Column content -->
+											<div class="mega-menu-tray-responsive__column mega-menu-tray-responsive__column--content">
+												<div class="mega-menu-tray__info richtext">
+													<p class="font-small pb-1 text-uppercase">
+														3 Cover Levels
+													</p>
+													<a href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/3-cover-levels" class="test2">
+Find out more													</a>
+												</div>
+											</div>
+											<!-- / Column content -->
+											<!-- Column -->
+											<div class="mega-menu-tray-responsive__column">
+												<!-- Level 1 -->
+												<ul class="mega-menu-tray-responsive__nav">
+													<li class="mega-menu-tray-responsive__nav-item">
+														<p class="mega-menu-tray-responsive__nav-item--title pb-1 hide">
+															3 Cover Levels
+														</p>
+																<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/abta-travel-insurance" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/3-cover-levels&quot;, &quot;3 Cover Levels&quot;,&quot;ABTA Travel Insurance&quot;, 'header navigation submenu', 'sub menu link')">
+																	ABTA Travel Insurance
+																</a>
+																<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/abta-travel-insurance-gold" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/3-cover-levels&quot;, &quot;3 Cover Levels&quot;,&quot;ABTA Travel Insurance Gold&quot;, 'header navigation submenu', 'sub menu link')">
+																	ABTA Travel Insurance Gold
+																</a>
+																<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/abta-travel-insurance-platinum" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/3-cover-levels&quot;, &quot;3 Cover Levels&quot;,&quot;ABTA Travel Insurance Platinum&quot;, 'header navigation submenu', 'sub menu link')">
+																	ABTA Travel Insurance Platinum
+																</a>
+													</li>
+												</ul>
+												<!-- / Level 1 -->
+											</div>
+											<!-- / Column -->
+											<!-- Column content -->
+											<div class="mega-menu-tray-responsive__column mega-menu-tray-responsive__column--content">
+												<div class="mega-menu-tray-responsive__info richtext">
+												</div>
+											</div>
+											<!-- / Column content -->
+										</div>
+										<!-- Container -->
+									</div>
+									<!-- Content -->
+								</div>
+								<!-- / Tray -->
+							</li>
+							<li class="mega-menu-responsive__item">
+								<div class="mega-menu-responsive__item-title" aria-haspopup="true" aria-expanded="false" onclick="pushDataLayerLandingNavigationCategoryMobile('90.152.3.204',&quot;Holiday Types&quot;,&quot;Holiday Types&quot;, 'header navigation menu')"><span>
+										Holiday Types
+									</span></div>
+								<!-- Tray -->
+								<div class="mega-menu-tray-responsive" style="display: none;">
+									<!-- Content -->
+									<div class="mega-menu-tray-responsive__content container">
+										<!-- Container -->
+										<div class="mega-menu-tray-responsive__container">
+											<!-- Column content -->
+											<div class="mega-menu-tray-responsive__column mega-menu-tray-responsive__column--content">
+												<div class="mega-menu-tray__info richtext">
+													<p class="font-small pb-1 text-uppercase">
+														Holiday Types
+													</p>
+													<a href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/holiday-types" class="test2">
+Find out more													</a>
+												</div>
+											</div>
+											<!-- / Column content -->
+											<!-- Column -->
+											<div class="mega-menu-tray-responsive__column">
+												<!-- Level 1 -->
+												<ul class="mega-menu-tray-responsive__nav">
+													<li class="mega-menu-tray-responsive__nav-item">
+														<p class="mega-menu-tray-responsive__nav-item--title pb-1 hide">
+															Holiday Types
+														</p>
+																<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/winter-sports" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/holiday-types&quot;, &quot;Holiday Types&quot;,&quot;Winter sports&quot;, 'header navigation submenu', 'sub menu link')">
+																	Winter sports
+																</a>
+																<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/adventureholidays" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/holiday-types&quot;, &quot;Holiday Types&quot;,&quot;Adventure holidays&quot;, 'header navigation submenu', 'sub menu link')">
+																	Adventure holidays
+																</a>
+																<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/cruise" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/holiday-types&quot;, &quot;Holiday Types&quot;,&quot;Cruise insurance&quot;, 'header navigation submenu', 'sub menu link')">
+																	Cruise insurance
+																</a>
+													</li>
+												</ul>
+												<!-- / Level 1 -->
+											</div>
+											<!-- / Column -->
+											<!-- Column content -->
+											<div class="mega-menu-tray-responsive__column mega-menu-tray-responsive__column--content">
+												<div class="mega-menu-tray-responsive__info richtext">
+												</div>
+											</div>
+											<!-- / Column content -->
+										</div>
+										<!-- Container -->
+									</div>
+									<!-- Content -->
+								</div>
+								<!-- / Tray -->
+							</li>
+							<li class="mega-menu-responsive__item">
+								<div class="mega-menu-responsive__item-title" aria-haspopup="true" aria-expanded="false" onclick="pushDataLayerLandingNavigationCategoryMobile('90.152.3.204',&quot;Blogs &amp; info&quot;,&quot;Blogs &amp; info&quot;, 'header navigation menu')"><span>
+										Blogs &amp; info
+									</span></div>
+								<!-- Tray -->
+								<div class="mega-menu-tray-responsive" style="display: none;">
+									<!-- Content -->
+									<div class="mega-menu-tray-responsive__content container">
+										<!-- Container -->
+										<div class="mega-menu-tray-responsive__container">
+											<!-- Column content -->
+											<div class="mega-menu-tray-responsive__column mega-menu-tray-responsive__column--content">
+												<div class="mega-menu-tray__info richtext">
+													<p class="font-small pb-1 text-uppercase">
+														Blogs &amp; info
+													</p>
+													<a href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/blogs-and-info" class="test2">
+Find out more													</a>
+												</div>
+											</div>
+											<!-- / Column content -->
+											<!-- Column -->
+											<div class="mega-menu-tray-responsive__column">
+												<!-- Level 1 -->
+												<ul class="mega-menu-tray-responsive__nav">
+													<li class="mega-menu-tray-responsive__nav-item">
+														<p class="mega-menu-tray-responsive__nav-item--title pb-1 hide">
+															Blogs &amp; info
+														</p>
+																<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/abta-travel-money" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/blogs-and-info&quot;, &quot;Blogs &amp; info&quot;,&quot;ABTA Travel Money&quot;, 'header navigation submenu', 'sub menu link')">
+																	ABTA Travel Money
+																</a>
+																<a class="pb-1" href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/medical-screening" role="menuitem" onclick="pushDataLayerLandingNavigationCategory('90.152.3.204',&quot;https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/blogs-and-info&quot;, &quot;Blogs &amp; info&quot;,&quot;Medical screening&quot;, 'header navigation submenu', 'sub menu link')">
+																	Medical screening
+																</a>
+													</li>
+												</ul>
+												<!-- / Level 1 -->
+											</div>
+											<!-- / Column -->
+											<!-- Column content -->
+											<div class="mega-menu-tray-responsive__column mega-menu-tray-responsive__column--content">
+												<div class="mega-menu-tray-responsive__info richtext">
+												</div>
+											</div>
+											<!-- / Column content -->
+										</div>
+										<!-- Container -->
+									</div>
+									<!-- Content -->
+								</div>
+								<!-- / Tray -->
+							</li>
+							<li class="mega-menu-responsive__item">
+								<div class="mega-menu-responsive__item-title" aria-haspopup="true" aria-expanded="false" onclick="pushDataLayerLandingNavigationCategoryMobile('90.152.3.204',&quot;Existing Customers&quot;,&quot;Existing Customers&quot;, 'header navigation menu')"><span>
+										Existing Customers
+									</span></div>
+								<!-- Tray -->
+								<div class="mega-menu-tray-responsive" style="display: none;">
+									<!-- Content -->
+									<div class="mega-menu-tray-responsive__content container">
+										<!-- Container -->
+										<div class="mega-menu-tray-responsive__container">
+											<!-- Column content -->
+											<div class="mega-menu-tray-responsive__column mega-menu-tray-responsive__column--content">
+												<div class="mega-menu-tray__info richtext">
+													<p class="font-small pb-1 text-uppercase">
+														Existing Customers
+													</p>
+													<a href="https://abtatravelinsurance.onesolutiontravel.co.uk/user/login" class="test2">
+Find out more													</a>
+												</div>
+											</div>
+											<!-- / Column content -->
+											<!-- Column -->
+											<div class="mega-menu-tray-responsive__column">
+												<!-- Level 1 -->
+												<ul class="mega-menu-tray-responsive__nav">
+													<li class="mega-menu-tray-responsive__nav-item">
+														<p class="mega-menu-tray-responsive__nav-item--title pb-1 hide">
+															Existing Customers
+														</p>
+													</li>
+												</ul>
+												<!-- / Level 1 -->
+											</div>
+											<!-- / Column -->
+											<!-- Column content -->
+											<div class="mega-menu-tray-responsive__column mega-menu-tray-responsive__column--content">
+												<div class="mega-menu-tray-responsive__info richtext">
+												</div>
+											</div>
+											<!-- / Column content -->
+										</div>
+										<!-- Container -->
+									</div>
+									<!-- Content -->
+								</div>
+								<!-- / Tray -->
+							</li>
+							<li class="mega-menu-responsive__item">
+								<div class="mega-menu-responsive__item-title" aria-haspopup="true" aria-expanded="false" onclick="pushDataLayerLandingNavigationCategoryMobile('90.152.3.204',&quot;FAQs and Contact Us&quot;,&quot;FAQs and Contact Us&quot;, 'header navigation menu')"><span>
+										FAQs and Contact Us
+									</span></div>
+								<!-- Tray -->
+								<div class="mega-menu-tray-responsive" style="display: none;">
+									<!-- Content -->
+									<div class="mega-menu-tray-responsive__content container">
+										<!-- Container -->
+										<div class="mega-menu-tray-responsive__container">
+											<!-- Column content -->
+											<div class="mega-menu-tray-responsive__column mega-menu-tray-responsive__column--content">
+												<div class="mega-menu-tray__info richtext">
+													<p class="font-small pb-1 text-uppercase">
+														FAQs and Contact Us
+													</p>
+													<a href="https://webserver-salesaxapartners-prd.lfr.cloud/en-GB/web/neo-travel-uk-abta/faqs-and-contact-us" class="test2">
+Find out more													</a>
+												</div>
+											</div>
+											<!-- / Column content -->
+											<!-- Column -->
+											<div class="mega-menu-tray-responsive__column">
+												<!-- Level 1 -->
+												<ul class="mega-menu-tray-responsive__nav">
+													<li class="mega-menu-tray-responsive__nav-item">
+														<p class="mega-menu-tray-responsive__nav-item--title pb-1 hide">
+															FAQs and Contact Us
+														</p>
+													</li>
+												</ul>
+												<!-- / Level 1 -->
+											</div>
+											<!-- / Column -->
+											<!-- Column content -->
+											<div class="mega-menu-tray-responsive__column mega-menu-tray-responsive__column--content">
+												<div class="mega-menu-tray-responsive__info richtext">
+												</div>
+											</div>
+											<!-- / Column content -->
+										</div>
+										<!-- Container -->
+									</div>
+									<!-- Content -->
+								</div>
+								<!-- / Tray -->
+							</li>
+						<!-- CALL TO ACTION -->
+							<a href="https://abtatravelinsurance.onesolutiontravel.co.uk/quote" class="btn btn--primary" onclick="pushDataLayerCTA(window.location.href + &quot;https://abtatravelinsurance.onesolutiontravel.co.uk/quote&quot;, 'secondary ghost', &quot;Get a quote&quot;)">
+								Get a quote
+							</a>
+						<!-- /CALL TO ACTION -->
+					</ul>
+				</nav>
+				<!-- / Navigation -->
+				<!-- Navigation PAGES SECOND -->
+				<!-- Navigation PAGES SECOND -->
+			</div>
+			<!-- / Nav Container -->
+		</div>
+		<!-- / Wrapper -->
+	</div>
+	<!-- /NAVIGATION MOBILE-->
+
+
+	<script>
+		var cab = $('header#header--sticky');
+		var m_co = $('.menu-compensador');
+		var alto = parseInt(cab.outerHeight());
+		m_co.height(alto);
+
+		function scrollOn() {
+			if ($(window).scrollTop() > alto - 30) {
+				$('body').addClass('sticky');
+				$('#header--sticky').addClass('nav-down');
+				m_co.show();
+			} else {
+				$('body').removeClass('sticky');
+				$('#header--sticky').removeClass('nav-down nav-up');
+				cab.removeAttr("style");
+				m_co.hide();
+			}
+		}
+		var scrollActual = 0;
+
+		function scrollUp() {
+			var scroll = $(this).scrollTop();
+			if (scroll > scrollActual) {
+				$('#header--sticky').removeClass('nav-up');
+			} else {
+				$('body').addClass('sticky');
+				$('#header--sticky').addClass('nav-up');
+			}
+			scrollActual = scroll;
+		};
+		scrollOn();
+		$(window).scroll(function() {
+			scrollUp();
+			scrollOn();
+		});
+		jQuery(document).ready(function($) {
+			// CLOSE SEARCH
+			$(document).click(function(e) {
+				if (!$(e.target).parent(".main-navbar__search--search").length) {
+					$(".main-navbar__search--search").find(".input").removeClass("toggle");
+					$(".main-navbar__search--search").removeClass("openToggle");
+					$('.main-navbar__search--close').addClass('hide');
+				}
+			});
+			// CLICK SEARCH
+			$('.search-click').click(function() {
+				if ($('input.toggle').length) {
+					//$('.main-navbar__search--close > icon-close').toggleClass('toggle');
+					$('.main-navbar__search').submit();
+				} else {
+					$('.main-navbar__search--search').addClass('openToggle');
+					$('.input').toggleClass('toggle');
+					$('.main-navbar__search--close').removeClass('hide');
+					// ¿OPEN SEARCH WITH MENU?
+					if ($('#main-navbar__mobile-trigger').attr('data-active') == '') {
+						$('#main-navbar__mobile-trigger').removeAttr('data-active');
+						$('.main-navbar-responsive').slideToggle();
+					}
+				}
+				pushDataLayerBurgerMenu('90.152.3.204',this)
+			});
+			$('.main-navbar__search--close').click(function() {
+				if ($('input.toggle').length) {
+					$('.input').toggleClass('toggle');
+					$('.main-navbar__search--close').removeClass('hide');
+				}
+			});
+			// RESPONSIVE MENU
+			$('#main-navbar__mobile-trigger').on('click', function(e) {
+				e.preventDefault();
+				pushDataLayerBurgerMenu('90.152.3.204',this)
+				$('.main-navbar-responsive').slideToggle();
+				if ($(this).attr('data-active') == '') {
+					$(this).removeAttr('data-active');
+					$('.meta-nav__language').removeAttr('data-active');
+					$('.mega-menu-responsive').removeClass('opacity--black');
+					$('.main-navbar-responsive__sites').removeClass('opacity--black');
+				} else {
+					$(this).attr('data-active', '')
+				}
+			});
+			$('.mega-menu-responsive__list > .mega-menu-responsive__item > .mega-menu-responsive__item-title').each(function(index) {
+				$(this).on('click', function(e) {
+					if ($(this).parent().find('.mega-menu-tray-responsive')) {
+						$(this).parent().find('.mega-menu-tray-responsive').show();
+						//$(this).find('.mega-menu-tray-responsive').slideToggle();
+						if ($('.mega-menu-responsive__item').hasClass('openSubMenu')) {
+							$(this).parent().removeClass("openSubMenu");
+							$(this).parent().find('.mega-menu-tray-responsive').hide();
+							$('.mega-menu-tray-responsive--back').remove();
+						} else {
+							$(this).parent().addClass("openSubMenu");
+							$('.openSubMenu .mega-menu-responsive__item-title:first').prepend('<div class="mega-menu-tray-responsive--back">BACK</div>');
+						}
+					}
+				});
+			});
+			// RESPONSIVE MENU
+			$('.meta-nav__language').on('click', function(e) {
+				if ($(this).attr('data-active') == '') {
+					$(this).removeAttr('data-active');
+				} else {
+					$(this).attr('data-active', '');
+				}
+			});
+			$('.main-navbar-responsive__language').on('click', function(e) {
+				e.preventDefault();
+				if ($(this).find('.meta-nav__language').attr('data-active') == '') {
+					$(this).find('.meta-nav__language').removeAttr('data-active');
+					$('.mega-menu-responsive').removeClass('opacity--black');
+					$('.main-navbar-responsive__sites').removeClass('opacity--black');
+				} else {
+					$(this).find('.meta-nav__language').attr('data-active', '');
+					$('.mega-menu-responsive').addClass('opacity--black');
+					$('.main-navbar-responsive__sites').addClass('opacity--black');
+				}
+			});
+			// ¿HAVE SITES?
+			if ($('.main-navbar-responsive__sites').length > 0) {
+				$('#meta-nav__list--site').clone().appendTo('.main-navbar-responsive__sites');
+			}
+			// ¿HAVE PAGES?
+			if ($('.main-navbar-responsive__pages').length > 0) {
+				$('#meta-nav__list--pages').clone().appendTo('.main-navbar-responsive__pages');
+			}
+			// ¿HAVE LANGUAGE?
+			if ($('.main-navbar-responsive__language').length > 0) {
+				$('.meta-nav__language').clone().appendTo('.main-navbar-responsive__language');
+			}
+			// ¿HAVE LANGUAGE?
+			if ($('.meta-nav__highlight > .meta-nav__highlight-item').length > 0) {
+				$('.meta-nav__highlight-item > a').clone().appendTo('.mega-menu-responsive__list');
+			}
+		});
+	</script>
+		<!-- / V2 -->
+
+<script type="text/javascript">
+	var isInternalUrl = (destination) => {
+		var destinationUrl = new URL(destination);
+		return window.location.host === destinationUrl.host ? 'internal' : 'external';
+	}
+
+	function pushDataLayerLandingNavigationCategory(ipAddress, url, categoryName, entryName, navType, entryType) {
+		var linkType = isInternalUrl(url);
+		if(entryType == null){
+		    dataLayer.push({
+             	"event": "menu_click",
+            	'nav_item_type': navType,
+                'menu_categ': categoryName,
+                'entry_name': entryName,
+                'link_type': linkType,
+                'link_href': url,
+                'ip_address': ipAddress
+            });
+		}else{
+		     dataLayer.push({
+            	"event": "menu_click",
+           		'nav_item_type': navType,
+           		'menu_categ': categoryName,
+           		'entry_name': entryName,
+           		'entry_type': entryType,
+           		'link_type': linkType,
+          		'link_href': url,
+          		'ip_address': ipAddress
+           	});
+		}
+		window.location = url;
+	}
+
+	function pushDataLayerLandingNavigationCategoryMobile(ipAddress, categoryName, entryName, navType) {
+		dataLayer.push({
+			"event": "menu_click",
+			'nav_item_type': navType,
+			'menu_categ': categoryName,
+			'entry_name': entryName,
+			'ip_address': ipAddress
+		});
+	}
+
+	function pushDataLayerBurgerMenu(ipAddress, element) {
+		status = 'open'
+		const validateV2 = element.dataset && Object.keys(element.dataset).length && element.dataset.hasOwnProperty('active')
+		const validateV1 = element.ariaExpanded === 'true'
+		if ((validateV2) || validateV1) {
+			status = 'close'
+		}
+		dataLayer.push({
+			'event': 'click_burger_menu',
+			'status': status,
+			'ip_address': ipAddress
+		});
+	}
+
+	function pushDataLayerHeaderFunnel(ipAddress, linkHref) {
+		dataLayer.push({
+			"event": "logo_click",
+			'nav_item_type': 'brand logo',
+			'link_type': 'internal',
+			'link_href': linkHref,
+			'ip_address': ipAddress
+		});
+	}
+
+	function pushDataLayerLanguageNavigation(languageUpdate) {
+       	dataLayer.push({
+       		"event": "update_website_language",
+       		'website_language_updated': languageUpdate,
+       		'ip_address': themeDisplay.getRemoteAddr()
+       	});
+    }
+
+    function pushDataLayerCardNavigation(elementType, elementText, itemListId, itemListName, productName, itemId, price, position) {
+       	dataLayer.push({
+       	    'event': 'select_item',
+            'element_type' : elementType, // CTA type and position for the selected element
+            'element_text' : elementText, // CTA text for the selected element
+            'ecommerce': {
+                'item_list_id': itemListId, // eg. Page ID
+                'item_list_name': itemListName, // Page name
+                'items': [
+                    {
+                        'item_name': productName, // product name
+                        'item_id': itemId, // product ID
+                        'price': price,  // product price number
+                        'item_brand': "Axa Schengen",
+                        'item_category': 'insurance',
+                        'item_category2': '',
+                        'item_category3': '',
+                        'item_category4': '',
+                        'item_variant': '',
+                        'item_list_name': itemListName, // product list name "Page Title" component name
+                        'item_list_id': itemListId, // product list ID  "Page Title" component name
+                        'index': position,  // place of the product on the list 0 - 1 ?
+                        'quantity': '1'  // always 1
+                    }]
+                  },
+                'ip_address' : themeDisplay.getRemoteAddr()
+           	});
+        }
+</script>         </header>
+
+
+        <section id="content" class="flex-fill">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		<style type="text/css">
+			.master-layout-fragment .portlet-header {
+				display: none;
+			}
+		</style>
+
+		
+
+		<div class="columns-1" id="main-content" role="main">
+	<div class="portlet-layout row">
+		<div class="col-md-12 portlet-column portlet-column-only" id="column-1">
+			<div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+    
+		<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-barebone portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_EpSDZZFoY5u0_">
+			<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_EpSDZZFoY5u0"></span>
+    
+    
+
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+			<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_EpSDZZFoY5u0">
+
+
+		<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+				<div class="autofit-col autofit-col-end">
+					<div class="autofit-section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visible-interaction">
+
+	
+
+	
+</div>					</div>
+				</div>
+			</div>
+
+        
+		
+			
+            
+               <div class=" portlet-content-container">
+				
+
+
+
+
+
+
+
+
+    
+	    <div class="portlet-body">
+    
+
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+				
+					
+
+						
+						
+						
+                        
+						    <div class="" data-fragments-editor-item-id="31201-16516347" data-fragments-editor-item-type="fragments-editor-mapped-item">
+						
+                        
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+        
+		    <div class="journal-content-article " data-analytics-asset-id="16516345" data-analytics-asset-title="ABTA - Contact Details - TGTM" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="16516347">
+		
+        	
+			
+            
+
+			
+
+    <!-- hero-banner hero-banner--slim -->
+    <div class="hero-banner hero-banner--slim">
+        <div class="hero-banner__mask">
+		    <picture>
+			    <picture data-fileentryid="16516333"><source media="(max-width:2000px)" srcset="/o/adaptive-media/image/16516333/preview-2000/ABTA_Contact_Banner_01.webp?t=1765098485584"><img class="lazyload" src="https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/ABTA_Contact_Banner_01.webp/4e27050c-91f6-339d-c53f-7e16730ab08f?t=1765098485584" data-fileentryid="16516333" data-src="https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/ABTA_Contact_Banner_01.webp/4e27050c-91f6-339d-c53f-7e16730ab08f?t=1765098485584" data-srcset="https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/ABTA_Contact_Banner_01.webp/4e27050c-91f6-339d-c53f-7e16730ab08f?t=1765098485584"></picture>
+            </picture>
+			   		<div class="hero-banner__mask">
+                <div class="hero-banner__container">
+                    <div class="hero-banner__content text-left">
+								<div class="b__breadcrumbs">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+    
+		<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_  portlet-static portlet-static-end portlet-barebone portlet-breadcrumb " id="p_p_id_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_">
+			<span id="p_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet"></span>
+    
+    
+
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+			<section class="portlet" id="portlet_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet">
+
+
+		<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+				<div class="autofit-col autofit-col-end">
+					<div class="autofit-section">
+					</div>
+				</div>
+			</div>
+
+        
+		
+			
+            
+               <div class=" portlet-content-container">
+				
+
+
+
+
+
+
+
+
+    
+	    <div class="portlet-body">
+    
+
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav aria-label="Breadcrumb" id="_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_breadcrumbs-defaultScreen">
+	
+			<ol class="breadcrumb">
+			<li class="breadcrumb-item">
+					<a class="breadcrumb-link" href="/en-GB/web/neo-travel-uk-abta">
+						<span class="breadcrumb-text-truncate">neo-travel-uk-abta</span>
+					</a>
+			</li>
+			<li class="breadcrumb-item">
+					<span class="active breadcrumb-text-truncate">FAQs and Contact Us</span>
+			</li>
+	</ol>
+
+	
+</nav>
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+
+    
+		</div>
+	
+
+
+			</div>
+            
+            
+
+		
+
+		</div>
+	</section>
+
+	
+
+		
+		
+
+
+
+
+
+
+
+
+    
+		</div>
+	
+
+
+
+
+
+
+
+
+								</div>
+                        <h2 class="font-bold-publicoheadline font-display-4 color-white">Contact Us</h2>
+                        <p class="hero-banner__text font-medium color-white"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /hero-banner -->
+
+
+	<div class="article-full__content pt-5 pb-5">
+        <div class="article-full__container container">
+			
+            <div class="article-full__row--full">
+                <div class="article-full__left">
+					
+					
+					
+							<div class="article-full__resumen article-full__resumen--primary">
+							<h3 class="article-full__left--title font-x-big font-bold-publicoheadline">CUSTOMER SERVICE</h3>
+							<p class="font-xx-large"></p><h3>0203 093 0767</h3>
+
+<p>Lines open: Monday to Friday 8.30am to 8pm, Saturday 9am to 5pm and Sundays 10am - 4pm.<br>
+<br>
+You can also <strong><a href="mailto:abtatravelinsurance@rockinsurance.com" title="abtatravelinsurance@rockinsurance.com">email us</a></strong> or write to:</p>
+
+<p><strong>ABTA Travel Insurance, </strong><b>Britannia House</b></p>
+
+<p><b>3-5 Rushmills Business Park,</b></p>
+
+<p><b>Bedford Road, Northampton</b></p>
+
+<p><b>NN4 7YB</b><b> </b></p><p></p>
+						</div>
+
+
+						
+					
+							<div class="article-full__text">
+							<h3 class="article-full__left--title font-x-big font-bold-publicoheadline">EMERGENCY MEDICAL AND REPATRIATION ASSISTANCE LINE</h3>
+							<p class="font-xx-large"></p><h3>0203 093 0768</h3>
+
+<p>Lines open: 24/7. Call charges from outside the UK may vary.</p><p></p>
+						</div>
+
+
+						
+					
+							<div class="article-full__text">
+							<h3 class="article-full__left--title font-x-big font-bold-publicoheadline">TRAVEL INSURANCE CLAIMS</h3>
+							<p class="font-xx-large"></p><h3>0203 093 0768</h3>
+
+<p>Lines open: Monday to Saturday 9am to 5pm</p><p></p>
+						</div>
+
+
+						
+					
+							<div class="article-full__text">
+							<h3 class="article-full__left--title font-x-big font-bold-publicoheadline">COMPLAINTS</h3>
+							<p class="font-xx-large"></p><p>SALES COMPLAINTS</p>
+
+<h3>0203 093 0767</h3>
+
+<p>Lines open: Monday to Friday 9am to 5pm<br>
+<br>
+CLAIMS COMPLAINTS</p>
+
+<h3>0203 093 0768</h3>
+
+<p>Lines open: Monday to Friday 9am to 5pm<br>
+<br>
+ASSISTANCE COMPLAINTS</p>
+
+<h3>0203 093 0768</h3>
+
+<p>Lines open: 24/7 </p>
+
+<p> </p>
+
+<p>Calls on all lines may be recorded for training and monitoring purposes.</p><p></p>
+						</div>
+
+
+						
+
+						
+					<div class="article-full__text">
+						<p class="article-full__left--title font-x-big font-bold-publicoheadline"></p>
+						<p class="font-xx-large"></p>
+													
+
+					</div>
+					
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+			
+				
+		
+        		
+			</div>
+		
+        
+
+		
+
+        
+    
+
+    
+						
+						
+                        
+						    </div>
+						
+                        
+                        
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+
+    
+		</div>
+	
+
+
+			</div>
+            
+            
+
+		
+
+		</div>
+	</section>
+
+	
+
+		
+		
+
+
+
+
+
+
+
+
+    
+		</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+    
+		<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-barebone portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_dmUAVLzypLdV_">
+			<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_dmUAVLzypLdV"></span>
+    
+    
+
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+			<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_dmUAVLzypLdV">
+
+
+		<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+				<div class="autofit-col autofit-col-end">
+					<div class="autofit-section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visible-interaction">
+
+	
+
+	
+</div>					</div>
+				</div>
+			</div>
+
+        
+		
+			
+            
+               <div class=" portlet-content-container">
+				
+
+
+
+
+
+
+
+
+    
+	    <div class="portlet-body">
+    
+
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+				
+					
+
+						
+						
+						
+                        
+						    <div class="" data-fragments-editor-item-id="31201-16459466" data-fragments-editor-item-type="fragments-editor-mapped-item">
+						
+                        
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+        
+		    <div class="journal-content-article " data-analytics-asset-id="16459464" data-analytics-asset-title="ABTA - FAQ - TGTM" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="16459466">
+		
+        	
+			
+            
+
+			
+
+<!-- Faq -->
+<section class="page-faqs sheme-grease-light">
+    <div class="hero-banner hero-banner--small">
+        <div class="hero-banner__mask color-white" style="background-image: url('https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/ABTA_Travel_Money_Header.webp/a599f000-6fad-07dc-6ebd-adadcc284cc9?t=1764594059728')">
+            <div class="hero-banner__container">
+                <div class="hero-banner__content">
+                    <h1 class="font-display-4 font-bold-publicoheadline text-center pb-2">Need help? Ask your question</h1>
+					<p class="text-center">Ex : How to get an insurance quote?</p>
+
+						<div class="hero-banner--container">
+							<form id="f1" name="f1" action="javascript:void()" onsubmit="if(this.t1.value!=null &amp;&amp; this.t1.value!='') parent.findString(this.t1.value);return false;">
+								<fieldset class="form__group form__group--inline">
+										<input type="text" id="t1" name="t1" class="form__large" placeholder="Search">
+										<button type="submit" aria-label="Search" class="btn btn--secondary btn--small" onclick="pushDataLayerSearch(this.previousElementSibling)"><span class="icon-search color-white"></span></button>
+								</fieldset>
+							</form>
+						</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-4">
+        <!-- accordion -->
+
+			<!-- item -->
+				<script type="application/ld+json">
+					{
+					  "@context": "https://schema.org",
+					  "@type": "FAQPage",
+					  "mainEntity": [
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - If you need to make a claim",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Before you make a new claim, contact your travel provider or tour operator first to discuss what options are available to you.&amp;nbsp;
+
+If your package provider or airline has cancelled your trip you can claim a full cash refund from them. You don’t need to accept a voucher for a future booking. If you do accept a voucher, the booking date of the trip will be the date you use the voucher.&amp;nbsp;
+
+If there is a legal obligation for the package provider or airline to offer a refund and they refuse, your debit or credit card provider may be able to assist.&amp;nbsp;&amp;nbsp;
+
+If they can&#39;t resolve your request, you can make a claim on your policy quickly by calling us on 0203 093 0768*.
+
+While we&#39;re answering as many calls as possible, as well as looking after our employees&#39; well-being, you may wait longer than usual at this uncertain time.
+
+*Lines open: Monday-Friday 9am to 5pm."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - What happens if my child is unwell whilst we are away?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "If your child falls ill whilst you are away you can contact our emergency medical telephone number 24 hours a day. They can help to support and advise you on next steps and ensure you child is well looked after. Of course, if it is a medical emergency, call an ambulance straight away."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - What is family cover?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Family cover is where you have at least one child travelling under the insurance."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - My child has recently been diagnosed with Asthma, do I need to tell you?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Our travel insurance allows you to let us know about any medical conditions online when getting a quote. Simply click yes to pre-existing medical conditions and you will be asked information about the condition. It’s all available online- without the need to make a phone call."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - Are banana boats covered under your policy?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Banana boating is included within the standard policy and no upgrade is needed for this. Please check your policy booklet for full details."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - If I&#39;ve got a GHIC do I need insurance?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "If you are travelling to countries within the European Union (EU), the European Economic Area (EEA) or Switzerland you are strongly advised to obtain a European Health Insurance Card (GHIC).&amp;nbsp;You can apply for an GHIC online.&amp;nbsp; This will entitle you to benefit from the health care arrangements which exist between countries within the EU/EEA or Switzerland. Be careful of other website that will often try and charge you for an GHIC card.
+
+An GHIC will not cover treatment in private clinics nor will it cover the cost of getting you home. An air ambulance from Europe to the UK could cost in excess of £25,000."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - I&#39;m travelling with a group of friends, if there only one policy number?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Yes. You will only have one policy number which will cover you all."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - Where can I get my documents?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "You can download your documents after purchasing your policy. The documents are all available online via a login so you can return to at any point. You can print them or keep them on your phone in the event of a claim."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - I&#39;ve got a GHIC card but some of my friends travelling don&#39;t. Do we all need one?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Each traveller needs to have their own Global Health Insurance Card (GHIC) Card. If you are travelling to countries within the European Union (EU), the European Economic Area (EEA) or Switzerland you are strongly advised to obtain a (GHIC).&amp;nbsp;You can apply for an GHIC either online&amp;nbsp;. This will entitle you to benefit from the health care arrangements which exist between countries within the EU/EEA or Switzerland. Be careful of other website that will often try and charge you for an EHIC card.
+
+An GHIC will not cover treatment in private clinics nor will it cover the cost of getting you home. An air ambulance from Europe to the UK could cost in excess of £25,000."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - We are going on a trekking holiday. Is this covered?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Trekking/walking /hiking up to 2,500 metres above sea level is covered under the standard policy for no extra charge. Please check your policy booklet for full information."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - What happens if someone falls ill during the trip?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "If someone in the party falls ill whilst you are on your trip, you can contact us 24 hours a day on our emergency medical helpline. Of course if it’s a medical emergency, call an ambulance."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - What happens if one of us falls ill during our holiday?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "If one of you falls ill during your holiday, you can contact us 24 hours a day on our emergency medical helpline. Of course if it’s a medical emergency, call an ambulance."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - I&#39;ve got an GHIC card but my partner doesn&#39;t. Do we both need one?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Each traveller needs to have their own Global Health Insurance Card (GHIC) Card. If you are travelling to countries within the European Union (EU), the European Economic Area (EEA) or Switzerland you are strongly advised to obtain a (GHIC).&amp;nbsp;You can apply for an GHIC either online. This will entitle you to benefit from the health care arrangements which exist between countries within the EU/EEA or Switzerland. Be careful of other website that will often try and charge you for an EHIC card.
+
+An GHIC will not cover treatment in private clinics nor will it cover the cost of getting you home. An air ambulance from Europe to the UK could cost in excess of £25,000."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - I&#39;m travelling with my husband, is there only one policy number?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Yes. You will only have one policy number which will cover you both."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - Someone told me I should get an EHIC. What is it?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "If you are travelling to countries within the European Union (EU), the European Economic Area (EEA) or Switzerland you are strongly advised to obtain a (EHIC). You can apply for an EHIC either online at www.ehic.org.uk or by telephoning 0300 330 1350. This will entitle you to benefit from the health care arrangements which exist between countries within the EU/EEA or Switzerland. Be careful of other website that will often try and charge you for an EHIC card.
+
+An EHIC will not cover treatment in private clinics nor will it cover the cost of getting you home. An air ambulance from Europe to the UK could cost in excess of £25,000."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - I&#39;m thinking about going on a safari whilst away. Is this covered?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "A safari is covered under the standard policy for no extra charge. Please check your policy booklet for full information."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - What happens if I fall ill during my trip?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Don’t worry- you can contact us 24 hours a day on our emergency medical helpline. Of course if it’s a medical emergency, call an ambulance. As part of our policy, if you are required to stay in hospital for an extended period of time, we can arrange for a family member to be flown out to be with you."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - If I fall ill, how will ABTA Travel Insurance help me?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "By choosing ABTA Travel Insurance, you can rely on us to arrange your medical treatment for you. Our emergency medical team will organise the care you need, including air ambulances and doctor escorts where necessary."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - What will I be covered for if I miss my flight?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "You will be covered for reasonable additional accommodation and travel costs, up to the limit in your policy, that you had to pay in order to reach your destination or return to the United Kingdom, if you fail to board the public transport on which you are booked to travel as a result of:
+&amp;nbsp;
+
+
+	the failure of other public transport or
+	an accident to or breakdown of the vehicle in which you are travelling or
+	an accident or breakdown happening ahead of you on a public road which causes an unexpected delay to the vehicle in which you are travelling or
+	strike, industrial action or adverse weather conditions
+
+
+Please refer to the policy booklet for the full terms and conditions."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - Am I covered as soon as I get the travel insurance reference number?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "For single trip travel insurance your cancellation cover starts from the date we issue the policy &#8211; when you receive your reference number. The rest of your cover will start on your intended departure date.
+
+For annual multi-trip travel insurance your cancellation cover begins from the start date of the policy which you can choose."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - Do I need to tell you if I develop a new medical condition after I purchase my policy?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Unlike some other insurers, we do not require you to tell us about changes to your health during your period of insurance as detailed on your schedule.&amp;nbsp; However, you should consult your doctor before your trip to confirm you are able to travel.&amp;nbsp; If you have your doctor’s permission, you’ll be covered by us.
+
+
+When you renew your policy or arrange a new quote, you must tell us about any changes in your health.&amp;nbsp; Our advanced medical screening makes it easy to do this online or by phone.&amp;nbsp;&amp;nbsp;
+
+
+You should also ensure you are taking any medication as recommended or prescribed, you aren’t travelling against the public transport providers stipulations and you aren’t travelling to obtain treatment, surgery or investigations.&amp;nbsp;&amp;nbsp;"
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - I&#39;m looking for an annual multi-trip policy. What is the longest I can go on holiday for?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "No single trip may last longer than 31 nights with AXA’s annual multi-trip policy. If you choose winter sports cover, you can take a winter sports trip for up to 31 nights at a time."
+								}
+							}
+							,
+							{
+								"@type": "Question",
+								"name": "Frequently Asked Questions - What is your definition or Europe?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "If you’re buying travel insurance for Europe, ABTA Travel Insurance will also cover you in some non-European countries with a Mediterranean coastline.
+
+The countries we define as Europe are:
+
+Albania; Andorra; Austria; Belarus; Belgium; Bosnia and Herzegovina; Bulgaria; Canary Islands; Channel Islands; Corfu; Corsica; Crete; Croatia; Cyprus; Czech Republic; Denmark; Estonia; Finland; France; Fuerteventura; Germany; Gibraltar; Gozo; Gran Canaria; Greece; Hungary; Ibiza; Iceland; Irish Republic; Italy; Kos; Lanzarote; Latvia; Liechtenstein; Lithuania; Luxembourg; Macedonia; Madeira; Majorca; Malta; Menorca; Moldova; Monaco; Montenegro; Netherlands; Norway; Poland; Portugal; Rhodes; Romania; Russia (West of Ural Mountains); San Marino; Sardinia; Serbia; Sicily; Slovakia; Slovenia; Spain; Sweden; Switzerland; Tenerife; Ukraine; Vatican City."
+								}
+							}
+							
+					
+					]}
+					</script>
+
+					<div class="accordion p-5">
+						<h2 class="font-display-6 mb-2">Frequently Asked Questions</h2>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;If you need to make a claim&quot;)">If you need to make a claim</h3>
+								<div class="accordion__body">
+									<p>Before you make a new claim, contact your travel provider or tour operator first to discuss what options are available to you.&nbsp;</p>
+
+<p>If your package provider or airline has cancelled your trip you can claim a full cash refund from them. You don’t need to accept a voucher for a future booking. If you do accept a voucher, the booking date of the trip will be the date you use the voucher.&nbsp;</p>
+
+<p>If there is a legal obligation for the package provider or airline to offer a refund and they refuse, your debit or credit card provider may be able to assist.&nbsp;&nbsp;</p>
+
+<p>If they can't resolve your request, you can make a claim on your policy quickly by calling us on 0203 093 0768*.</p>
+
+<p>While we're answering as many calls as possible, as well as looking after our employees' well-being, you may wait longer than usual at this uncertain time.</p>
+
+<p>*Lines open: Monday-Friday 9am to 5pm.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;What happens if my child is unwell whilst we are away?&quot;)">What happens if my child is unwell whilst we are away?</h3>
+								<div class="accordion__body">
+									<p>If your child falls ill whilst you are away you can contact our emergency medical telephone number 24 hours a day. They can help to support and advise you on next steps and ensure you child is well looked after. Of course, if it is a medical emergency, call an ambulance straight away.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;What is family cover?&quot;)">What is family cover?</h3>
+								<div class="accordion__body">
+									<p>Family cover is where you have at least one child travelling under the insurance.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;My child has recently been diagnosed with Asthma, do I need to tell you?&quot;)">My child has recently been diagnosed with Asthma, do I need to tell you?</h3>
+								<div class="accordion__body">
+									<p>Our travel insurance allows you to let us know about any medical conditions online when getting a quote. Simply click yes to pre-existing medical conditions and you will be asked information about the condition. It’s all available online- without the need to make a phone call.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;Are banana boats covered under your policy?&quot;)">Are banana boats covered under your policy?</h3>
+								<div class="accordion__body">
+									<p>Banana boating is included within the standard policy and no upgrade is needed for this. Please check your policy booklet for full details.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;If I've got a GHIC do I need insurance?&quot;)">If I've got a GHIC do I need insurance?</h3>
+								<div class="accordion__body">
+									<p>If you are travelling to countries within the European Union (EU), the European Economic Area (EEA) or Switzerland you are strongly advised to obtain a European Health Insurance Card (GHIC).&nbsp;<a href="https://www.nhs.uk/using-the-nhs/healthcare-abroad/apply-for-a-free-uk-global-health-insurance-card-ghic/">You can apply for an GHIC online.</a>&nbsp; This will entitle you to benefit from the health care arrangements which exist between countries within the EU/EEA or Switzerland. Be careful of other website that will often try and charge you for an GHIC card.<br>
+<br>
+An GHIC will not cover treatment in private clinics nor will it cover the cost of getting you home. An air ambulance from Europe to the UK could cost in excess of £25,000.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;I'm travelling with a group of friends, if there only one policy number?&quot;)">I'm travelling with a group of friends, if there only one policy number?</h3>
+								<div class="accordion__body">
+									<p>Yes. You will only have one policy number which will cover you all.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;Where can I get my documents?&quot;)">Where can I get my documents?</h3>
+								<div class="accordion__body">
+									<p>You can download your documents after purchasing your policy. The documents are all available online via a login so you can return to at any point. You can print them or keep them on your phone in the event of a claim.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;I've got a GHIC card but some of my friends travelling don't. Do we all need one?&quot;)">I've got a GHIC card but some of my friends travelling don't. Do we all need one?</h3>
+								<div class="accordion__body">
+									<p>Each traveller needs to have their own Global Health Insurance Card (GHIC) Card. If you are travelling to countries within the European Union (EU), the European Economic Area (EEA) or Switzerland you are strongly advised to obtain a (GHIC).&nbsp;<a href="https://www.nhs.uk/using-the-nhs/healthcare-abroad/apply-for-a-free-uk-global-health-insurance-card-ghic/">You can apply for an GHIC either online</a>&nbsp;. This will entitle you to benefit from the health care arrangements which exist between countries within the EU/EEA or Switzerland. Be careful of other website that will often try and charge you for an EHIC card.<br>
+<br>
+An GHIC will not cover treatment in private clinics nor will it cover the cost of getting you home. An air ambulance from Europe to the UK could cost in excess of £25,000.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;We are going on a trekking holiday. Is this covered?&quot;)">We are going on a trekking holiday. Is this covered?</h3>
+								<div class="accordion__body">
+									<p>Trekking/walking /hiking up to 2,500 metres above sea level is covered under the standard policy for no extra charge. Please check your policy booklet for full information.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;What happens if someone falls ill during the trip?&quot;)">What happens if someone falls ill during the trip?</h3>
+								<div class="accordion__body">
+									<p>If someone in the party falls ill whilst you are on your trip, you can contact us 24 hours a day on our emergency medical helpline. Of course if it’s a medical emergency, call an ambulance.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;What happens if one of us falls ill during our holiday?&quot;)">What happens if one of us falls ill during our holiday?</h3>
+								<div class="accordion__body">
+									<p>If one of you falls ill during your holiday, you can contact us 24 hours a day on our emergency medical helpline. Of course if it’s a medical emergency, call an ambulance.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;I've got an GHIC card but my partner doesn't. Do we both need one?&quot;)">I've got an GHIC card but my partner doesn't. Do we both need one?</h3>
+								<div class="accordion__body">
+									<p>Each traveller needs to have their own Global Health Insurance Card (GHIC) Card. If you are travelling to countries within the European Union (EU), the European Economic Area (EEA) or Switzerland you are strongly advised to obtain a (GHIC).&nbsp;<a href="https://www.nhs.uk/using-the-nhs/healthcare-abroad/apply-for-a-free-uk-global-health-insurance-card-ghic/">You can apply for an GHIC either online</a>. This will entitle you to benefit from the health care arrangements which exist between countries within the EU/EEA or Switzerland. Be careful of other website that will often try and charge you for an EHIC card.<br>
+<br>
+An GHIC will not cover treatment in private clinics nor will it cover the cost of getting you home. An air ambulance from Europe to the UK could cost in excess of £25,000.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;I'm travelling with my husband, is there only one policy number?&quot;)">I'm travelling with my husband, is there only one policy number?</h3>
+								<div class="accordion__body">
+									<p>Yes. You will only have one policy number which will cover you both.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;Someone told me I should get an EHIC. What is it?&quot;)">Someone told me I should get an EHIC. What is it?</h3>
+								<div class="accordion__body">
+									<p>If you are travelling to countries within the European Union (EU), the European Economic Area (EEA) or Switzerland you are strongly advised to obtain a (EHIC). You can apply for an EHIC either online at www.ehic.org.uk or by telephoning 0300 330 1350. This will entitle you to benefit from the health care arrangements which exist between countries within the EU/EEA or Switzerland. Be careful of other website that will often try and charge you for an EHIC card.<br>
+<br>
+An EHIC will not cover treatment in private clinics nor will it cover the cost of getting you home. An air ambulance from Europe to the UK could cost in excess of £25,000.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;I'm thinking about going on a safari whilst away. Is this covered?&quot;)">I'm thinking about going on a safari whilst away. Is this covered?</h3>
+								<div class="accordion__body">
+									<p>A safari is covered under the standard policy for no extra charge. Please check your policy booklet for full information.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;What happens if I fall ill during my trip?&quot;)">What happens if I fall ill during my trip?</h3>
+								<div class="accordion__body">
+									<p>Don’t worry- you can contact us 24 hours a day on our emergency medical helpline. Of course if it’s a medical emergency, call an ambulance. As part of our policy, if you are required to stay in hospital for an extended period of time, we can arrange for a family member to be flown out to be with you.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;If I fall ill, how will ABTA Travel Insurance help me?&quot;)">If I fall ill, how will ABTA Travel Insurance help me?</h3>
+								<div class="accordion__body">
+									<p>By choosing ABTA Travel Insurance, you can rely on us to arrange your medical treatment for you. Our emergency medical team will organise the care you need, including air ambulances and doctor escorts where necessary.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;What will I be covered for if I miss my flight?&quot;)">What will I be covered for if I miss my flight?</h3>
+								<div class="accordion__body">
+									<p>You will be covered for reasonable additional accommodation and travel costs, up to the limit in your policy, that you had to pay in order to reach your destination or return to the United Kingdom, if you fail to board the public transport on which you are booked to travel as a result of:<br>
+&nbsp;</p>
+
+<ul>
+	<li>the failure of other public transport or</li>
+	<li>an accident to or breakdown of the vehicle in which you are travelling or</li>
+	<li>an accident or breakdown happening ahead of you on a public road which causes an unexpected delay to the vehicle in which you are travelling or</li>
+	<li>strike, industrial action or adverse weather conditions</li>
+</ul>
+
+<p>Please refer to the policy booklet for the full terms and conditions.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;Am I covered as soon as I get the travel insurance reference number?&quot;)">Am I covered as soon as I get the travel insurance reference number?</h3>
+								<div class="accordion__body">
+									<p>For single trip travel insurance your cancellation cover starts from the date we issue the policy – when you receive your reference number. The rest of your cover will start on your intended departure date.<br>
+<br>
+For annual multi-trip travel insurance your cancellation cover begins from the start date of the policy which you can choose.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;Do I need to tell you if I develop a new medical condition after I purchase my policy?&quot;)">Do I need to tell you if I develop a new medical condition after I purchase my policy?</h3>
+								<div class="accordion__body">
+									<p>Unlike some other insurers, we do not require you to tell us about changes to your health during your period of insurance as detailed on your schedule.&nbsp; However, you should consult your doctor before your trip to confirm you are able to travel.&nbsp; If you have your doctor’s permission, you’ll be covered by us.</p>
+
+<p><br>
+When you renew your policy or arrange a new quote, you must tell us about any changes in your health.&nbsp; Our advanced medical screening makes it easy to do this online or by phone.&nbsp;&nbsp;</p>
+
+<p><br>
+You should also ensure you are taking any medication as recommended or prescribed, you aren’t travelling against the public transport providers stipulations and you aren’t travelling to obtain treatment, surgery or investigations.&nbsp;&nbsp;</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;I'm looking for an annual multi-trip policy. What is the longest I can go on holiday for?&quot;)">I'm looking for an annual multi-trip policy. What is the longest I can go on holiday for?</h3>
+								<div class="accordion__body">
+									<p>No single trip may last longer than 31 nights with AXA’s annual multi-trip policy. If you choose winter sports cover, you can take a winter sports trip for up to 31 nights at a time.</p>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<h3 class="accordion__header" onclick="pushDataLayerFaq(this, &quot;What is your definition or Europe?&quot;)">What is your definition or Europe?</h3>
+								<div class="accordion__body">
+									<p>If you’re buying travel insurance for Europe, ABTA Travel Insurance will also cover you in some non-European countries with a Mediterranean coastline.<br>
+<br>
+The countries we define as Europe are:<br>
+<br>
+Albania; Andorra; Austria; Belarus; Belgium; Bosnia and Herzegovina; Bulgaria; Canary Islands; Channel Islands; Corfu; Corsica; Crete; Croatia; Cyprus; Czech Republic; Denmark; Estonia; Finland; France; Fuerteventura; Germany; Gibraltar; Gozo; Gran Canaria; Greece; Hungary; Ibiza; Iceland; Irish Republic; Italy; Kos; Lanzarote; Latvia; Liechtenstein; Lithuania; Luxembourg; Macedonia; Madeira; Majorca; Malta; Menorca; Moldova; Monaco; Montenegro; Netherlands; Norway; Poland; Portugal; Rhodes; Romania; Russia (West of Ural Mountains); San Marino; Sardinia; Serbia; Sicily; Slovakia; Slovenia; Spain; Sweden; Switzerland; Tenerife; Ukraine; Vatican City.</p>
+								</div>
+							</div>
+					</div>
+            <!-- item -->
+        <!--/ accordion -->
+    </div>
+
+
+    <script type="text/javascript">
+	var TRange=null;
+        function findString (str) {
+        if (parseInt(navigator.appVersion)<4) return;
+
+        var strFound;
+
+        if (window.find) {
+          // CODE FOR BROWSERS THAT SUPPORT window.find
+          strFound=self.find(str);
+
+          if (!strFound) {
+           strFound=self.find(str,0,1);
+           while (self.find(str,0,1)) continue;
+          }
+        }
+
+        else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+          // EXPLORER-SPECIFIC CODE
+          if (TRange!=null) {
+           TRange.collapse(false);
+           strFound=TRange.findText(str);
+           if (strFound) TRange.select();
+          }
+
+          if (TRange==null || strFound==0) {
+            TRange=self.document.body.createTextRange();
+            strFound=TRange.findText(str);
+            if (strFound) TRange.select();
+          }
+        }
+        else if (navigator.appName=="Opera") {
+          alert ("Opera browsers not supported, sorry...")
+          return;
+        }
+
+        if (!strFound) alert ("String '"+str+"' not found!")
+            return;
+        }
+    </script>
+
+</section>
+<!-- /Faq -->
+
+<script type="text/javascript">
+    const element = document.getElementById("t1");
+    element.addEventListener("keyup", function(event) {
+        if (event.key === "Enter") {
+            pushDataLayerSearch(element)
+        }
+    });
+
+    function pushDataLayerFaq(element, entry) {
+        dataLayer.push({
+            'event': 'faq_entry_click',
+            'nav_item_type': 'faq_entry',
+            'status': element.ariaExpanded === 'true' ? 'close' : 'open',
+            'entry_name': entry,
+	        'ip_address': themeDisplay.getRemoteAddr()
+        });
+    }
+    function pushDataLayerSearch(element) {
+        dataLayer.push({
+            'event': 'faq_search_click',
+            'nav_item_type': 'faq_search_bar',
+            'search_term': element.value,
+	        'ip_address': themeDisplay.getRemoteAddr()
+        });
+    }
+		$(function () {
+    if ($(".accordion__header").hasClass("accordion__active")) {
+        $(".accordion__header").each(function () {
+            if ($(this).hasClass('accordion__active')) {
+                $(this).parent().find(".accordion__body").slideDown();
+            }
+        });
+    }
+
+     $('.accordion__header').click(function(e) {
+        var openAccordion = $(this).closest('.accordion__item').find('.accordion__body');
+
+        if ($(this).hasClass('accordion__active')) {
+            $(this).removeClass('accordion__active');
+            openAccordion.slideUp();
+        } else {
+            $(this).closest('.accordion').find('.accordion__body').slideUp();
+            $(this).closest('.accordion').find('.accordion__header').removeClass('accordion__active');
+
+            $(this).addClass('accordion__active');
+            openAccordion.slideDown();
+        }
+
+        e.preventDefault();
+    });
+});
+
+</script>
+
+			
+				
+		
+        		
+			</div>
+		
+        
+
+		
+
+        
+    
+
+    
+						
+						
+                        
+						    </div>
+						
+                        
+                        
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+
+    
+		</div>
+	
+
+
+			</div>
+            
+            
+
+		
+
+		</div>
+	</section>
+
+	
+
+		
+		
+
+
+
+
+
+
+
+
+    
+		</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+    
+		<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-barebone portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_75rZjUqyCY8W_">
+			<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_75rZjUqyCY8W"></span>
+    
+    
+
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+			<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_75rZjUqyCY8W">
+
+
+		<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+				<div class="autofit-col autofit-col-end">
+					<div class="autofit-section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="visible-interaction">
+
+	
+
+	
+</div>					</div>
+				</div>
+			</div>
+
+        
+		
+			
+            
+               <div class=" portlet-content-container">
+				
+
+
+
+
+
+
+
+
+    
+	    <div class="portlet-body">
+    
+
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+				
+					
+
+						
+						
+						
+                        
+						    <div class="" data-fragments-editor-item-id="31201-15646502" data-fragments-editor-item-type="fragments-editor-mapped-item">
+						
+                        
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+        
+		    <div class="journal-content-article " data-analytics-asset-id="15646500" data-analytics-asset-title="TGTM - ABTA Footer" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="15646502">
+		
+        	
+			
+            
+
+			
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="m-footer-small m-footer-small--top m-footer-small--desktop">
+		<div class="m-footer-small__container">
+			<div class="m-footer-small__disclaimer--list">
+			<div class="m-footer-small__list">
+						<a target="_self" href="/en-GB/web/neo-travel-uk-abta/security" class="m-footer-small__list-item m-footer-small__list-item--border" onclick="pushDataLayerNavigationLinksFooterSmall(&quot;/en-GB/web/neo-travel-uk-abta/security&quot;, &quot;Footer&quot;,&quot;Security&quot;)">
+							Security
+						</a>
+						<a target="_self" href="https://www.axapartners.co.uk/en/privacy-policy" class="m-footer-small__list-item m-footer-small__list-item--border" onclick="pushDataLayerNavigationLinksFooterSmall(&quot;https://www.axapartners.co.uk/en/privacy-policy&quot;, &quot;Footer&quot;,&quot;Privacy&quot;)">
+							Privacy
+						</a>
+						<a target="_self" href="/en-GB/web/neo-travel-uk-abta/home" class="m-footer-small__list-item m-footer-small__list-item--border" onclick="pushDataLayerNavigationLinksFooterSmall(&quot;/en-GB/web/neo-travel-uk-abta/home&quot;, &quot;Footer&quot;,&quot;Accessibility&quot;)">
+							Accessibility
+						</a>
+						<a target="_self" href="/en-GB/web/neo-travel-uk-abta/website-terms-of-use" class="m-footer-small__list-item m-footer-small__list-item--border" onclick="pushDataLayerNavigationLinksFooterSmall(&quot;/en-GB/web/neo-travel-uk-abta/website-terms-of-use&quot;, &quot;Footer&quot;,&quot;Website terms of use&quot;)">
+							Website terms of use
+						</a>
+						<a target="_self" href="/en-GB/web/neo-travel-uk-abta/cookie-policy" class="m-footer-small__list-item m-footer-small__list-item--border" onclick="pushDataLayerNavigationLinksFooterSmall(&quot;/en-GB/web/neo-travel-uk-abta/cookie-policy&quot;, &quot;Footer&quot;,&quot;Cookie policy&quot;)">
+							Cookie policy
+						</a>
+				</div>
+			</div>
+
+				<div class="m-footer-small__disclaimer">
+					<div class="m-footer-small__list">
+						<p class="m-footer-small__list-item--follow text-uppercase">FOLLOW US:</p>
+                                	<a href="https://www.facebook.com/ABTAlovetravel" class="m-footer-small__list-item" target="_blank" title="Facebook" onclick="pushDataLayerSocialLinksFooterSmall(&quot;https://www.facebook.com/ABTAlovetravel&quot;, &quot;&quot;)">
+                                			<picture data-fileentryid="16339429"><source media="(max-width:144px)" srcset="/o/adaptive-media/image/16339429/preview-2000/Platform%3DFacebook%2C+Color%3DNegative.webp?t=1764762879198"><img class="lazyload" data-fileentryid="16339429" alt="" data-src="https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/Platform%3DFacebook%2C+Color%3DNegative.webp/6f9ff9dc-db22-1fe5-047c-957cbc55a193?t=1764762879198"></picture>
+                                	</a>
+                                	<a href="https://www.instagram.com/abtalovetravel/" class="m-footer-small__list-item" target="_blank" title="Facebook" onclick="pushDataLayerSocialLinksFooterSmall(&quot;https://www.instagram.com/abtalovetravel/&quot;, &quot;&quot;)">
+                                			<picture data-fileentryid="16339465"><source media="(max-width:144px)" srcset="/o/adaptive-media/image/16339465/preview-2000/Platform%3DInstagram%2C+Color%3DNegative.webp?t=1764762890249"><img class="lazyload" data-fileentryid="16339465" alt="" data-src="https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/Platform%3DInstagram%2C+Color%3DNegative.webp/dd598902-d3fb-1b63-08dc-aa3ed1f0e963?t=1764762890249"></picture>
+                                	</a>
+                                	<a href="https://www.tiktok.com/@ABTAlovetravel" class="m-footer-small__list-item" target="_blank" title="Facebook" onclick="pushDataLayerSocialLinksFooterSmall(&quot;https://www.tiktok.com/@ABTAlovetravel&quot;, &quot;&quot;)">
+                                			<picture data-fileentryid="16340630"><source media="(max-width:144px)" srcset="/o/adaptive-media/image/16340630/preview-2000/TikTokWhite_Negative.webp?t=1764763008282"><img class="lazyload" data-fileentryid="16340630" alt="" data-src="https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/TikTokWhite_Negative.webp/7b13e01a-ffba-ecee-92ec-2d0c96762e72?t=1764763008282"></picture>
+                                	</a>
+                                	<a href="https://uk.pinterest.com/abtalovetravel/" class="m-footer-small__list-item" target="_blank" title="Facebook" onclick="pushDataLayerSocialLinksFooterSmall(&quot;https://uk.pinterest.com/abtalovetravel/&quot;, &quot;&quot;)">
+                                			<picture data-fileentryid="16340031"><source media="(max-width:48px)" srcset="/o/adaptive-media/image/16340031/preview-2000/Platform%3DPinterest%2C+Color%3DNegative.webp?t=1764762963619"><img class="lazyload" data-fileentryid="16340031" alt="" data-src="https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/Platform%3DPinterest%2C+Color%3DNegative.webp/0eaccc2d-a1c3-0116-c057-f2ea741fb7d9?t=1764762963619"></picture>
+                                	</a>
+					</div>
+				</div>
+		</div>
+		</div>
+
+
+
+			<div class="m-footer-small m-footer-small--top">
+				<div class="m-footer-small__container">
+
+
+						<div class="m-footer-small__disclaimer p-2">
+						<ul class="m-footer-small__list">
+							<li class="m-footer-small__list-item">
+								<a href="#">
+									ABTA Ltd is an appointed representative of ITC Compliance Limited which is authorised and regulated by the Financial Conduct Authority (their registration number is 313486) and which is permitted to arrange general insurance contracts as an intermediary. The insurance is underwritten by Inter Partner Assistance S.A. Inter Partner Assistance S.A. is authorised and regulated by the National Bank of Belgium, with a registered head office at Boulevard du Régent 7, 1000 Brussels, Belgium. Authorised by the Prudential Regulation Authority (firm reference number 202664). Subject to regulation by the Financial Conduct Authority and limited regulation by the Prudential Regulation Authority. Inter Partner Assistance S.A. UK branch office address is 106-118 Station Road, Redhill, RH1 1PR. Inter Partner Assistance S.A. is part of the AXA Group. <span class="color-white current-year">2025</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<script nonce="">
+				jQuery(document).ready(function ($) {
+					$('.current-year').text((new Date).getFullYear());
+				});
+			</script>
+
+	</footer>
+<!-- / Footer -->
+
+<script nonce="" type="text/javascript">
+    function pushDataLayerSocialLinksFooterSmall(url, socialNetwork) {
+        dataLayer.push({
+            'event': 'social_link_click',
+			'content_type': 'social link footer',
+			'entry_name': socialNetwork,
+			'link_type': 'external',
+        	'link_href': url,
+			'ip_address': themeDisplay.getRemoteAddr()
+        });
+    }
+    function pushDataLayerNavigationLinksFooterSmall(url, category, entry) {
+        dataLayer.push({
+            'event': 'footer_navigation_click',
+            'content_type': 'footer navigation menu',
+            'menu_categ': category,
+            'entry_name': entry,
+            'link_type': 'internal',
+            'link_href': window.location.href + url,
+			'ip_address': themeDisplay.getRemoteAddr()
+        });
+    }
+</script>
+
+			
+				
+		
+        		
+			</div>
+		
+        
+
+		
+
+        
+    
+
+    
+						
+						
+                        
+						    </div>
+						
+                        
+                        
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+
+    
+		</div>
+	
+
+
+			</div>
+            
+            
+
+		
+
+		</div>
+	</section>
+
+	
+
+		
+		
+
+
+
+
+
+
+
+
+    
+		</div>
+	
+
+
+
+
+
+
+
+
+</div>
+		</div>
+	</div>
+</div>
+	
+
+
+<form action="#" aria-hidden="true" class="hide" id="hrefFm" method="post" name="hrefFm"><span></span><button hidden="" type="submit">Hidden</button></form>
+
+	
+        </section>
+
+    </div>
+	<div id="rootPortal" class="react-datepicker--withPortal"><div>
+	<div id="rootPortal" class="react-datepicker--withPortal"><div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+	
+		
+
+			
+
+			
+		
+	
+
+
+</script><script>
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+<script type="text/javascript">
+
+	function getValueByAttribute(node, attr) {
+		return (
+			node.dataset[attr] ||
+			(node.parentElement && node.parentElement.dataset[attr])
+		);
+	}
+
+	function sendDocumentDownloadedAnalyticsEvent(anchor) {
+		var fileEntryId = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryId'
+		);
+		var title = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryTitle'
+		);
+		var version = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryVersion'
+		);
+
+		if (fileEntryId) {
+			Analytics.send('documentDownloaded', 'Document', {
+				groupId: themeDisplay.getScopeGroupId(),
+				fileEntryId,
+				preview: !!window._com_liferay_document_library_analytics_isViewFileEntry,
+				title,
+				version,
+			});
+		}
+	}
+
+	function handleDownloadClick(event) {
+		if (window.Analytics) {
+			if (event.target.nodeName.toLowerCase() === 'a') {
+				sendDocumentDownloadedAnalyticsEvent(
+					event.target
+				);
+			}
+			else if (
+				event.target.parentNode &&
+				event.target.parentNode.nodeName.toLowerCase() === 'a'
+			) {
+				sendDocumentDownloadedAnalyticsEvent(
+					event.target.parentNode
+				);
+			}
+			else {
+				var target = event.target;
+				var matchTextContent =
+					target.textContent &&
+					target.textContent.toLowerCase() ===
+						'download';
+				var matchTitle =
+					target.title && target.title.toLowerCase() === 'download';
+				var matchAction = target.action === 'download';
+				var matchLexiconIcon = !!target.querySelector(
+					'.lexicon-icon-download'
+				);
+				var matchLexiconClassName = target.classList.contains(
+					'lexicon-icon-download'
+				);
+				var matchParentTitle =
+					target.parentNode &&
+					target.parentNode.title &&
+					target.parentNode.title.toLowerCase() === 'download';
+				var matchParentLexiconClassName =
+					target.parentNode &&
+					target.parentNode.classList.contains('lexicon-icon-download');
+
+				if (
+					matchTextContent ||
+					matchTitle ||
+					matchParentTitle ||
+					matchAction ||
+					matchLexiconIcon ||
+					matchLexiconClassName ||
+					matchParentLexiconClassName
+				) {
+					var selectedFiles = document.querySelectorAll(
+						'.form .custom-control-input:checked'
+					);
+
+					selectedFiles.forEach(({value}) => {
+						var selectedFile = document.querySelector(
+							'[data-analytics-file-entry-id="' + value + '"]'
+						);
+
+						sendDocumentDownloadedAnalyticsEvent(
+							selectedFile
+						);
+					});
+				}
+			}
+		}
+	}
+
+	Liferay.once('destroyPortlet', () => {
+		document.body.removeEventListener(
+			'click',
+			handleDownloadClick
+		);
+	});
+
+	Liferay.once('portletReady', () => {
+		document.body.addEventListener(
+			'click',
+			handleDownloadClick
+		);
+	});
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onShare = function (data) {
+		if (window.Analytics) {
+			Analytics.send('shared', 'SocialBookmarks', {
+				className: data.className,
+				classPK: data.classPK,
+				type: data.type,
+				url: data.url,
+			});
+		}
+	};
+
+	var onDestroyPortlet = function () {
+		Liferay.detach('socialBookmarks:share', onShare);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('socialBookmarks:share', onShare);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onDestroyPortlet = function () {
+		Liferay.detach('messagePosted', onMessagePosted);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+
+	var onMessagePosted = function (event) {
+		if (window.Analytics) {
+			const eventProperties = {
+				className: event.className,
+				classPK: event.classPK,
+				commentId: event.commentId,
+				text: event.text,
+			};
+
+			const blogNode = document.querySelector(
+				'[data-analytics-asset-id="' + event.classPK + '"]'
+			);
+
+			const dmNode = document.querySelector(
+				'[data-analytics-file-entry-id="' + event.classPK + '"]'
+			);
+
+			if (blogNode) {
+				eventProperties.title = blogNode.dataset.analyticsAssetTitle;
+			}
+			else if (dmNode) {
+				eventProperties.title = dmNode.dataset.analyticsFileEntryTitle;
+			}
+
+			Analytics.send('posted', 'Comment', eventProperties);
+		}
+	};
+
+	Liferay.on('messagePosted', onMessagePosted);
+})();
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onVote = function (event) {
+		if (window.Analytics) {
+			let title = event.contentTitle;
+
+			if (!title) {
+				const dmNode = document.querySelector(
+					'[data-analytics-file-entry-id="' + event.classPK + '"]'
+				);
+
+				if (dmNode) {
+					title = dmNode.dataset.analyticsFileEntryTitle;
+				}
+			}
+
+			Analytics.send('VOTE', 'Ratings', {
+				className: event.className,
+				classPK: event.classPK,
+				ratingType: event.ratingType,
+				score: event.score,
+				title,
+			});
+		}
+	};
+
+	var onDestroyPortlet = function () {
+		Liferay.detach('ratings:vote', onVote);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('ratings:vote', onVote);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();
+
+	if (window.svg4everybody && Liferay.Data.ICONS_INLINE_SVG) {
+		svg4everybody(
+			{
+				polyfill: true,
+				validate: function (src, svg, use) {
+					return !src || !src.startsWith('#');
+				}
+			}
+		);
+	}
+
+
+	// <![CDATA[
+
+		
+
+		Liferay.currentURL = '\x2fen-GB\x2fweb\x2fneo-travel-uk-abta\x2ffaqs-and-contact-us';
+		Liferay.currentURLEncoded = '\x252Fen-GB\x252Fweb\x252Fneo-travel-uk-abta\x252Ffaqs-and-contact-us';
+
+	// ]]>
+
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_',
+			portletId: 'com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet',
+			refreshURL: '\x2fen-GB\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1513058\x26p_p_id\x3dcom_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen-GB\x252Fweb\x252Fneo-travel-uk-abta\x252Ffaqs-and-contact-us',
+			refreshURLData: {}
+		}
+	);
+
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_EpSDZZFoY5u0');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_EpSDZZFoY5u0_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_EpSDZZFoY5u0',
+			refreshURL: '\x2fen-GB\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1513058\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_EpSDZZFoY5u0\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d3\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen-GB\x252Fweb\x252Fneo-travel-uk-abta\x252Ffaqs-and-contact-us',
+			refreshURLData: {}
+		}
+	);
+
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_75rZjUqyCY8W');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 2,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_75rZjUqyCY8W_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_75rZjUqyCY8W',
+			refreshURL: '\x2fen-GB\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1513058\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_75rZjUqyCY8W\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d2\x26p_p_col_count\x3d3\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen-GB\x252Fweb\x252Fneo-travel-uk-abta\x252Ffaqs-and-contact-us',
+			refreshURLData: {}
+		}
+	);
+
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_dmUAVLzypLdV');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 1,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_dmUAVLzypLdV_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_dmUAVLzypLdV',
+			refreshURL: '\x2fen-GB\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1513058\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_dmUAVLzypLdV\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d1\x26p_p_col_count\x3d3\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fen-GB\x252Fweb\x252Fneo-travel-uk-abta\x252Ffaqs-and-contact-us',
+			refreshURLData: {}
+		}
+	);
+
+
+</script><script type="module">
+import {InfoItemActionHandler as ComponentModule} from '/o/layout-taglib/__liferay__/index.js';
+Liferay.Loader.require(
+'frontend-js-web/index',
+function(frontendJsWeb) {
+try {
+AUI().use(
+  'liferay-menu',
+function(A) {
+{
+Liferay.component('infoItemActionComponent', new ComponentModule({"executeInfoItemActionURL":"https:\/\/webserver-salesaxapartners-prd.lfr.cloud\/en-GB\/c\/portal\/execute_info_item_action?p_l_mode=view&plid=1513058","namespace":"","spritemap":"https:\/\/webserver-salesaxapartners-prd.lfr.cloud\/o\/neo-travel-axa-theme\/images\/clay\/icons.svg"}), { destroyOnNavigate: true, portletId: ''});
+}
+(function() {
+var $ = AUI.$;var _ = AUI._;
+	var {delegate} = frontendJsWeb;
+
+	delegate(
+		document,
+		'focusin',
+		'.portlet',
+		function(event) {
+			event.delegateTarget.closest('.portlet').classList.add('open');
+		}
+	);
+
+	delegate(
+		document,
+		'focusout',
+		'.portlet',
+		function(event) {
+			event.delegateTarget.closest('.portlet').classList.remove('open');
+		}
+	);
+})();
+(function() {
+var $ = AUI.$;var _ = AUI._;
+	new Liferay.Menu();
+
+	var liferayNotices = Liferay.Data.notices;
+
+	for (var i = 0; i < liferayNotices.length; i++) {
+		Liferay.Util.openToast(liferayNotices[i]);
+	}
+
+})();
+(function() {
+var $ = AUI.$;var _ = AUI._;
+		var {openToast} = frontendJsWeb;
+
+		AUI().use(
+			'liferay-session',
+			function() {
+				Liferay.Session = new Liferay.SessionBase(
+					{
+						autoExtend: true,
+						redirectOnExpire: false,
+						redirectUrl: 'https\x3a\x2f\x2fwebserver-salesaxapartners-prd\x2elfr\x2ecloud\x2fweb\x2fguest',
+						sessionLength: 900,
+						sessionTimeoutOffset: 70,
+						warningLength: 60
+					}
+				);
+
+				
+			}
+		);
+	
+})();
+});
+} catch (err) {
+	console.error(err);
+}
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+<script src="https://webserver-salesaxapartners-prd.lfr.cloud/o/neo-travel-axa-theme/js/main.js?browserId=chrome&amp;minifierType=js&amp;languageId=en_GB&amp;t=1765378266000" type="text/javascript"></script>
+
+
+
+
+<script type="module">
+import {default as main} from '/o/frontend-js-dropdown-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {default as main} from '/o/frontend-js-tooltip-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {default as main} from '/o/frontend-js-collapse-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {default as main} from '/o/frontend-js-alert-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {default as main} from '/o/frontend-js-tabs-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {runThirdPartyCookiesInterval} from '/o/cookies-banner-web/__liferay__/index.js';
+{
+runThirdPartyCookiesInterval();
+}
+
+</script><script type="text/javascript">
+Liferay.CustomDialogs = {enabled: false};
+
+</script><script>
+
+</script>
+
+
+
+
+<script type="text/javascript">
+	function pushDataLayerBlogArticles(url, contentName) {
+        var linkType = isInternalUrl(url);
+        dataLayer.push({
+            "event": "select_content",
+            'content_type': 'blog',
+            'content_name': contentName,
+            'link_type': linkType,
+            'link_href': url,
+            'ip_address': themeDisplay.getRemoteAddr()
+        });
+    }
+
+    function pushDataLayerDestinationAdvices(url, contentName) {
+        var linkType = isInternalUrl(url);
+        dataLayer.push({
+            "event": "select_content",
+            'content_type': 'Travel Advice',
+            'content_name': contentName,
+            'link_type': linkType,
+            'link_href': url,
+            'ip_address': themeDisplay.getRemoteAddr()
+        });
+    }
+
+    function pushDataLayerDestinationAdvicesTab(elementText) {
+        dataLayer.push({
+            "event": "tab_click",
+            'element_type': 'Tab Type',
+            'element_text': elementText,
+            'ip_address': themeDisplay.getRemoteAddr()
+        });
+    }
+
+	function pushDataLayerSocialLinks(url, socialNetwork) {
+    	dataLayer.push({
+    		'event': 'social_link_click',
+    		'content_type': 'social link footer',
+    		'entry_name': socialNetwork,
+    		'link_type': 'external',
+    		'link_href': url,
+            'ip_address': themeDisplay.getRemoteAddr()
+    	});
+    }
+
+    function pushDataLayerNavigationLinks(url, category, entry) {
+    	dataLayer.push({
+    		'event': 'footer_navigation_click',
+    		'nav_item_type': 'footer navigation menu',
+    		'menu_categ': category,
+    		'entry_name': entry,
+    		'link_type': 'internal',
+    		'link_href': window.location.href + url,
+    		'ip_address': themeDisplay.getRemoteAddr()
+    	});
+    }
+
+    function pushDataLayerContactUS(contactReason) {
+        dataLayer.push({
+            'event': 'contact_form_click',
+            'contact_reason' : contactReason, // element clicked on the list
+            'ip_address' : themeDisplay.getRemoteAddr()
+        });
+    }
+
+
+    function pushDataLayerContactUSButton(formEvent, formName, dropdownSelected) {
+        let ipAddress =  themeDisplay.getRemoteAddr();
+        if(formEvent == 1){
+            dataLayer.push({
+                'event': 'form_submit',
+                'form_name' : formName, // form name
+                'dropdown_selected' : dropdownSelected, // value of the dropdown selected.
+                'ip_address' : ipAddress
+            });
+        }else if(formEvent == 2){
+            dataLayer.push({
+                  'event': 'form_cancel',
+                  'form_name' : formName, // form name
+                  'dropdown_selected' : dropdownSelected, // value of the dropdown selected.
+                  'ip_address' : ipAddress
+            });
+
+        }else{
+            dataLayer.push({
+              'event': 'form_initiated',
+              'form_name' : formName, // form name
+              'dropdown_selected' : dropdownSelected, // value of the dropdown selected.
+              'ip_address' : ipAddress
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+
+		
+	
+
+</div></div></div></div><div id="tooltipContainer" class="lfr-tooltip-scope"></div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div></body>
