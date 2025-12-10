@@ -377,6 +377,87 @@ section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_main
     color: #007ac2 !important;
 }
 
+/* ===== CRUISE INSURANCE - H3 & LISTS WITH INLINE STYLES ===== */
+/* Override inline styles for H3 headings in cruise content */
+section.t_block.t_quote.t_quote--xlarge .t_mainText.font-medium h3,
+section.t_block.t_quote.t_quote--xlarge .t_mainText h3,
+.t_quote--xlarge h3[style] {
+    color: #0077C8 !important;
+    font-size: 1.375rem !important; /* 22px */
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    line-height: 1.3 !important;
+    text-transform: none !important;
+    text-align: left !important;
+}
+
+/* Override inline styles for UL lists with checkmarks */
+section.t_block.t_quote.t_quote--xlarge .t_mainText.font-medium ul,
+section.t_block.t_quote.t_quote--xlarge .t_mainText ul,
+.t_quote--xlarge ul[style] {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 0 25px 0 !important;
+    text-align: left !important;
+}
+
+/* Override inline styles for LI items */
+section.t_block.t_quote.t_quote--xlarge .t_mainText.font-medium ul li,
+section.t_block.t_quote.t_quote--xlarge .t_mainText ul li,
+.t_quote--xlarge ul[style] li[style] {
+    color: #333 !important;
+    font-size: 0.9375rem !important; /* 15px */
+    line-height: 1.6 !important;
+    padding-left: 30px !important;
+    margin-bottom: 12px !important;
+    position: relative !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    text-align: left !important;
+}
+
+/* Override inline styles for checkmark spans */
+section.t_block.t_quote.t_quote--xlarge .t_mainText.font-medium ul li span,
+section.t_block.t_quote.t_quote--xlarge .t_mainText ul li span,
+.t_quote--xlarge ul li span[style] {
+    color: #0077C8 !important;
+    position: absolute !important;
+    left: 0 !important;
+    font-weight: bold !important;
+}
+
+/* Override inline styles for paragraphs in cruise sections */
+section.t_block.t_quote.t_quote--xlarge .t_mainText.font-medium > p[style] {
+    color: #333 !important;
+    font-size: 0.9375rem !important; /* 15px */
+    line-height: 1.6 !important;
+    margin-bottom: 20px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    text-align: left !important;
+}
+
+/* Force container to be left-aligned for cruise content */
+section.t_block.t_quote.t_quote--xlarge .t_block__inner.container.text-right,
+section.t_block.t_quote.t_quote--xlarge .t_quote__inner.container.text-right {
+    text-align: left !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge .t_mainText.font-medium {
+    text-align: left !important;
+}
+
+@media (max-width: 768px) {
+    section.t_block.t_quote.t_quote--xlarge .t_mainText h3,
+    .t_quote--xlarge h3[style] {
+        font-size: 1.25rem !important; /* 20px on mobile */
+    }
+    
+    section.t_block.t_quote.t_quote--xlarge .t_mainText ul li,
+    .t_quote--xlarge ul[style] li[style] {
+        font-size: 0.875rem !important; /* 14px on mobile */
+    }
+}
+
 @media (max-width: 768px) {
     section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]),
     section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) {
@@ -1766,6 +1847,24 @@ section.p-3[style*="background-color: #00008F"] .btn--light-white:hover {
     flex-grow: 1 !important;
 }
 
+/* Hide empty summaries */
+.cards-news__summary:empty {
+    display: none !important;
+    margin: 0 !important;
+}
+
+/* Hide empty article card text */
+.article__card-text:empty {
+    display: none !important;
+}
+
+/* Hide empty article full text sections */
+.article-full__text:empty,
+.article-full__text:not(:has(h3)):not(:has(p:not(:empty))),
+.article-full__text > .article-full__left--title:empty {
+    display: none !important;
+}
+
 .cards-news__link {
     color: #007ac2 !important;
     font-family: Calibri, Arial, sans-serif !important;
@@ -1934,6 +2033,456 @@ section.p-3[style*="background-color: #00008F"] .btn--light-white:hover {
     background: #ffffff !important;
 }
 
+/* ==========================================
+   FAQ HERO BANNER
+   ========================================== */
+
+.hero-banner--small {
+    position: relative !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.hero-banner__mask {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    position: relative !important;
+    padding: 100px 20px !important;
+    min-height: 400px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Subtle dark overlay for readability */
+.hero-banner__mask::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%) !important;
+    z-index: 1 !important;
+}
+
+.hero-banner__container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    z-index: 2 !important;
+    width: 100% !important;
+}
+
+.hero-banner__content {
+    text-align: center !important;
+}
+
+/* Hero Title */
+.hero-banner h1.font-display-4 {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2.75rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    margin: 0 0 12px 0 !important;
+    line-height: 1.2 !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Hero Subtitle */
+.hero-banner p {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.125rem !important;
+    color: #ffffff !important;
+    margin: 0 0 40px 0 !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ==========================================
+   FAQ SEARCH BAR
+   ========================================== */
+
+.hero-banner--container {
+    max-width: 600px !important;
+    margin: 0 auto !important;
+}
+
+.form__group--inline {
+    display: flex !important;
+    gap: 12px !important;
+    align-items: stretch !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.form__large {
+    flex: 1 !important;
+    padding: 14px 20px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    border: none !important;
+    border-radius: 6px !important;
+    background: #ffffff !important;
+    color: #333 !important;
+}
+
+.form__large::placeholder {
+    color: #999 !important;
+}
+
+.form__large:focus {
+    outline: 3px solid rgba(252, 179, 22, 0.5) !important;
+    outline-offset: 2px !important;
+}
+
+.btn--secondary.btn--small {
+    padding: 14px 24px !important;
+    background: #fcb316 !important;
+    border: 2px solid #fcb316 !important;
+    border-radius: 6px !important;
+    color: #ffffff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: none !important;
+}
+
+.btn--secondary.btn--small:hover {
+    background: #e0a014 !important;
+    border-color: #e0a014 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.btn--secondary.btn--small .icon-search {
+    font-size: 1.25rem !important;
+}
+
+/* ==========================================
+   FAQ ACCORDION SECTION
+   ========================================== */
+
+.accordion {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 60px 40px !important;
+}
+
+.accordion > h2,
+.accordion h2.font-display-6,
+.accordion h2 {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: #007ac2 !important;
+    margin: 0 0 32px 0 !important;
+    display: block !important;
+    text-transform: none !important;
+}
+
+/* Accordion Item */
+.accordion__item {
+    border-bottom: 1px solid #e0e0e0 !important;
+    margin: 0 !important;
+}
+
+.accordion__item:first-of-type {
+    border-top: 1px solid #e0e0e0 !important;
+}
+
+/* Accordion Header */
+.accordion__header {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.125rem !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+    padding: 24px 48px 24px 0 !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+    position: relative !important;
+    transition: color 0.3s ease !important;
+    background: transparent !important;
+    border: none !important;
+    width: 100% !important;
+    text-align: left !important;
+    text-transform: none !important;
+}
+
+.accordion__header:hover {
+    color: #007ac2 !important;
+}
+
+/* Plus/Minus Icon */
+.accordion__header::after {
+    content: "+" !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    font-size: 2rem !important;
+    font-weight: 400 !important;
+    color: #007ac2 !important;
+    transition: transform 0.3s ease !important;
+}
+
+.accordion__header.accordion__active::after {
+    content: "−" !important;
+}
+
+/* Accordion Body */
+.accordion__body {
+    padding: 0 0 24px 0 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    color: #666 !important;
+    overflow: hidden !important;
+    border-top: none !important;
+    margin-top: 0 !important;
+}
+
+.accordion__body p {
+    margin: 0 0 16px 0 !important;
+    color: #666 !important;
+    border-top: none !important;
+}
+
+.accordion__body p:first-child {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.accordion__body p:last-child {
+    margin-bottom: 0 !important;
+}
+
+.accordion__body ul {
+    margin: 16px 0 !important;
+    padding-left: 24px !important;
+    list-style: disc !important;
+}
+
+.accordion__body li {
+    margin: 8px 0 !important;
+    color: #666 !important;
+}
+
+.accordion__body a {
+    color: #007ac2 !important;
+    text-decoration: none !important;
+    border-bottom: 2px solid #fcb316 !important;
+    transition: all 0.3s ease !important;
+}
+
+.accordion__body a:hover {
+    color: #005a8f !important;
+    border-bottom-color: #007ac2 !important;
+}
+
+/* ==========================================
+   CONTACT PAGE STYLING
+   ========================================== */
+
+/* Hide Breadcrumbs */
+.b__breadcrumbs,
+.breadcrumb,
+nav[aria-label="Breadcrumb"] {
+    display: none !important;
+}
+
+/* Hero Banner - HIDE on FAQ and Contact Pages */
+.page-faqs .hero-banner--slim,
+.page-faqs .hero-banner,
+.article-full__content + .hero-banner--slim,
+.article-full__content ~ .hero-banner--slim,
+body:has(.article-full__content) .hero-banner--slim,
+body:has(.article-full__content) .hero-banner {
+    display: none !important;
+}
+
+/* Contact Content Section */
+.article-full__content {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 60px 40px !important;
+    background: #ffffff !important;
+}
+
+.article-full__container {
+    background: #ffffff !important;
+}
+
+.article-full__row--full {
+    background: #ffffff !important;
+}
+
+/* Contact Section Boxes - Clean White Cards */
+.article-full__resumen--primary,
+.article-full__text {
+    background: #ffffff !important;
+    padding: 32px !important;
+    margin-bottom: 30px !important;
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.3s ease !important;
+}
+
+.article-full__resumen--primary:hover,
+.article-full__text:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 16px rgba(0, 122, 194, 0.12) !important;
+}
+
+/* Section Titles */
+.article-full__left--title {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #007ac2 !important;
+    margin: 0 0 20px 0 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Phone Number Headings */
+.article-full__resumen h3,
+.article-full__text h3 {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+    margin: 0 0 16px 0 !important;
+}
+
+/* Contact Text */
+.article-full__resumen p,
+.article-full__text p {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    color: #666 !important;
+    margin: 0 0 12px 0 !important;
+}
+
+.article-full__resumen p:last-child,
+.article-full__text p:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Bold Text */
+.article-full__resumen strong,
+.article-full__text strong,
+.article-full__resumen b,
+.article-full__text b {
+    font-weight: 600 !important;
+    color: #333 !important;
+}
+
+/* Email Links */
+.article-full__resumen a,
+.article-full__text a {
+    color: #007ac2 !important;
+    text-decoration: none !important;
+    border-bottom: 2px solid #fcb316 !important;
+    transition: all 0.3s ease !important;
+}
+
+.article-full__resumen a:hover,
+.article-full__text a:hover {
+    color: #005a8f !important;
+    border-bottom-color: #007ac2 !important;
+}
+
+/* Remove Extra Font Classes */
+.font-xx-large {
+    font-size: inherit !important;
+}
+
+/* FAQ & Contact Responsive */
+@media (max-width: 768px) {
+    .hero-banner__mask {
+        padding: 60px 20px !important;
+    }
+
+    .hero-banner h1.font-display-4 {
+        font-size: 2rem !important;
+    }
+
+    .hero-banner p {
+        font-size: 1rem !important;
+    }
+
+    .form__group--inline {
+        flex-direction: column !important;
+    }
+
+    .btn--secondary.btn--small {
+        width: 100% !important;
+    }
+
+    .accordion {
+        padding: 40px 20px !important;
+    }
+
+    .accordion > h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .accordion__header {
+        font-size: 1rem !important;
+        padding-right: 40px !important;
+    }
+    
+    .article-full__content {
+        padding: 40px 20px !important;
+    }
+    
+    .article-full__resumen--primary,
+    .article-full__text {
+        padding: 24px !important;
+    }
+    
+    .article-full__left--title {
+        font-size: 1.25rem !important;
+    }
+    
+    .article-full__resumen h3,
+    .article-full__text h3 {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-banner__mask {
+        padding: 40px 20px !important;
+    }
+
+    .hero-banner h1.font-display-4 {
+        font-size: 1.75rem !important;
+    }
+
+    .accordion__header {
+        font-size: 0.95rem !important;
+        padding: 20px 40px 20px 0 !important;
+    }
+
+    .accordion__body {
+        font-size: 0.9rem !important;
+    }
+    
+    .article-full__resumen--primary,
+    .article-full__text {
+        padding: 20px !important;
+        margin-bottom: 20px !important;
+    }
+}
+
 /* ===== PORTLET CLEANUP ===== */
 .portlet-asset-publisher .portlet-header {
     display: none !important;
@@ -1948,6 +2497,88 @@ section.p-3[style*="background-color: #00008F"] .btn--light-white:hover {
 @media (max-width: 768px) {
     .portlet-asset-publisher .portlet-body {
         padding: 0 15px 40px !important;
+    }
+}
+
+/* ===== PAGINATION - ABTA STYLING ===== */
+.portlet-asset-publisher .taglib-page-iterator,
+.portlet-asset-publisher .pagination-bar,
+.taglib-page-iterator {
+    max-width: 1200px !important;
+    margin: 40px auto 0 !important;
+    padding: 0 20px !important;
+}
+
+.portlet-asset-publisher .pagination,
+.portlet-asset-publisher .pagination-bar > div,
+.taglib-page-iterator .pagination {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    flex-wrap: wrap !important;
+}
+
+.portlet-asset-publisher .pagination a,
+.portlet-asset-publisher .page-link,
+.portlet-asset-publisher .pagination-link,
+.portlet-asset-publisher .pagination__item,
+.taglib-page-iterator .pagination a,
+.taglib-page-iterator .pagination__item {
+    background: #ffffff !important;
+    border: 2px solid #007ac2 !important;
+    color: #007ac2 !important;
+    padding: 10px 18px !important;
+    border-radius: 6px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    min-width: 44px !important;
+    text-align: center !important;
+}
+
+.portlet-asset-publisher .pagination a:hover,
+.portlet-asset-publisher .page-link:hover,
+.portlet-asset-publisher .pagination__item:hover,
+.taglib-page-iterator .pagination a:hover,
+.taglib-page-iterator .pagination__item:hover {
+    background: #007ac2 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.portlet-asset-publisher .page-item.active .page-link,
+.portlet-asset-publisher .pagination .active a,
+.portlet-asset-publisher .pagination__item--active,
+.portlet-asset-publisher .pagination__item.pagination__item--active,
+.taglib-page-iterator .pagination__item--active,
+.taglib-page-iterator .pagination__item.pagination__item--active {
+    background: #007ac2 !important;
+    color: #ffffff !important;
+    border-color: #007ac2 !important;
+}
+
+.portlet-asset-publisher .page-item.disabled .page-link,
+.portlet-asset-publisher .pagination .disabled a,
+.portlet-asset-publisher .pagination__item.is--disabled,
+.taglib-page-iterator .pagination__item.is--disabled {
+    opacity: 0.4 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+    background: #ffffff !important;
+    color: #007ac2 !important;
+    border-color: #007ac2 !important;
+}
+
+@media (max-width: 768px) {
+    .portlet-asset-publisher .pagination a,
+    .portlet-asset-publisher .pagination__item,
+    .taglib-page-iterator .pagination a,
+    .taglib-page-iterator .pagination__item {
+        padding: 8px 14px !important;
+        font-size: 0.9rem !important;
     }
 }
 
