@@ -1088,26 +1088,22 @@ section.container {
     display: flex !important;
     align-items: flex-start !important;
     margin-bottom: 15px !important;
-    list-style: none !important;
+    list-style: disc !important;
+    list-style-position: inside !important;
 }
 
 .article-inline__card-body .card-v2__content__body__list__item:last-child {
     margin-bottom: 20px !important;
 }
 
+/* Hide the checkmark icon */
 .article-inline__card-body .card-v2__content__body__list__item i::before {
-    content: "✓" !important;
-    color: #007ac2 !important;
-    font-weight: bold !important;
+    content: "" !important;
+    display: none !important;
 }
 
 .article-inline__card-body .card-v2__content__body__list__item i {
-    font-family: Arial, sans-serif !important;
-    font-style: normal !important;
-    font-size: 1.25rem !important;
-    margin-right: 10px !important;
-    flex-shrink: 0 !important;
-    margin-top: 2px !important;
+    display: none !important;
 }
 
 .article-inline__card-body .card-v2__content__body__list__item span {
@@ -1115,6 +1111,7 @@ section.container {
     font-family: Calibri, Arial, sans-serif !important;
     font-size: 1rem !important;
     line-height: 1.5 !important;
+    display: list-item !important;
 }
 
 /* Remove bold from article-inline list text */
