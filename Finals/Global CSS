@@ -120,6 +120,7 @@ h2,
 h3,
 .font-display-3,
 .article-inline__title,
+.font-x-big,
 .card-v2__content__header__headline h2,
 .accordion__header {
     font-family: Calibri, Arial, sans-serif !important;
@@ -162,6 +163,26 @@ small,
     color: #1c1c1b !important;
 }
 
+/* Font utility classes */
+.font-medium {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important; /* 16px - same as body */
+    font-weight: 400 !important;
+}
+
+.font-x-big {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.5rem !important; /* 24px - same as H3 */
+    font-weight: 700 !important;
+    color: #007ac2 !important;
+}
+
+.font-large {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.25rem !important; /* 20px */
+    font-weight: 400 !important;
+}
+
 /* Font weight utilities */
 .font-bold,
 .font-bold-publicoheadline {
@@ -184,7 +205,8 @@ small,
     
     h3,
     .font-display-3,
-    .article-inline__title {
+    .article-inline__title,
+    .font-x-big {
         font-size: 1.35rem !important; /* ~22px */
     }
 }
@@ -204,6 +226,7 @@ small,
     h3,
     .font-display-3,
     .article-inline__title,
+    .font-x-big,
     .accordion__header {
         font-size: 1.25rem !important; /* 20px */
     }
