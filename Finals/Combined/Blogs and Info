@@ -1,0 +1,1644 @@
+/* ============================================
+   ABTA COMPLETE SITE CSS
+   Blog Grid + Footer + Navigation
+   ============================================ */
+
+/* ==========================================
+   NAVIGATION - ABTA STYLING
+   ========================================== */
+
+.header#header--sticky {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-navbar {
+    background: #fff;
+}
+
+.main-navbar__wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.mega-menu__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.mega-menu__item a {
+    color: #333 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    padding: 20px 0 !important;
+    display: block;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent !important;
+}
+
+.mega-menu__item a,
+.mega-menu__item a *,
+.mega-menu__item--active a,
+.mega-menu__item--active a * {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.mega-menu__item a::before,
+.mega-menu__item a::after,
+.mega-menu__item--active a::before,
+.mega-menu__item--active a::after,
+.mega-menu__item--active > a::before,
+.mega-menu__item--active > a::after {
+    display: none !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.mega-menu__item a:hover {
+    color: #0077C8 !important;
+    border-bottom: 2px solid #0077C8 !important;
+}
+
+.mega-menu__item--active > a {
+    color: #0077C8 !important;
+    border-bottom: 2px solid #0077C8 !important;
+}
+
+.mega-menu__item--active-tree:not(.mega-menu__item--active) > a {
+    color: #333 !important;
+    border-bottom: 2px solid transparent !important;
+}
+
+.mega-menu__item--active {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.mega-menu-tray__column--content {
+    display: none !important;
+}
+
+.mega-menu-tray {
+    background: #fff !important;
+    border-top: 2px solid #0077C8 !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mega-menu-tray__content {
+    padding: 30px 40px !important;
+}
+
+.mega-menu-tray__info p {
+    color: #0077C8 !important;
+    font-weight: 600 !important;
+}
+
+.mega-menu-tray__info a {
+    color: #0077C8 !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+}
+
+.mega-menu-tray__info a:hover {
+    text-decoration: underline !important;
+}
+
+.mega-menu-tray__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    display: block;
+    padding: 8px 0 !important;
+    text-decoration: none !important;
+}
+
+.mega-menu-tray__nav a:hover {
+    color: #0077C8 !important;
+}
+
+.main-navbar__mobile-trigger__icon,
+.main-navbar__mobile-trigger__icon::before,
+.main-navbar__mobile-trigger__icon::after {
+    background-color: #0077C8 !important;
+}
+
+.main-navbar-responsive {
+    background: #fff !important;
+}
+
+.mega-menu-responsive__item-title {
+    color: #333 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    padding: 15px 20px !important;
+    border-bottom: 1px solid #eee !important;
+}
+
+.mega-menu-responsive__item-title:hover {
+    color: #0077C8 !important;
+}
+
+.mega-menu-tray-responsive {
+    background: #f9f9f9 !important;
+}
+
+.mega-menu-tray-responsive__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    padding: 12px 20px !important;
+    display: block;
+}
+
+.mega-menu-tray-responsive__nav a:hover {
+    color: #0077C8 !important;
+    background: #f0f0f0 !important;
+}
+
+.mega-menu-tray-responsive--back {
+    color: #0077C8 !important;
+    font-weight: 600 !important;
+}
+
+.extra-details-v2 {
+    background: #0077C8 !important;
+}
+
+.extra-details-v2 .item__text,
+.extra-details-v2 .item__icon {
+    color: #fff !important;
+}
+
+/* ==========================================
+   ABTA BLOG GRID - COMPLETE WITH IMAGES
+   ========================================== */
+
+/* Navigation Font Size Fix */
+.mega-menu__item a {
+    font-size: 14px !important;
+}
+
+.mega-menu-responsive__item-title {
+    font-size: 14px !important;
+}
+
+/* Page Header */
+.abta-blog-header {
+    background: linear-gradient(135deg, #007ac2 0%, #005a8f 100%);
+    padding: 80px 20px;
+    margin: 0 0 60px 0;
+    text-align: center;
+}
+
+.abta-blog-header__title {
+    font-family: 'Calibri', Arial, sans-serif !important;
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    margin: 0 !important;
+}
+
+/* Container Cleanup */
+.portlet-asset-publisher .portlet-header {
+    display: none !important;
+}
+
+.portlet-asset-publisher .portlet-body {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 20px 60px !important;
+}
+
+/* Grid Layout */
+.cards-news {
+    width: 100% !important;
+}
+
+.cards-news__cards-group {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+    gap: 30px !important;
+}
+
+/* Individual Card */
+.cards-news__card {
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    padding: 0 !important;
+    min-height: 400px !important;
+}
+
+.cards-news__card:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 6px 20px rgba(0, 122, 194, 0.15) !important;
+    text-decoration: none !important;
+}
+
+/* Featured Image at Top */
+.cards-news__image-container {
+    width: 100% !important;
+    height: 200px !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 12px 12px 0 0 !important;
+    flex-shrink: 0 !important;
+}
+
+.cards-news__image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    transition: transform 0.3s ease !important;
+}
+
+.cards-news__card:hover .cards-news__image {
+    transform: scale(1.05) !important;
+}
+
+/* Content Section */
+.cards-news__summary-info {
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 24px !important;
+}
+
+/* Title */
+.cards-news__title {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #007ac2 !important;
+    margin: 0 0 16px 0 !important;
+    line-height: 1.3 !important;
+}
+
+/* Summary Text */
+.cards-news__summary {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    color: #666666 !important;
+    line-height: 1.6 !important;
+    margin: 0 0 20px 0 !important;
+    flex-grow: 1 !important;
+}
+
+/* Read More Link */
+.cards-news__link {
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    padding: 10px 20px !important;
+    background: transparent !important;
+    border: 2px solid #007ac2 !important;
+    border-radius: 4px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    align-self: flex-start !important;
+    margin-top: auto !important;
+}
+
+.cards-news__card:hover .cards-news__link {
+    background: #007ac2 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.cards-news__link i,
+.cards-news__link .icon-navigate_next {
+    font-size: 1.2rem !important;
+}
+
+/* HIDE THE DATE */
+.cards-news__info {
+    display: none !important;
+}
+
+.cards-news__time {
+    display: none !important;
+}
+
+/* Pagination Styling */
+.portlet-asset-publisher .taglib-page-iterator,
+.portlet-asset-publisher .pagination-bar {
+    max-width: 1200px !important;
+    margin: 40px auto 0 !important;
+    padding: 0 20px !important;
+}
+
+.portlet-asset-publisher .pagination,
+.portlet-asset-publisher .pagination-bar > div {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    flex-wrap: wrap !important;
+}
+
+.portlet-asset-publisher .pagination a,
+.portlet-asset-publisher .page-link,
+.portlet-asset-publisher .pagination-link,
+.portlet-asset-publisher .pagination__item {
+    background: #ffffff !important;
+    border: 2px solid #007ac2 !important;
+    color: #007ac2 !important;
+    padding: 10px 18px !important;
+    border-radius: 6px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    min-width: 44px !important;
+    text-align: center !important;
+}
+
+.portlet-asset-publisher .pagination a:hover,
+.portlet-asset-publisher .page-link:hover,
+.portlet-asset-publisher .pagination__item:hover {
+    background: #007ac2 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.portlet-asset-publisher .page-item.active .page-link,
+.portlet-asset-publisher .pagination .active a,
+.portlet-asset-publisher .pagination__item--active {
+    background: #007ac2 !important;
+    color: #ffffff !important;
+    border-color: #007ac2 !important;
+}
+
+.portlet-asset-publisher .page-item.disabled .page-link,
+.portlet-asset-publisher .pagination .disabled a,
+.portlet-asset-publisher .pagination__item.is--disabled {
+    opacity: 0.4 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+}
+
+/* Empty State */
+.portlet-asset-publisher .alert-info {
+    text-align: center !important;
+    padding: 60px 20px !important;
+    font-size: 1.1rem !important;
+    color: #666 !important;
+    background: #f8f9fa !important;
+    border: 2px dashed #007ac2 !important;
+    border-radius: 12px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .abta-blog-header {
+        padding: 60px 20px !important;
+        margin-bottom: 40px !important;
+    }
+    
+    .abta-blog-header__title {
+        font-size: 2rem !important;
+    }
+    
+    .cards-news__cards-group {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    .cards-news__card {
+        min-height: auto !important;
+    }
+    
+    .cards-news__image-container {
+        height: 180px !important;
+    }
+    
+    .cards-news__summary-info {
+        padding: 20px !important;
+    }
+    
+    .cards-news__title {
+        font-size: 1.25rem !important;
+    }
+    
+    .portlet-asset-publisher .portlet-body {
+        padding: 0 15px 40px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .abta-blog-header {
+        padding: 40px 20px !important;
+    }
+    
+    .abta-blog-header__title {
+        font-size: 1.75rem !important;
+    }
+    
+    .cards-news__image-container {
+        height: 160px !important;
+    }
+    
+    .cards-news__summary-info {
+        padding: 16px !important;
+    }
+    
+    .cards-news__link {
+        padding: 8px 16px !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .pagination a,
+    .page-link,
+    .pagination__item {
+        padding: 8px 14px !important;
+        font-size: 0.9rem !important;
+    }
+}
+/* Force blog card images to always show */
+.cards-news__image-container {
+  display: block !important;
+}
+
+.cards-news__image {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Make sure mobile trigger is clickable */
+.main-navbar__mobile-trigger {
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    z-index: 1000 !important;
+}
+
+.main-navbar__mobile-trigger__icon {
+    pointer-events: none !important;
+}
+
+/* Don't hide pseudo-elements on mobile trigger */
+.main-navbar__mobile-trigger::before,
+.main-navbar__mobile-trigger::after {
+    display: block !important;
+}
+
+/* Ensure mobile menu can show */
+.main-navbar-responsive {
+    background: #fff !important;
+    z-index: 999 !important;
+}
+
+/* ==========================================
+   ABTA FOOTER – FINAL VERSION (SQUARE AXA LOGO)
+   ========================================== */
+
+/* MAIN FOOTER BASE */
+footer.footer {
+    background-color: #007ac2 !important;
+    padding: 60px 20px 40px 20px !important;
+    margin: 0 !important;
+    color: #ffffff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    border-top: none !important;
+}
+
+/* ============================================================
+   TOP SECTION – DESKTOP (LOGOS + NAV + SOCIAL)
+   ============================================================ */
+
+.m-footer-small.m-footer-small--top.m-footer-small--desktop {
+    background: transparent !important;
+    border: none !important;
+    margin: 0 0 32px 0 !important;
+    padding: 0 0 32px 0 !important;
+    position: relative !important;
+}
+
+/* MAIN CONTAINER */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    padding-top: 90px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    position: relative !important;
+}
+
+/* ============================================================
+   LOGO ROW (ABTA LEFT, AXA RIGHT) - WITH SIDE PADDING
+   ============================================================ */
+
+/* ABTA LOGO (TOP LEFT) - WITH LEFT PADDING */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 16px !important;
+    left: 40px !important;
+    width: 180px !important;
+    height: 55px !important;
+    background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/abta-travel-insurance-white-logo-rgb.webp/a903b952-072c-31f3-70fb-c3927ab764f4?version=1.0&t=1763453026583&imagePreview=1") !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    background-size: contain !important;
+    border: none !important;
+}
+
+/* AXA LOCKUP (TOP RIGHT) - WITH RIGHT PADDING */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+    content: "IN PARTNERSHIP WITH" !important;
+    position: absolute !important;
+    top: 8px !important;
+    right: 40px !important;
+    width: 200px !important;
+    height: 80px !important;
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    text-align: right !important;
+    line-height: 1.2 !important;
+    padding-bottom: 45px !important;
+    background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/axa_logo_solid_rgb.webp/b6ba9428-c8da-c8b9-6e97-09bd46908585?version=1.0&t=1763453280994&imagePreview=1") !important;
+    background-repeat: no-repeat !important;
+    background-position: right bottom !important;
+    background-size: 48px 48px !important;
+}
+
+/* ============================================================
+   NAVIGATION – CENTERED WITH EQUAL SPACING
+   ============================================================ */
+
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer--list {
+    order: 1 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.m-footer-small__disclaimer--list .m-footer-small__list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+}
+
+.m-footer-small__list-item.m-footer-small__list-item--border {
+    color: #ffffff !important;
+    font-size: 1rem !important;
+    padding: 0 20px !important;
+    border-right: 1px solid #ffffff !important;
+    white-space: nowrap !important;
+}
+
+.m-footer-small__list-item.m-footer-small__list-item--border:first-child {
+    padding-left: 0 !important;
+}
+
+.m-footer-small__list-item.m-footer-small__list-item--border:last-child {
+    border-right: none !important;
+    padding-right: 0 !important;
+}
+
+.m-footer-small__list-item a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.m-footer-small__list-item a:hover {
+    text-decoration: underline !important;
+}
+
+/* ============================================================
+   SOCIAL ICONS – CENTERED
+   ============================================================ */
+
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer {
+    order: 2 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 4px !important;
+    position: static !important;
+}
+
+/* Hide "Follow us" label */
+.m-footer-small__list-item--follow {
+    display: none !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list img {
+    width: 32px !important;
+    height: 32px !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list a:hover img {
+    opacity: 0.8 !important;
+}
+
+/* ============================================================
+   LEGAL SECTION – SINGLE LINE ABOVE + PLAIN TEXT
+   ============================================================ */
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) {
+    background: transparent !important;
+    padding: 24px 0 0 0 !important;
+    margin: 0 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-bottom: none !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+/* Only legal text should show */
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__disclaimer > :not(.m-footer-small__list) {
+    display: none !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__list {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__list-item {
+    color: #ffffff !important;
+    font-size: 0.8rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Make legal text plain, not clickable */
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__list-item a {
+    color: inherit !important;
+    text-decoration: none !important;
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1024px) {
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        padding-top: 70px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+        top: 12px !important;
+        left: 30px !important;
+        width: 150px !important;
+        height: 40px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+        right: 30px !important;
+        width: 180px !important;
+        height: 70px !important;
+        background-size: 40px 40px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    footer.footer {
+        padding: 40px 20px 30px 20px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+        left: 20px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+        right: 20px !important;
+    }
+
+    .m-footer-small__disclaimer--list .m-footer-small__list {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    .m-footer-small__list-item.m-footer-small__list-item--border {
+        border-right: none !important;
+        padding: 0 !important;
+    }
+}
+/* Get a Quote Button in Navigation */
+.mega-menu__item .btn--primary {
+    background: #fcb316 !important;
+    border: 2px solid #fcb316 !important;
+    color: #333 !important;
+    padding: 10px 24px !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+    border-bottom: 2px solid #fcb316 !important;
+}
+
+.mega-menu__item .btn--primary:hover {
+    background: #e0a014 !important;
+    border: 2px solid #e0a014 !important;
+    border-bottom: 2px solid #e0a014 !important;
+    color: #333 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(252, 179, 22, 0.4) !important;
+}
+
+/* Override the default menu item link styling for the button */
+.mega-menu__item a.btn--primary {
+    padding: 10px 24px !important;
+    display: inline-block !important;
+}
+/* ============================================
+   ABTA COMPLETE SITE STYLES
+   Header + Footer + Blog Styling
+   ============================================ */
+
+/* ===== BRAND COLORS ===== */
+:root {
+    --abta-blue: #007ac2;
+    --abta-yellow: #fcb316;
+    --abta-dark-blue: #005a8f;
+    --abta-light-blue: #e6f4fb;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --background-light: #f8f9fa;
+}
+
+/* ==========================================
+   HEADER / NAVIGATION BAR - ABTA STYLING
+   ========================================== */
+
+.header#header--sticky {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-navbar {
+    background: #fff;
+}
+
+.main-navbar__wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Main menu items */
+.mega-menu__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.mega-menu__item a {
+    color: #333 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    padding: 20px 0 !important;
+    display: block;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent !important;
+}
+
+/* Remove any lingering borders/colors from original theme */
+.mega-menu__item a,
+.mega-menu__item a *,
+.mega-menu__item--active a,
+.mega-menu__item--active a * {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Remove any pseudo-elements that might be creating colored lines */
+.mega-menu__item a::before,
+.mega-menu__item a::after,
+.mega-menu__item--active a::before,
+.mega-menu__item--active a::after,
+.mega-menu__item--active > a::before,
+.mega-menu__item--active > a::after {
+    display: none !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+/* Only show blue line on hover */
+.mega-menu__item a:hover {
+    color: #0077C8 !important;
+    border-bottom: 2px solid #0077C8 !important;
+}
+
+/* Only show blue line when it's the EXACT active page */
+.mega-menu__item--active > a {
+    color: #0077C8 !important;
+    border-bottom: 2px solid #0077C8 !important;
+}
+
+/* Remove blue line from parent when child page is active */
+.mega-menu__item--active-tree:not(.mega-menu__item--active) > a {
+    color: #333 !important;
+    border-bottom: 2px solid transparent !important;
+}
+
+/* Ensure no background colors creating lines on active items */
+.mega-menu__item--active {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Hide the Holiday Types info column in mega menu */
+.mega-menu-tray__column--content {
+    display: none !important;
+}
+
+/* Mega menu dropdown tray */
+.mega-menu-tray {
+    background: #fff !important;
+    border-top: 2px solid #0077C8 !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mega-menu-tray__content {
+    padding: 30px 40px !important;
+}
+
+.mega-menu-tray__info p {
+    color: #0077C8 !important;
+    font-weight: 600 !important;
+}
+
+.mega-menu-tray__info a {
+    color: #0077C8 !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+}
+
+.mega-menu-tray__info a:hover {
+    text-decoration: underline !important;
+}
+
+.mega-menu-tray__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    display: block;
+    padding: 8px 0 !important;
+    text-decoration: none !important;
+}
+
+.mega-menu-tray__nav a:hover {
+    color: #0077C8 !important;
+}
+
+/* Mobile navigation trigger */
+.main-navbar__mobile-trigger__icon,
+.main-navbar__mobile-trigger__icon::before,
+.main-navbar__mobile-trigger__icon::after {
+    background-color: #0077C8 !important;
+}
+
+/* Mobile navigation */
+.main-navbar-responsive {
+    background: #fff !important;
+}
+
+.mega-menu-responsive__item-title {
+    color: #333 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    padding: 15px 20px !important;
+    border-bottom: 1px solid #eee !important;
+}
+
+.mega-menu-responsive__item-title:hover {
+    color: #0077C8 !important;
+}
+
+.mega-menu-tray-responsive {
+    background: #f9f9f9 !important;
+}
+
+.mega-menu-tray-responsive__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    padding: 12px 20px !important;
+    display: block;
+}
+
+.mega-menu-tray-responsive__nav a:hover {
+    color: #0077C8 !important;
+    background: #f0f0f0 !important;
+}
+
+.mega-menu-tray-responsive--back {
+    color: #0077C8 !important;
+    font-weight: 600 !important;
+}
+
+/* Extra details bar */
+.extra-details-v2 {
+    background: #0077C8 !important;
+}
+
+.extra-details-v2 .item__text,
+.extra-details-v2 .item__icon {
+    color: #fff !important;
+}
+
+/* ==========================================
+   FOOTER - ABTA STYLING
+   ========================================== */
+
+/* MAIN FOOTER BASE */
+footer.footer {
+    background-color: #007ac2 !important;
+    padding: 60px 20px 40px 20px !important;
+    margin: 0 !important;
+    color: #ffffff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    border-top: none !important;
+}
+
+/* TOP SECTION – DESKTOP (LOGOS + NAV + SOCIAL) */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop {
+    background: transparent !important;
+    border: none !important;
+    margin: 0 0 32px 0 !important;
+    padding: 0 0 32px 0 !important;
+    position: relative !important;
+}
+
+/* MAIN CONTAINER */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    padding-top: 90px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    position: relative !important;
+}
+
+/* LOGO ROW (ABTA LEFT, AXA RIGHT) - WITH SIDE PADDING */
+
+/* ABTA LOGO (TOP LEFT) - WITH LEFT PADDING */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 16px !important;
+    left: 40px !important;
+    width: 180px !important;
+    height: 55px !important;
+    background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/abta-travel-insurance-white-logo-rgb.webp/a903b952-072c-31f3-70fb-c3927ab764f4?version=1.0&t=1763453026583&imagePreview=1") !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    background-size: contain !important;
+    border: none !important;
+}
+
+/* AXA LOCKUP (TOP RIGHT) - WITH RIGHT PADDING */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+    content: "IN PARTNERSHIP WITH" !important;
+    position: absolute !important;
+    top: 8px !important;
+    right: 40px !important;
+    width: 200px !important;
+    height: 80px !important;
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    text-align: right !important;
+    line-height: 1.2 !important;
+    padding-bottom: 45px !important;
+    background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/axa_logo_solid_rgb.webp/b6ba9428-c8da-c8b9-6e97-09bd46908585?version=1.0&t=1763453280994&imagePreview=1") !important;
+    background-repeat: no-repeat !important;
+    background-position: right bottom !important;
+    background-size: 48px 48px !important;
+}
+
+/* NAVIGATION – CENTERED WITH EQUAL SPACING */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer--list {
+    order: 1 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.m-footer-small__disclaimer--list .m-footer-small__list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+}
+
+.m-footer-small__list-item.m-footer-small__list-item--border {
+    color: #ffffff !important;
+    font-size: 1rem !important;
+    padding: 0 20px !important;
+    border-right: 1px solid #ffffff !important;
+    white-space: nowrap !important;
+}
+
+.m-footer-small__list-item.m-footer-small__list-item--border:first-child {
+    padding-left: 0 !important;
+}
+
+.m-footer-small__list-item.m-footer-small__list-item--border:last-child {
+    border-right: none !important;
+    padding-right: 0 !important;
+}
+
+.m-footer-small__list-item a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.m-footer-small__list-item a:hover {
+    text-decoration: underline !important;
+}
+
+/* SOCIAL ICONS – CENTERED */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer {
+    order: 2 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 4px !important;
+    position: static !important;
+}
+
+/* Hide "Follow us" label */
+.m-footer-small__list-item--follow {
+    display: none !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list img {
+    width: 32px !important;
+    height: 32px !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list a:hover img {
+    opacity: 0.8 !important;
+}
+
+/* LEGAL SECTION – SINGLE LINE ABOVE + PLAIN TEXT */
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) {
+    background: transparent !important;
+    padding: 24px 0 0 0 !important;
+    margin: 0 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-bottom: none !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+/* Only legal text should show */
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__disclaimer > :not(.m-footer-small__list) {
+    display: none !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__list {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__list-item {
+    color: #ffffff !important;
+    font-size: 0.8rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Make legal text plain, not clickable */
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop)
+.m-footer-small__list-item a {
+    color: inherit !important;
+    text-decoration: none !important;
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+/* FOOTER RESPONSIVE */
+@media (max-width: 1024px) {
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        padding-top: 70px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+        top: 12px !important;
+        left: 30px !important;
+        width: 150px !important;
+        height: 40px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+        right: 30px !important;
+        width: 180px !important;
+        height: 70px !important;
+        background-size: 40px 40px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    footer.footer {
+        padding: 40px 20px 30px 20px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+        left: 20px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+        right: 20px !important;
+    }
+
+    .m-footer-small__disclaimer--list .m-footer-small__list {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    .m-footer-small__list-item.m-footer-small__list-item--border {
+        border-right: none !important;
+        padding: 0 !important;
+    }
+}
+
+/* ==========================================
+   BLOG PAGES - ABTA STYLING
+   ========================================== */
+
+/* HIDE UNWANTED SECTIONS */
+.article-full__right,
+.article-full__detail {
+    display: none !important;
+}
+
+.t_block.t_quote,
+.pictures,
+section.mt-1 {
+    display: none !important;
+}
+
+/* LAYOUT ADJUSTMENTS */
+.article-full__row {
+    display: block !important;
+}
+
+.article-full__left {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    background: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.article-full__content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.article-full__container {
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* HERO BANNER STYLING */
+.hero-banner {
+    position: relative;
+    min-height: 400px;
+    margin-bottom: 40px;
+}
+
+.hero-banner__mask {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-banner__mask.black-mask::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.3) 70%, transparent 100%);
+    z-index: 0;
+}
+
+.hero-banner__mask img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-banner__container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 30px 40px;
+    z-index: 2;
+}
+
+.hero-banner__content {
+    text-align: left;
+}
+
+.hero-banner__content h1,
+.hero-banner__content h1.font-bold-publicoheadline,
+.hero-banner__content h1.font-display-4,
+.hero-banner__content .black-mask-text,
+.hero-banner__content h1 * {
+    font-family: 'Calibri', 'Arial', sans-serif !important;
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    margin: 0 !important;
+    line-height: 1.2 !important;
+    text-align: left !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+.hero-banner__text,
+.hero-banner__text.font-medium,
+.hero-banner__text.black-mask-text {
+    display: none !important;
+}
+
+/* TAG SECTION */
+.tg__tag {
+    margin: 30px 0;
+}
+
+/* ARTICLE TEXT CONTENT */
+.article-full__text {
+    font-family: 'Calibri', 'Arial', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.article-full__text h2,
+.article-full__text h3,
+.article-full__text h4 {
+    font-family: 'Calibri', 'Arial', sans-serif;
+    color: var(--abta-blue);
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.article-full__text h2 {
+    font-size: 2rem;
+    border-bottom: 3px solid var(--abta-yellow);
+    padding-bottom: 10px;
+}
+
+.article-full__text h3 {
+    font-size: 1.5rem;
+}
+
+.article-full__text h4 {
+    font-size: 1.25rem;
+}
+
+.article-full__text p {
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.article-full__text > p:first-of-type {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    line-height: 1.9;
+}
+
+.article-full__text strong,
+.article-full__text b {
+    color: var(--abta-blue);
+    font-weight: 700;
+}
+
+.article-full__text a {
+    color: var(--abta-blue);
+    text-decoration: none;
+    border-bottom: 2px solid var(--abta-yellow);
+    transition: all 0.3s ease;
+    padding-bottom: 2px;
+}
+
+.article-full__text a:hover {
+    color: var(--abta-dark-blue);
+    border-bottom-color: var(--abta-blue);
+    padding-bottom: 4px;
+}
+
+/* IMAGE HANDLING */
+.article-full__text img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    display: block;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 122, 194, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-full__text img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 122, 194, 0.2);
+}
+
+.article-full__text picture {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.article-full__text picture img {
+    margin: 0;
+}
+
+.article-full__text figure {
+    width: 100%;
+    margin: 30px 0;
+    padding: 0;
+}
+
+.article-full__text figure img {
+    margin: 0 0 10px 0;
+}
+
+.article-full__text figcaption {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* LISTS */
+.article-full__text ul,
+.article-full__text ol {
+    margin: 20px 0 20px 30px;
+    padding: 0;
+}
+
+.article-full__text li {
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+.article-full__text ul li::marker {
+    color: var(--abta-blue);
+}
+
+/* BLOCKQUOTES */
+.article-full__text blockquote {
+    border-left: 5px solid var(--abta-yellow);
+    background: var(--abta-light-blue);
+    padding: 25px 30px;
+    margin: 30px 0;
+    font-style: italic;
+    color: var(--text-primary);
+}
+
+.article-full__text blockquote p {
+    margin-bottom: 0;
+}
+
+/* SPECIAL CONTENT BOXES */
+.article-full__text .info-box,
+.article-full__text .tip-box {
+    background: var(--abta-light-blue);
+    border-left: 5px solid var(--abta-blue);
+    padding: 20px 25px;
+    margin: 25px 0;
+    border-radius: 4px;
+}
+
+.article-full__text .highlight-box {
+    background: var(--abta-yellow);
+    padding: 20px 25px;
+    margin: 25px 0;
+    border-radius: 4px;
+    color: var(--text-primary);
+}
+
+/* TABLES */
+.article-full__text table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-size: 1rem;
+}
+
+.article-full__text th {
+    background: var(--abta-blue);
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.article-full__text td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.article-full__text tr:nth-child(even) {
+    background: var(--background-light);
+}
+
+/* BLOG RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .hero-banner {
+        min-height: 300px;
+    }
+    
+    .hero-banner__mask img {
+        height: 300px;
+    }
+    
+    .hero-banner__container {
+        padding: 40px 20px;
+    }
+    
+    .hero-banner__content h1,
+    .hero-banner__content h1.font-bold-publicoheadline,
+    .hero-banner__content h1.font-display-4 {
+        font-size: 2rem !important;
+    }
+    
+    .article-full__content {
+        padding: 0 15px 40px;
+    }
+    
+    .article-full__text {
+        font-size: 1rem;
+    }
+    
+    .article-full__text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .article-full__text h3 {
+        font-size: 1.25rem;
+    }
+    
+    .article-full__text img {
+        margin: 20px 0;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-banner__content h1,
+    .hero-banner__content h1.font-bold-publicoheadline,
+    .hero-banner__content h1.font-display-4 {
+        font-size: 1.75rem !important;
+    }
+    
+    .article-full__text {
+        font-size: 0.95rem;
+    }
+}
+
+/* UTILITY CLASSES */
+.text-center {
+    text-align: center !important;
+}
+
+.mt-1 { margin-top: 10px !important; }
+.mt-2 { margin-top: 20px !important; }
+.mt-3 { margin-top: 30px !important; }
+.mt-4 { margin-top: 40px !important; }
+.mt-5 { margin-top: 50px !important; }
+
+.mb-1 { margin-bottom: 10px !important; }
+.mb-2 { margin-bottom: 20px !important; }
+.mb-3 { margin-bottom: 30px !important; }
+.mb-4 { margin-bottom: 40px !important; }
+.mb-5 { margin-bottom: 50px !important; }
+
+/* PRINT STYLES */
+@media print {
+    .hero-banner__container {
+        background: var(--abta-blue);
+    }
+    
+    .article-full__text a {
+        color: var(--abta-blue);
+        text-decoration: underline;
+    }
+    
+    .article-full__text img {
+        page-break-inside: avoid;
+    }
+}
