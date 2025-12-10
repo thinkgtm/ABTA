@@ -586,6 +586,31 @@ section.container {
     margin: 0 0 30px 0 !important;
 }
 
+/* Article card lists - Replace checkmarks with bullet points */
+.article__card-body ul,
+.article__card-text ul {
+    list-style: disc !important;
+    padding-left: 20px !important;
+    margin: 0 0 25px 0 !important;
+}
+
+.article__card-body ul li,
+.article__card-text ul li {
+    color: #333 !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    padding-left: 10px !important;
+    margin-bottom: 12px !important;
+    position: relative !important;
+    font-family: Calibri, Arial, sans-serif !important;
+}
+
+/* Hide checkmark spans in article cards */
+.article__card-body ul li span,
+.article__card-text ul li span {
+    display: none !important;
+}
+
 @media (max-width: 1024px) {
     .article__container {
         flex-direction: column !important;
