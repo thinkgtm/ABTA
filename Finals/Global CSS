@@ -16,7 +16,7 @@
     font-size: 1.25rem !important;
     font-weight: 700 !important;
     border-radius: 10px !important;
-    text-transform: none !important;
+    text-transform: uppercase !important;
     text-decoration: none !important;
     display: inline-block !important;
     border: none !important;
@@ -738,7 +738,7 @@ section.container {
     display: inline-block !important;
     border: none !important;
     box-shadow: none !important;
-    text-transform: none !important;
+    text-transform: uppercase !important;
     transition: background-color 0.3s ease !important;
 }
 
@@ -1080,7 +1080,7 @@ section.container {
     font-size: 1.125rem !important;
     font-weight: 700 !important;
     border-radius: 10px !important;
-    text-transform: none !important;
+    text-transform: uppercase !important;
     text-decoration: none !important;
     display: inline-block !important;
     border: none !important;
@@ -1718,7 +1718,7 @@ section.p-3[style*="background-color: #00008F"] .btn--light-white:hover {
     transition: background-color 0.3s ease !important;
     display: inline-block !important;
     width: fit-content !important;
-    text-transform: none !important;
+    text-transform: uppercase !important;
 }
 
 .banner-quote-now-v2 .inner__description-box .btn--secondary:hover,
@@ -2150,6 +2150,7 @@ section.p-3[style*="background-color: #00008F"] .btn--light-white:hover {
     align-items: center !important;
     justify-content: center !important;
     box-shadow: none !important;
+    text-transform: uppercase !important;
 }
 
 .btn--secondary.btn--small:hover {
