@@ -1591,7 +1591,7 @@ div.card-v2__content {
 
 /* ===== WHAT ABTA TRAVEL INSURANCE COVERS - SECONDARY BANNER ===== */
 section.introduction .introduction-banner:has(.introduction-banner__text) .introduction-banner__content--content {
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.85) !important;
     border-radius: 12px;
     padding: 35px 40px;
     max-width: 500px;
@@ -1615,7 +1615,7 @@ section.introduction .introduction-banner:has(.introduction-banner__text) p.intr
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctext x='2' y='18' font-family='Arial' font-size='20' font-weight='bold' fill='%230077C8'%3E✓%3C/text%3E%3C/svg%3E"),
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctext x='2' y='18' font-family='Arial' font-size='20' font-weight='bold' fill='%230077C8'%3E✓%3C/text%3E%3C/svg%3E") !important;
     background-repeat: no-repeat !important;
-    background-position: 0 2px, 0 38px, 0 74px !important;
+    background-position: 0 0.3em, 0 calc(1 * 2.4em + 0.3em), 0 calc(2 * 2.4em + 0.3em) !important;
     background-size: 18px 18px !important;
 }
 
@@ -1652,7 +1652,7 @@ section.introduction .article-full__detail--mobile .introduction-banner__text {
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctext x='2' y='18' font-family='Arial' font-size='20' font-weight='bold' fill='%230077C8'%3E✓%3C/text%3E%3C/svg%3E"),
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctext x='2' y='18' font-family='Arial' font-size='20' font-weight='bold' fill='%230077C8'%3E✓%3C/text%3E%3C/svg%3E") !important;
     background-repeat: no-repeat !important;
-    background-position: 0 2px, 0 38px, 0 74px !important;
+    background-position: 0 0.3em, 0 calc(1 * 2.4em + 0.3em), 0 calc(2 * 2.4em + 0.3em) !important;
     background-size: 18px 18px !important;
 }
 
@@ -2925,7 +2925,7 @@ body:has(.article-full__content) .hero-banner {
 /* ===== FOOTER - ABTA ===== */
 footer.footer {
     background-color: #007ac2 !important;
-    padding: 60px 20px 40px 20px !important;
+    padding: 40px 20px 30px 20px !important;
     margin: 0 !important;
     color: #ffffff !important;
     font-family: Calibri, Arial, sans-serif !important;
@@ -3126,7 +3126,7 @@ footer.footer {
 
 @media (max-width: 768px) {
     footer.footer {
-        padding: 40px 20px 30px 20px !important;
+        padding: 30px 20px 20px 20px !important;
     }
 
     .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
