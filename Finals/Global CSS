@@ -2743,6 +2743,18 @@ body:has(.article-full__content) .hero-banner {
 .mt-5 { margin-top: 3rem !important; }
 
 /* ===== NAVIGATION BAR - ABTA STYLING ===== */
+/* Force sentence case on menu items */
+.mega-menu__item > a,
+.mega-menu__item > button.mega-menu__item-button {
+    text-transform: capitalize !important;
+}
+
+/* Override for acronyms - keep ABTA, FAQ, etc. uppercase */
+.mega-menu__item > a:first-letter,
+.mega-menu__item > button.mega-menu__item-button:first-letter {
+    text-transform: uppercase !important;
+}
+
 .header#header--sticky {
     background: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
