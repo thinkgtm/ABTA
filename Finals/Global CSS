@@ -3,7 +3,25 @@
    FINAL VERSION - Based on actual working CSS + HTML
    Ready for 30-minute presentation
    ========================================== */
+/* ===== THREE LEVELS OF COVER CARDS - COLORED CHECKMARKS ===== */
 
+/* First card (ABTA Travel Insurance) - Blue checkmarks */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(1) .icon-check_circle::before,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(1) .icon-check_circle {
+    color: #007ac2 !important;
+}
+
+/* Second card (ABTA Travel Insurance Gold) - Gold checkmarks */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(2) .icon-check_circle::before,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(2) .icon-check_circle {
+    color: #B8860B !important;
+}
+
+/* Third card (ABTA Travel Insurance Platinum) - Silver/Grey checkmarks */
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(3) .icon-check_circle::before,
+.journal-content-article[data-analytics-asset-title="TGTM - Three Levels of Cover - Card"] .card-v2:nth-child(3) .icon-check_circle {
+    color: #808080 !important;
+}
 /* ===== GLOBAL BUTTON STYLING - ALL BUTTONS ===== */
 .btn,
 .btn--primary,
@@ -2726,165 +2744,150 @@ body:has(.article-full__content) .hero-banner {
 
 /* ===== NAVIGATION BAR - ABTA STYLING ===== */
 .header#header--sticky {
-    background: #fff !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .main-navbar {
-    background: #fff !important;
+    background: #fff;
 }
 
 .main-navbar__wrapper {
-    max-width: 1400px !important;
-    margin: 0 auto !important;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
+/* Main menu items */
 .mega-menu__list {
-    display: flex !important;
-    align-items: center !important;
-    gap: 30px !important;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-/* ALL menu items - links AND buttons */
-.mega-menu__item > a,
-.mega-menu__item > button.mega-menu__item-button,
-.mega-menu__item-button {
+/* Style BOTH links AND buttons the same way */
+.mega-menu__item a,
+.mega-menu__item button.mega-menu__item-button {
     color: #333 !important;
     font-size: 16px !important;
     font-weight: 500 !important;
     text-decoration: none !important;
     padding: 20px 0 !important;
-    display: block !important;
-    transition: all 0.3s ease !important;
-    border: none !important;  /* KILL ALL BORDERS */
-    border-bottom: 2px solid transparent !important;  /* Only bottom border for ABTA style */
-    text-transform: none !important;
+    display: block;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent !important;
+    background: transparent !important;
     font-family: Calibri, Arial, sans-serif !important;
-    background: transparent !important;
     cursor: pointer !important;
-    pointer-events: auto !important;
-    position: relative !important;
-    z-index: 10 !important;
-    outline: none !important;  /* Remove focus outline that might show red */
-    box-shadow: none !important;  /* Remove any shadow */
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
 }
 
-/* Hover state for ALL items - ONLY BLUE BOTTOM BORDER */
-.mega-menu__item > a:hover,
-.mega-menu__item > button.mega-menu__item-button:hover,
-.mega-menu__item-button:hover {
-    color: #007ac2 !important;
-    border: none !important;  /* KILL ALL BORDERS */
-    border-bottom: 2px solid #007ac2 !important;  /* Only blue bottom border */
-    background: transparent !important;
-    text-decoration: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
-
-/* Active state - ONLY BLUE BOTTOM BORDER */
-.mega-menu__item--active > a,
-.mega-menu__item--active > button.mega-menu__item-button {
-    color: #007ac2 !important;
-    border: none !important;  /* KILL ALL BORDERS */
-    border-bottom: 2px solid #007ac2 !important;  /* Only blue bottom border */
-    background: transparent !important;
+/* Remove any lingering borders/colors from original theme */
+.mega-menu__item a,
+.mega-menu__item a *,
+.mega-menu__item button,
+.mega-menu__item button *,
+.mega-menu__item--active a,
+.mega-menu__item--active a *,
+.mega-menu__item--active button,
+.mega-menu__item--active button * {
     box-shadow: none !important;
 }
 
-/* Focus state - remove any red focus indicators */
-.mega-menu__item > a:focus,
-.mega-menu__item > button.mega-menu__item-button:focus,
-.mega-menu__item-button:focus {
-    border: none !important;  /* KILL ALL BORDERS */
-    border-bottom: 2px solid #007ac2 !important;  /* Only blue bottom border */
-    outline: none !important;
-    box-shadow: none !important;
-}
-
-/* Active/pressed state */
-.mega-menu__item > a:active,
-.mega-menu__item > button.mega-menu__item-button:active,
-.mega-menu__item-button:active {
-    border: none !important;  /* KILL ALL BORDERS */
-    border-bottom: 2px solid #007ac2 !important;  /* Only blue bottom border */
-    outline: none !important;
-    box-shadow: none !important;
-}
-
-/* Remove ALL pseudo-elements that might create lines */
-.mega-menu__item > a::before,
-.mega-menu__item > a::after,
-.mega-menu__item > button::before,
-.mega-menu__item > button::after,
-.mega-menu__item::before,
-.mega-menu__item::after {
+/* Remove any pseudo-elements that might be creating colored lines */
+.mega-menu__item a::before,
+.mega-menu__item a::after,
+.mega-menu__item button::before,
+.mega-menu__item button::after,
+.mega-menu__item--active a::before,
+.mega-menu__item--active a::after,
+.mega-menu__item--active button::before,
+.mega-menu__item--active button::after,
+.mega-menu__item--active > a::before,
+.mega-menu__item--active > a::after,
+.mega-menu__item--active > button::before,
+.mega-menu__item--active > button::after {
     display: none !important;
-    content: none !important;
-    border: none !important;
-    background: none !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
 }
 
-/* Dropdown menu styling */
+/* Only show blue line on hover - for BOTH links and buttons */
+.mega-menu__item a:hover,
+.mega-menu__item button.mega-menu__item-button:hover {
+    color: #007ac2 !important;
+    border-bottom: 2px solid #007ac2 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* Only show blue line when it's the EXACT active page */
+.mega-menu__item--active > a {
+    color: #007ac2 !important;
+    border-bottom: 2px solid #007ac2 !important;
+}
+
+/* Remove blue line from parent when child page is active */
+.mega-menu__item--active-tree:not(.mega-menu__item--active) > a {
+    color: #333 !important;
+    border-bottom: 2px solid transparent !important;
+}
+
+/* Ensure no background colors creating lines on active items */
+.mega-menu__item--active {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Hide the Holiday Types info column in mega menu */
+.mega-menu-tray__column--content {
+    display: none !important;
+}
+
+/* Mega menu dropdown tray */
 .mega-menu-tray {
     background: #fff !important;
-    border: none !important;  /* KILL ALL BORDERS */
-    border-top: 2px solid #007ac2 !important;  /* Only top border */
+    border-top: 2px solid #007ac2 !important;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
-    pointer-events: auto !important;
 }
 
 .mega-menu-tray__content {
     padding: 30px 40px !important;
-    pointer-events: auto !important;
-}
-
-.mega-menu-tray__column--content {
-    display: none !important;
 }
 
 .mega-menu-tray__info p {
     color: #007ac2 !important;
     font-weight: 600 !important;
-    font-family: Calibri, Arial, sans-serif !important;
 }
 
 .mega-menu-tray__info a {
     color: #007ac2 !important;
     font-weight: 500 !important;
     text-decoration: none !important;
-    font-family: Calibri, Arial, sans-serif !important;
-    pointer-events: auto !important;
-    border: none !important;
 }
 
 .mega-menu-tray__info a:hover {
     text-decoration: underline !important;
-    border: none !important;
 }
 
 .mega-menu-tray__nav a {
     color: #333 !important;
     font-size: 15px !important;
-    font-family: Calibri, Arial, sans-serif !important;
-    display: block !important;
+    display: block;
     padding: 8px 0 !important;
     text-decoration: none !important;
-    pointer-events: auto !important;
-    border: none !important;
 }
 
 .mega-menu-tray__nav a:hover {
     color: #007ac2 !important;
-    border: none !important;
 }
 
-/* Get a Quote Button - COMPLETELY OVERRIDE */
-.mega-menu__item:last-child > a.btn--primary,
-.mega-menu__item > a.btn.btn--primary,
+/* Get a Quote Button */
 .mega-menu__item a.btn--primary {
     background: #fcb316 !important;
-    border: 2px solid #fcb316 !important;  /* Yellow border only */
+    border: 2px solid #fcb316 !important;
     color: #000000 !important;
     padding: 10px 24px !important;
     border-radius: 6px !important;
@@ -2892,45 +2895,24 @@ body:has(.article-full__content) .hero-banner {
     font-weight: 600 !important;
     text-transform: uppercase !important;
     letter-spacing: 0.5px !important;
-    transition: all 0.3s ease !important;
-    display: inline-block !important;
-    font-family: Calibri, Arial, sans-serif !important;
-    pointer-events: auto !important;
-    box-shadow: none !important;
-    outline: none !important;
 }
 
-.mega-menu__item:last-child > a.btn--primary:hover,
-.mega-menu__item > a.btn.btn--primary:hover,
 .mega-menu__item a.btn--primary:hover {
     background: #E6C000 !important;
-    border: 2px solid #E6C000 !important;  /* Darker yellow border on hover */
+    border: 2px solid #E6C000 !important;
     color: #000000 !important;
     transform: translateY(-2px) !important;
     box-shadow: 0 4px 12px rgba(252, 179, 22, 0.4) !important;
 }
 
-.mega-menu__item:last-child > a.btn--primary:focus,
-.mega-menu__item > a.btn.btn--primary:focus,
-.mega-menu__item a.btn--primary:focus {
-    background: #fcb316 !important;
-    border: 2px solid #fcb316 !important;
-    outline: none !important;
-}
-
-/* Mobile Navigation */
-.main-navbar__mobile-trigger {
-    pointer-events: auto !important;
-    cursor: pointer !important;
-    border: none !important;
-}
-
+/* Mobile navigation trigger */
 .main-navbar__mobile-trigger__icon,
 .main-navbar__mobile-trigger__icon::before,
 .main-navbar__mobile-trigger__icon::after {
     background-color: #007ac2 !important;
 }
 
+/* Mobile navigation */
 .main-navbar-responsive {
     background: #fff !important;
 }
@@ -2939,11 +2921,8 @@ body:has(.article-full__content) .hero-banner {
     color: #333 !important;
     font-size: 16px !important;
     font-weight: 500 !important;
-    font-family: Calibri, Arial, sans-serif !important;
     padding: 15px 20px !important;
     border-bottom: 1px solid #eee !important;
-    text-transform: none !important;
-    pointer-events: auto !important;
 }
 
 .mega-menu-responsive__item-title:hover {
@@ -2957,17 +2936,13 @@ body:has(.article-full__content) .hero-banner {
 .mega-menu-tray-responsive__nav a {
     color: #333 !important;
     font-size: 15px !important;
-    font-family: Calibri, Arial, sans-serif !important;
     padding: 12px 20px !important;
-    display: block !important;
-    pointer-events: auto !important;
-    border: none !important;
+    display: block;
 }
 
 .mega-menu-tray-responsive__nav a:hover {
     color: #007ac2 !important;
     background: #f0f0f0 !important;
-    border: none !important;
 }
 
 .mega-menu-tray-responsive--back {
@@ -2975,6 +2950,7 @@ body:has(.article-full__content) .hero-banner {
     font-weight: 600 !important;
 }
 
+/* Extra details bar */
 .extra-details-v2 {
     background: #007ac2 !important;
 }
