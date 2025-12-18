@@ -2909,16 +2909,16 @@ body:has(.article-full__content) .hero-banner {
 .mt-5 { margin-top: 3rem !important; }
 
 /* ===== NAVIGATION BAR - ABTA STYLING ===== */
-/* Force sentence case on menu items */
+/* Force normal case - no text transformation */
 .mega-menu__item > a,
 .mega-menu__item > button.mega-menu__item-button {
-    text-transform: capitalize !important;
+    text-transform: none !important;
 }
 
-/* Override for acronyms - keep ABTA, FAQ, etc. uppercase */
+/* No first-letter transformation either */
 .mega-menu__item > a:first-letter,
 .mega-menu__item > button.mega-menu__item-button:first-letter {
-    text-transform: uppercase !important;
+    text-transform: none !important;
 }
 
 .header#header--sticky {
@@ -3101,6 +3101,7 @@ body:has(.article-full__content) .hero-banner {
     font-weight: 500 !important;
     padding: 15px 20px !important;
     border-bottom: 1px solid #eee !important;
+    text-transform: none !important;
 }
 
 .mega-menu-responsive__item-title:hover {
@@ -3116,6 +3117,7 @@ body:has(.article-full__content) .hero-banner {
     font-size: 15px !important;
     padding: 12px 20px !important;
     display: block;
+    text-transform: none !important;
 }
 
 .mega-menu-tray-responsive__nav a:hover {
@@ -3169,15 +3171,9 @@ body:has(.article-full__content) .hero-banner {
     background: transparent !important;
     font-family: Calibri, Arial, sans-serif !important;
     cursor: pointer !important;
-    text-transform: lowercase !important;
+    text-transform: none !important;
     box-shadow: none !important;
     outline: none !important;
-}
-
-/* Capitalize first letter only */
-.mega-menu__item a::first-letter,
-.mega-menu__item button.mega-menu__item-button::first-letter {
-    text-transform: uppercase !important;
 }
 
 /* Only show blue line on hover */
@@ -3285,11 +3281,10 @@ body:has(.article-full__content) .hero-banner {
 .mega-menu-tray__nav a {
     color: #333 !important;
     font-size: 15px !important;
-    font-family: Calibri, Arial, sans-serif !important;
-    display: block !important;
-    padding: 12px 20px !important;
+    display: block;
+    padding: 8px 0 !important;
     text-decoration: none !important;
-    transition: all 0.3s ease !important;
+    text-transform: none !important;
 }
 
 .mega-menu-tray__nav a:hover {
@@ -3315,15 +3310,7 @@ body:has(.article-full__content) .hero-banner {
     font-size: 16px !important;
     font-weight: 600 !important;
     font-family: Calibri, Arial, sans-serif !important;
-    text-transform: lowercase !important;
-}
-
-/* Capitalize first letter */
-.mega-menu-responsive__item-title::first-letter,
-.mega-menu-responsive__item-title span::first-letter,
-.mega-menu-responsive__item a::first-letter,
-.mega-menu-responsive__item a span::first-letter {
-    text-transform: uppercase !important;
+    text-transform: none !important;
 }
 
 /* Mobile menu item container */
@@ -3367,6 +3354,7 @@ body:has(.article-full__content) .hero-banner {
     padding: 14px 20px 14px 40px !important;
     display: block !important;
     border-bottom: 1px solid #e0e0e0 !important;
+    text-transform: none !important;
 }
 
 .mega-menu-tray-responsive__nav a:hover {
