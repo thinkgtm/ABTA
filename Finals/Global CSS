@@ -3634,6 +3634,7 @@ body:has(.article-full__content) .hero-banner {
         text-align: center !important;
     }
 }
+
 /* ===== FOOTER - ABTA ===== */
 footer.footer {
     background-color: #007ac2 !important;
