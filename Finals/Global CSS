@@ -1850,7 +1850,7 @@ section.introduction .article-full__detail--mobile:has(.introduction-banner__tex
 /* ===== DOWNLOAD POLICY DOCUMENTS BANNER ===== */
 section.p-3[style*="background-color: #00008F"] {
     background-color: #0077C8 !important;
-    padding: 30px 60px !important;
+    padding: 15px 60px !important;
     width: 100%;
 }
 
@@ -3958,5 +3958,202 @@ div.card-v2__content {
     display: none !important;
 }
 
-/* ... rest of the card CSS stays the same ... */
+/* ===== REDUCE SPACING - CRUISE COVER PAGE ONLY ===== */
+
+/* Reduce top padding on the cruise hero section */
+section.container:has(.article__card-title:contains("Cruise Travel Insurance")),
+section.container .article {
+    padding-top: 30px !important;
+}
+
+/* Better approach - target by position after the quote banner */
+.t_quote + section.container {
+    padding-top: 30px !important;
+}
+
+/* Reduce gap after "Get a Quote" button and before "What's covered" text */
+.article + .t_block.t_quote {
+    padding-top: 20px !important;
+    margin-top: -30px !important;
+}
+
+/* Reduce bottom padding of the article section (with Get a Quote button) */
+.article .article__card {
+    padding-bottom: 20px !important;
+}
+
+/* Reduce gap between "What's covered" text content and cruise cover table */
+section.table-v2 {
+    margin-top: -30px !important;
+}
+
+/* Reduce top padding of the cruise cover table */
+.table-v2.p-5 {
+    padding-top: 20px !important;
+}
+
+/* Additional spacing reduction for text section directly above table */
+.t_quote--xlarge + section.table-v2 {
+    margin-top: -40px !important;
+}
+
+/* Mobile adjustments for cruise page spacing */
+@media (max-width: 768px) {
+    .t_quote + section.container {
+        padding-top: 20px !important;
+    }
+    
+    .table-v2.p-5 {
+        padding-top: 15px !important;
+    }
+    
+    section.table-v2 {
+        margin-top: -20px !important;
+    }
+}
+/* ===== POLICY DOCUMENTS DOWNLOAD SECTION - ABTA STYLING ===== */
+
+/* Main container - light grey background */
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__content-t {
+    background-color: #f5f5f5 !important;
+    padding: 60px 20px !important;
+    margin: 0 !important;
+}
+
+/* Section heading */
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] h2.font-display-4 {
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    margin-bottom: 40px !important;
+}
+
+/* Container layout - SINGLE COLUMN */
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__container {
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    background: transparent !important;
+}
+
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0 !important;
+    background: transparent !important;
+}
+
+/* Hide left side description text */
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__left--t {
+    display: none !important;
+}
+
+/* Center the download card */
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__right {
+    width: 100% !important;
+    background: transparent !important;
+}
+
+/* Download card styling - TRANSPARENT background with ABTA blue border */
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__detail {
+    background: transparent !important;
+    border: 3px solid #007ac2 !important;
+    border-radius: 12px !important;
+    padding: 40px !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease !important;
+    text-align: center !important;
+}
+
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__detail:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 8px 20px rgba(0, 122, 194, 0.15) !important;
+}
+
+/* REMOVE RED AXA LINE & WHITE BACKGROUNDS */
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__detail::before,
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__detail::after,
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__container::before,
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__container::after {
+    display: none !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Remove any AXA branding colors and white backgrounds */
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] [class*="axa"],
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] [class*="red"],
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .color-primary,
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .bg-primary {
+    background: transparent !important;
+    color: #007ac2 !important;
+    border-color: #007ac2 !important;
+}
+
+/* Card title */
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__detail p.font-display-6 {
+    color: #007ac2 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 24px !important;
+    text-align: center !important;
+}
+
+/* Download link button */
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__detail a {
+    background-color: #fcb316 !important;
+    color: #000000 !important;
+    padding: 16px 40px !important;
+    border-radius: 8px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.125rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    display: inline-block !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid #fcb316 !important;
+}
+
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__detail a:hover {
+    background-color: #E6C000 !important;
+    border-color: #E6C000 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(252, 179, 22, 0.4) !important;
+}
+
+/* Add PDF icon before link */
+.journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__detail a::before {
+    content: "📄 " !important;
+    margin-right: 8px !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__content-t {
+        padding: 40px 20px !important;
+    }
+    
+    .journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] h2.font-display-4 {
+        font-size: 1.75rem !important;
+        margin-bottom: 30px !important;
+    }
+    
+    .journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__detail {
+        padding: 30px 24px !important;
+    }
+    
+    .journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__detail p.font-display-6 {
+        font-size: 1.5rem !important;
+    }
+    
+    .journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"] .article-full__detail a {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 14px 32px !important;
+    }
+}
 /* ===== END OF MASTER CSS ===== */
