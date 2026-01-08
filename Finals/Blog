@@ -1,0 +1,85 @@
+/* ========================================
+   ABTA Article Page Rebrand - CSS Fixes
+   ======================================== */
+
+/* Hero Banner - Article Pages */
+.hero-banner__content h1.font-bold-publicoheadline,
+.hero-banner__content h1.font-display-4 {
+    font-family: 'Calibri', Arial, sans-serif !important;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Override any AXA font classes on hero H1 */
+h1.font-bold-publicoheadline.font-display-4.black-mask-text {
+    font-family: 'Calibri', Arial, sans-serif !important;
+}
+
+/* Hide hero banner subtitle text */
+.hero-banner__text.font-medium.black-mask-text {
+    display: none;
+}
+
+/* Article Content Background */
+.article-full__content {
+    background-color: #ffffff !important;
+}
+
+.article-full__content.pb-4 {
+    background-color: #ffffff !important;
+}
+
+/* Article Container Background */
+.article-full__container {
+    background-color: #ffffff !important;
+}
+
+.article-full__container.container {
+    background-color: #ffffff !important;
+}
+
+/* Article Row Background */
+.article-full__row {
+    background-color: #ffffff !important;
+}
+
+/* Hide article right sidebar (social sharing) */
+.article-full__right {
+    display: none;
+}
+
+/* Article Left Column - Full Width */
+.article-full__left {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    border: none;
+    background-color: #ffffff;
+}
+
+/* Article Text Styling */
+.article-full__text,
+.article-full__text p {
+    font-family: 'Calibri', Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Remove any borders on article text section */
+.article-full__text {
+    border: none;
+}
+
+/* Hide AXA quote section */
+.t_block.t_quote.t_quote--xlarge {
+    display: none;
+}
+
+/* Hide related articles section */
+section.mt-1:has(h2.font-display-4.text-center) {
+    display: none;
+}
+
+/* Alternative selector if the above doesn't work */
+.article-inline {
+    display: none;
+}
