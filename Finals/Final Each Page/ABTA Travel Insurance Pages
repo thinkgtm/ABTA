@@ -3107,28 +3107,33 @@ body:has(.article-full__content) .hero-banner {
     margin: 0 auto;
 }
 
-/* ===== MOBILE NAVIGATION - SAFARI BOTTOM TOOLBAR FIX ===== */
+/* ===== MOBILE NAVIGATION - PROPER SCROLLING FIX ===== */
 
-/* Ensure mobile nav container is tall enough */
+/* Enable scrolling on the mobile nav container */
 .main-navbar-responsive {
-    min-height: 100vh !important;
-    padding-bottom: 200px !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    background: #ffffff !important;
 }
 
-/* Position button within visible area */
+/* Menu list needs to be taller than viewport to allow scrolling */
 .mega-menu-responsive__list {
     display: flex !important;
     flex-direction: column !important;
-    min-height: calc(100vh - 100px) !important;
+    min-height: calc(100vh + 100px) !important;
+    padding: 20px 0 250px 0 !important;
+    box-sizing: border-box !important;
 }
 
-/* Get a Quote button - force it into view */
+/* Get a Quote button positioned at bottom with proper spacing */
 .mega-menu-responsive__list > a.btn--primary {
     order: 999 !important;
-    margin: 30px 20px !important;
+    margin: auto 20px 100px 20px !important;
     padding: 16px 24px !important;
     display: block !important;
-    position: relative !important;
     background-color: #fcb316 !important;
     color: #000000 !important;
     font-size: 15px !important;
@@ -3136,23 +3141,29 @@ body:has(.article-full__content) .hero-banner {
     text-transform: uppercase !important;
     border-radius: 6px !important;
     text-align: center !important;
-    z-index: 10000 !important;
-    /* Force render */
-    isolation: isolate !important;
+    flex-shrink: 0 !important;
+    line-height: 1.5 !important;
+    min-height: 52px !important;
 }
 
-/* Show button content explicitly */
-.mega-menu-responsive__list > a.btn--primary span,
-.mega-menu-responsive__list > a.btn--primary::after {
-    content: attr(href) !important;
+/* Ensure button text is always visible */
+.mega-menu-responsive__list > a.btn--primary,
+.mega-menu-responsive__list > a.btn--primary * {
     color: #000000 !important;
-    display: inline !important;
     visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-font-smoothing: antialiased !important;
 }
 
+/* Menu items should not prevent scrolling */
+.mega-menu-responsive__item {
+    flex-shrink: 0 !important;
+}
+
+/* iOS specific fixes */
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
-    .main-navbar-responsive {
-        padding-bottom: calc(180px + env(safe-area-inset-bottom)) !important;
+    .mega-menu-responsive__list {
+        padding-bottom: calc(250px + env(safe-area-inset-bottom)) !important;
     }
 }
 /* Main menu items */
