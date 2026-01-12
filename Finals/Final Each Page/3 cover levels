@@ -1758,13 +1758,22 @@ div.card-v2__content {
     margin: 0 0 25px 0 !important;
     padding: 0 !important;
     display: block !important;
+    max-width: none !important;
+    width: auto !important;
 }
 
 .v2-icons-list__item figure.v2-icons-list__item-image img.v2-icons-list__item-image {
     display: block !important;
     height: 80px !important;
     width: auto !important;
-    max-width: 100% !important;
+    max-width: none !important;
+}
+
+/* MAKE CRUISE ICON BIGGER */
+.v2-icons-list__item figure.v2-icons-list__item-image img[alt="ABTA Cruise Cover"],
+.v2-icons-list__item figure.v2-icons-list__item-image img[alt="Cruise cover"] {
+    height: 55px !important;
+    width: auto !important;
 }
 
 .v2-icons-list__item .v2-icons-list__item-title {
@@ -1801,6 +1810,7 @@ div.card-v2__content {
         font-size: 26px;
     }
 }
+
 
 /* ===== WHAT ABTA TRAVEL INSURANCE COVERS - SECONDARY BANNER ===== */
 section.introduction .introduction-banner:has(.introduction-banner__text) .introduction-banner__content--content {
