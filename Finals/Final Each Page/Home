@@ -4785,27 +4785,68 @@ footer.footer {
         padding: 40px 20px 30px 20px !important;
     }
 
+    /* MOBILE: Reorganize footer layout */
     .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
         padding-left: 20px !important;
         padding-right: 20px !important;
+        padding-top: 100px !important; /* Space for top logo */
+        padding-bottom: 40px !important;
+        flex-direction: column !important;
+        gap: 32px !important;
+        position: relative !important;
     }
 
+    /* ABTA LOGO - CENTERED AT TOP */
     .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
-        left: 20px !important;
+        display: block !important;
+        top: 20px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 180px !important;
+        height: 55px !important;
     }
 
+    /* HIDE the right-side AXA desktop positioning */
     .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
-        right: 20px !important;
+        display: none !important;
     }
 
+    /* AXA LOGO + TEXT - CENTERED BELOW SOCIAL ICONS */
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer::after {
+        content: "IN PARTNERSHIP WITH" !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        font-size: 0.7rem !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.08em !important;
+        color: #ffffff !important;
+        margin-top: 32px !important;
+        padding-bottom: 60px !important;
+        background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/axa_logo_solid_rgb.webp/b6ba9428-c8da-c8b9-6e97-09bd46908585?version=1.0&t=1763453280994&imagePreview=1") !important;
+        background-repeat: no-repeat !important;
+        background-position: center bottom !important;
+        background-size: 48px 48px !important;
+    }
+
+    /* Navigation - centered */
     .m-footer-small__disclaimer--list .m-footer-small__list {
         flex-direction: column !important;
-        gap: 10px !important;
+        gap: 12px !important;
+        text-align: center !important;
     }
 
     .m-footer-small__list-item.m-footer-small__list-item--border {
         border-right: none !important;
         padding: 0 !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* Social icons - centered */
+    .m-footer-small__disclaimer .m-footer-small__list {
+        justify-content: center !important;
+        gap: 16px !important;
     }
 }
 
