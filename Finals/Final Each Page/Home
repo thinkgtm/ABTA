@@ -3023,35 +3023,33 @@ body:has(.article-full__content) .hero-banner {
     margin: 0 auto;
 }
 
-/* ===== MOBILE NAVIGATION - SAFARI BOTTOM TOOLBAR FIX ===== */
+/* ===== MOBILE NAVIGATION - PROPER SCROLLING FIX ===== */
 
-/* Ensure mobile nav container has proper height calculation */
+/* Enable scrolling on the mobile nav container */
 .main-navbar-responsive {
-    min-height: 100vh !important;
-    min-height: 100dvh !important; /* Dynamic viewport height for modern browsers */
-    padding-bottom: 0 !important;
-    overflow-y: auto !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    overflow-y: scroll !important;
     overflow-x: hidden !important;
     -webkit-overflow-scrolling: touch !important;
+    background: #ffffff !important;
 }
 
-/* Position button within visible area with safe spacing */
+/* Menu list needs to be taller than viewport to allow scrolling */
 .mega-menu-responsive__list {
     display: flex !important;
     flex-direction: column !important;
-    min-height: 100vh !important;
-    min-height: 100dvh !important;
-    padding-bottom: 200px !important;
+    min-height: calc(100vh + 100px) !important;
+    padding: 20px 0 250px 0 !important;
     box-sizing: border-box !important;
 }
 
-/* Get a Quote button - force it into view with extra bottom margin */
+/* Get a Quote button positioned at bottom with proper spacing */
 .mega-menu-responsive__list > a.btn--primary {
     order: 999 !important;
-    margin: 30px 20px 150px 20px !important;
+    margin: auto 20px 100px 20px !important;
     padding: 16px 24px !important;
     display: block !important;
-    position: relative !important;
     background-color: #fcb316 !important;
     color: #000000 !important;
     font-size: 15px !important;
@@ -3059,82 +3057,29 @@ body:has(.article-full__content) .hero-banner {
     text-transform: uppercase !important;
     border-radius: 6px !important;
     text-align: center !important;
-    z-index: 10000 !important;
-    /* Force render */
-    isolation: isolate !important;
-    /* Ensure text is visible */
+    flex-shrink: 0 !important;
     line-height: 1.5 !important;
-    min-height: 48px !important;
+    min-height: 52px !important;
 }
 
-/* Force button text to be visible immediately */
+/* Ensure button text is always visible */
 .mega-menu-responsive__list > a.btn--primary,
 .mega-menu-responsive__list > a.btn--primary * {
     color: #000000 !important;
-    display: inline !important;
     visibility: visible !important;
     opacity: 1 !important;
     -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
 }
 
-/* iOS safe area support */
+/* Menu items should not prevent scrolling */
+.mega-menu-responsive__item {
+    flex-shrink: 0 !important;
+}
+
+/* iOS specific fixes */
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
     .mega-menu-responsive__list {
-        padding-bottom: calc(200px + env(safe-area-inset-bottom)) !important;
-    }
-    
-    .mega-menu-responsive__list > a.btn--primary {
-        margin-bottom: calc(150px + env(safe-area-inset-bottom)) !important;
-    }
-}
-
-/* Additional fix for older iOS devices */
-@supports (-webkit-touch-callout: none) {
-    .main-navbar-responsive {
-        min-height: calc(100vh + 100px) !important;
-    }
-    
-    .mega-menu-responsive__list {
-        padding-bottom: 250px !important;
-    }
-    
-    .mega-menu-responsive__list > a.btn--primary {
-        margin-bottom: 180px !important;
-    }
-}
-
-/* Get a Quote button - force it into view */
-.mega-menu-responsive__list > a.btn--primary {
-    order: 999 !important;
-    margin: 30px 20px !important;
-    padding: 16px 24px !important;
-    display: block !important;
-    position: relative !important;
-    background-color: #fcb316 !important;
-    color: #000000 !important;
-    font-size: 15px !important;
-    font-weight: 700 !important;
-    text-transform: uppercase !important;
-    border-radius: 6px !important;
-    text-align: center !important;
-    z-index: 10000 !important;
-    /* Force render */
-    isolation: isolate !important;
-}
-
-/* Show button content explicitly */
-.mega-menu-responsive__list > a.btn--primary span,
-.mega-menu-responsive__list > a.btn--primary::after {
-    content: attr(href) !important;
-    color: #000000 !important;
-    display: inline !important;
-    visibility: visible !important;
-}
-
-@supports (padding-bottom: env(safe-area-inset-bottom)) {
-    .main-navbar-responsive {
-        padding-bottom: calc(180px + env(safe-area-inset-bottom)) !important;
+        padding-bottom: calc(250px + env(safe-area-inset-bottom)) !important;
     }
 }
 /* Main menu items */
