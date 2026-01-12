@@ -3590,134 +3590,181 @@ body:has(.article-full__content) .hero-banner {
     margin: 0 !important;
 }
 
-/* ===== MOBILE BANNER BOX - OVERLAY ON HEADER IMAGE - AGGRESSIVE FIX ===== */
+/* ===== MOBILE BANNER BOX - MOBILE ONLY, HIDE ON DESKTOP ===== */
 
-/* Outer wrapper - make sure it has no background */
-.article-full__content.sheme-white.show-xs {
-    background: transparent !important;
-    padding: 0 20px !important;
-    margin: 0 !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
+/* HIDE mobile banner on desktop */
+@media (min-width: 769px) {
+    .article-full__content.sheme-white.show-xs,
+    .article-full__detail--mobile.sheme-white.show-xs {
+        display: none !important;
+    }
 }
 
-/* Remove any pseudo-elements that might have backgrounds */
-.article-full__content.sheme-white.show-xs::before,
-.article-full__content.sheme-white.show-xs::after {
-    display: none !important;
-    background: transparent !important;
-}
-
-.article-full__container--position {
-    position: relative !important;
-    margin-top: -80px !important;
-    z-index: 10 !important;
-    padding: 0 !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-    background: transparent !important;
-}
-
-.article-full__container--position::before,
-.article-full__container--position::after {
-    display: none !important;
-}
-
-/* Mobile detail box - THIS is where the rounded background goes */
-.article-full__detail--mobile.sheme-white.show-xs {
-    background: rgba(255, 255, 255, 0.95) !important;
-    border-top: 4px solid #007ac2 !important;
-    border-radius: 12px !important;
-    padding: 24px 20px !important;
-    margin: 0 !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-    overflow: hidden !important;
-    position: relative !important;
-}
-
-.article-full__detail--mobile.sheme-white.show-xs::before,
-.article-full__detail--mobile.sheme-white.show-xs::after {
-    display: none !important;
-}
-
-/* Inner container - COMPLETELY transparent, no styling */
-.article-full__detail--mobile.sheme-white.show-xs .article-full__container {
-    padding: 0 !important;
-    margin: 0 !important;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-}
-
-.article-full__detail--mobile.sheme-white.show-xs .article-full__container::before,
-.article-full__detail--mobile.sheme-white.show-xs .article-full__container::after {
-    display: none !important;
-}
-
-/* Heading styling */
-.article-full__detail--mobile.show-xs h2 {
-    color: #007ac2 !important;
-    font-family: Calibri, Arial, sans-serif !important;
-    font-size: 1.5rem !important;
-    font-weight: 700 !important;
-    margin: 0 0 20px 0 !important;
-    line-height: 1.3 !important;
-    text-align: left !important;
-}
-
-/* Button container */
-.article-full__detail--mobile.show-xs .btn__btn {
-    padding-top: 0 !important;
-    margin: 0 !important;
-}
-
-/* Button styling */
-.article-full__detail--mobile.show-xs .btn--primary {
-    background: #fcb316 !important;
-    color: #000000 !important;
-    border: 2px solid #fcb316 !important;
-    padding: 14px 32px !important;
-    font-size: 1rem !important;
-    font-weight: 700 !important;
-    border-radius: 6px !important;
-    text-transform: uppercase !important;
-    display: inline-block !important;
-    text-decoration: none !important;
-    transition: all 0.3s ease !important;
-}
-
-.article-full__detail--mobile.show-xs .btn--primary:hover {
-    background: #E6C000 !important;
-    border-color: #E6C000 !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 12px rgba(252, 179, 22, 0.4) !important;
-}
-
+/* SHOW mobile banner ONLY on mobile/tablet */
 @media (max-width: 768px) {
+    /* Hide desktop banner */
+    .introduction-banner__content.hide-xs {
+        display: none !important;
+    }
+    
+    /* Show mobile banner */
     .article-full__content.sheme-white.show-xs {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background: transparent !important;
         padding: 0 15px !important;
+        margin: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        min-height: 50px !important;
+    }
+    
+    .article-full__content.sheme-white.show-xs::before,
+    .article-full__content.sheme-white.show-xs::after {
+        display: none !important;
     }
     
     .article-full__container--position {
+        position: relative !important;
         margin-top: -60px !important;
+        z-index: 10 !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        background: transparent !important;
+        display: block !important;
+        visibility: visible !important;
+        min-height: 50px !important;
     }
     
+    .article-full__container--position::before,
+    .article-full__container--position::after {
+        display: none !important;
+    }
+    
+    /* Mobile detail box - white rounded background */
     .article-full__detail--mobile.sheme-white.show-xs {
+        background: rgba(255, 255, 255, 0.95) !important;
+        border-top: 4px solid #007ac2 !important;
+        border-radius: 12px !important;
         padding: 20px 16px !important;
+        margin: 0 !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+        position: relative !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        min-height: 100px !important;
+        /* Mobile device rendering */
+        transform: translate3d(0, 0, 0) !important;
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        backface-visibility: visible !important;
+        -webkit-backface-visibility: visible !important;
     }
     
-    .article-full__detail--mobile.show-xs h2 {
+    .article-full__detail--mobile.sheme-white.show-xs::before,
+    .article-full__detail--mobile.sheme-white.show-xs::after {
+        display: none !important;
+    }
+    
+    /* Inner container */
+    .article-full__detail--mobile.sheme-white.show-xs .article-full__container {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    .article-full__detail--mobile.sheme-white.show-xs .article-full__container::before,
+    .article-full__detail--mobile.sheme-white.show-xs .article-full__container::after {
+        display: none !important;
+    }
+    
+    /* Paragraph */
+    .article-full__detail--mobile.show-xs p {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #333333 !important;
+        font-family: Calibri, Arial, sans-serif !important;
+        margin: 0 0 10px 0 !important;
+    }
+    
+    /* Heading - FORCE VISIBILITY */
+    .article-full__detail--mobile.show-xs h2,
+    .article-full__detail--mobile.show-xs h2.font-bold-publicoheadline,
+    .article-full__detail--mobile.show-xs h2.font-display-4 {
+        color: #007ac2 !important;
+        font-family: Calibri, Arial, sans-serif !important;
         font-size: 1.35rem !important;
-        margin-bottom: 16px !important;
+        font-weight: 700 !important;
+        margin: 0 0 16px 0 !important;
+        line-height: 1.3 !important;
+        text-align: left !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        min-height: 30px !important;
+        /* Mobile rendering */
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+        text-rendering: optimizeLegibility !important;
+        transform: translate3d(0, 0, 0) !important;
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        text-shadow: 0 0 0 transparent !important;
+        filter: none !important;
+        -webkit-filter: none !important;
     }
     
-    .article-full__detail--mobile.show-xs .btn--primary {
+    /* Button container */
+    .article-full__detail--mobile.show-xs .btn__btn {
+        padding-top: 0 !important;
+        margin: 0 !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    /* Button */
+    .article-full__detail--mobile.show-xs .btn--primary,
+    .article-full__detail--mobile.show-xs a.btn--primary {
+        background: #fcb316 !important;
+        color: #000000 !important;
+        border: 2px solid #fcb316 !important;
         padding: 12px 28px !important;
         font-size: 0.95rem !important;
+        font-weight: 700 !important;
+        border-radius: 6px !important;
+        text-transform: uppercase !important;
+        display: inline-block !important;
+        text-decoration: none !important;
+        transition: all 0.3s ease !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        min-height: 44px !important;
+        /* Mobile rendering */
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+        transform: translate3d(0, 0, 0) !important;
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        text-shadow: 0 0 0 transparent !important;
+        filter: none !important;
+        -webkit-filter: none !important;
+    }
+    
+    .article-full__detail--mobile.show-xs .btn--primary:hover {
+        background: #E6C000 !important;
+        border-color: #E6C000 !important;
     }
 }
 
