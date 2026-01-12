@@ -1,0 +1,145 @@
+/* ========================================
+   ABTA Article Page Rebrand - CSS Fixes
+   ======================================== */
+
+/* Hero Banner - Article Pages */
+.hero-banner__content h1.font-bold-publicoheadline,
+.hero-banner__content h1.font-display-4 {
+    font-family: 'Calibri', Arial, sans-serif !important;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Override any AXA font classes on hero H1 */
+h1.font-bold-publicoheadline.font-display-4.black-mask-text {
+    font-family: 'Calibri', Arial, sans-serif !important;
+}
+
+/* Hide hero banner subtitle text */
+.hero-banner__text.font-medium.black-mask-text {
+    display: none;
+}
+
+/* Article Content Background */
+.article-full__content {
+    background-color: #ffffff !important;
+}
+
+.article-full__content.pb-4 {
+    background-color: #ffffff !important;
+}
+
+/* Article Container Background */
+.article-full__container {
+    background-color: #ffffff !important;
+}
+
+.article-full__container.container {
+    background-color: #ffffff !important;
+}
+
+/* Article Row Background */
+.article-full__row {
+    background-color: #ffffff !important;
+}
+
+/* Hide article right sidebar (social sharing) */
+.article-full__right {
+    display: none;
+}
+
+/* Article Left Column - Full Width */
+.article-full__left {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    border: none;
+    background-color: #ffffff;
+}
+
+/* Article Text Styling */
+.article-full__text,
+.article-full__text p {
+    font-family: 'Calibri', Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Remove any borders on article text section */
+.article-full__text {
+    border: none;
+}
+
+/* Hide AXA quote section */
+.t_block.t_quote.t_quote--xlarge {
+    display: none;
+}
+
+/* Hide related articles section */
+section.mt-1:has(h2.font-display-4.text-center) {
+    display: none;
+}
+
+/* Alternative selector if the above doesn't work */
+.article-inline {
+    display: none;
+}
+
+/* ===== ABTA EXTERNAL LINK BUTTONS (Read More) ===== */
+.article-full__text a.abta-read-more-btn {
+    background-color: #007ac2 !important;
+    color: #ffffff !important;
+    padding: 14px 24px !important;
+    border-radius: 8px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    border: 2px solid #007ac2 !important;
+    border-bottom: 2px solid #007ac2 !important;
+    transition: all 0.3s ease !important;
+    margin: 20px 0 !important;
+}
+
+.article-full__text a.abta-read-more-btn:hover {
+    background-color: #005a8f !important;
+    border-color: #005a8f !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 122, 194, 0.3) !important;
+    padding-bottom: 14px !important;
+}
+
+/* Hide the current arrow icon */
+.article-full__text a.abta-read-more-btn i.icon-navigate_next {
+    display: none !important;
+}
+
+/* Add external link icon using SVG */
+.article-full__text a.abta-read-more-btn::after {
+    content: "" !important;
+    width: 18px !important;
+    height: 18px !important;
+    display: inline-block !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    transition: transform 0.3s ease !important;
+    margin-left: 4px !important;
+}
+
+.article-full__text a.abta-read-more-btn:hover::after {
+    transform: translate(2px, -2px) !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .article-full__text a.abta-read-more-btn {
+        padding: 12px 20px !important;
+        font-size: 0.95rem !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+}
