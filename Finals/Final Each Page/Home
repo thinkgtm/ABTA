@@ -396,6 +396,29 @@ section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText.
 section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText.font-medium p a:hover {
     color: #007ac2 !important;
 }
+/* ===== FORCE MONEYHELPER VISIBILITY ===== */
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]),
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    min-height: 50px !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_block__inner,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_block__inner {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+section.t_block.t_quote.t_quote--xlarge:has(a[href*="moneyhelper"]) .t_mainText,
+section.t_block.t_quote.t_quote--xlarge:last-of-type:not(:first-of-type) .t_mainText {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
 
 /* ===== CRUISE INSURANCE - H3 & LISTS WITH INLINE STYLES ===== */
 /* Override inline styles for H3 headings in cruise content */
