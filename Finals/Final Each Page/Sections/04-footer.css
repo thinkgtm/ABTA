@@ -1,0 +1,241 @@
+/* ==========================================
+   FOOTER
+   Footer layout, logos, navigation, social icons
+   ========================================== */
+
+/* ===== FOOTER - ABTA ===== */
+footer.footer {
+    background-color: #007ac2 !important;
+    padding: 40px 20px 30px 20px !important;
+    margin: 0 !important;
+    color: #ffffff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    border-top: none !important;
+}
+
+.m-footer-small.m-footer-small--top.m-footer-small--desktop {
+    background: transparent !important;
+    border: none !important;
+    margin: 0 0 32px 0 !important;
+    padding: 0 0 32px 0 !important;
+    position: relative !important;
+}
+
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    padding-top: 90px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    position: relative !important;
+}
+
+/* ABTA LOGO (TOP LEFT) */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 16px !important;
+    left: calc((100% - 1200px) / 2) !important;
+    width: 180px !important;
+    height: 55px !important;
+    background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/abta-travel-insurance-white-logo-rgb.webp/a903b952-072c-31f3-70fb-c3927ab764f4?version=1.0&t=1763453026583&imagePreview=1") !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    background-size: contain !important;
+    border: none !important;
+}
+
+/* AXA LOCKUP (TOP RIGHT) */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+    content: "IN PARTNERSHIP WITH" !important;
+    position: absolute !important;
+    top: 8px !important;
+    right: calc((100% - 1200px) / 2) !important;
+    width: 200px !important;
+    height: 80px !important;
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    text-align: right !important;
+    line-height: 1.2 !important;
+    padding-bottom: 45px !important;
+    background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/axa_logo_solid_rgb.webp/b6ba9428-c8da-c8b9-6e97-09bd46908585?version=1.0&t=1763453280994&imagePreview=1") !important;
+    background-repeat: no-repeat !important;
+    background-position: right bottom !important;
+    background-size: 48px 48px !important;
+}
+
+/* NAVIGATION LINKS */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer--list {
+    order: 1 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.m-footer-small__disclaimer--list .m-footer-small__list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+}
+
+.m-footer-small__list-item.m-footer-small__list-item--border {
+    color: #ffffff !important;
+    font-size: 1rem !important;
+    padding: 0 20px !important;
+    border-right: 1px solid #ffffff !important;
+    white-space: nowrap !important;
+}
+
+.m-footer-small__list-item.m-footer-small__list-item--border:first-child {
+    padding-left: 0 !important;
+}
+
+.m-footer-small__list-item.m-footer-small__list-item--border:last-child {
+    border-right: none !important;
+    padding-right: 0 !important;
+}
+
+.m-footer-small__list-item a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.m-footer-small__list-item a:hover {
+    text-decoration: underline !important;
+}
+
+/* SOCIAL ICONS */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer {
+    order: 2 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 4px !important;
+    position: static !important;
+}
+
+.m-footer-small__list-item--follow {
+    display: none !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list img {
+    width: 32px !important;
+    height: 32px !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.m-footer-small__disclaimer .m-footer-small__list a:hover img {
+    opacity: 0.8 !important;
+}
+
+/* LEGAL TEXT SECTION */
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) {
+    background: transparent !important;
+    padding: 24px 0 0 0 !important;
+    margin: 0 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-bottom: none !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) .m-footer-small__container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) .m-footer-small__disclaimer > :not(.m-footer-small__list) {
+    display: none !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) .m-footer-small__list {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) .m-footer-small__list-item {
+    color: #ffffff !important;
+    font-size: 0.8rem !important;
+    line-height: 1.6 !important;
+}
+
+.m-footer-small.m-footer-small--top:not(.m-footer-small--desktop) .m-footer-small__list-item a {
+    color: inherit !important;
+    text-decoration: none !important;
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+/* FOOTER RESPONSIVE */
+@media (max-width: 1024px) {
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        padding-top: 70px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+        top: 12px !important;
+        left: 30px !important;
+        width: 150px !important;
+        height: 40px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+        right: 30px !important;
+        width: 180px !important;
+        height: 70px !important;
+        background-size: 40px 40px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    footer.footer {
+        padding: 30px 20px 20px 20px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+        left: 20px !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+        right: 20px !important;
+    }
+
+    .m-footer-small__disclaimer--list .m-footer-small__list {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    .m-footer-small__list-item.m-footer-small__list-item--border {
+        border-right: none !important;
+        padding: 0 !important;
+    }
+}

@@ -1,0 +1,556 @@
+/* ==========================================
+   FAQ & CONTACT PAGES
+   Hero banners, accordions, search, contact sections
+   ========================================== */
+
+/* ===== HERO BANNER - BLOG POSTS & FAQ PAGES ===== */
+
+/* General hero banner structure */
+.hero-banner,
+.hero-banner--small,
+.hero-banner--slim {
+    position: relative;
+    width: 100%;
+    margin: 0 0 40px 0;
+}
+
+/* Banner background image container */
+.hero-banner__mask {
+    position: relative;
+    overflow: hidden;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    padding: 100px 20px !important;
+    min-height: 400px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Dark overlay for better text readability */
+.hero-banner__mask::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%) !important;
+    z-index: 1 !important;
+}
+
+/* Image element inside banner */
+.hero-banner__mask img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Content positioning */
+.hero-banner__container,
+.hero-banner--container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    z-index: 2 !important;
+    width: 100% !important;
+    padding: 0 40px !important;
+}
+
+/* Content alignment - centered for FAQ, left for blog */
+.hero-banner__content {
+    text-align: center !important;
+}
+
+/* Hero title styling */
+.hero-banner__content h1,
+.hero-banner__content h1.font-bold-publicoheadline,
+.hero-banner__content h1.font-display-4,
+.hero-banner__content .black-mask-text,
+.hero-banner__content h1 *,
+.hero-banner h1.font-display-4 {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2.75rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    margin: 0 0 16px 0 !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+    text-transform: none !important;
+}
+
+/* Hero subtitle text */
+.hero-banner__content > p,
+.hero-banner p {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.125rem !important;
+    color: #ffffff !important;
+    margin: 0 0 32px 0 !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Legacy text elements - hide by default */
+.hero-banner__text,
+.hero-banner__text.font-medium,
+.hero-banner__text.black-mask-text {
+    display: none !important;
+}
+
+/* ===== FAQ PAGE SPECIFIC - SEARCH BAR ===== */
+
+/* FAQ search container */
+.hero-banner--container {
+    max-width: 600px !important;
+    margin: 0 auto !important;
+}
+
+/* Search form layout */
+.form__group--inline {
+    display: flex !important;
+    gap: 12px !important;
+    align-items: stretch !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+/* Search input field */
+.form__large {
+    flex: 1 !important;
+    padding: 16px 20px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    border: none !important;
+    border-radius: 8px !important;
+    background: #ffffff !important;
+    color: #333 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.form__large::placeholder {
+    color: #999 !important;
+}
+
+.form__large:focus {
+    outline: 3px solid rgba(252, 179, 22, 0.5) !important;
+    outline-offset: 2px !important;
+}
+
+/* FAQ search button - ABTA yellow */
+.btn--secondary.btn--small {
+    padding: 16px 24px !important;
+    background: #fcb316 !important;
+    border: 2px solid #fcb316 !important;
+    border-radius: 8px !important;
+    color: #000000 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+    text-transform: uppercase !important;
+}
+
+.btn--secondary.btn--small:hover {
+    background: #E6C000 !important;
+    border-color: #E6C000 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(252, 179, 22, 0.4) !important;
+}
+
+.btn--secondary.btn--small .icon-search {
+    font-size: 1.25rem !important;
+    color: #000000 !important;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .hero-banner,
+    .hero-banner--small {
+        min-height: 300px;
+        margin-bottom: 30px;
+    }
+    
+    .hero-banner__mask {
+        min-height: 300px !important;
+        padding: 60px 20px !important;
+    }
+    
+    .hero-banner__container,
+    .hero-banner--container {
+        padding: 0 20px !important;
+    }
+    
+    .hero-banner__content h1,
+    .hero-banner__content h1.font-display-4,
+    .hero-banner h1.font-display-4 {
+        font-size: 2rem !important;
+    }
+    
+    .hero-banner__content > p,
+    .hero-banner p {
+        font-size: 1rem !important;
+        margin-bottom: 24px !important;
+    }
+    
+    /* FAQ mobile search adjustments */
+    .form__group--inline {
+        flex-direction: column !important;
+    }
+    
+    .btn--secondary.btn--small {
+        width: 100% !important;
+        padding: 14px 20px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-banner__mask {
+        padding: 40px 20px !important;
+        min-height: 250px !important;
+    }
+    
+    .hero-banner__content h1,
+    .hero-banner__content h1.font-display-4,
+    .hero-banner h1.font-display-4 {
+        font-size: 1.75rem !important;
+    }
+}
+
+/* ===== PAGE-SPECIFIC: FAQ PAGE ===== */
+.page-faqs {
+    font-family: Calibri, Arial, sans-serif !important;
+    background: #ffffff !important;
+}
+
+.page-faqs .p-4 {
+    background: #ffffff !important;
+}
+
+/* ==========================================
+   FAQ ACCORDION SECTION
+   ========================================== */
+
+.accordion {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 60px 40px !important;
+}
+
+.accordion > h2,
+.accordion h2.font-display-6,
+.accordion h2 {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: #007ac2 !important;
+    margin: 0 0 32px 0 !important;
+    display: block !important;
+    text-transform: none !important;
+}
+
+/* Accordion Item */
+.accordion__item {
+    border-bottom: 1px solid #e0e0e0 !important;
+    margin: 0 !important;
+}
+
+.accordion__item:first-of-type {
+    border-top: 1px solid #e0e0e0 !important;
+}
+
+/* Accordion Header */
+.accordion__header {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.125rem !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+    padding: 24px 48px 24px 0 !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+    position: relative !important;
+    transition: color 0.3s ease !important;
+    background: transparent !important;
+    border: none !important;
+    width: 100% !important;
+    text-align: left !important;
+    text-transform: none !important;
+}
+
+.accordion__header:hover {
+    color: #007ac2 !important;
+}
+
+/* Plus/Minus Icon */
+.accordion__header::after {
+    content: "+" !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    font-size: 2rem !important;
+    font-weight: 400 !important;
+    color: #007ac2 !important;
+    transition: transform 0.3s ease !important;
+}
+
+.accordion__header.accordion__active::after {
+    content: "−" !important;
+}
+
+/* Accordion Body */
+.accordion__body {
+    padding: 0 0 24px 0 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    color: #666 !important;
+    overflow: hidden !important;
+    border-top: none !important;
+    margin-top: 0 !important;
+}
+
+.accordion__body p {
+    margin: 0 0 16px 0 !important;
+    color: #666 !important;
+    border-top: none !important;
+}
+
+.accordion__body p:first-child {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.accordion__body p:last-child {
+    margin-bottom: 0 !important;
+}
+
+.accordion__body ul {
+    margin: 16px 0 !important;
+    padding-left: 24px !important;
+    list-style: disc !important;
+}
+
+.accordion__body li {
+    margin: 8px 0 !important;
+    color: #666 !important;
+}
+
+.accordion__body a {
+    color: #007ac2 !important;
+    text-decoration: none !important;
+    border-bottom: 2px solid #fcb316 !important;
+    transition: all 0.3s ease !important;
+}
+
+.accordion__body a:hover {
+    color: #005a8f !important;
+    border-bottom-color: #007ac2 !important;
+}
+
+/* ==========================================
+   CONTACT PAGE STYLING
+   ========================================== */
+
+/* Hide Breadcrumbs */
+.b__breadcrumbs,
+.breadcrumb,
+nav[aria-label="Breadcrumb"] {
+    display: none !important;
+}
+
+/* Hero Banner - HIDE on Contact Pages ONLY (NOT FAQ pages) */
+.article-full__content + .hero-banner--slim,
+.article-full__content ~ .hero-banner--slim,
+body:has(.article-full__content) .hero-banner--slim,
+body:has(.article-full__content) .hero-banner {
+    display: none !important;
+}
+
+/* Contact Content Section */
+.article-full__content {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 60px 40px !important;
+    background: #ffffff !important;
+}
+
+.article-full__container {
+    background: #ffffff !important;
+}
+
+.article-full__row--full {
+    background: #ffffff !important;
+}
+
+/* Contact Section Boxes - Clean White Cards */
+.article-full__resumen--primary,
+.article-full__text {
+    background: #ffffff !important;
+    padding: 32px !important;
+    margin-bottom: 30px !important;
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.3s ease !important;
+}
+
+.article-full__resumen--primary:hover,
+.article-full__text:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 16px rgba(0, 122, 194, 0.12) !important;
+}
+
+/* Section Titles */
+.article-full__left--title {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #007ac2 !important;
+    margin: 0 0 20px 0 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Phone Number Headings */
+.article-full__resumen h3,
+.article-full__text h3 {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+    margin: 0 0 16px 0 !important;
+}
+
+/* Contact Text */
+.article-full__resumen p,
+.article-full__text p {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    color: #666 !important;
+    margin: 0 0 12px 0 !important;
+}
+
+.article-full__resumen p:last-child,
+.article-full__text p:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Bold Text */
+.article-full__resumen strong,
+.article-full__text strong,
+.article-full__resumen b,
+.article-full__text b {
+    font-weight: 600 !important;
+    color: #333 !important;
+}
+
+/* Email Links */
+.article-full__resumen a,
+.article-full__text a {
+    color: #007ac2 !important;
+    text-decoration: none !important;
+    border-bottom: 2px solid #fcb316 !important;
+    transition: all 0.3s ease !important;
+}
+
+.article-full__resumen a:hover,
+.article-full__text a:hover {
+    color: #005a8f !important;
+    border-bottom-color: #007ac2 !important;
+}
+
+/* Remove Extra Font Classes */
+.font-xx-large {
+    font-size: inherit !important;
+}
+
+/* FAQ & Contact Responsive */
+@media (max-width: 768px) {
+    .article-full__content {
+        padding: 40px 20px !important;
+    }
+    
+    .article-full__resumen--primary,
+    .article-full__text {
+        padding: 24px !important;
+    }
+    
+    .article-full__left--title {
+        font-size: 1.25rem !important;
+    }
+    
+    .article-full__resumen h3,
+    .article-full__text h3 {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-full__resumen--primary,
+    .article-full__text {
+        padding: 20px !important;
+        margin-bottom: 20px !important;
+    }
+}
+
+/* ===== ALERT & INFO BOXES ===== */
+.portlet-asset-publisher .alert-info {
+    text-align: center !important;
+    padding: 60px 20px !important;
+    font-size: 1.1rem !important;
+    color: #666 !important;
+    background: #f8f9fa !important;
+    border: 2px dashed #007ac2 !important;
+    border-radius: 12px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+}
+
+.article-full__text .info-box,
+.article-full__text .tip-box {
+    background: #e6f2ff;
+    border-left: 5px solid #007ac2;
+    padding: 20px 25px;
+    margin: 25px 0;
+    border-radius: 4px;
+    font-family: Calibri, Arial, sans-serif !important;
+}
+
+.article-full__text .highlight-box {
+    background: #fcb316;
+    padding: 20px 25px;
+    margin: 25px 0;
+    border-radius: 4px;
+    color: #1c1c1b;
+    font-family: Calibri, Arial, sans-serif !important;
+}
+
+/* ===== NUCLEAR OPTION - FORCE FAQ BANNER TO SHOW ===== */
+body.page-faqs .hero-banner,
+body.page-faqs .hero-banner--small,
+body.page-faqs .hero-banner--slim,
+body.page-faqs .hero-banner__mask,
+body.page-faqs .hero-banner__container,
+body.page-faqs .hero-banner__content,
+section.page-faqs .hero-banner,
+section.page-faqs .hero-banner--small,
+section.page-faqs .hero-banner--slim,
+section.page-faqs .hero-banner__mask,
+.page-faqs > .hero-banner,
+.page-faqs > .hero-banner--small {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    min-height: 400px !important;
+    max-height: none !important;
+    overflow: visible !important;
+    position: relative !important;
+}

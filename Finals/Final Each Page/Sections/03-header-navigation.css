@@ -1,0 +1,410 @@
+/* ==========================================
+   HEADER & NAVIGATION
+   Main navigation bar, dropdowns, mobile menu
+   ========================================== */
+
+/* ===== NAVIGATION BAR - ABTA STYLING ===== */
+/* Force proper case: First letter capital, rest lowercase */
+.mega-menu__item > a,
+.mega-menu__item > button.mega-menu__item-button {
+    text-transform: lowercase !important;
+}
+
+.mega-menu__item > a::first-letter,
+.mega-menu__item > button.mega-menu__item-button::first-letter {
+    text-transform: uppercase !important;
+}
+
+/* Apply same rules to dropdown menu items */
+.mega-menu-tray__nav a {
+    text-transform: lowercase !important;
+}
+
+.mega-menu-tray__nav a::first-letter {
+    text-transform: uppercase !important;
+}
+
+/* Mobile menu items */
+.mega-menu-responsive__item-title,
+.mega-menu-responsive__item-title span,
+.mega-menu-responsive__item a,
+.mega-menu-responsive__item a span {
+    text-transform: lowercase !important;
+}
+
+.mega-menu-responsive__item-title::first-letter,
+.mega-menu-responsive__item-title span::first-letter,
+.mega-menu-responsive__item a::first-letter,
+.mega-menu-responsive__item a span::first-letter {
+    text-transform: uppercase !important;
+}
+
+/* Mobile dropdown links */
+.mega-menu-tray-responsive__nav a {
+    text-transform: lowercase !important;
+}
+
+.mega-menu-tray-responsive__nav a::first-letter {
+    text-transform: uppercase !important;
+}
+
+.header#header--sticky {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-navbar {
+    background: #fff;
+}
+
+.main-navbar__wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Main menu items */
+.mega-menu__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ===== NUCLEAR RED LINE KILLER ===== */
+/* Target the LI parent element */
+.mega-menu__item,
+.mega-menu__item *,
+.mega-menu__item::before,
+.mega-menu__item::after {
+    border: none !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+/* Style BOTH links AND buttons the same way */
+.mega-menu__item > a,
+.mega-menu__item > button.mega-menu__item-button {
+    color: #333 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    padding: 20px 0 !important;
+    display: block !important;
+    transition: all 0.3s ease !important;
+    border-bottom: 2px solid transparent !important;
+    background: transparent !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    cursor: pointer !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    line-height: 1 !important;
+}
+
+/* Only show blue line on hover - for BOTH links and buttons */
+.mega-menu__item > a:hover,
+.mega-menu__item > button.mega-menu__item-button:hover {
+    color: #007ac2 !important;
+    border-bottom: 2px solid #007ac2 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* Only show blue line when it's the EXACT active page */
+.mega-menu__item--active {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.mega-menu__item--active > a {
+    color: #007ac2 !important;
+    border: none !important;
+    border-bottom: 2px solid #007ac2 !important;
+}
+
+/* Remove blue line from parent when child page is active */
+.mega-menu__item--active-tree:not(.mega-menu__item--active) > a {
+    color: #333 !important;
+    border: none !important;
+    border-bottom: 2px solid transparent !important;
+}
+
+/* Get a Quote Button - override everything */
+.mega-menu__item a.btn--primary,
+.mega-menu__item a.btn.btn--primary {
+    background: #fcb316 !important;
+    border: 2px solid #fcb316 !important;
+    color: #000000 !important;
+    padding: 10px 24px !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.mega-menu__item a.btn--primary:hover {
+    background: #E6C000 !important;
+    border: 2px solid #E6C000 !important;
+}
+
+/* ===== MEGA MENU DROPDOWN ALIGNMENT ===== */
+
+/* Remove the "Find out more" column completely */
+.mega-menu-tray__column--content {
+    display: none !important;
+}
+
+/* Make the navigation column full width */
+.mega-menu-tray__container {
+    display: block !important;
+    max-width: 300px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.mega-menu-tray__column {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Position the dropdown directly under each menu item */
+.mega-menu__item {
+    position: relative !important;
+}
+
+.mega-menu-tray {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    margin-top: 0 !important;
+    min-width: 250px !important;
+    max-width: 300px !important;
+    background: #fff !important;
+    border: 3px solid #007ac2 !important;
+    border-top: 3px solid #007ac2 !important;
+    box-shadow: 0 8px 24px rgba(0, 122, 194, 0.2) !important;
+    border-radius: 0 0 8px 8px !important;
+    z-index: 1000 !important;
+}
+
+/* Dropdown content styling */
+.mega-menu-tray__content {
+    padding: 20px 0 !important;
+}
+
+.mega-menu-tray__nav {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.mega-menu-tray__nav-item {
+    list-style: none !important;
+}
+
+.mega-menu-tray__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    display: block !important;
+    padding: 12px 20px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    border-left: 3px solid transparent !important;
+}
+
+.mega-menu-tray__nav a:hover {
+    color: #007ac2 !important;
+    background: #f5f5f5 !important;
+    border-left: 3px solid #007ac2 !important;
+}
+
+/* Hide the title in the dropdown */
+.mega-menu-tray__nav-item--title {
+    display: none !important;
+}
+
+/* ===== MEGA MENU DROPDOWN - FIX FREEZING ===== */
+
+/* Remove the frozen/stuck state when clicking */
+.mega-menu__item.is-open .mega-menu-tray,
+.mega-menu__item.is-active .mega-menu-tray,
+.mega-menu__item[aria-expanded="true"] .mega-menu-tray {
+    display: block !important;
+}
+
+/* Hide dropdown when NOT hovering (override JS) */
+.mega-menu__item:not(:hover) .mega-menu-tray {
+    display: none !important;
+}
+
+/* Show dropdown only on hover */
+.mega-menu__item:hover .mega-menu-tray {
+    display: block !important;
+}
+
+/* Remove any click/active states that might freeze the dropdown */
+.mega-menu__item-button[aria-expanded="true"],
+.mega-menu__item-button.is-active,
+.mega-menu__item.is-open > button {
+    color: #007ac2 !important;
+    border-bottom: 2px solid #007ac2 !important;
+}
+
+/* Ensure button doesn't stay "active" after click */
+.mega-menu__item-button:focus {
+    outline: none !important;
+}
+
+/* Remove any background that appears on active state */
+.mega-menu__item.is-open,
+.mega-menu__item[aria-expanded="true"] {
+    background: transparent !important;
+}
+
+/* ===== MOBILE NAVIGATION - PROPER SCROLLING FIX ===== */
+
+/* Enable scrolling on the mobile nav container */
+.main-navbar-responsive {
+    height: 100vh !important;
+    height: 100dvh !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    background: #ffffff !important;
+}
+
+/* Menu list needs to be taller than viewport to allow scrolling */
+.mega-menu-responsive__list {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: calc(100vh + 100px) !important;
+    padding: 20px 0 250px 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Get a Quote button positioned at bottom with proper spacing */
+.mega-menu-responsive__list > a.btn--primary {
+    order: 999 !important;
+    margin: auto 20px 100px 20px !important;
+    padding: 16px 24px !important;
+    display: block !important;
+    background-color: #fcb316 !important;
+    color: #000000 !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    border-radius: 6px !important;
+    text-align: center !important;
+    flex-shrink: 0 !important;
+    line-height: 1.5 !important;
+    min-height: 52px !important;
+}
+
+/* Ensure button text is always visible */
+.mega-menu-responsive__list > a.btn--primary,
+.mega-menu-responsive__list > a.btn--primary * {
+    color: #000000 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+/* Menu items should not prevent scrolling */
+.mega-menu-responsive__item {
+    flex-shrink: 0 !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+}
+
+/* iOS specific fixes */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    .mega-menu-responsive__list {
+        padding-bottom: calc(250px + env(safe-area-inset-bottom)) !important;
+    }
+}
+
+/* ===== MOBILE NAVIGATION - COMPLETE FIX ===== */
+
+/* Mobile menu items - target the span inside */
+.mega-menu-responsive__item-title,
+.mega-menu-responsive__item-title span,
+.mega-menu-responsive__item a,
+.mega-menu-responsive__item a span,
+.mega-menu-responsive__item button,
+.mega-menu-responsive__item button span {
+    color: #007ac2 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    text-transform: none !important;
+}
+
+/* Mobile menu links and buttons */
+.mega-menu-responsive__item-title {
+    padding: 18px 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    text-align: left !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Arrows on the right side */
+.mega-menu-responsive__item-title::after {
+    color: #007ac2 !important;
+}
+
+/* Hide "Find out more" column in mobile dropdowns */
+.mega-menu-tray-responsive__column--content {
+    display: none !important;
+}
+
+/* Mobile dropdown background */
+.mega-menu-tray-responsive {
+    background: #f5f5f5 !important;
+    border-top: 1px solid #e0e0e0 !important;
+}
+
+/* Mobile dropdown links */
+.mega-menu-tray-responsive__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    padding: 14px 20px 14px 40px !important;
+    display: block !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+    text-transform: none !important;
+}
+
+.mega-menu-tray-responsive__nav a:hover {
+    color: #007ac2 !important;
+    background: #ffffff !important;
+}
+
+/* Mobile navigation trigger */
+.main-navbar__mobile-trigger__icon,
+.main-navbar__mobile-trigger__icon::before,
+.main-navbar__mobile-trigger__icon::after {
+    background-color: #007ac2 !important;
+}
+
+/* Extra details bar */
+.extra-details-v2 {
+    background: #007ac2 !important;
+}
+
+.extra-details-v2 .item__text,
+.extra-details-v2 .item__icon {
+    color: #fff !important;
+}

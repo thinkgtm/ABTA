@@ -1,0 +1,193 @@
+/* ==========================================
+   BANNERS CTA
+   banner-quote-now-v2 component (Medical, Travel Tips, etc.)
+   ========================================== */
+
+/* ===== BANNER-QUOTE-NOW-V2 COMPONENT (Medical Banner, etc) ===== */
+.banner-quote-now-v2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.banner-quote-now-v2 .banner-quote-now-v2__inner.container {
+    display: flex;
+    align-items: stretch;
+    background: #fff;
+    border: 2px solid #0077C8;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 0 !important;
+    max-width: none;
+    width: 100%;
+    box-shadow: none;
+}
+
+.banner-quote-now-v2 .inner__description-box {
+    flex: 1;
+    padding: 40px 50px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+}
+
+.banner-quote-now-v2 .inner__description-box h2 {
+    color: #0077C8 !important;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    margin-bottom: 16px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    text-transform: none !important;
+}
+
+.banner-quote-now-v2 .inner__description-box p {
+    color: #333 !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 24px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+}
+
+.banner-quote-now-v2 .inner__description-box .btn--secondary,
+.banner-quote-now-v2 .inner__description-box .btn--large {
+    background-color: #FFB81C !important;
+    color: #333 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 14px 28px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+    display: inline-block !important;
+    width: fit-content !important;
+    text-transform: uppercase !important;
+}
+
+.banner-quote-now-v2 .inner__description-box .btn--secondary:hover,
+.banner-quote-now-v2 .inner__description-box .btn--large:hover {
+    background-color: #E5A519 !important;
+}
+
+.banner-quote-now-v2 .inner__image-box {
+    flex: 0 0 40%;
+    min-height: 280px;
+    background: transparent;
+}
+
+.banner-quote-now-v2 .inner__image-box picture {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-quote-now-v2 .inner__image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 768px) {
+    /* Add proper padding around ALL banner-quote-now-v2 banners */
+    .journal-content-article[data-analytics-asset-title*="ABTA"][data-analytics-asset-title*="Banner"],
+    .journal-content-article[data-analytics-asset-title="ABTA - Medical Cover Banner - TGTM"],
+    .journal-content-article[data-analytics-asset-title="ABTA - Travel Tips Banner - TGTM"] {
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+    }
+    
+    /* Alternative: Apply to all instances of the component */
+    .banner-quote-now-v2 {
+        margin: 20px 0 !important;
+        padding: 0 20px !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        box-sizing: border-box !important;
+    }
+    
+    .banner-quote-now-v2 .banner-quote-now-v2__inner.container {
+        flex-direction: column !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+    
+    .banner-quote-now-v2 .inner__description-box {
+        padding: 30px 25px !important;
+        box-sizing: border-box !important;
+        width: 100% !important;
+    }
+    
+    .banner-quote-now-v2 .inner__description-box h2 {
+        font-size: 22px !important;
+        margin-bottom: 16px !important;
+    }
+    
+    .banner-quote-now-v2 .inner__description-box p {
+        font-size: 15px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    /* Style lists in Travel Tips banner */
+    .banner-quote-now-v2 .inner__description-box ul {
+        margin: 0 0 20px 0 !important;
+        padding-left: 20px !important;
+        list-style: disc !important;
+    }
+    
+    .banner-quote-now-v2 .inner__description-box ul li {
+        margin-bottom: 12px !important;
+        line-height: 1.6 !important;
+        color: #333 !important;
+        font-size: 15px !important;
+    }
+    
+    .banner-quote-now-v2 .inner__image-box {
+        min-height: 200px !important;
+        padding: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    .banner-quote-now-v2 .inner__image-box picture,
+    .banner-quote-now-v2 .inner__image-box img {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .banner-quote-now-v2 .inner__image-box img {
+        border-radius: 0 0 10px 10px !important;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .journal-content-article[data-analytics-asset-title*="ABTA"][data-analytics-asset-title*="Banner"],
+    .journal-content-article[data-analytics-asset-title="ABTA - Medical Cover Banner - TGTM"],
+    .journal-content-article[data-analytics-asset-title="ABTA - Travel Tips Banner - TGTM"] {
+        padding: 0 !important;
+        overflow-x: hidden !important;
+    }
+    
+    .banner-quote-now-v2 {
+        margin: 20px !important;
+        padding: 0 20px !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        box-sizing: border-box !important;
+    }
+    
+    .banner-quote-now-v2 .inner__description-box {
+        padding: 35px 30px !important;
+    }
+}

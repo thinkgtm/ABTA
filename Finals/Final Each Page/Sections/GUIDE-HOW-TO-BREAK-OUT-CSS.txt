@@ -1,0 +1,215 @@
+/* ==========================================
+   HOW TO BREAK OUT YOUR REMAINING CSS FILES
+   Step-by-step guide with line numbers
+   ========================================== */
+
+YOU HAVE THESE FILES ALREADY:
+==============================
+✅ 01-global-typography.css (lines 84-241, utilities scattered)
+✅ 02-buttons.css (lines 27-82)
+✅ 03-header-navigation.css (lines 2809-3595)  
+✅ 04-footer.css (lines 3597-3813)
+
+FILES YOU NEED TO CREATE:
+==========================
+
+05-homepage-cards.css
+---------------------
+WHAT TO COPY: Lines 4-25, 673-886, 2043-2218
+CONTAINS:
+- Three Levels of Cover cards (colored checkmarks)
+- Why Choose ABTA cards (transparent cards with blue border)
+- Card layouts, headers, footers
+- Checkmark styling (blue/gold/silver)
+- Mobile responsive
+
+06-homepage-hero-banners.css
+----------------------------
+WHAT TO COPY: Lines 243-330, 3815-3995
+CONTAINS:
+- .introduction-banner
+- .introduction-banner__mask--flex
+- Background image handling
+- Content positioning
+- Mobile banner boxes (.article-full__detail--mobile)
+- White rounded backgrounds
+- Mobile responsive overlays
+
+07-homepage-sections.css
+------------------------
+WHAT TO COPY: Lines 693-1252, 1254-1390, 1392-1452, 1454-1537
+CONTAINS:
+- Summary of Cover section (.article)
+- Types of Holiday Cover images/text (.insurance--, .article-inline)
+- Benefits of Cover icons grid (.v2-icons-list)
+- Download Policy Documents banner (section.p-3)
+- Whatever's in Front banner
+- Secondary banners with checkmark bullets
+
+08-tables.css
+-------------
+WHAT TO COPY: Lines 1253-1388
+CONTAINS:
+- .table-v2 container
+- Table headers & cells
+- First column left-align, others centered
+- Zebra striping
+- Mobile description rows (centered white)
+- Hide first column on mobile
+- Bold removal from first column
+
+09-text-blocks.css
+------------------
+WHAT TO COPY: Lines 332-467, 469-596
+CONTAINS:
+- MoneyHelper boxed text (white bg, blue border)
+- Cruise insurance text blocks
+- H3 & list overrides
+- Force visibility rules
+- Text replacement (AXA to ABTA)
+
+10-widgets.css
+--------------
+WHAT TO COPY: Lines 888-1067
+CONTAINS:
+- Trustpilot carousel (.journal-content-article[data-analytics-asset-title="TGTM - ABTA Trustpilot"])
+- Trustpilot stars widget (.range-star)
+- Star coloring (green + half star)
+- Trustpilot logo SVG
+
+11-banners-cta.css
+------------------
+WHAT TO COPY: Lines 1539-1715
+CONTAINS:
+- .banner-quote-now-v2 component
+- Medical Cover Banner
+- Travel Tips Banner
+- Image/text split layout
+- ABTA blue border
+- Mobile responsive stacking
+
+12-blog-cards.css
+-----------------
+WHAT TO COPY: Lines 1717-1835, 1837-1919
+CONTAINS:
+- .cards-news component
+- Blog card grid
+- Card hover effects
+- Image containers
+- Title/summary/link styling
+- ABTA Blog Header gradient
+
+13-blog-article-pages.css
+-------------------------
+WHAT TO COPY: Lines 1921-2041, 4239-4551
+CONTAINS:
+- Hero banner for blog posts
+- .article-full__text styling
+- H2/H3/H4 in articles
+- Image handling (full width, rounded)
+- Lists, blockquotes, tables
+- Hide unwanted sections (.t_block.t_quote, .pictures)
+- Blog page layout
+
+14-faq-contact-pages.css
+------------------------
+WHAT TO COPY: Lines 2220-2419, 2421-2593
+CONTAINS:
+- FAQ hero banner with search bar
+- .hero-banner--container
+- Search input (.form__large)
+- Search button styling (ABTA yellow)
+- Accordion styling (.accordion)
+- Plus/minus icons
+- Contact page boxes
+- Hide breadcrumbs
+
+15-policy-download.css
+----------------------
+WHAT TO COPY: Lines 2595-2722
+CONTAINS:
+- .journal-content-article[data-analytics-asset-title="ABTA - Policy Document Download List - TGTM"]
+- Single column centered layout
+- Transparent card with blue border
+- PDF icon before link
+- Download button (ABTA yellow)
+- Remove AXA red line/white backgrounds
+
+16-spacing-fixes.css
+--------------------
+WHAT TO COPY: Lines 2724-2789
+CONTAINS:
+- Cruise page spacing reductions
+- Gap reductions between sections
+- .t_quote + section.container
+- .article + .t_block.t_quote
+- Table margin adjustments
+- Mobile spacing tweaks
+
+17-portlet-pagination.css
+-------------------------
+WHAT TO COPY: Lines 2791-2807
+CONTAINS:
+- .portlet-asset-publisher cleanup
+- Pagination styling (.taglib-page-iterator)
+- ABTA blue pagination buttons
+- Active/hover states
+- Mobile responsive pagination
+
+HOW TO CREATE EACH FILE:
+=========================
+
+1. Open your master CSS file
+2. Find the line numbers listed above for each section
+3. Copy those lines
+4. Create a new .css file with the section name
+5. Add this header:
+
+/* ==========================================
+   [SECTION NAME]
+   [Brief description]
+   ========================================== */
+
+6. Paste the CSS below the header
+7. Save the file
+
+EXAMPLE:
+--------
+To create 05-homepage-cards.css:
+
+1. Copy lines 4-25 (Three Levels checkmark colors)
+2. Copy lines 673-886 (Three Levels cards full styling)
+3. Copy lines 2043-2218 (Why Choose cards)
+4. Paste all into new file with header
+5. Save as 05-homepage-cards.css
+
+LOADING ORDER:
+==============
+Load files in this exact order in your HTML:
+<link rel="stylesheet" href="01-global-typography.css">
+<link rel="stylesheet" href="02-buttons.css">
+<link rel="stylesheet" href="03-header-navigation.css">
+<link rel="stylesheet" href="04-footer.css">
+<link rel="stylesheet" href="05-homepage-cards.css">
+... etc
+
+OR CONCATENATE:
+===============
+cat 01-*.css 02-*.css 03-*.css ... > master-compiled.css
+
+BENEFITS:
+=========
+✓ Easy to find specific styles
+✓ Can disable sections for testing
+✓ Cleaner git diffs
+✓ Team collaboration easier
+✓ Clear documentation per section
+✓ Faster debugging
+✓ Modular updates
+
+MAINTENANCE:
+============
+- Update individual files as needed
+- Keep line number references updated if you edit master
+- Use git to track changes per section
+- Comment changes in each file's header

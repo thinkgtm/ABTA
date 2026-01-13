@@ -1,0 +1,103 @@
+/* ==========================================
+   ABTA CSS FILE STRUCTURE - MASTER INDEX
+   Complete breakdown of all CSS sections
+   ========================================== */
+
+✅ CREATED FILES:
+================
+01-global-typography.css         - Base fonts, headings, utilities (3.9KB)
+02-buttons.css                   - All button styling (1.9KB)
+03-header-navigation.css         - Header, nav, mobile menu (12KB)
+
+📋 REMAINING FILES TO CREATE:
+==============================
+
+04-footer.css
+   - Footer structure
+   - Logo positioning (ABTA + AXA)
+   - Navigation links
+   - Social icons
+   - Legal text
+   - Mobile responsive footer
+   
+05-homepage-hero-banners.css
+   - Main hero banner styling
+   - Banner background images
+   - Content positioning
+   - Mobile banner boxes
+   - Secondary banners
+
+06-homepage-cards.css
+   - Three Levels of Cover cards
+   - Why Choose ABTA cards
+   - Colored checkmarks (blue/gold/silver)
+   - Card layouts & responsive
+
+07-homepage-sections.css
+   - Summary of Cover section
+   - Types of Holiday Cover
+   - Benefits of Cover icons grid
+   - Whatever's in Front banner
+   - Download Policy Documents banner
+
+08-homepage-widgets.css
+   - Trustpilot carousel
+   - Trustpilot stars widget
+   - Range star styling
+
+09-tables.css
+   - Table headers & cells
+   - Zebra striping
+   - Mobile responsive tables
+   - First column styling
+
+10-text-blocks.css
+   - MoneyHelper boxed text
+   - Cruise insurance text
+   - Force visibility rules
+   - Inline styles overrides
+
+11-banners-cta.css
+   - banner-quote-now-v2 component
+   - Medical Cover Banner
+   - Travel Tips Banner
+   - Secondary banner styles
+
+12-blog-pages.css
+   - Blog card grid
+   - Blog hero banners
+   - Article text styling
+   - Image handling
+   - Lists, blockquotes, tables
+
+13-faq-contact-pages.css
+   - FAQ hero banner with search
+   - Accordion styling
+   - Contact page sections
+   - Hide unwanted elements
+
+14-policy-download.css
+   - Policy documents section
+   - Download cards
+   - Centered layout
+
+15-spacing-fixes.css
+   - Cruise page spacing reductions
+   - Section margin adjustments
+   - Mobile spacing
+
+HOW TO USE:
+===========
+1. Load files in numerical order (01, 02, 03, etc.)
+2. OR concatenate all into one master file
+3. Each file is self-contained and documented
+4. Mobile responsive code included in each section
+5. All !important flags preserved for specificity
+
+TOTAL ESTIMATED SIZE: ~85-95KB (currently 18KB created)
+BENEFITS:
+- Easy to find specific styles
+- Can disable individual sections for testing
+- Cleaner version control
+- Easier team collaboration
+- Clear documentation per section

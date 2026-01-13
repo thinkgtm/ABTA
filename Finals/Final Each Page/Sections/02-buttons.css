@@ -1,0 +1,74 @@
+/* ==========================================
+   BUTTONS
+   All button styling - primary, secondary, etc.
+   ========================================== */
+
+/* ===== GLOBAL BUTTON STYLING - ALL BUTTONS ===== */
+.btn,
+.btn--primary,
+.btn--secondary,
+.link,
+.introduction .btn--primary,
+.introduction .btn__btn .btn--primary,
+.article__card-body .btn--secondary {
+    padding: 16px 44px !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    border-radius: 10px !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+    transition: background-color 0.3s ease !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    line-height: 1.3 !important;
+}
+
+.btn--primary,
+.introduction .btn--primary,
+.introduction .btn__btn .btn--primary {
+    background-color: #fcb316 !important;
+    color: #000000 !important;
+}
+
+.btn--primary:hover,
+.introduction .btn--primary:hover,
+.introduction .btn__btn .btn--primary:hover {
+    background-color: #E6C000 !important;
+}
+
+.btn--secondary,
+.article__card-body .btn--secondary {
+    background-color: #fcb316 !important;
+    color: #000000 !important;
+}
+
+.btn--secondary:hover,
+.article__card-body .btn--secondary:hover {
+    background-color: #E6C000 !important;
+}
+
+.btn:focus,
+.btn:active,
+.btn--primary:focus,
+.btn--primary:active,
+.btn--secondary:focus,
+.btn--secondary:active {
+    background-color: #fcb316 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+    .btn,
+    .btn--primary,
+    .btn--secondary,
+    .link,
+    .introduction .btn--primary,
+    .introduction .btn__btn .btn--primary,
+    .article__card-body .btn--secondary {
+        padding: 14px 38px !important;
+        font-size: 1.125rem !important;
+    }
+}
