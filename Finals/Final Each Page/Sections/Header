@@ -1,0 +1,862 @@
+/* ===== NAVIGATION BAR - ABTA STYLING ===== */
+/* Force proper case: First letter capital, rest lowercase */
+.mega-menu__item > a,
+.mega-menu__item > button.mega-menu__item-button {
+    text-transform: lowercase !important;
+}
+
+.mega-menu__item > a::first-letter,
+.mega-menu__item > button.mega-menu__item-button::first-letter {
+    text-transform: uppercase !important;
+}
+
+/* Apply same rules to dropdown menu items */
+.mega-menu-tray__nav a {
+    text-transform: lowercase !important;
+}
+
+.mega-menu-tray__nav a::first-letter {
+    text-transform: uppercase !important;
+}
+
+/* Mobile menu items */
+.mega-menu-responsive__item-title,
+.mega-menu-responsive__item-title span,
+.mega-menu-responsive__item a,
+.mega-menu-responsive__item a span {
+    text-transform: lowercase !important;
+}
+
+.mega-menu-responsive__item-title::first-letter,
+.mega-menu-responsive__item-title span::first-letter,
+.mega-menu-responsive__item a::first-letter,
+.mega-menu-responsive__item a span::first-letter {
+    text-transform: uppercase !important;
+}
+
+/* Mobile dropdown links */
+.mega-menu-tray-responsive__nav a {
+    text-transform: lowercase !important;
+}
+
+.mega-menu-tray-responsive__nav a::first-letter {
+    text-transform: uppercase !important;
+}
+
+.header#header--sticky {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-navbar {
+    background: #fff;
+}
+
+.main-navbar__wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ===== MOBILE NAVIGATION - PROPER SCROLLING FIX ===== */
+
+/* Enable scrolling on the mobile nav container */
+.main-navbar-responsive {
+    height: 100vh !important;
+    height: 100dvh !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    background: #ffffff !important;
+}
+
+/* Menu list needs to be taller than viewport to allow scrolling */
+.mega-menu-responsive__list {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: calc(100vh + 100px) !important;
+    padding: 20px 0 250px 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Get a Quote button positioned at bottom with proper spacing */
+.mega-menu-responsive__list > a.btn--primary {
+    order: 999 !important;
+    margin: auto 20px 100px 20px !important;
+    padding: 16px 24px !important;
+    display: block !important;
+    background-color: #fcb316 !important;
+    color: #000000 !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    border-radius: 6px !important;
+    text-align: center !important;
+    flex-shrink: 0 !important;
+    line-height: 1.5 !important;
+    min-height: 52px !important;
+}
+
+/* Ensure button text is always visible */
+.mega-menu-responsive__list > a.btn--primary,
+.mega-menu-responsive__list > a.btn--primary * {
+    color: #000000 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+/* Menu items should not prevent scrolling */
+.mega-menu-responsive__item {
+    flex-shrink: 0 !important;
+}
+
+/* iOS specific fixes */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    .mega-menu-responsive__list {
+        padding-bottom: calc(250px + env(safe-area-inset-bottom)) !important;
+    }
+}
+/* Main menu items */
+.mega-menu__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Style BOTH links AND buttons the same way */
+.mega-menu__item a,
+.mega-menu__item button.mega-menu__item-button {
+    color: #333 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    padding: 20px 0 !important;
+    display: block;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent !important;
+    background: transparent !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    cursor: pointer !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* Remove any lingering borders/colors from original theme */
+.mega-menu__item a,
+.mega-menu__item a *,
+.mega-menu__item button,
+.mega-menu__item button *,
+.mega-menu__item--active a,
+.mega-menu__item--active a *,
+.mega-menu__item--active button,
+.mega-menu__item--active button * {
+    box-shadow: none !important;
+}
+
+/* Remove any pseudo-elements that might be creating colored lines */
+.mega-menu__item a::before,
+.mega-menu__item a::after,
+.mega-menu__item button::before,
+.mega-menu__item button::after,
+.mega-menu__item--active a::before,
+.mega-menu__item--active a::after,
+.mega-menu__item--active button::before,
+.mega-menu__item--active button::after,
+.mega-menu__item--active > a::before,
+.mega-menu__item--active > a::after,
+.mega-menu__item--active > button::before,
+.mega-menu__item--active > button::after {
+    display: none !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+/* Only show blue line on hover - for BOTH links and buttons */
+.mega-menu__item a:hover,
+.mega-menu__item button.mega-menu__item-button:hover {
+    color: #007ac2 !important;
+    border-bottom: 2px solid #007ac2 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* Only show blue line when it's the EXACT active page */
+.mega-menu__item--active > a {
+    color: #007ac2 !important;
+    border-bottom: 2px solid #007ac2 !important;
+}
+
+/* Remove blue line from parent when child page is active */
+.mega-menu__item--active-tree:not(.mega-menu__item--active) > a {
+    color: #333 !important;
+    border-bottom: 2px solid transparent !important;
+}
+
+/* Ensure no background colors creating lines on active items */
+.mega-menu__item--active {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Hide the Holiday Types info column in mega menu */
+.mega-menu-tray__column--content {
+    display: none !important;
+}
+
+/* Mega menu dropdown tray */
+.mega-menu-tray {
+    background: #fff !important;
+    border-top: 2px solid #007ac2 !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mega-menu-tray__content {
+    padding: 30px 40px !important;
+}
+
+.mega-menu-tray__info p {
+    color: #007ac2 !important;
+    font-weight: 600 !important;
+}
+
+.mega-menu-tray__info a {
+    color: #007ac2 !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+}
+
+.mega-menu-tray__info a:hover {
+    text-decoration: underline !important;
+}
+
+.mega-menu-tray__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    display: block;
+    padding: 8px 0 !important;
+    text-decoration: none !important;
+}
+
+.mega-menu-tray__nav a:hover {
+    color: #007ac2 !important;
+}
+
+/* Get a Quote Button */
+.mega-menu__item a.btn--primary {
+    background: #fcb316 !important;
+    border: 2px solid #fcb316 !important;
+    color: #000000 !important;
+    padding: 10px 24px !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.mega-menu__item a.btn--primary:hover {
+    background: #E6C000 !important;
+    border: 2px solid #E6C000 !important;
+    color: #000000 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(252, 179, 22, 0.4) !important;
+}
+
+/* Mobile navigation trigger */
+.main-navbar__mobile-trigger__icon,
+.main-navbar__mobile-trigger__icon::before,
+.main-navbar__mobile-trigger__icon::after {
+    background-color: #007ac2 !important;
+}
+
+/* Mobile navigation */
+.main-navbar-responsive {
+    background: #fff !important;
+}
+
+.mega-menu-responsive__item-title {
+    color: #333 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    padding: 15px 20px !important;
+    border-bottom: 1px solid #eee !important;
+    text-transform: none !important;
+}
+
+.mega-menu-responsive__item-title:hover {
+    color: #007ac2 !important;
+}
+
+.mega-menu-tray-responsive {
+    background: #f9f9f9 !important;
+}
+
+.mega-menu-tray-responsive__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    padding: 12px 20px !important;
+    display: block;
+    text-transform: none !important;
+}
+
+.mega-menu-tray-responsive__nav a:hover {
+    color: #007ac2 !important;
+    background: #f0f0f0 !important;
+}
+
+.mega-menu-tray-responsive--back {
+    color: #007ac2 !important;
+    font-weight: 600 !important;
+}
+
+/* Extra details bar */
+.extra-details-v2 {
+    background: #007ac2 !important;
+}
+
+.extra-details-v2 .item__text,
+.extra-details-v2 .item__icon {
+    color: #fff !important;
+}
+
+/* ===== NUCLEAR RED LINE KILLER ===== */
+/* Target the LI parent element */
+.mega-menu__item,
+.mega-menu__item *,
+.mega-menu__item::before,
+.mega-menu__item::after {
+    border: none !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+/* Style BOTH links AND buttons the same way - 14px like rest of nav */
+.mega-menu__item > a,
+.mega-menu__item > button.mega-menu__item-button {
+    color: #333 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    padding: 20px 0 !important;
+    display: block !important;
+    transition: all 0.3s ease !important;
+    border-bottom: 2px solid transparent !important;
+    background: transparent !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    cursor: pointer !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    line-height: 1 !important;
+}
+
+/* Only show blue line on hover - for BOTH links and buttons */
+.mega-menu__item > a:hover,
+.mega-menu__item > button.mega-menu__item-button:hover {
+    color: #007ac2 !important;
+    border-bottom: 2px solid #007ac2 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* Only show blue line when it's the EXACT active page */
+.mega-menu__item--active {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.mega-menu__item--active > a {
+    color: #007ac2 !important;
+    border: none !important;
+    border-bottom: 2px solid #007ac2 !important;
+}
+
+/* Remove blue line from parent when child page is active */
+.mega-menu__item--active-tree:not(.mega-menu__item--active) > a {
+    color: #333 !important;
+    border: none !important;
+    border-bottom: 2px solid transparent !important;
+}
+
+/* Get a Quote Button - override everything */
+.mega-menu__item a.btn--primary,
+.mega-menu__item a.btn.btn--primary {
+    background: #fcb316 !important;
+    border: 2px solid #fcb316 !important;
+    color: #000000 !important;
+    padding: 10px 24px !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.mega-menu__item a.btn--primary:hover {
+    background: #E6C000 !important;
+    border: 2px solid #E6C000 !important;
+}
+
+/* ===== MEGA MENU DROPDOWN ALIGNMENT ===== */
+
+/* Remove the "Find out more" column completely */
+.mega-menu-tray__column--content {
+    display: none !important;
+}
+
+/* Make the navigation column full width */
+.mega-menu-tray__container {
+    display: block !important;
+    max-width: 300px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.mega-menu-tray__column {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Position the dropdown directly under each menu item */
+.mega-menu__item {
+    position: relative !important;
+}
+
+.mega-menu-tray {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    margin-top: 0 !important;
+    min-width: 250px !important;
+    max-width: 300px !important;
+}
+
+/* Dropdown content styling */
+.mega-menu-tray__content {
+    padding: 20px 0 !important;
+}
+
+.mega-menu-tray__nav {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.mega-menu-tray__nav-item {
+    list-style: none !important;
+}
+
+.mega-menu-tray__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    display: block;
+    padding: 8px 0 !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+}
+
+.mega-menu-tray__nav a:hover {
+    color: #007ac2 !important;
+    background: #f5f5f5 !important;
+}
+
+/* Hide the title in the dropdown */
+.mega-menu-tray__nav-item--title {
+    display: none !important;
+}
+
+/* ===== MOBILE NAVIGATION - COMPLETE FIX ===== */
+
+/* Mobile menu items - target the span inside */
+.mega-menu-responsive__item-title,
+.mega-menu-responsive__item-title span,
+.mega-menu-responsive__item a,
+.mega-menu-responsive__item a span,
+.mega-menu-responsive__item button,
+.mega-menu-responsive__item button span {
+    color: #007ac2 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    text-transform: none !important;
+}
+
+/* Mobile menu item container */
+.mega-menu-responsive__item {
+    border-bottom: 1px solid #e0e0e0 !important;
+}
+
+/* Mobile menu links and buttons */
+.mega-menu-responsive__item-title {
+    padding: 18px 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    text-align: left !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Arrows on the right side */
+.mega-menu-responsive__item-title::after {
+    color: #007ac2 !important;
+}
+
+/* Hide "Find out more" column in mobile dropdowns */
+.mega-menu-tray-responsive__column--content {
+    display: none !important;
+}
+
+/* Mobile dropdown background */
+.mega-menu-tray-responsive {
+    background: #f5f5f5 !important;
+    border-top: 1px solid #e0e0e0 !important;
+}
+
+/* Mobile dropdown links */
+.mega-menu-tray-responsive__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    padding: 14px 20px 14px 40px !important;
+    display: block !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+    text-transform: none !important;
+}
+
+.mega-menu-tray-responsive__nav a:hover {
+    color: #007ac2 !important;
+    background: #ffffff !important;
+}
+
+/* Mobile Get a Quote button */
+.mega-menu-responsive__list > a.btn--primary {
+    background: #fcb316 !important;
+    color: #000000 !important;
+    margin: 20px !important;
+    padding: 16px 24px !important;
+    text-align: center !important;
+    border-radius: 6px !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    display: block !important;
+}
+/* ===== MEGA MENU DROPDOWN - FIX FREEZING & ADD OUTLINE ===== */
+
+/* Remove the frozen/stuck state when clicking */
+.mega-menu__item.is-open .mega-menu-tray,
+.mega-menu__item.is-active .mega-menu-tray,
+.mega-menu__item[aria-expanded="true"] .mega-menu-tray {
+    display: block !important;
+}
+
+/* Hide dropdown when NOT hovering (override JS) */
+.mega-menu__item:not(:hover) .mega-menu-tray {
+    display: none !important;
+}
+
+/* Show dropdown only on hover */
+.mega-menu__item:hover .mega-menu-tray {
+    display: block !important;
+}
+
+/* Dropdown tray styling with ABTA blue border */
+.mega-menu-tray {
+    background: #fff !important;
+    border: 3px solid #007ac2 !important;
+    border-top: 3px solid #007ac2 !important;
+    box-shadow: 0 8px 24px rgba(0, 122, 194, 0.2) !important;
+    border-radius: 0 0 8px 8px !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    margin-top: 0 !important;
+    min-width: 250px !important;
+    max-width: 300px !important;
+    z-index: 1000 !important;
+}
+
+/* Dropdown content padding */
+.mega-menu-tray__content {
+    padding: 20px 0 !important;
+}
+
+/* Remove any click/active states that might freeze the dropdown */
+.mega-menu__item-button[aria-expanded="true"],
+.mega-menu__item-button.is-active,
+.mega-menu__item.is-open > button {
+    color: #007ac2 !important;
+    border-bottom: 2px solid #007ac2 !important;
+}
+
+/* Ensure button doesn't stay "active" after click */
+.mega-menu__item-button:focus {
+    outline: none !important;
+}
+
+/* Remove any background that appears on active state */
+.mega-menu__item.is-open,
+.mega-menu__item[aria-expanded="true"] {
+    background: transparent !important;
+}
+
+/* Dropdown navigation links */
+.mega-menu-tray__nav {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.mega-menu-tray__nav a {
+    color: #333 !important;
+    font-size: 15px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    display: block !important;
+    padding: 12px 20px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    border-left: 3px solid transparent !important;
+}
+
+.mega-menu-tray__nav a:hover {
+    color: #007ac2 !important;
+    background: #f5f5f5 !important;
+    border-left: 3px solid #007ac2 !important;
+}
+
+/* Hide "Find out more" section */
+.mega-menu-tray__column--content {
+    display: none !important;
+}
+
+/* Dropdown container adjustments */
+.mega-menu-tray__container {
+    display: block !important;
+    max-width: 300px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.mega-menu-tray__column {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* ===== MOBILE BANNER BOX - MOBILE ONLY, HIDE ON DESKTOP ===== */
+
+/* HIDE mobile banner on desktop */
+@media (min-width: 769px) {
+    .article-full__content.sheme-white.show-xs,
+    .article-full__detail--mobile.sheme-white.show-xs {
+        display: none !important;
+    }
+}
+
+/* SHOW mobile banner ONLY on mobile/tablet */
+@media (max-width: 768px) {
+    /* Hide desktop banner */
+    .introduction-banner__content.hide-xs {
+        display: none !important;
+    }
+    
+    /* Show mobile banner */
+    .article-full__content.sheme-white.show-xs {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        background: transparent !important;
+        padding: 0 15px !important;
+        margin: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        min-height: 50px !important;
+    }
+    
+    .article-full__content.sheme-white.show-xs::before,
+    .article-full__content.sheme-white.show-xs::after {
+        display: none !important;
+    }
+    
+    .article-full__container--position {
+        position: relative !important;
+        margin-top: -60px !important;
+        z-index: 10 !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        background: transparent !important;
+        display: block !important;
+        visibility: visible !important;
+        min-height: 50px !important;
+    }
+    
+    .article-full__container--position::before,
+    .article-full__container--position::after {
+        display: none !important;
+    }
+    
+    /* Mobile detail box - white rounded background */
+    .article-full__detail--mobile.sheme-white.show-xs {
+        background: rgba(255, 255, 255, 0.95) !important;
+        border-top: 4px solid #007ac2 !important;
+        border-radius: 12px !important;
+        padding: 20px 16px !important;
+        margin: 0 !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+        position: relative !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        min-height: 100px !important;
+        /* Mobile device rendering */
+        transform: translate3d(0, 0, 0) !important;
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        backface-visibility: visible !important;
+        -webkit-backface-visibility: visible !important;
+    }
+    
+    .article-full__detail--mobile.sheme-white.show-xs::before,
+    .article-full__detail--mobile.sheme-white.show-xs::after {
+        display: none !important;
+    }
+    
+    /* Inner container */
+    .article-full__detail--mobile.sheme-white.show-xs .article-full__container {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    .article-full__detail--mobile.sheme-white.show-xs .article-full__container::before,
+    .article-full__detail--mobile.sheme-white.show-xs .article-full__container::after {
+        display: none !important;
+    }
+    
+    /* Paragraph */
+    .article-full__detail--mobile.show-xs p {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #333333 !important;
+        font-family: Calibri, Arial, sans-serif !important;
+        margin: 0 0 10px 0 !important;
+    }
+    
+    /* Heading - FORCE VISIBILITY */
+    .article-full__detail--mobile.show-xs h2,
+    .article-full__detail--mobile.show-xs h2.font-bold-publicoheadline,
+    .article-full__detail--mobile.show-xs h2.font-display-4 {
+        color: #007ac2 !important;
+        font-family: Calibri, Arial, sans-serif !important;
+        font-size: 1.35rem !important;
+        font-weight: 700 !important;
+        margin: 0 0 16px 0 !important;
+        line-height: 1.3 !important;
+        text-align: left !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        min-height: 30px !important;
+        /* Mobile rendering */
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+        text-rendering: optimizeLegibility !important;
+        transform: translate3d(0, 0, 0) !important;
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        text-shadow: 0 0 0 transparent !important;
+        filter: none !important;
+        -webkit-filter: none !important;
+    }
+    
+    /* Button container */
+    .article-full__detail--mobile.show-xs .btn__btn {
+        padding-top: 0 !important;
+        margin: 0 !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    /* Button */
+    .article-full__detail--mobile.show-xs .btn--primary,
+    .article-full__detail--mobile.show-xs a.btn--primary {
+        background: #fcb316 !important;
+        color: #000000 !important;
+        border: 2px solid #fcb316 !important;
+        padding: 12px 28px !important;
+        font-size: 0.95rem !important;
+        font-weight: 700 !important;
+        border-radius: 6px !important;
+        text-transform: uppercase !important;
+        display: inline-block !important;
+        text-decoration: none !important;
+        transition: all 0.3s ease !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        min-height: 44px !important;
+        /* Mobile rendering */
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+        transform: translate3d(0, 0, 0) !important;
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        text-shadow: 0 0 0 transparent !important;
+        filter: none !important;
+        -webkit-filter: none !important;
+    }
+    
+    .article-full__detail--mobile.show-xs .btn--primary:hover {
+        background: #E6C000 !important;
+        border-color: #E6C000 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-full__content.sheme-white.show-xs {
+        padding: 0 12px !important;
+    }
+    
+    .article-full__container--position {
+        margin-top: -50px !important;
+    }
+    
+    .article-full__detail--mobile.sheme-white.show-xs {
+        padding: 18px 14px !important;
+        border-radius: 10px !important;
+    }
+    
+    .article-full__detail--mobile.show-xs h2 {
+        font-size: 1.25rem !important;
+        margin-bottom: 14px !important;
+    }
+    
+    .article-full__detail--mobile.show-xs .btn--primary {
+        padding: 12px 24px !important;
+        font-size: 0.9rem !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+}
