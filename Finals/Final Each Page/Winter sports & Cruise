@@ -4186,7 +4186,7 @@ section.container .article {
 
 /* Reduce gap after "Get a Quote" button and before "What's covered" text */
 .article + .t_block.t_quote {
-    padding-top: 20px !important;
+    padding-top: 0px !important;
     margin-top: -30px !important;
 }
 
@@ -4933,6 +4933,172 @@ a.link.link--secondary-link.text-uppercase.icons--right.icons--east::after {
     opacity: 0 !important;
     visibility: hidden !important;
 }
+
+/* ===== TABLE STYLING - RESPONSIVE ===== */
+
+/* Table container - LIMITED WIDTH & CENTERED */
+section.table-v2 {
+    background: #ffffff !important;
+    padding: 40px 20px !important;
+    margin: 20px auto !important;
+    overflow-x: auto !important;
+    max-width: 1200px !important;
+    width: auto !important; /* CHANGED from 100% */
+}
+
+/* Table itself */
+.table-v2__content {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    font-family: Calibri, Arial, sans-serif !important;
+}
+
+/* Desktop view - table headers */
+.table-v2__content__row__header {
+    background: #007ac2 !important;
+    color: #ffffff !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    padding: 16px 12px !important;
+    text-align: center !important;
+    border: 1px solid #005a8f !important;
+}
+
+/* First column header - left align */
+.table-v2__content__row__header:first-child {
+    text-align: left !important;
+}
+
+/* Table cells */
+.table-v2__content__row__cell {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 0.95rem !important;
+    padding: 14px 12px !important;
+    border: 1px solid #e0e0e0 !important;
+    text-align: center !important;
+    color: #333 !important;
+}
+
+/* First column - left align and normal weight */
+.table-v2__content__row__cell.cell__description {
+    text-align: left !important;
+    font-weight: normal !important;
+}
+
+/* Remove bold from first column */
+.table-v2__content__row__cell .font-weight-bold,
+.table-v2__content__row__cell span.font-weight-bold,
+.cell__description .font-weight-bold,
+.cell__description span.font-weight-bold {
+    font-weight: normal !important;
+}
+
+/* Zebra striping */
+.table-v2__content__row.row--zebra-odd {
+    background: #f9f9f9 !important;
+}
+
+.table-v2__content__row.row--zebra-even {
+    background: #ffffff !important;
+}
+
+/* Hide mobile description rows on desktop */
+.table-v2__content__row.row__description.row--lg-hidden {
+    display: none !important;
+}
+
+/* MOBILE STYLING */
+@media (max-width: 1024px) {
+    /* Show mobile description rows - WHITE WITH CENTERED TEXT */
+    .table-v2__content__row.row__description.row--lg-hidden {
+        display: table-row !important;
+    }
+    
+    .table-v2__content__row.row__description.row--lg-hidden .cell__description {
+        background: #ffffff !important;
+        color: #333 !important;
+        font-weight: 600 !important;
+        padding: 14px 12px !important;
+        text-align: center !important;
+        border: 1px solid #e0e0e0 !important;
+        border-top: 2px solid #007ac2 !important;
+    }
+    
+    .table-v2__content__row.row__description.row--lg-hidden .cell__description span,
+    .table-v2__content__row.row__description.row--lg-hidden .cell__description span.font-weight-bold {
+        font-weight: 600 !important;
+        color: #333 !important;
+    }
+    
+    /* Hide the first column (desktop benefit column) on mobile */
+    .table-v2__content__row__cell.cell--md-hidden {
+        display: none !important;
+    }
+    
+    /* Keep table header visible but adjust */
+    .table-v2__content thead {
+        display: table-header-group !important;
+    }
+    
+    /* Hide the first header column (Benefit) on mobile */
+    .table-v2__content__row__header:first-child {
+        display: none !important;
+    }
+    
+    /* Adjust remaining header cells */
+    .table-v2__content__row__header {
+        font-size: 0.85rem !important;
+        padding: 12px 8px !important;
+    }
+    
+    /* Adjust data cells */
+    .table-v2__content__row__cell {
+        font-size: 0.85rem !important;
+        padding: 12px 8px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-v2 {
+        padding: 20px 10px !important;
+    }
+    
+    .table-v2__content__row__header {
+        font-size: 0.8rem !important;
+        padding: 10px 6px !important;
+    }
+    
+    .table-v2__content__row__cell {
+        font-size: 0.8rem !important;
+        padding: 10px 6px !important;
+    }
+    
+    .table-v2__content__row.row__description.row--lg-hidden .cell__description {
+        font-size: 0.9rem !important;
+        padding: 12px 10px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-v2 {
+        padding: 15px 5px !important;
+    }
+    
+    .table-v2__content__row__header {
+        font-size: 0.75rem !important;
+        padding: 8px 4px !important;
+    }
+    
+    .table-v2__content__row__cell {
+        font-size: 0.75rem !important;
+        padding: 8px 4px !important;
+    }
+    
+    .table-v2__content__row.row__description.row--lg-hidden .cell__description {
+        font-size: 0.85rem !important;
+        padding: 10px 6px !important;
+    }
 }
 
 /* ===== END OF MASTER CSS ===== */
