@@ -3303,36 +3303,34 @@ body:has(.article-full__content) .hero-banner {
     text-decoration: none !important;
 }
 
-/* Style BOTH links AND buttons the same way */
-.mega-menu__item a,
-.mega-menu__item button.mega-menu__item-button {
+/* Style BOTH links AND buttons the same way - 14px like rest of nav */
+.mega-menu__item > a,
+.mega-menu__item > button.mega-menu__item-button {
     color: #333 !important;
     font-size: 16px !important;
     font-weight: 500 !important;
     text-decoration: none !important;
     padding: 20px 0 !important;
-    display: block;
-    transition: all 0.3s ease;
-    border: none !important;
+    display: block !important;
+    transition: all 0.3s ease !important;
     border-bottom: 2px solid transparent !important;
     background: transparent !important;
     font-family: Calibri, Arial, sans-serif !important;
     cursor: pointer !important;
-    text-transform: none !important;
-    box-shadow: none !important;
-    outline: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    line-height: 1 !important;
 }
 
-/* Only show blue line on hover */
-.mega-menu__item:hover {
-    border: none !important;
-}
-
-.mega-menu__item a:hover,
-.mega-menu__item button.mega-menu__item-button:hover {
+/* Only show blue line on hover - for BOTH links and buttons */
+.mega-menu__item > a:hover,
+.mega-menu__item > button.mega-menu__item-button:hover {
     color: #007ac2 !important;
-    border: none !important;
     border-bottom: 2px solid #007ac2 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
 }
 
 /* Only show blue line when it's the EXACT active page */
@@ -4415,7 +4413,7 @@ section.page-faqs .hero-banner__mask,
 
 .mega-menu__item a {
     color: #333 !important;
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-weight: 500 !important;
     text-decoration: none !important;
     padding: 20px 0 !important;
