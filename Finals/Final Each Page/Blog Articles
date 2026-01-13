@@ -1438,15 +1438,17 @@ div.card-v2__content {
     gap: 30px;
 }
 
-.mega-menu__item a {
+.mega-menu__item > a,
+.mega-menu__item > button.mega-menu__item-button {
     color: #333 !important;
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-weight: 500 !important;
-    text-decoration: none !important;
-    padding: 20px 0 !important;
-    display: block;
-    transition: all 0.3s ease;
-    border-bottom: 2px solid transparent !important;
+    text-transform: lowercase !important;  /* ← ADD THIS */
+}
+
+.mega-menu__item > a::first-letter,
+.mega-menu__item > button.mega-menu__item-button::first-letter {
+    text-transform: uppercase !important;  /* ← ADD THIS */
 }
 
 /* Remove any lingering borders/colors from original theme */
