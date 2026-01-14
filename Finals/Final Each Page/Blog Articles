@@ -13,6 +13,7 @@
 /* Override any AXA font classes on hero H1 */
 h1.font-bold-publicoheadline.font-display-4.black-mask-text {
     font-family: 'Calibri', Arial, sans-serif !important;
+    color: #ffffff !important;
 }
 
 /* Hide hero banner subtitle text */
@@ -43,6 +44,11 @@ h1.font-bold-publicoheadline.font-display-4.black-mask-text {
     background-color: #ffffff !important;
 }
 
+/* Hide Liferay description field - second paragraph in article text */
+.article-full__text > p:nth-child(2) {
+    display: none !important;
+}
+
 /* Hide article right sidebar (social sharing) */
 .article-full__right {
     display: none;
@@ -62,6 +68,49 @@ h1.font-bold-publicoheadline.font-display-4.black-mask-text {
 .article-full__text p {
     font-family: 'Calibri', Arial, sans-serif;
     background-color: #ffffff;
+}
+
+/* ===== STANDARDIZED FONT SIZES - SITE-WIDE ===== */
+
+/* Body text base */
+body,
+p {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+}
+
+/* Article body text */
+.article-full__text p,
+.article-full__text p span {
+    font-size: 16px !important; /* Match body text */
+    line-height: 1.7 !important; /* Slightly more for readability */
+}
+
+/* Headings hierarchy */
+h1, h1.font-display-4 {
+    font-size: 2.5rem !important; /* 40px */
+}
+
+h2, h2.font-display-4 {
+    font-size: 2rem !important; /* 32px */
+}
+
+h2.font-display-6 {
+    font-size: 1.75rem !important; /* 28px */
+}
+
+h3 {
+    font-size: 1.5rem !important; /* 24px */
+}
+
+h4 {
+    font-size: 1.25rem !important; /* 20px */
+}
+
+/* Small text (legal, disclaimers) */
+.footer small,
+.m-footer-small__list-item {
+    font-size: 0.875rem !important; /* 14px */
 }
 
 /* Remove any borders on article text section */
