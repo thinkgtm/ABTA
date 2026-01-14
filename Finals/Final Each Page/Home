@@ -1215,10 +1215,36 @@ section.container {
     background-color: #E6C000 !important;
 }
 
-.article-inline__card-body .link.icons--east::after,
-.article-inline__card-body .link.icons--right::after {
-    display: none !important;
+/* Holiday type buttons - proper styling without arrows */
+.article-inline__card-body .link,
+.article-inline__card-body a.link {
+    background-color: #fcb316 !important;
+    color: #000000 !important;
+    padding: 15px 42px !important;
+    border-radius: 10px !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 1.125rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-transform: uppercase !important;
+    transition: background-color 0.3s ease !important;
 }
+
+.article-inline__card-body .link:hover,
+.article-inline__card-body a.link:hover {
+    background-color: #E6C000 !important;
+}
+
+/* Remove arrows */
+.article-inline__card-body .link::after,
+.article-inline__card-body .link::before {
+    display: none !important;
+    content: none !important;
+}
+
 
 .article-inline__card-body .card-v2__content__body__list {
     padding: 0 !important;
@@ -2965,50 +2991,6 @@ body:has(.article-full__content) .hero-banner {
 .mt-5 { margin-top: 3rem !important; }
 
 /* ===== NAVIGATION BAR - ABTA STYLING ===== */
-/* Force proper case: First letter capital, rest lowercase */
-.mega-menu__item > a,
-.mega-menu__item > button.mega-menu__item-button {
-    text-transform: lowercase !important;
-}
-
-.mega-menu__item > a::first-letter,
-.mega-menu__item > button.mega-menu__item-button::first-letter {
-    text-transform: uppercase !important;
-}
-
-/* Apply same rules to dropdown menu items */
-.mega-menu-tray__nav a {
-    text-transform: lowercase !important;
-}
-
-.mega-menu-tray__nav a::first-letter {
-    text-transform: uppercase !important;
-}
-
-/* Mobile menu items */
-.mega-menu-responsive__item-title,
-.mega-menu-responsive__item-title span,
-.mega-menu-responsive__item a,
-.mega-menu-responsive__item a span {
-    text-transform: lowercase !important;
-}
-
-.mega-menu-responsive__item-title::first-letter,
-.mega-menu-responsive__item-title span::first-letter,
-.mega-menu-responsive__item a::first-letter,
-.mega-menu-responsive__item a span::first-letter {
-    text-transform: uppercase !important;
-}
-
-/* Mobile dropdown links */
-.mega-menu-tray-responsive__nav a {
-    text-transform: lowercase !important;
-}
-
-.mega-menu-tray-responsive__nav a::first-letter {
-    text-transform: uppercase !important;
-}
-
 .header#header--sticky {
     background: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -3021,6 +3003,18 @@ body:has(.article-full__content) .hero-banner {
 .main-navbar__wrapper {
     max-width: 1400px;
     margin: 0 auto;
+}
+
+/* Remove any text transformations - display as written in Liferay */
+.mega-menu__item > a,
+.mega-menu__item > button.mega-menu__item-button,
+.mega-menu-tray__nav a,
+.mega-menu-responsive__item-title,
+.mega-menu-responsive__item-title span,
+.mega-menu-responsive__item a,
+.mega-menu-responsive__item a span,
+.mega-menu-tray-responsive__nav a {
+    text-transform: none !important;
 }
 
 /* ===== MOBILE NAVIGATION - PROPER SCROLLING FIX ===== */
@@ -4602,14 +4596,14 @@ footer.footer {
     position: relative !important;
 }
 
-/* LOGO ROW (ABTA LEFT, AXA RIGHT) - WITH SIDE PADDING */
-
-/* ABTA LOGO (TOP LEFT) - WITH LEFT PADDING */
+/* ABTA LOGO (TOP LEFT) - ALIGNED WITH HEADER */
 .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
     content: "" !important;
     position: absolute !important;
     top: 16px !important;
-    left: 40px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-left: -560px !important;
     width: 180px !important;
     height: 55px !important;
     background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/abta-travel-insurance-white-logo-rgb.webp/a903b952-072c-31f3-70fb-c3927ab764f4?version=1.0&t=1763453026583&imagePreview=1") !important;
@@ -4619,12 +4613,15 @@ footer.footer {
     border: none !important;
 }
 
-/* AXA LOCKUP (TOP RIGHT) - WITH RIGHT PADDING */
+/* AXA LOCKUP (TOP RIGHT) - ALIGNED WITH HEADER */
 .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
     content: "IN PARTNERSHIP WITH" !important;
     position: absolute !important;
     top: 8px !important;
-    right: 40px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-left: 560px !important;
+    margin-right: 0 !important;
     width: 200px !important;
     height: 80px !important;
     font-size: 0.7rem !important;
@@ -4776,13 +4773,14 @@ footer.footer {
 
     .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
         top: 12px !important;
-        left: 30px !important;
+        margin-left: -485px !important;
         width: 150px !important;
         height: 40px !important;
     }
 
     .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
-        right: 30px !important;
+        margin-left: 485px !important;
+        margin-right: -30px !important;
         width: 180px !important;
         height: 70px !important;
         background-size: 40px 40px !important;
@@ -4811,6 +4809,7 @@ footer.footer {
         top: 20px !important;
         left: 50% !important;
         transform: translateX(-50%) !important;
+        margin-left: 0 !important;
         width: 180px !important;
         height: 55px !important;
     }
