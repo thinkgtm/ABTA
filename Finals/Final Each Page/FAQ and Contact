@@ -2324,190 +2324,48 @@ section.p-3[style*="background-color: #00008F"] .btn--light-white:hover {
     }
 }
 
-/* ===== FAQ HERO BANNER ===== */
-.hero-banner.hero-banner--small .hero-banner__container {
-    position: relative !important;
-    z-index: 2 !important;
-    width: 100% !important;
-    max-width: 900px !important;
-    margin: 0 auto !important;
-    padding: 40px 20px !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-}
+/* ==========================================
+   FAQ PAGE - REMOVE HERO BANNER COMPLETELY
+   ========================================== */
 
-.hero-banner.hero-banner--small .hero-banner__content {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100% !important;
-    text-align: center !important;
-}
-
-.hero-banner.hero-banner--small h1,
-.hero-banner.hero-banner--small h1.font-display-4,
-.hero-banner.hero-banner--small h1.font-bold-publicoheadline,
-.hero-banner.hero-banner--small h1.text-center {
-    color: #ffffff !important;
-    font-family: Calibri, Arial, sans-serif !important;
-    font-size: 2.75rem !important;
-    font-weight: 700 !important;
-    margin: 0 auto 20px auto !important;
-    padding: 0 !important;
-    text-align: center !important;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
-    width: 100% !important;
-}
-
-.hero-banner.hero-banner--small p,
-.hero-banner.hero-banner--small p.text-center {
-    color: #ffffff !important;
-    font-size: 1.125rem !important;
-    margin: 0 auto 30px auto !important;
-    padding: 0 !important;
-    text-align: center !important;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8) !important;
-    width: 100% !important;
-}
-
-.hero-banner.hero-banner--small .hero-banner--container {
-    width: 100% !important;
-}
-
-.hero-banner.hero-banner--small form {
-    width: 100% !important;
-}
-
-.hero-banner.hero-banner--small .form__group--inline {
-    display: flex !important;
-    gap: 12px !important;
-    width: 100% !important;
-    border: none !important;
-    padding: 0 !important;
+/* Hide the entire hero banner section */
+.hero-banner.hero-banner--small,
+section.hero-banner.hero-banner--small,
+.page-faqs .hero-banner.hero-banner--small {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
     margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
 }
 
-.hero-banner.hero-banner--small input.form__large {
-    flex: 1 !important;
-    background: #ffffff !important;
-    border: none !important;
-    padding: 16px 20px !important;
-    border-radius: 8px !important;
-    height: 56px !important;
-    font-size: 1rem !important;
-    outline: none !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+/* Remove any top spacing/margin from the accordion section */
+.page-faqs .accordion,
+section.page-faqs .accordion {
+    margin-top: 0 !important;
+    padding-top: 60px !important;
 }
 
-.hero-banner.hero-banner--small input.form__large:focus {
-    outline: none !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
-}
-
-.hero-banner.hero-banner--small button.btn--secondary {
-    flex-shrink: 0 !important;
-    background: #fcb316 !important;
-    color: #000000 !important;
-    border: 2px solid #fcb316 !important;
-    padding: 16px 24px !important;
-    border-radius: 8px !important;
-    height: 56px !important;
-    min-width: 56px !important;
-}
-
-.hero-banner.hero-banner--small .icon-search {
-    color: #000000 !important;
-    font-size: 1.5rem !important;
-}
-@media (max-width: 768px) {
-    .hero-banner.hero-banner--small h1,
-    .hero-banner.hero-banner--small h1.font-display-4,
-    .hero-banner.hero-banner--small h1.font-bold-publicoheadline,
-    .hero-banner.hero-banner--small h1.text-center {
-        font-size: 2rem !important;
-    }
-    
-    .hero-banner.hero-banner--small p {
-        font-size: 1rem !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-banner.hero-banner--small h1,
-    .hero-banner.hero-banner--small h1.font-display-4,
-    .hero-banner.hero-banner--small h1.font-bold-publicoheadline,
-    .hero-banner.hero-banner--small h1.text-center {
-        font-size: 1.5rem !important;
-    }
-    
-    .hero-banner.hero-banner--small p {
-        font-size: 0.9rem !important;
-    }
-}
-/* Hide the example text and search form in FAQ banner */
-.hero-banner.hero-banner--small p.text-center {
-    display: none !important;
-}
-
-.hero-banner.hero-banner--small .hero-banner--container {
-    display: none !important;
-}
-
-/* ===== FAQ BANNER - SHOW AND CENTER ===== */
-.hero-banner.hero-banner--small {
-    position: relative !important;
-    min-height: 450px !important;
-    width: 100% !important;
-}
-
-.hero-banner.hero-banner--small .hero-banner__mask {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    background-size: cover !important;
-    background-position: center !important;
-}
-
-.hero-banner.hero-banner--small .hero-banner__mask::before {
-    content: "" !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    background: rgba(0, 0, 0, 0.5) !important;
-    z-index: 1 !important;
-}
-
-.hero-banner.hero-banner--small .hero-banner__container {
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    z-index: 2 !important;
-    width: 100% !important;
-    max-width: 900px !important;
-    padding: 0 20px !important;
-}
-
-/* Remove grey background from FAQ page */
+/* Remove any grey background that might show */
 section.page-faqs,
 section.page-faqs.sheme-grease-light {
     background: #ffffff !important;
+    padding-top: 0 !important;
 }
 
 section.page-faqs .p-4 {
     background: #ffffff !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
 }
 
-.accordion {
-    background: #ffffff !important;
+/* Ensure breadcrumbs are hidden (already in your code but reinforcing) */
+.page-faqs .b__breadcrumbs,
+.page-faqs .breadcrumb,
+.page-faqs nav[aria-label="Breadcrumb"] {
+    display: none !important;
 }
-
 /* ==========================================
    FAQ ACCORDION SECTION
    ========================================== */
@@ -2516,13 +2374,6 @@ section.page-faqs .p-4 {
     max-width: 1200px !important;
     margin: 0 auto !important;
     padding: 20px 40px 60px 40px !important;
-}
-
-/* HIDE the "Frequently Asked Questions" header */
-.accordion > h2,
-.accordion h2.font-display-6,
-.accordion h2.mb-2 {
-    display: none !important;
 }
 
 /* Accordion Item */
@@ -4302,7 +4153,7 @@ section.table-v2 {
 
 .mega-menu__item a {
     color: #333 !important;
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-weight: 500 !important;
     text-decoration: none !important;
     padding: 20px 0 !important;
@@ -4390,13 +4241,20 @@ section.table-v2 {
 .mega-menu-tray__nav a {
     color: #333 !important;
     font-size: 15px !important;
-    display: block;
-    padding: 8px 0 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    display: block !important;
+    padding: 12px 20px !important;
     text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    border-left: none !important;  /* Remove blue square */
+    border-bottom: 2px solid transparent !important;  /* Add transparent underline */
 }
 
 .mega-menu-tray__nav a:hover {
-    color: #0077C8 !important;
+    color: #007ac2 !important;
+    background: transparent !important;  /* Remove grey background */
+    border-left: none !important;  /* Keep blue square removed */
+    border-bottom: 2px solid #007ac2 !important;  /* Add blue underline on hover */
 }
 
 /* Mobile navigation trigger */
@@ -4491,14 +4349,14 @@ footer.footer {
     position: relative !important;
 }
 
-/* LOGO ROW (ABTA LEFT, AXA RIGHT) - WITH SIDE PADDING */
-
-/* ABTA LOGO (TOP LEFT) - WITH LEFT PADDING */
+/* ABTA LOGO (TOP LEFT) - ALIGNED WITH HEADER */
 .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
     content: "" !important;
     position: absolute !important;
     top: 16px !important;
-    left: 40px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-left: -560px !important;
     width: 180px !important;
     height: 55px !important;
     background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/abta-travel-insurance-white-logo-rgb.webp/a903b952-072c-31f3-70fb-c3927ab764f4?version=1.0&t=1763453026583&imagePreview=1") !important;
@@ -4508,12 +4366,15 @@ footer.footer {
     border: none !important;
 }
 
-/* AXA LOCKUP (TOP RIGHT) - WITH RIGHT PADDING */
+/* AXA LOCKUP (TOP RIGHT) - ALIGNED WITH HEADER */
 .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
     content: "IN PARTNERSHIP WITH" !important;
     position: absolute !important;
     top: 8px !important;
-    right: 40px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-left: 560px !important;
+    margin-right: 0 !important;
     width: 200px !important;
     height: 80px !important;
     font-size: 0.7rem !important;
@@ -4665,13 +4526,14 @@ footer.footer {
 
     .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
         top: 12px !important;
-        left: 30px !important;
+        margin-left: -485px !important;
         width: 150px !important;
         height: 40px !important;
     }
 
     .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
-        right: 30px !important;
+        margin-left: 485px !important;
+        margin-right: -30px !important;
         width: 180px !important;
         height: 70px !important;
         background-size: 40px 40px !important;
@@ -4700,6 +4562,7 @@ footer.footer {
         top: 20px !important;
         left: 50% !important;
         transform: translateX(-50%) !important;
+        margin-left: 0 !important;
         width: 180px !important;
         height: 55px !important;
     }
