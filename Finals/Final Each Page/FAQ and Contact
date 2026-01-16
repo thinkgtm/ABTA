@@ -4762,5 +4762,25 @@ footer.footer {
         height: 200px !important;
     }
 }
+/* ===== HIDE BUTTON IN BLOG PAGE HERO ===== */
 
+/* Desktop - hide button in hero banner */
+.introduction-banner__content--content .btn__btn,
+.introduction-banner__content--content .btn--primary {
+    display: none !important;
+}
+
+/* Mobile - hide button in mobile hero box */
+.article-full__detail--mobile .btn__btn,
+.article-full__detail--mobile .btn--primary {
+    display: none !important;
+}
+
+/* Adjust spacing after heading since button is removed */
+.introduction-banner__content--content h2:last-child,
+.article-full__detail--mobile h2:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+}
 /* ===== END OF MASTER CSS ===== */
