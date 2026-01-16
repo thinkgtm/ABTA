@@ -4447,19 +4447,16 @@ section.page-faqs .hero-banner__mask,
     gap: 30px;
 }
 
-.mega-menu__item > a,
-.mega-menu__item > button.mega-menu__item-button {
+.mega-menu__item a {
     color: #333 !important;
     font-size: 16px !important;
     font-weight: 500 !important;
-    text-transform: lowercase !important;  /* ← ADD THIS */
+    text-decoration: none !important;
+    padding: 20px 0 !important;
+    display: block;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent !important;
 }
-
-.mega-menu__item > a::first-letter,
-.mega-menu__item > button.mega-menu__item-button::first-letter {
-    text-transform: uppercase !important;  /* ← ADD THIS */
-}
-
 
 /* Remove any lingering borders/colors from original theme */
 .mega-menu__item a,
@@ -4540,13 +4537,20 @@ section.page-faqs .hero-banner__mask,
 .mega-menu-tray__nav a {
     color: #333 !important;
     font-size: 15px !important;
-    display: block;
-    padding: 8px 0 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    display: block !important;
+    padding: 12px 20px !important;
     text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    border-left: none !important;  /* Remove blue square */
+    border-bottom: 2px solid transparent !important;  /* Add transparent underline */
 }
 
 .mega-menu-tray__nav a:hover {
-    color: #0077C8 !important;
+    color: #007ac2 !important;
+    background: transparent !important;  /* Remove grey background */
+    border-left: none !important;  /* Keep blue square removed */
+    border-bottom: 2px solid #007ac2 !important;  /* Add blue underline on hover */
 }
 
 /* Mobile navigation trigger */
@@ -4641,14 +4645,14 @@ footer.footer {
     position: relative !important;
 }
 
-/* LOGO ROW (ABTA LEFT, AXA RIGHT) - WITH SIDE PADDING */
-
-/* ABTA LOGO (TOP LEFT) - WITH LEFT PADDING */
+/* ABTA LOGO (TOP LEFT) - ALIGNED WITH HEADER */
 .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
     content: "" !important;
     position: absolute !important;
     top: 16px !important;
-    left: 40px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-left: -560px !important;
     width: 180px !important;
     height: 55px !important;
     background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/abta-travel-insurance-white-logo-rgb.webp/a903b952-072c-31f3-70fb-c3927ab764f4?version=1.0&t=1763453026583&imagePreview=1") !important;
@@ -4658,12 +4662,15 @@ footer.footer {
     border: none !important;
 }
 
-/* AXA LOCKUP (TOP RIGHT) - WITH RIGHT PADDING */
+/* AXA LOCKUP (TOP RIGHT) - ALIGNED WITH HEADER */
 .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
     content: "IN PARTNERSHIP WITH" !important;
     position: absolute !important;
     top: 8px !important;
-    right: 40px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-left: 560px !important;
+    margin-right: 0 !important;
     width: 200px !important;
     height: 80px !important;
     font-size: 0.7rem !important;
@@ -4815,13 +4822,14 @@ footer.footer {
 
     .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
         top: 12px !important;
-        left: 30px !important;
+        margin-left: -485px !important;
         width: 150px !important;
         height: 40px !important;
     }
 
     .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
-        right: 30px !important;
+        margin-left: 485px !important;
+        margin-right: -30px !important;
         width: 180px !important;
         height: 70px !important;
         background-size: 40px 40px !important;
@@ -4850,6 +4858,7 @@ footer.footer {
         top: 20px !important;
         left: 50% !important;
         transform: translateX(-50%) !important;
+        margin-left: 0 !important;
         width: 180px !important;
         height: 55px !important;
     }
