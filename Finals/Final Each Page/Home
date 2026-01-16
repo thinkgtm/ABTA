@@ -3194,13 +3194,20 @@ body:has(.article-full__content) .hero-banner {
 .mega-menu-tray__nav a {
     color: #333 !important;
     font-size: 15px !important;
-    display: block;
-    padding: 8px 0 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    display: block !important;
+    padding: 12px 20px !important;
     text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    border-left: none !important;  /* Remove blue square */
+    border-bottom: 2px solid transparent !important;  /* Add transparent underline */
 }
 
 .mega-menu-tray__nav a:hover {
     color: #007ac2 !important;
+    background: transparent !important;  /* Remove grey background */
+    border-left: none !important;  /* Keep blue square removed */
+    border-bottom: 2px solid #007ac2 !important;  /* Add blue underline on hover */
 }
 
 /* Get a Quote Button */
@@ -4495,13 +4502,20 @@ section.page-faqs .hero-banner__mask,
 .mega-menu-tray__nav a {
     color: #333 !important;
     font-size: 15px !important;
-    display: block;
-    padding: 8px 0 !important;
+    font-family: Calibri, Arial, sans-serif !important;
+    display: block !important;
+    padding: 12px 20px !important;
     text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    border-left: none !important;  /* Remove blue square */
+    border-bottom: 2px solid transparent !important;  /* Add transparent underline */
 }
 
 .mega-menu-tray__nav a:hover {
-    color: #0077C8 !important;
+    color: #007ac2 !important;
+    background: transparent !important;  /* Remove grey background */
+    border-left: none !important;  /* Keep blue square removed */
+    border-bottom: 2px solid #007ac2 !important;  /* Add blue underline on hover */
 }
 
 /* Mobile navigation trigger */
