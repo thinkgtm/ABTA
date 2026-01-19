@@ -1,3 +1,19 @@
+/* ============================================
+   ABTA COMPLETE SITE STYLES
+   Header + Footer + Blog Styling
+   ============================================ */
+
+/* ===== BRAND COLORS ===== */
+:root {
+    --abta-blue: #007ac2;
+    --abta-yellow: #fcb316;
+    --abta-dark-blue: #005a8f;
+    --abta-light-blue: #e6f4fb;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --background-light: #f8f9fa;
+}
+
 /* ==========================================
    HEADER / NAVIGATION BAR - ABTA STYLING
    ========================================== */
@@ -482,6 +498,7 @@ footer.footer {
         gap: 16px !important;
     }
 }
+
 /* ========================================
    ABTA Article Page Rebrand - CSS Fixes
    ======================================== */
