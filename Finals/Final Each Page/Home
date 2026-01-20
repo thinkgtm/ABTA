@@ -4907,20 +4907,4 @@ footer.footer {
 .mega-menu-responsive__item-title {
     border-bottom: 1px solid #eee !important;
 }
-
-/* All links in paragraphs and body text */
-p a,
-.richtext a,
-body a:not([class*="btn"]):not([class*="mega-menu"]) {
-    color: #007bc2 !important;
-    text-decoration: none !important;
-}
-
-p a:hover,
-.richtext a:hover,
-body a:not([class*="btn"]):not([class*="mega-menu"]):hover {
-    color: #007bc2 !important;
-    text-decoration: underline !important;
-}
-   }
 /* ===== END OF MASTER CSS ===== */
