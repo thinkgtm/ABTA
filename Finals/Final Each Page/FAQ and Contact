@@ -4833,4 +4833,9 @@ footer.footer {
     padding-bottom: 0 !important;
 }
 }
+/* ===== OVERRIDE ALL AXA COLORS TO ABTA BLUE ===== */
+* {
+    --axa-primary-100: #007ac2 !important;
+    --axa-primary: #007ac2 !important;
+}
 /* ===== END OF MASTER CSS ===== */
