@@ -1582,15 +1582,15 @@ div.card-v2__content {
     padding: 12px 20px !important;
     text-decoration: none !important;
     transition: all 0.3s ease !important;
-    border-left: none !important;  /* Remove blue square */
-    border-bottom: 2px solid transparent !important;  /* Add transparent underline */
+    border-left: none !important;
+    border-bottom: 2px solid transparent !important;
 }
 
 .mega-menu-tray__nav a:hover {
     color: #007ac2 !important;
-    background: transparent !important;  /* Remove grey background */
-    border-left: none !important;  /* Keep blue square removed */
-    border-bottom: 2px solid #007ac2 !important;  /* Add blue underline on hover */
+    background: transparent !important;
+    border-left: none !important;
+    border-bottom: 2px solid #007ac2 !important;
 }
 
 /* Mobile navigation trigger */
@@ -1649,7 +1649,7 @@ div.card-v2__content {
 }
 
 /* ==========================================
-   FOOTER - ABTA STYLING
+   FOOTER - ABTA STYLING (FLEXBOX APPROACH)
    ========================================== */
 
 /* MAIN FOOTER BASE */
@@ -1668,49 +1668,46 @@ footer.footer {
     border: none !important;
     margin: 0 0 32px 0 !important;
     padding: 0 0 32px 0 !important;
-    position: relative !important;
 }
 
-/* MAIN CONTAINER */
+/* MAIN CONTAINER - USING FLEXBOX FOR TRUE RESPONSIVE LAYOUT */
 .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
-    max-width: 1200px !important;
+    max-width: 1400px !important;
     margin: 0 auto !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+    padding: 20px 40px !important;
+    display: grid !important;
+    grid-template-columns: 1fr auto 1fr !important;
+    grid-template-rows: auto auto auto !important;
     gap: 24px !important;
-    padding-top: 90px !important;
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-    position: relative !important;
+    align-items: start !important;
 }
 
-/* ABTA LOGO (TOP LEFT) - ALIGNED WITH HEADER */
-.m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
+/* HIDE PSEUDO-ELEMENTS (we're not using them anymore) */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop::before,
+.m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+    display: none !important;
+}
+
+/* CREATE ACTUAL LOGO ELEMENTS USING EXISTING STRUCTURE */
+/* ABTA LOGO - LEFT SIDE */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container::before {
     content: "" !important;
-    position: absolute !important;
-    top: 16px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    margin-left: -560px !important;
+    grid-column: 1 !important;
+    grid-row: 1 !important;
     width: 180px !important;
     height: 55px !important;
     background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/abta-travel-insurance-white-logo-rgb.webp/a903b952-072c-31f3-70fb-c3927ab764f4?version=1.0&t=1763453026583&imagePreview=1") !important;
     background-repeat: no-repeat !important;
     background-position: left center !important;
     background-size: contain !important;
-    border: none !important;
+    justify-self: start !important;
 }
 
-/* AXA LOCKUP (TOP RIGHT) - ALIGNED WITH HEADER */
-.m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
+/* AXA LOCKUP - RIGHT SIDE */
+.m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container::after {
     content: "IN PARTNERSHIP WITH" !important;
-    position: absolute !important;
-    top: 8px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    margin-left: 560px !important;
-    margin-right: 0 !important;
+    grid-column: 3 !important;
+    grid-row: 1 !important;
     width: 200px !important;
     height: 80px !important;
     font-size: 0.7rem !important;
@@ -1724,12 +1721,14 @@ footer.footer {
     background-repeat: no-repeat !important;
     background-position: right bottom !important;
     background-size: 48px 48px !important;
+    justify-self: end !important;
+    color: #ffffff !important;
 }
 
-/* NAVIGATION – CENTERED WITH EQUAL SPACING */
+/* NAVIGATION – CENTERED MIDDLE COLUMN */
 .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer--list {
-    order: 1 !important;
-    width: 100% !important;
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
     display: flex !important;
     justify-content: center !important;
 }
@@ -1771,15 +1770,13 @@ footer.footer {
     text-decoration: underline !important;
 }
 
-/* SOCIAL ICONS – CENTERED */
+/* SOCIAL ICONS – CENTERED BELOW NAV */
 .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer {
-    order: 2 !important;
-    width: 100% !important;
+    grid-column: 1 / -1 !important;
+    grid-row: 3 !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    margin-top: 4px !important;
-    position: static !important;
 }
 
 /* Hide "Follow us" label */
@@ -1852,97 +1849,143 @@ footer.footer {
     cursor: default !important;
 }
 
-/* FOOTER RESPONSIVE */
-@media (max-width: 1024px) {
+/* ==========================================
+   FOOTER RESPONSIVE BREAKPOINTS
+   ========================================== */
+
+/* Tablets and smaller desktops - adjust logo sizes */
+@media (max-width: 1200px) {
     .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
-        padding-left: 30px !important;
-        padding-right: 30px !important;
-        padding-top: 70px !important;
+        padding: 20px 30px !important;
     }
 
-    .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
-        top: 12px !important;
-        margin-left: -485px !important;
-        width: 150px !important;
-        height: 40px !important;
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container::before {
+        width: 160px !important;
+        height: 48px !important;
     }
 
-    .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
-        margin-left: 485px !important;
-        margin-right: -30px !important;
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container::after {
         width: 180px !important;
         height: 70px !important;
-        background-size: 40px 40px !important;
+        background-size: 44px 44px !important;
     }
 }
 
-@media (max-width: 768px) {
-    footer.footer {
-        padding: 40px 20px 30px 20px !important;
+@media (max-width: 1024px) {
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container::before {
+        width: 140px !important;
+        height: 42px !important;
     }
 
-    /* MOBILE: Reorganize footer layout */
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container::after {
+        width: 160px !important;
+        height: 65px !important;
+        background-size: 40px 40px !important;
+    }
+
+    .m-footer-small__list-item.m-footer-small__list-item--border {
+        font-size: 0.9rem !important;
+        padding: 0 16px !important;
+    }
+}
+
+/* Small tablets - stack logos and content vertically */
+@media (max-width: 900px) {
     .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-        padding-top: 100px !important; /* Space for top logo */
-        padding-bottom: 40px !important;
-        flex-direction: column !important;
-        gap: 32px !important;
-        position: relative !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto auto auto auto !important;
+        text-align: center !important;
+        gap: 20px !important;
     }
 
-    /* ABTA LOGO - CENTERED AT TOP */
-    .m-footer-small.m-footer-small--top.m-footer-small--desktop::before {
-        display: block !important;
-        top: 20px !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        margin-left: 0 !important;
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container::before {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+        justify-self: center !important;
         width: 180px !important;
         height: 55px !important;
+        background-position: center !important;
     }
 
-    /* HIDE the right-side AXA desktop positioning */
-    .m-footer-small.m-footer-small--top.m-footer-small--desktop::after {
-        display: none !important;
-    }
-
-    /* AXA LOGO + TEXT - CENTERED BELOW SOCIAL ICONS */
-    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer::after {
-        content: "IN PARTNERSHIP WITH" !important;
-        display: block !important;
-        width: 100% !important;
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container::after {
+        grid-column: 1 !important;
+        grid-row: 5 !important;
+        justify-self: center !important;
         text-align: center !important;
-        font-size: 0.7rem !important;
-        font-weight: 700 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 0.08em !important;
-        color: #ffffff !important;
-        margin-top: 32px !important;
-        padding-bottom: 60px !important;
-        background-image: url("https://webserver-salesaxapartners-prd.lfr.cloud/documents/11583305/0/axa_logo_solid_rgb.webp/b6ba9428-c8da-c8b9-6e97-09bd46908585?version=1.0&t=1763453280994&imagePreview=1") !important;
-        background-repeat: no-repeat !important;
+        width: 200px !important;
         background-position: center bottom !important;
-        background-size: 48px 48px !important;
     }
 
-    /* Navigation - centered */
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer--list {
+        grid-row: 2 !important;
+    }
+
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__disclaimer {
+        grid-row: 3 !important;
+    }
+
     .m-footer-small__disclaimer--list .m-footer-small__list {
         flex-direction: column !important;
         gap: 12px !important;
-        text-align: center !important;
     }
 
     .m-footer-small__list-item.m-footer-small__list-item--border {
         border-right: none !important;
         padding: 0 !important;
-        font-size: 0.9rem !important;
+    }
+}
+
+/* Mobile - simplified layout */
+@media (max-width: 768px) {
+    footer.footer {
+        padding: 40px 20px 30px 20px !important;
     }
 
-    /* Social icons - centered */
+    .m-footer-small.m-footer-small--top.m-footer-small--desktop .m-footer-small__container {
+        padding: 20px !important;
+        gap: 24px !important;
+    }
+
     .m-footer-small__disclaimer .m-footer-small__list {
-        justify-content: center !important;
         gap: 16px !important;
     }
 }
+
+/* Mobile navigation - force remove all text underlines */
+.mega-menu-responsive__item-title,
+.mega-menu-responsive__item-title a,
+.mega-menu-responsive__item-title button,
+.mega-menu-responsive__item-title span,
+.mega-menu-responsive__item a,
+.mega-menu-responsive__item button {
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+    text-decoration-style: none !important;
+    border-bottom-color: transparent !important;
+    box-shadow: none !important;
+    background-image: none !important;
+    -webkit-text-decoration: none !important;
+}
+
+/* Remove any pseudo-elements that might create lines */
+.mega-menu-responsive__item-title::before,
+.mega-menu-responsive__item-title::after,
+.mega-menu-responsive__item-title *::before,
+.mega-menu-responsive__item-title *::after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+    background: none !important;
+}
+
+/* Keep separator between items */
+.mega-menu-responsive__item-title {
+    border-bottom: 1px solid #eee !important;
+}
+
+/* ===== OVERRIDE ALL AXA COLORS TO ABTA BLUE ===== */
+* {
+    --axa-primary-100: #007ac2 !important;
+    --axa-primary: #007ac2 !important;
+}
+   }
